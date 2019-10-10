@@ -1,6 +1,6 @@
 #!/bin/bash
 
-venv_dir=".venv"
+venv_dir="../.venv"
 content_dir="../content"
 
 if [ -d $venv_dir ]; then
@@ -8,8 +8,8 @@ if [ -d $venv_dir ]; then
 else
     python3 -m venv --system-site-packages $venv_dir
     source $venv_dir/bin/activate
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
 fi
 
-jupyter-notebook --notebook-dir=$content_dir
+jupyter-lab --notebook-dir=$content_dir
 source deactivate
