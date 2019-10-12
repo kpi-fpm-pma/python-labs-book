@@ -1,0 +1,1859 @@
+---
+interact_link: content/lab1/theory.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  РўРµРѕСЂРµС‚РёС‡РЅС– РІС–РґРѕРјРѕСЃС‚С–
+prev_page:
+  url: /lab1/intro.html
+  title: |-
+    РџСЂРѕРіСЂР°РјСѓРІР°РЅРЅСЏ Р»С–РЅС–Р№РЅРёС… Р°Р»РіРѕСЂРёС‚РјС–РІ С‚Р° СЂРѕР·РіР°Р»СѓР¶РµРЅРёС… РїСЂРѕС†РµСЃС–РІ
+next_page:
+  url: /lab1/questions.html
+  title: |-
+    РџРёС‚Р°РЅРЅСЏ РґР»СЏ СЃР°РјРѕРїРµСЂРІС–СЂРєРё
+suffix: .ipynb
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;">&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110; &#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;"> </a></h1><p>Лінійний алгоритм — алгоритм, в якому обчислення виконуються строго послідовно. Такий алгоритм реалізується простими інструкціями. Прості інструкції (simple statements) є базовим елементом більшості мов програмування і Python не виняток.</p>
+<p>Прості інструкції розташовуються в одному рядку. Кілька простих інструкцій теж можна розташовувати в одному рядку, для цього вони повинні бути розділені крапкою з комою. Однак, зловживати не варто, так як це погано позначається на читання коду.</p>
+<p>Типова блок-схема лінійного алгоритму показана на рис. 1.1.</p>
+<p>[]</p>
+<h2 id="&#1062;&#1110;&#1083;&#1110;-&#1095;&#1080;&#1089;&#1083;&#1072;-(int)">&#1062;&#1110;&#1083;&#1110; &#1095;&#1080;&#1089;&#1083;&#1072; (int)<a class="anchor-link" href="#&#1062;&#1110;&#1083;&#1110;-&#1095;&#1080;&#1089;&#1083;&#1072;-(int)"> </a></h2><p>Числа в Python 3 нічим не відрізняються від звичайних чисел. Вони підтримують набір звичайних математичних операцій:</p>
+<table>
+<thead><tr>
+<th>Запис</th>
+<th>Операція</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x + y</code></td>
+<td>додавання</td>
+</tr>
+<tr>
+<td><code>x - y</code></td>
+<td>віднімання</td>
+</tr>
+<tr>
+<td><code>x * y</code></td>
+<td>множення</td>
+</tr>
+<tr>
+<td><code>x / y</code></td>
+<td>ділення</td>
+</tr>
+<tr>
+<td><code>x // y</code></td>
+<td>отримання цілої частини від ділення</td>
+</tr>
+<tr>
+<td><code>x % y</code></td>
+<td>залишок від ділення</td>
+</tr>
+<tr>
+<td><code>-x</code></td>
+<td>зміна знака числа</td>
+</tr>
+<tr>
+<td><code>abs(x)</code></td>
+<td>модуль числа</td>
+</tr>
+<tr>
+<td><code>divmod(x, y)</code></td>
+<td>Частка і залишок від ділення</td>
+</tr>
+<tr>
+<td><code>x ** y</code></td>
+<td>зведення в ступінь</td>
+</tr>
+<tr>
+<td><code>pow(x, y[, z])</code></td>
+<td>x^y по модулю (якщо модуль заданий)</td>
+</tr>
+</tbody>
+</table>
+<p>Також потрібно відзначити, що цілі числа в Python 3, на відміну від багатьох інших мов, підтримують довгу арифметику (проте, це вимагає більше пам'яті).</p>
+<p>Приклади операцій:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">255</span><span class="o">+</span><span class="mi">34</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>289</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">5</span><span class="o">*</span><span class="mi">2</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">20</span><span class="o">/</span><span class="mi">3</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>6.666666666666667</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">20</span><span class="o">//</span><span class="mi">3</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>6</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">20</span><span class="o">%</span><span class="k">3</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>81</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>81</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">27</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mi">150</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>369988485035126972924700782451696644186473100389722973815184405301748249</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1041;&#1110;&#1090;&#1086;&#1074;&#1110;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1110;&#1111;">&#1041;&#1110;&#1090;&#1086;&#1074;&#1110; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1110;&#1111;<a class="anchor-link" href="#&#1041;&#1110;&#1090;&#1086;&#1074;&#1110;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1110;&#1111;"> </a></h2><p>Над цілими числами також можна виконувати бітові операції.</p>
+<table>
+<thead><tr>
+<th>Запис</th>
+<th>Операція</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>x | y</code></td>
+<td>побітове або</td>
+</tr>
+<tr>
+<td><code>x ^ y</code></td>
+<td>побітове виключення або</td>
+</tr>
+<tr>
+<td><code>x &amp; y</code></td>
+<td>побітове і</td>
+</tr>
+<tr>
+<td><code>x &lt;&lt; n</code></td>
+<td>бітовий зсув вліво</td>
+</tr>
+<tr>
+<td><code>x &gt;&gt; y</code></td>
+<td>бітовий зсув вправо</td>
+</tr>
+<tr>
+<td><code>~x</code></td>
+<td>інверсія бітів</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#1057;&#1080;&#1089;&#1090;&#1077;&#1084;&#1080;-&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1103;">&#1057;&#1080;&#1089;&#1090;&#1077;&#1084;&#1080; &#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1103;<a class="anchor-link" href="#&#1057;&#1080;&#1089;&#1090;&#1077;&#1084;&#1080;-&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1085;&#1103;"> </a></h2><p>Для переведення числа з однієї системи числення в іншу Python надає кілька функцій:</p>
+<blockquote><p><code>int ([object], [основа системи числення])</code> - перетворення до цілого числа в десятковій системі числення. За замовчуванням система числення десяткова, але можна задати будь-яку основу від 2 до 36 включно.</p>
+<p><code>bin (x)</code> - перетворення цілого числа в двійковий рядок.</p>
+<p><code>hex (х)</code> - перетворення цілого числа в шістнадцятковий рядок.</p>
+<p><code>oct (х)</code> - перетворення цілого числа в вісімковий рядок.</p>
+</blockquote>
+<h2 id="&#1044;&#1110;&#1081;&#1089;&#1085;&#1110;-&#1095;&#1080;&#1089;&#1083;&#1072;-(float)">&#1044;&#1110;&#1081;&#1089;&#1085;&#1110; &#1095;&#1080;&#1089;&#1083;&#1072; (float)<a class="anchor-link" href="#&#1044;&#1110;&#1081;&#1089;&#1085;&#1110;-&#1095;&#1080;&#1089;&#1083;&#1072;-(float)"> </a></h2><p>Дійсні числа підтримують ті ж операції, що і цілі.Більш докладно про можливі операції див. <a href="link">Додаток 4</a>.</p>
+<p>Прості приклади роботи з числами:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c</span><span class="o">=</span><span class="mi">150</span> 
+<span class="n">d</span><span class="o">=</span><span class="mf">12.9</span> 
+<span class="n">c</span><span class="o">+</span><span class="n">d</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>162.9</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span><span class="o">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">d</span><span class="o">-</span><span class="n">c</span><span class="p">)</span> <span class="c1"># Модуль числа </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>137.1
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="c1"># Заокруглення </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>137</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Крім стандартних виразів для роботи з числами (а в Python їх не так вже й багато), в складі Python є кілька корисних модулів.</p>
+<p>Модуль <code>math</code> надає більш складні математичні функції.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span> 
+
+<span class="n">math</span><span class="o">.</span><span class="n">pi</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3.141592653589793</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">85</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>9.219544457292887</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Модуль random реалізує генератор випадкових чисел і функції випадкового вибору.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+
+<span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.9734358296928365</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Більш докладно операції з різними типами змінних описано в <a href="link">Додатку 4</a>.</p>
+<h2 id="&#1060;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-print-&#1110;-input">&#1060;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111; <code>print</code> &#1110; <code>input</code><a class="anchor-link" href="#&#1060;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-print-&#1110;-input"> </a></h2><p>Для обміну даними із зовнішнім для програми середовищем в Python застосовуються функції <code>print</code> і <code>input</code>.</p>
+<p>Функція <code>print</code> виводить на монітор те, що вказано в дужках при виклику цієї функції. У дужках можуть бути будь-які типи даних. Крім того, кількість даних може бути різним:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1032</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1032
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">2.34</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.34
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a:&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a: 1
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">one</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">two</span> <span class="o">=</span> <span class="mi">2</span> 
+<span class="n">three</span> <span class="o">=</span> <span class="mi">3</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">one</span><span class="p">,</span> <span class="n">two</span><span class="p">,</span> <span class="n">three</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Аргументи функції (те, що в дужках), поділяються між собою комами. У виводі замість ком значення розділені пробілом. Якщо в дужках стоїть вираз, то спочатку він виконується, після чого <code>print()</code> вже виводить результат цього виразу:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;world&quot;</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>hello world
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">-</span> <span class="mf">2.5</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>8.75
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>У <code>print</code> передбачені додаткові параметри. Наприклад, через параметр <code>sep</code> можна вказати відмінний від пробілу роздільник рядків:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">,</span> <span class="s2">&quot;Tue&quot;</span><span class="p">,</span> <span class="s2">&quot;Wed&quot;</span><span class="p">,</span> <span class="s2">&quot;Thu&quot;</span><span class="p">,</span> <span class="s2">&quot;Fri&quot;</span><span class="p">,</span> <span class="s2">&quot;Sat&quot;</span><span class="p">,</span> <span class="s2">&quot;Sun&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mon-Tue-Wed-Thu-Fri-Sat-Sun
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;//&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1//2//3
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Форматування виведення може виконуватися в так званому старому стилі або за допомогою строкового методу <code>format</code>. Старий стиль також називають Сі-стилем, так як він схожий з тим, як відбувається вивід на екран в мові C. Приклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pupil</span> <span class="o">=</span> <span class="s2">&quot;Ben&quot;</span> 
+<span class="n">old</span> <span class="o">=</span> <span class="mi">16</span> 
+<span class="n">grade</span> <span class="o">=</span> <span class="mf">9.2</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s </span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2">. Level: </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pupil</span><span class="p">,</span> <span class="n">old</span><span class="p">,</span> <span class="n">grade</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It&#39;s Ben, 16. Level: 9.200000
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Тут замість трьох комбінацій символів <code>%s</code>, <code>%d</code>, <code>%f</code> підставляються значення змінних <code>pupil</code>, <code>old</code>, <code>grade</code>. Букви <code>s</code>, <code>d</code>, <code>f</code> позначають типи даних - рядок, ціле число, дійсне число. Якби було потрібно підставити три рядки, то у всіх випадках використовувалося б сполучення <code>%s</code>.</p>
+<p>Хоча в якості значення змінної <code>grade</code> було зазначено число <code>9.2</code>, на екран воно вивелося з додатковими нулями. Однак, можна вказати, скільки потрібно знаків після коми, записавши перед буквою <code>f</code> точку з бажаним числом знаків в дробовій частині:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s </span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2">. Level: </span><span class="si">%.1f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pupil</span><span class="p">,</span> <span class="n">old</span><span class="p">,</span> <span class="n">grade</span><span class="p">))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It&#39;s Ben, 16. Level: 9.2
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Тепер розглянемо метод <code>format</code>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;ball&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a ball. It&#39;s red.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a cat. It&#39;s white.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2"> </span><span class="si">{2}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;number&quot;</span><span class="p">))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This is a 1. It&#39;s a number.
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>У рядку в фігурних дужках вказані номери даних, які будуть сюди під-ставлені. Далі до рядка застосовується метод <code>format</code>. У його дужках вказуються самі дані (можна використовувати змінні). На нульове місце підставиться перший аргумент методу <code>format</code>, на місце з номером 1 - другий і т. д.</p>
+<p>За введення у програму даних з клавіатури в Python відповідає функція <code>input</code>. Коли викликається ця функція, програма зупиняє своє виконання і чекає, коли користувач введе текст. Після цього, коли він натисне Enter, функція <code>input</code> забере введений текст і передасть його програмі, яка вже буде обробляти його відповідно до своїх алгоритмів.</p>
+<p>Якщо у інтерактивному режимі ввести команду <code>input</code>, то комп'ютер буде чекати, коли ви введете щось і натиснете Enter або просто натиснете Enter. Якщо ви щось ввели, це відразу ж відобразитися на екрані:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">input</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Yes!&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Функція <code>input</code> передає введені дані у програму. Їх можна присвоїти змінній. В цьому випадку інтерпретатор не виводить рядок відразу ж:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>В даному випадку рядок зберігається в змінній answer, і при бажанні можно вивести її значення на екран:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">answer</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;No, it is not.&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>При використанні функції <code>print</code> лапки опускаються.</p>
+<p>За замовчуванням функція <code>іnput</code> вводить інформацію як рядок, тобто як символи.</p>
+<p><em>Приклад</em>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="nb">input</span><span class="p">()</span> 
+<span class="n">y</span><span class="o">=</span><span class="nb">input</span><span class="p">()</span> 
+<span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>  <span class="c1"># до першого рядку приєднується другий</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>512
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Щоб працювати з числовою інформацією треба для функції <code>input</code> вказати тип числа, що вводиться (наприклад, int або float).</p>
+<p><em>Приклад</em>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> 
+<span class="n">y</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>     <span class="c1"># перше число складається з другим </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>17
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Перед викликом функції треба передбачити спеціальне запрошення, тому що користувач може не зрозуміти, що від нього чекає програма.</p>
+<p><em>Приклад</em>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">UserName</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">UserName</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Natalia
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1055;&#1086;&#1085;&#1103;&#1090;&#1090;&#1103;-&#1088;&#1086;&#1079;&#1075;&#1072;&#1083;&#1091;&#1078;&#1077;&#1085;&#1085;&#1103;">&#1055;&#1086;&#1085;&#1103;&#1090;&#1090;&#1103; &#1088;&#1086;&#1079;&#1075;&#1072;&#1083;&#1091;&#1078;&#1077;&#1085;&#1085;&#1103;<a class="anchor-link" href="#&#1055;&#1086;&#1085;&#1103;&#1090;&#1090;&#1103;-&#1088;&#1086;&#1079;&#1075;&#1072;&#1083;&#1091;&#1078;&#1077;&#1085;&#1085;&#1103;"> </a></h2><p>Розгалужений обчислювальний процес передбачає кілька можливих напрямків обчислення, але тільки одиніз них повинен виконуватися при реалізації алгоритму. Тому розгалуження включає перевірку одного або декількох умов, в залежності від якої і буде вибиратися напрямок (гілка) обчислення.</p>
+<p>Таким чином, алгоритм розгалуження складається з перевірки умови (умов) і всіх можливих гілок обчислення, при цьому бажано, щоб дії, загальні для всіх гілок, описувалися один раз (до або після розгалуження).</p>
+<p>Найбільш відома інструкція, що дозволяє реалізувати логічне розгалуження, складається з трьох частин: <code>if</code>, <code>elif</code>, <code>else</code>.</p>
+<h3 id="&#1050;&#1077;&#1088;&#1091;&#1102;&#1095;&#1110;-&#1082;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1111;---&#1086;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1080;-IF-...-ELIF-...-ELSE">&#1050;&#1077;&#1088;&#1091;&#1102;&#1095;&#1110; &#1082;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1111; - &#1086;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1080; <code>IF ... ELIF ... ELSE</code><a class="anchor-link" href="#&#1050;&#1077;&#1088;&#1091;&#1102;&#1095;&#1110;-&#1082;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1111;---&#1086;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1080;-IF-...-ELIF-...-ELSE"> </a></h3><p>Структура керуючої конструкції (або "прийняття рішення") вимагає, щоб програміст поставив одне або більше умов, які будуть виконані і перевірені програмою і однієї або декількох дій, які будуть виконані, якщо умова буде визначено як істина (<code>true</code>) і, опціонально, інші вирази, які будуть виконані, якщо умова буде визначено як хибність (<code>false</code>).</p>
+<p>Нижче наведено форму типової структури форми керуючої конструкції, яка схожа в більшості мов програмування (рис.1.2):</p>
+<p><a href=""></a></p>
+<p>Рисунок 1.2.  − Приклад розгалуженого алгоритму програми.</p>
+<p>Мова програмування Python передбачає будь-яке не рівне нулю або не порожнє значення як істину (<code>true</code>), і навпаки - якщо значення буде порожнім або дорівнювати нулю - то воно буде вважатися хибним (<code>false</code>).</p>
+<h3 id="&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-IF">&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088; <code>IF</code><a class="anchor-link" href="#&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-IF"> </a></h3><p>Оператор <code>if</code> в Python подібний цьому оператору в інших мовах. Утвердження з використанням оператора <code>if</code> містить в собі логічну умову, в який проводиться порівняння даних і по результату вибирається подальша дія.</p>
+<h4 id="&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;">&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;<a class="anchor-link" href="#&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;"> </a></h4><p>Синтаксис оператора <code>if</code> в Python такий:</p>
+
+<pre><code>if  умова: 
+
+   дія(s)</code></pre>
+<p>Якщо логічна умова є істиною (<code>true</code>), тоді блок дій в виразі буде виконаний. Якщо умова є хибною (<code>false</code>) - тоді буде виконаний наступний блок коду після цього виразу.</p>
+<p>Приклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span> 
+
+<span class="k">if</span> <span class="n">var1</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span> 
+<span class="nb">print</span> <span class="p">(</span><span class="n">var1</span><span class="p">)</span>
+
+<span class="n">var2</span> <span class="o">=</span> <span class="mi">0</span> 
+
+<span class="k">if</span> <span class="n">var2</span><span class="p">:</span> 
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span> 
+    <span class="nb">print</span> <span class="p">(</span><span class="n">var2</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 - Got a true expression value
+100
+Good bye!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1099;-IF-..-ELIF-..-ELSE">&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1099; <code>IF .. ELIF .. ELSE</code><a class="anchor-link" href="#&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1099;-IF-..-ELIF-..-ELSE"> </a></h3><p>Оператор <code>else</code> може використовуватися разом з оператором <code>if</code>. Оператор <code>else</code> містить блок  коду, який буде виконаний, якщо результат виразу дорівнює нулю або вважається хибним. Це опціональний оператор, і він може бути тільки один у всьому виразі після <code>if</code>.</p>
+<h4 id="&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;">&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;<a class="anchor-link" href="#&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;"> </a></h4>
+<pre><code>if  умова: 
+
+    дія (ї) 
+
+else: 
+
+    дія (ї)</code></pre>
+<p>Приклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span> 
+
+<span class="k">if</span> <span class="n">var1</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="n">var1</span><span class="p">)</span> 
+<span class="k">else</span><span class="p">:</span> 
+       <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a false expression value&quot;</span><span class="p">)</span> 
+       <span class="nb">print</span> <span class="p">(</span><span class="n">var1</span><span class="p">)</span> 
+
+<span class="n">var2</span> <span class="o">=</span> <span class="mi">0</span> 
+
+<span class="k">if</span> <span class="n">var2</span><span class="p">:</span> 
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span> 
+    <span class="nb">print</span> <span class="p">(</span><span class="n">var2</span><span class="p">)</span> 
+<span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a false expression value&quot;</span><span class="p">)</span> 
+        <span class="nb">print</span> <span class="p">(</span><span class="n">var2</span><span class="p">)</span> 
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 - Got a true expression value
+100
+2 - Got a false expression value
+0
+Good bye!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-elif">&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088; <code>elif</code><a class="anchor-link" href="#&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-elif"> </a></h3><p>Оператор <code>elif</code> дозволяє виконувати множинну перевірку виразу і виконувати блок коду, як тільки результат буде вважатися істиною.</p>
+<p>Як і оператор <code>else</code>, <code>elif</code> опціональний, однак, на відміну від <code>else</code>, він може використовуватися багаторазово.</p>
+<h4 id="&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;">&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;<a class="anchor-link" href="#&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;"> </a></h4>
+<pre><code>if  умова: 
+
+    дія (ї) 
+
+elif   умова2: 
+
+    дія(ї) 
+
+elif  умова3: 
+
+    дія(ї) 
+
+else: 
+
+    дія(ї)</code></pre>
+<p>В Python немає таких операторів як <code>switch</code> або <code>case</code>, але можна використовувати оператори <code>if..elif ...</code> замість них.</p>
+<p>Приклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span> 
+
+<span class="k">if</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
+<span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">150</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
+<span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;3 - Got a true expression value&quot;</span><span class="p">)</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
+<span class="k">else</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;4 - Got a false expression value&quot;</span><span class="p">)</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3 - Got a true expression value
+100
+Good bye!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1042;&#1082;&#1083;&#1072;&#1076;&#1077;&#1085;&#1110;-&#1082;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1111;-IF">&#1042;&#1082;&#1083;&#1072;&#1076;&#1077;&#1085;&#1110; &#1082;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1111; IF<a class="anchor-link" href="#&#1042;&#1082;&#1083;&#1072;&#1076;&#1077;&#1085;&#1110;-&#1082;&#1086;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1111;-IF"> </a></h3><p>Бувають випадки, коли ви хочете провести ще одну перевірку після того, як результат виразу прийнятий як істина. В такому випадку - можна використовувати вкладені керуючі конструкції <code>if</code> (або інакше каскадні).</p>
+<p>У вкладеної конструкції, ви можете додавати <code>if .. elif .. else</code> всередині іншої такої ж конструкції.</p>
+<h4 id="&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;">&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;<a class="anchor-link" href="#&#1057;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;"> </a></h4>
+<pre><code>if умова1: 
+
+   дія (ї) 
+
+   if  умова2: 
+
+    дія (ї) 
+
+   elif  умова3: 
+
+      дія (ї) 
+
+   else 
+
+     дія (ї) 
+
+elif  умова4: 
+
+  дія (ї) 
+
+else: 
+
+  дія(ї)</code></pre>
+<p>Приклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span> 
+
+<span class="k">if</span>  <span class="n">var</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Expression value is less than 200&quot;</span><span class="p">)</span> 
+   <span class="k">if</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">150</span><span class="p">:</span> 
+     <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Which is 150&quot;</span><span class="p">)</span> 
+   <span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span> 
+      <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Which is 100&quot;</span><span class="p">)</span> 
+   <span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">50</span><span class="p">:</span> 
+      <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Which is 50&quot;</span><span class="p">)</span> 
+<span class="k">elif</span>  <span class="n">var</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span> 
+   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Expression value is less than 50&quot;</span><span class="p">)</span> 
+<span class="k">else</span><span class="p">:</span> 
+  <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Could not find true expression&quot;</span><span class="p">)</span> 
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Expression value is less than 200
+Which is 100
+Good bye!
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Як правило, в якості умови, що перевіряється використовується результат обчислення одного з наступних операторів порівняння:</p>
+<table>
+<thead><tr>
+<th>Оператор</th>
+<th>Значення</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;</code></td>
+<td>Менше - умова вірна, якщо перший операнд менше другого.</td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Більше - умова вірна, якщо перший операнд більше другого.</td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Менше або дорівнює.</td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Більше або дорівнює.</td>
+</tr>
+<tr>
+<td><code>==</code></td>
+<td>Рівність. Умова вірна, якщо два операнда рівні.</td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Нерівність. Умова вірна, якщо два операнда нерівні.</td>
+</tr>
+</tbody>
+</table>
+<p>Оператори порівняння в Python можна об'єднувати в ланцюжки (на відміну від більшості інших мов програмування, де для цього потрібно використовувати логічні зв'язки), наприклад, <code>a==b==c</code> або <code>1&lt;=x&lt;=10</code>.</p>
+<p>Оператори порівняння повертають значення спеціального логічного типу <code>bool</code>. Значення логічного типу можуть приймати одне з двох значень: True (істина) або False (хибність). Якщо перетворити логічне True до типу <code>int</code>, то вийде 1, а перетворення False дасть 0. При зворотному перетворенні число 0 перетворюється в False, а будь-яке ненульове число в True. При перетворенні <code>str</code> в <code>bool</code> порожній рядок перетворюється в False, а будь-який непорожній рядок в True.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+
+    </main>
+    
