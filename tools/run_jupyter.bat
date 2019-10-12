@@ -5,7 +5,7 @@ set CONTENT_DIR=..\content
 if exist %VENV_DIR%\ (
     call %VENV_DIR%\Scripts\activate.bat
 ) else (
-    python -m venv --system-site-packages %VENV_DIR%
+    python -m venv %VENV_DIR%
     call %VENV_DIR%\Scripts\activate.bat
     pip install -r requirements.txt
 )

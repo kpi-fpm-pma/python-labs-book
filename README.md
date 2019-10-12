@@ -7,7 +7,7 @@ This is a Jupyter Book version of a lab materials for freshman year Python cours
 
 Author: Gromova V.V.
 
-Jupyter adaptation: our beautiful [contributors](https://github.com/GasperPaul/python-labs-book/graphs/contributors) :heart:.
+Jupyter adaptation: our beautiful [contributors](https://github.com/GasperPaul/python-labs-book/graphs/contributors) :heart:
 
 ## Contributing
 
@@ -27,5 +27,5 @@ Please, cite this book as:
     address = {Київ},
     year = 2018,
     pages = 166
-}```
-
+}
+```
