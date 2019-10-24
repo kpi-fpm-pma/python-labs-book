@@ -1,0 +1,90 @@
+---
+interact_link: content/intro/functions.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  Вбудовані функції
+prev_page:
+  url: /intro/structure.html
+  title: |-
+    Структура програми на мові Python та основні модулі
+next_page:
+  url: /intro/formating.html
+  title: |-
+    Основні вказівки до форматування коду
+suffix: .ipynb
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1042;&#1073;&#1091;&#1076;&#1086;&#1074;&#1072;&#1085;&#1110;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;">&#1042;&#1073;&#1091;&#1076;&#1086;&#1074;&#1072;&#1085;&#1110; &#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;<a class="anchor-link" href="#&#1042;&#1073;&#1091;&#1076;&#1086;&#1074;&#1072;&#1085;&#1110;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;"> </a></h1><p>У середовищі Python без операцій імпорту є більш сотні вбудованих об'єктів, в основному, функцій і винятків. 
+Для зручності функції умовно розділені за категоріями:</p>
+<ul>
+<li>Функції перетворення типів і класи: <code>coerce,str,repr,int,list,tuple,long,float,complex,dict,super,file,bool,object</code>.</li>
+<li>Числові і рядкові функції: <code>abs ,divmod,ord,pow,len,chr,unichr,hex,oct,cmp,round,unicode</code>.</li>
+<li>Функції обробки даних: <code>apply,map,filter,reduce,zip,range,xrange,max,min,iter,enumerate,sum</code>.</li>
+<li>Функції визначення властивостей: <code>hash,id,callable,issubclass, isinstance,type</code>.</li>
+<li>Функції для доступу до внутрішніх структурам: <code>locals,globals, vars,intern,dir</code>.</li>
+<li>Функції компіляції та виконання: <code>eval,execfile,reload, __import__,compile</code>.</li>
+<li>Функції введення-виведення: <code>input,raw_input,open</code>.</li>
+<li>Функції для роботи з атрибутами: <code>getattr,setattr,delattr, hasattr</code>.</li>
+<li>Функції-"прикрашувачи" методів класів: <code>staticmethod,classmethod, property</code>.</li>
+<li>Інші функції:<code>buffer, slice</code>.</li>
+</ul>
+<p>Уточнити призначення функції, її аргументів і результату можна в інтерактивній сесії інтерпретатора Python :
+<img src="..\images\intro\Func_Info.bmp" alt=""></p>
+<p>Ще один варіант отримати інформацію про функції можна, звернувшись за адресою:<a href="https://docs.python.org/3.4/library/functions.html#help">https://docs.python.org/3.4/library/functions.html#help</a></p>
+<p>У <a href="http://link">Додатку 2</a> описаний синтаксис вбудованих функцій, найбільш уживаних у курсі вивчення мови Python.
+У <a href="http://link">Додатку 3</a> перераховані ключові слова мови Python. 
+Ці зарезервовані слова не можна використовувати в якості імені змінної або будь-якого іншого ідентифікатора. 
+Всі ключові слова Python складаються тільки з букв в нижньому регістрі.</p>
+<p>Отримати список ключових слів можливо в інтерпретаторі командою:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keyword</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;False&#39;, &#39;None&#39;, &#39;True&#39;, &#39;and&#39;, &#39;as&#39;, &#39;assert&#39;, &#39;async&#39;, &#39;await&#39;, &#39;break&#39;, &#39;class&#39;, &#39;continue&#39;, &#39;def&#39;, &#39;del&#39;, &#39;elif&#39;, &#39;else&#39;, &#39;except&#39;, &#39;finally&#39;, &#39;for&#39;, &#39;from&#39;, &#39;global&#39;, &#39;if&#39;, &#39;import&#39;, &#39;in&#39;, &#39;is&#39;, &#39;lambda&#39;, &#39;nonlocal&#39;, &#39;not&#39;, &#39;or&#39;, &#39;pass&#39;, &#39;raise&#39;, &#39;return&#39;, &#39;try&#39;, &#39;while&#39;, &#39;with&#39;, &#39;yield&#39;]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+ 
+
+
+    </main>
+    

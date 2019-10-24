@@ -1,0 +1,338 @@
+---
+interact_link: content/intro/structure.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  Структура програми на мові Python та основні модулі
+prev_page:
+  url: /intro/installation.html
+  title: |-
+    Встановлення і робота з інтерпретатором Python
+next_page:
+  url: /intro/functions.html
+  title: |-
+    Вбудовані функції
+suffix: .ipynb
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1057;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1072;-&#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1080;-Python">&#1057;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1072; &#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1080; Python<a class="anchor-link" href="#&#1057;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1072;-&#1087;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1080;-Python"> </a></h1><p>Програми на мові Python можна розкласти на такі складові, як модулі,
+інструкції, вирази і об'єкти. При цьому:</p>
+<ol>
+<li>Програми діляться на модулі.</li>
+<li>Модулі містять інструкції.</li>
+<li>Інструкції складаються з виразів.</li>
+<li>Вирази створюють і обробляють об'єкти.</li>
+</ol>
+<p><!--М. переформулювати  -->
+Синтаксис мови Python побудований на інструкціях і виразах.
+Вирази обробляють об'єкти і вбудовуються в інструкції. Інструкції є більші
+логічні блоки програми - вони безпосередньо використовують вирази для
+обробки об'єктів. Крім того, інструкції - це місце, де створюються об'єкти
+(наприклад, в інструкціях присвоювання), а в деяких інструкціях створюються
+абсолютно нові види об'єктів (функції, класи і так далі). Інструкції завжди
+присутні в модулях, які самі керуються інструкціями.</p>
+<h1 id="&#1054;&#1089;&#1085;&#1086;&#1074;&#1085;&#1110;-&#1089;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;&#1085;&#1110;-&#1084;&#1086;&#1076;&#1091;&#1083;&#1110;-Python">&#1054;&#1089;&#1085;&#1086;&#1074;&#1085;&#1110; &#1089;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;&#1085;&#1110; &#1084;&#1086;&#1076;&#1091;&#1083;&#1110; Python<a class="anchor-link" href="#&#1054;&#1089;&#1085;&#1086;&#1074;&#1085;&#1110;-&#1089;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;&#1085;&#1110;-&#1084;&#1086;&#1076;&#1091;&#1083;&#1110;-Python"> </a></h1><h2 id="&#1055;&#1086;&#1085;&#1103;&#1090;&#1090;&#1103;-&#1084;&#1086;&#1076;&#1091;&#1083;&#1103;">&#1055;&#1086;&#1085;&#1103;&#1090;&#1090;&#1103; &#1084;&#1086;&#1076;&#1091;&#1083;&#1103;<a class="anchor-link" href="#&#1055;&#1086;&#1085;&#1103;&#1090;&#1090;&#1103;-&#1084;&#1086;&#1076;&#1091;&#1083;&#1103;"> </a></h2><p>Перед тим як приступити до вивчення модулів стандартної бібліотеки,
+необхідно визначити те, що в Python називається модулем.
+Відповідно до модульним підходом до програмування велике завдання
+розбивається на кілька дрібніших, кожну з яких (в ідеалі) вирішує окремий
+модуль. У різних методиках даються різні обмеження на розмір модулів, однак
+при побудові модульної структури програми важливіше скласти таку
+композицію модулів, яка дозволила б звести до мінімуму зв'язки між ними. Набір
+класів і функцій, що має безліч зв'язків між своїми елементами, було б логічно
+розташувати в одному модулі. Є і ще одне корисне зауваження: модулі повинно
+бути легше використовувати, ніж написати заново. Це означає, що модуль
+повинен мати зручний інтерфейс: набір функцій, класів і констант, який він
+пропонує своїм користувачам.</p>
+<p>У мові Python набір модулів, присвячених одній проблемі, можна
+помістити в пакет.
+Більш детально можна ознайомитися про перелік і склад модулів на ресурсі
+<a href="https://pythonworld.ru/moduli">https://pythonworld.ru/moduli</a>.</p>
+<h2 id="&#1055;&#1110;&#1076;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;&#1085;&#1103;-&#1084;&#1086;&#1076;&#1091;&#1083;&#1103;-&#1079;&#1110;-&#1089;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;&#1085;&#1086;&#1111;-&#1073;&#1110;&#1073;&#1083;&#1110;&#1086;&#1090;&#1077;&#1082;&#1080;">&#1055;&#1110;&#1076;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;&#1085;&#1103; &#1084;&#1086;&#1076;&#1091;&#1083;&#1103; &#1079;&#1110; &#1089;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;&#1085;&#1086;&#1111; &#1073;&#1110;&#1073;&#1083;&#1110;&#1086;&#1090;&#1077;&#1082;&#1080;<a class="anchor-link" href="#&#1055;&#1110;&#1076;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;&#1085;&#1103;-&#1084;&#1086;&#1076;&#1091;&#1083;&#1103;-&#1079;&#1110;-&#1089;&#1090;&#1072;&#1085;&#1076;&#1072;&#1088;&#1090;&#1085;&#1086;&#1111;-&#1073;&#1110;&#1073;&#1083;&#1110;&#1086;&#1090;&#1077;&#1082;&#1080;"> </a></h2><p>Підключити модуль можна за допомогою інструкції import. Наприклад,
+підключимо модуль os для отримання поточної директорії:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;P:\\JupyterBook\\python-labs-book\\content\\intro&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Після ключового слова <code>import</code> вказується назва модуля. Після імпортування
+модуля його назва стає змінною, через яку можна отримати доступ до атрибутів
+модуля. Наприклад, можна звернутися до константи <code>e</code>, розташованої в модулі
+<code>math</code>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">math</span><span class="o">.</span><span class="n">e</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2.718281828459045</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Варто відзначити, що якщо зазначений атрибут модуля не буде знайдений,
+викличеться виняток <code>AttributeError</code>. А якщо не вдасться знайти модуль для
+імпортування, то <code>ImportError</code>.</p>
+<h2 id="&#1042;&#1080;&#1082;&#1086;&#1088;&#1080;&#1089;&#1090;&#1072;&#1085;&#1085;&#1103;-&#1087;&#1089;&#1077;&#1074;&#1076;&#1086;&#1085;&#1110;&#1084;&#1110;&#1074;">&#1042;&#1080;&#1082;&#1086;&#1088;&#1080;&#1089;&#1090;&#1072;&#1085;&#1085;&#1103; &#1087;&#1089;&#1077;&#1074;&#1076;&#1086;&#1085;&#1110;&#1084;&#1110;&#1074;<a class="anchor-link" href="#&#1042;&#1080;&#1082;&#1086;&#1088;&#1080;&#1089;&#1090;&#1072;&#1085;&#1085;&#1103;-&#1087;&#1089;&#1077;&#1074;&#1076;&#1086;&#1085;&#1110;&#1084;&#1110;&#1074;"> </a></h2><p>Якщо назва модуля занадто довга, або вона вам не подобається з якихось
+інших причин, то для нього можна створити псевдонім, за допомогою ключового
+слова as.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span> <span class="k">as</span> <span class="nn">m</span>
+
+<span class="n">m</span><span class="o">.</span><span class="n">e</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2.718281828459045</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Доступ до всіх атрибутів модуля <code>math</code> здійснюється тільки за допомогою
+змінної <code>m</code> , а змінної <code>math</code> в цій програмі вже не буде (якщо, звичайно, ви після цього не напишете <code>import math</code>, тоді модуль буде доступний під ім'ям <code>m</code> і <code>math</code>).</p>
+<h4 id="&#1030;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1103;-from">&#1030;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1103; <code>from</code><a class="anchor-link" href="#&#1030;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1110;&#1103;-from"> </a></h4><p>Підключити певні атрибути модуля можна за допомогою інструкції from.
+Вона має кілька форматів:</p>
+
+<pre><code>from &lt;Назва модуля&gt; import &lt;Атрибут 1&gt; [as &lt;Ім'я користувача 1&gt;], [&lt;Атрибут 2&gt; [as &lt;Ім'я користувача 2&gt;] ...]
+from &lt;Назва модуля&gt; import *</code></pre>
+<p>Перший формат дозволяє підключити з модуля тільки зазначені вами
+атрибути. Для довгих імен також можна призначити псевдонім, вказавши його
+після ключового слова <code>as</code>.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="k">import</span> <span class="n">e</span><span class="p">,</span> <span class="n">ceil</span> <span class="k">as</span> <span class="n">c</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="n">c</span><span class="p">(</span><span class="mf">4.6</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.718281828459045
+</pre>
+</div>
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Другий формат інструкції <code>from</code> дозволяє підключити всі (точніше, майже
+все) змінні з модуля. Для прикладу імпортуємо всі атрибути з модуля <code>sys</code>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3.7.3 (v3.7.3:ef4ec6ed12, Mar 25 2019, 22:22:05) [MSC v.1916 64 bit (AMD64)]
+sys.version_info(major=3, minor=7, micro=3, releaselevel=&#39;final&#39;, serial=0)
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Слід зауважити, що не всі атрибути будуть імпортовані. Якщо в модулі
+визначена змінна <code>__all__</code> (список атрибутів, які можуть бути підключені), то
+будуть підключені тільки атрибути з цього списку. Якщо змінна <code>__all__</code> не
+визначена, то будуть підключені всі атрибути, які не починаються з нижнього
+підкреслення. Крім того, необхідно враховувати, що імпортування всіх атрибутів
+з модуля може конфлікт імен головної програми, так як змінні, що
+мають однакові імена, будуть перезаписані.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+
+    </main>
+    

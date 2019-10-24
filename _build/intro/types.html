@@ -1,0 +1,1405 @@
+---
+interact_link: content/intro/types.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  Типи і структури даних в Python
+prev_page:
+  url: /intro/formating.html
+  title: |-
+    Основні вказівки до форматування коду
+next_page:
+  url: /lab1/intro.html
+  title: |-
+    Програмування лінійних алгоритмів та розгалужених процесів
+suffix: .ipynb
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1058;&#1080;&#1087;&#1080;-&#1110;-&#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1080;-&#1076;&#1072;&#1085;&#1080;&#1093;-Python">&#1058;&#1080;&#1087;&#1080; &#1110; &#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1080; &#1076;&#1072;&#1085;&#1080;&#1093; Python<a class="anchor-link" href="#&#1058;&#1080;&#1087;&#1080;-&#1110;-&#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1080;-&#1076;&#1072;&#1085;&#1080;&#1093;-Python"> </a></h1><h2 id="&#1047;&#1084;&#1110;&#1085;&#1085;&#1110;-&#1074;-Python">&#1047;&#1084;&#1110;&#1085;&#1085;&#1110; &#1074; Python<a class="anchor-link" href="#&#1047;&#1084;&#1110;&#1085;&#1085;&#1110;-&#1074;-Python"> </a></h2><p>Змінна в мові програмування − це назва для зарезервованого місця в пам'яті комп'ютера, призначене для зберігання значень. 
+Це означає, що при створенні змінної резервується певне місце в пам'яті комп'ютера.
+Грунтуючись на типі даних змінної, інтерпретатор виділяє необхідну кількість пам'яті і вирішує, що може перебувати в зарезервованої області пам'яті.
+В Python оголошення відбувається автоматично (це називається динамічна типізація), коли присвоюється значення змінній. 
+Знак рівності <code>=</code> використовується для присвоєння значення змінній.
+Операнд по ліву сторону від знака рівності <code>=</code> це ім'я змінної, операнд по праву сторону - значення присвоєне цієї змінної.
+Наприклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country</span> <span class="o">=</span> <span class="s2">&quot;Swiss&quot;</span> <span class="c1"># Присвоїти значення Swiss змінній під назвою country</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">23</span> <span class="c1"># Присвоєннязначення 23 зміннійage</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">country</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">age</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Swiss
+23
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#1052;&#1085;&#1086;&#1078;&#1080;&#1085;&#1085;&#1077;-&#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1102;&#1074;&#1072;&#1085;&#1085;&#1103;-&#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1100;">&#1052;&#1085;&#1086;&#1078;&#1080;&#1085;&#1085;&#1077; &#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1102;&#1074;&#1072;&#1085;&#1085;&#1103; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1100;<a class="anchor-link" href="#&#1052;&#1085;&#1086;&#1078;&#1080;&#1085;&#1085;&#1077;-&#1087;&#1088;&#1080;&#1089;&#1074;&#1086;&#1102;&#1074;&#1072;&#1085;&#1085;&#1103;-&#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1100;"> </a></h2><p>В Python можливо присвоювати одне значення декільком змінним відразу.
+Наприклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="n">b</span><span class="o">=</span><span class="n">c</span><span class="o">=</span><span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+1
+1
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Створюється об'єкт зі значенням 1, і все 3 змінні вказують на область в пам'яті, в якій він знаходиться.</p>
+<h2 id="&#1042;&#1073;&#1091;&#1076;&#1086;&#1074;&#1072;&#1085;&#1110;-&#1090;&#1080;&#1087;&#1080;-&#1076;&#1072;&#1085;&#1080;&#1093;-&#1074;-Python:">&#1042;&#1073;&#1091;&#1076;&#1086;&#1074;&#1072;&#1085;&#1110; &#1090;&#1080;&#1087;&#1080; &#1076;&#1072;&#1085;&#1080;&#1093; &#1074; Python:<a class="anchor-link" href="#&#1042;&#1073;&#1091;&#1076;&#1086;&#1074;&#1072;&#1085;&#1110;-&#1090;&#1080;&#1087;&#1080;-&#1076;&#1072;&#1085;&#1080;&#1093;-&#1074;-Python:"> </a></h2><p>Інформація, збережена в пам'яті може бути різних типів даних. 
+Наприклад, вік людини може бути числовим значенням, а його адреса - літерно-числовим. 
+В Python існує безліч стандартних типів даних, які використовуються для зберігання певних значень і мають своїспецифічні методи.
+До стандартних типів даних в Python відносять:</p>
+<ul>
+<li>Числа (Numbers)</li>
+<li>Рядок (String)</li>
+<li>Список (List)</li>
+<li>Кортеж (Tuple)</li>
+<li>Множини (Set)</li>
+<li>Словник (Dictionary)
+Всі перераховані типи даних діляться на змінювані і незмінні. 
+Багато з зумовлених типів даних Python - це типи незмінних об'єктів: </li>
+<li>числові дані (<code>int, float, complex</code>)</li>
+<li>символьні рядки (<code>class 'str'</code>)</li>
+<li>кортежі (<code>tuple</code>).</li>
+</ul>
+<p>Інші типи визначені як змінювані: списки (<code>list</code>), множини (<code>set</code>), словники (<code>dict</code>).</p>
+<h3 id="&#1063;&#1080;&#1089;&#1083;&#1086;&#1074;&#1080;&#1081;-&#1090;&#1080;&#1087;-&#1076;&#1072;&#1085;&#1080;&#1093;-&#1074;-Python">&#1063;&#1080;&#1089;&#1083;&#1086;&#1074;&#1080;&#1081; &#1090;&#1080;&#1087; &#1076;&#1072;&#1085;&#1080;&#1093; &#1074; Python<a class="anchor-link" href="#&#1063;&#1080;&#1089;&#1083;&#1086;&#1074;&#1080;&#1081;-&#1090;&#1080;&#1087;-&#1076;&#1072;&#1085;&#1080;&#1093;-&#1074;-Python"> </a></h3><p>Числовий тип даних в Python призначений для зберігання числових значень. 
+Числові об'єкти створюються, коли їм присвоюється значення. 
+Приклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Також можна видалити числовий об'єкт за допомогою ключового слова <code>del</code>.
+Синтаксис команди <code>del</code> наступний:</p>
+
+<pre><code>del num1 # видаляє змінну num1
+del num2,num3 # видаляє обидві змінні num2 за num3 за раз</code></pre>
+<p>В Python є чотири види числового типу даних:</p>
+<blockquote><p><code>int</code> -ціле число</p>
+<p><code>long</code> -довге ціле число</p>
+<p><code>float</code> -число з плаваючою точкою: -0.2, 0.0, 3.14159265 і т.д.</p>
+<p><code>complex</code> -комплексне число</p>
+</blockquote>
+<p>Приклади видів числового типу даних наведені в Табл.1:</p>
+<p>Таблиця 1. - Приклади числових типів даних.</p>
+<table>
+<thead><tr>
+<th>int</th>
+<th>long</th>
+<th>float</th>
+<th>complex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>51924361L</td>
+<td>0.0</td>
+<td>3.14j</td>
+</tr>
+<tr>
+<td>102</td>
+<td>-0x19323L</td>
+<td>15.20</td>
+<td>45.j</td>
+</tr>
+<tr>
+<td>-786</td>
+<td>0122L</td>
+<td>-21.9</td>
+<td>9.322e-36j</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0xDEFABCECBDAECBFBAEl</td>
+<td>32.3+e18</td>
+<td>.876j</td>
+</tr>
+<tr>
+<td>0b10</td>
+<td>535633629843L</td>
+<td>-90.</td>
+<td>-.6545+0J</td>
+</tr>
+<tr>
+<td>-0x260</td>
+<td>-052318172735L</td>
+<td>-32.54e100</td>
+<td>3e+26J</td>
+</tr>
+<tr>
+<td>0x69</td>
+<td>-4721885298529L</td>
+<td>70.2-E12</td>
+<td>4.53e-7j</td>
+</tr>
+</tbody>
+</table>
+<p>Для перетворення чисел з дійсних в цілі і навпаки в Python визначені функції <code>int()</code> і <code>float()</code>.</p>
+<p>Наприклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mf">10.58</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10
+10.0
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Операції з числами наведені в <a href="">Додатку 4</a>.
+Крім того, в Python для операцій з числами використовуються функції:</p>
+<blockquote><p><code>abs()</code>- обчислення абсолютного значення - модуля</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>3</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><code>pow()</code>-піднесення до степеня</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>8</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><code>divmod()</code>- обчислення результату цілочисельного ділення і залишку</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">divmod</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(3, 2)</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><code>round()</code>- округлення</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">round</span><span class="p">(</span><span class="mf">100.0</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>17</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ці функції є «вбудованними», що означає, що для використання немає необхідності підключати додаткові модулі. 
+Всі інші функції для роботи з числами (математичні), такі як обчислення квадратного кореня, синуса і ін. вимагають підключення модуля <code>math</code>.</p>
+<p>Логічні значення в Python представлені двома величинами − логічними константами <code>True</code> (Істина) і <code>False</code> (Хибність).
+Логічні значення виходять в результаті логічних операцій і обчислення логічних виразів.
+Більш докладно логічні операції і операції порівняння описані в [Додатку 4].</p>
+<h2 id="&#1057;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1080;-&#1076;&#1072;&#1085;&#1080;&#1093;">&#1057;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1080; &#1076;&#1072;&#1085;&#1080;&#1093;<a class="anchor-link" href="#&#1057;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1080;-&#1076;&#1072;&#1085;&#1080;&#1093;"> </a></h2><p>Мова Python включає в себе всі необхідні структури для побудови ПЗ:</p>
+<ul>
+<li>рядки</li>
+<li>списки</li>
+<li>кортежі</li>
+<li>словники</li>
+<li>множини</li>
+</ul>
+<p>Структури даних використовуються для зберігання зв'язаних даних, які визначені як послідовності. Послідовності, в свою чергу, поділяються на змінювані і незмінні. 
+Під змінністю послідовності розуміється можливість додавати або видаляти елементи цієї послідовності (тобто змінювати кількість елементів послідовності).
+Для структур даних в Python визначені функції (операції) і методи, принципової різниці між якими немає, а є відмінності в правилах написання.</p>
+<h3 id="&#1056;&#1103;&#1076;&#1082;&#1080;">&#1056;&#1103;&#1076;&#1082;&#1080;<a class="anchor-link" href="#&#1056;&#1103;&#1076;&#1082;&#1080;"> </a></h3><p>Рядок - це послідовність символів з довільним доступом. 
+Рядки в мові Python неможливо змінити - в цьому випадку говорять, що це <code>immutable</code> тип.
+Спроба змінити символ в певній позиції або підрядок викличе помилку. 
+В Python рядки і символи потрібно брати в лапки (одиночні або подвійні). 
+Елементи (символи) в рядку нумеруються, починаючи з нуля. 
+Одиночний символ − буква − є «з точки зору Python» рядком, що складається з одного елемента.
+Максимально можлива кількість символів в рядку (довжина рядка) в Python обмежується тільки доступним об'ємом пам'яті. 
+Так що текст будь-якого розумного розміру (наприклад, кілька тисяч сторінок) може бути записаний в
+один рядок Python.
+Числа можуть бути перетворені в рядки за допомогою функції <code>str()</code>.
+Наприклад</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">str</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;123&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Можна отримати будь-який символ рядка по його індексу.
+Для визначення підрядка використовується такий механізм як зріз − два індекса, розділені двокрапкою:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word</span><span class="o">=</span><span class="s1">&#39;strength&#39;</span>
+<span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;n&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;st&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span> <span class="mi">4</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;re&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Робота з рядками більш детально описана в Лабораторній роботі №4.</p>
+<h3 id="&#1057;&#1087;&#1080;&#1089;&#1086;&#1082;">&#1057;&#1087;&#1080;&#1089;&#1086;&#1082;<a class="anchor-link" href="#&#1057;&#1087;&#1080;&#1089;&#1086;&#1082;"> </a></h3><p>Список - упорядкований набір елементів, які можуть бути об'єктами різних типів (числа, рядки, інші списки і кортежі). 
+Елементи списку перераховуються через кому. 
+Сам список береться в квадратні дужки. 
+Список є змінною структурою даних, що дозволяє видаляти і додавати елементи, тобто його можна модифікувати. Елементи списку можуть бути різного типу.
+Також списки підтримують вкладеність.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;two&#39;</span><span class="p">,[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span> <span class="c1"># Приклад створення списку</span>
+<span class="nb">list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;one&#39;, &#39;two&#39;, [1, 2, 3]]</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Методи списку:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p><code>append(x)</code> -додає елемент в кінець списку;</p>
+<p><code>extend(list)</code>− розширює список, додаючи в кінець списку елементи іншого списку;</p>
+<p><code>insert(i,x)</code>− вставляє елемент на місце за індексом <code>i</code>;</p>
+<p><code>remove(x)</code>− видаляє перший елемент списку співпав зі значенням <code>x</code>;</p>
+<p><code>pop(x)</code>− видаляє перший елемент і повертає його;</p>
+<p><code>index(x, [start [, end]])</code>− повертає індекс першого збігається елемента з <code>x</code> від індексу <code>start</code> до <code>end</code>;</p>
+<p><code>count(x)</code>− повертає кількість елементів збігаються з <code>x</code>;</p>
+<p><code>sort([функція порівняння])</code> − сортування елементів списку;</p>
+<p><code>reverse()</code>− розгортає список;</p>
+<p><code>copy()</code>− повертається копія списку;</p>
+<p><code>clear()</code>− очищає список;</p>
+<p><code>len()</code> − довжина списку;</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Так само списки підтримують арифметичні складання, де:</p>
+
+<pre><code>список + список - об'єднання списків;
+список * число - повторення списку n раз.</code></pre>
+<p>Для перевірки, чи є елемент частиною списку, можна використовувати оператор <code>in</code>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;two&#39;</span><span class="p">]</span>
+<span class="s1">&#39;one&#39;</span><span class="ow">in</span> <span class="nb">list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>До списків можна звертатися, використовуючи індекси і зрізи:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="nb">list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;seven&#39;</span><span class="p">)</span>
+<span class="nb">list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 2, 3, 4, 5, 6, &#39;seven&#39;]</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">IndexError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-16-9445660f2c0e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>list<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">7</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
+
+<span class="ansi-red-intense-fg ansi-bold">IndexError</span>: list index out of range</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Варто відмітити, що індексація йде,починаючи з нуля, а не з 1,що говорить повідомлення:
+<code>IndexError: list index out of range.</code></p>
+<h4 id="&#1047;&#1088;&#1110;&#1079;&#1080;">&#1047;&#1088;&#1110;&#1079;&#1080;<a class="anchor-link" href="#&#1047;&#1088;&#1110;&#1079;&#1080;"> </a></h4><p>Списки підтримують зрізи. 
+Зріз - витяг з рядка одного символу або деякого фрагмента підрядка. 
+За замовчуванням, синтаксис зрізу наступний: <code>[start: stop: step]</code> 
+Де останній аргумент не є обов'язковим. Також якщо вказувати від'ємні параметри, то зріз буде починатися з кінця.
+Приклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+<span class="nb">list</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Більш детальну інформацію про роботу зі списками можна отримати з <a href="">2</a> стр.71-80 і <a href="">5</a> стр.5-15.</p>
+<h3 id="&#1050;&#1086;&#1088;&#1090;&#1077;&#1078;&#1110;">&#1050;&#1086;&#1088;&#1090;&#1077;&#1078;&#1110;<a class="anchor-link" href="#&#1050;&#1086;&#1088;&#1090;&#1077;&#1078;&#1110;"> </a></h3><p>Кортежі служать для зберігання кількох об'єктів разом.
+Їх можна розглядати як аналог списків, але без такої великої функціональності, яку надає клас списку.
+Одна з найважливіших особливостей кортежів полягає в тому, що вони незмінні, так само, як і рядки. 
+Тобто модифікувати кортежі неможливо.
+Кортежі зазвичай використовуються в тих випадках, коли оператор або призначена для користувача функція повинні напевно знати, що набір значень, тобто кортеж значень, не зміниться.
+Кортежі позначаються зазначенням елементів, розділених комами; за бажанням, їх можна ще укласти в круглі дужки.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tup</span> <span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Для кортежів необов'язково наявність дужок, тобто вони можуть бути
+записані як:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tup</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Хоча дужки і не є обов'язковими, краще вказувати їх, щоб було очевидно,
+що це кортеж, особливо в двозначних випадках.</p>
+<p>Наприклад:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Роблять різні речі: перше вираження виводить три числа, тоді як
+друге - кортеж, що містить ці три числа.
+Кортежі, як і списки, підтримують додавання і множення:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tup</span><span class="o">+</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tup</span><span class="o">*</span><span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Варто відзначити, що кортеж можна створити з ітеріруемого об'єкта:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tup</span><span class="o">=</span><span class="nb">tuple</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span>
+<span class="n">tup</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Для роботи з кортежами доступні два методи:</p>
+<blockquote><p><code>count (x)</code> - повертає кількість <code>x</code> в кортежі;</p>
+<p><code>index (x)</code> - повертає індекс першого-ліпшого <code>x</code>.</p>
+</blockquote>
+<p>Більш детальну інформацію про роботу з кортежами можна отримати з <a href="">5</a> стр.12-15.
+До кортежів, як і до списків, застосовне поняття упаковки і розпаковування елементів:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tup</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span>
+<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">tup</span>
+<span class="n">a</span>
+<span class="n">b</span>
+<span class="n">c</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="p">,</span><span class="n">f</span><span class="o">=</span><span class="nb">list</span>
+<span class="n">d</span>
+<span class="n">e</span>
+<span class="n">f</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Кортеж можна перетворити в список, як власне і список в кортеж:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">tup</span><span class="o">=</span><span class="nb">tuple</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+<span class="n">tup</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1052;&#1085;&#1086;&#1078;&#1080;&#1085;&#1080;">&#1052;&#1085;&#1086;&#1078;&#1080;&#1085;&#1080;<a class="anchor-link" href="#&#1052;&#1085;&#1086;&#1078;&#1080;&#1085;&#1080;"> </a></h3><p>Множина в мові Python- це структура даних, еквівалентна множинам в математиці.
+Множина може складатися з різних елементів, порядок елементів у множині невизначений. 
+У множину можна додавати і видаляти елементи, можна перебирати елементи множини, можна виконувати операції над множинами (об'єднання, перетин, різниця). 
+Можна перевіряти приналежність елемента множині.
+На відміну від масивів, де елементи зберігаються у вигляді послідовного списку, у множинах порядок зберігання елементів невизначений (більш того, елементи множини зберігаються не підряд, як в списку, а за допомогою хитрих алгоритмів). 
+Це дозволяє виконувати операції типу "перевірити приналежність елемента множині" швидше, ніж просто перебираючи всі елементи множини.
+Елементами множини може бути будь-який незмінний тип даних: числа, рядки, кортежі. 
+Не можна зробити елементом множини список (але можна зробити кортеж) або іншу множину. 
+Вимога незмінності елементів множини накладається особливостями подання множини в пам'яті комп'ютера.
+Для створення множини можна використовувати фігурні дужки або функцію <code>set()</code>. 
+Для створення порожнього набору потрібно використовувати <code>set()</code>, але не <code>{}</code>, тому що фігурні дужки в даному випадку створюють інший тип даних − порожній словник.
+Способи створення множин:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{3, 5, 6}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Множини можна створювати на основі списків. Зверніть увагу, що в
+момент створення множини зі списку будуть видалені повторювані елементи. Це
+відмінний спосіб очистити список від повторів:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-21-8b22c3fb16ab&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>list<span class="ansi-yellow-intense-fg ansi-bold">(</span>set<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">6</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">5</span><span class="ansi-yellow-intense-fg ansi-bold">]</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: &#39;list&#39; object is not callable</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Функція range() дозволяє створювати множини з діапазону:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+ 
+
+
+    </main>
+    
