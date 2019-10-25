@@ -22,9 +22,23 @@
 # See the links below for an example.
 
 - title: Вступ
-  url: /intro
+  url: /intro/intro
   not_numbered: true
-
+  expand_sections: true
+  sections: 
+    - title: Загальні вказівки до виконання лабораторних робіт
+      url: /intro/guidlines
+    - title: Встановлення і робота з інтерпретатором Python
+      url: /intro/installation
+    - title: Структура програми на мові Python та основні модулі
+      url: /intro/structure
+    - title: Вбудовані функції
+      url: /intro/functions
+    - title: Основні вказівки до форматування коду
+      url: /intro/formating
+    - title: Типи і структури даних в Python
+      url: /intro/types
+    
 - header: Лабораторна робота №1
 - title: Програмування лінійних алгоритмів та розгалужених процесів
   url: /lab1/intro
