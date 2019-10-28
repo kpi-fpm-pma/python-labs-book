@@ -29,12 +29,23 @@
 - title: Програмування лінійних алгоритмів та розгалужених процесів
   url: /lab1/intro
   not_numbered: true
-  expand_sections: true
   sections:
   - title: Теоретичні відомості
     url: /lab1/theory
   - title: Питання для самопервірки
     url: /lab1/questions
-    not_numbered: true
   - title: Завдання
     url: /lab1/problems
+
+- header: Лабораторна робота №4
+- title: Використання функцій
+  url: /lab4/intro
+  not_numbered: true
+  sections: 
+  - title: Теоретичні відомості
+    url: /lab4/theory
+  - title: Питання для самопервірки
+    url: /lab4/questions
+  - title: Завдання
+    url: /lab4/problems
+  
