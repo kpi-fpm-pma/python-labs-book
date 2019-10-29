@@ -4,3 +4,14 @@
     margin-right: 5px;
     float: left;
 }
+
+/* Possible bibliography numbering fix */
+ /*
+ol.bibliography { list-style: none; }
+ol.bibliography { counter-reset: bib-item }
+ol.bibliography li::before {
+    content: '[' counter(bib-item) '] ';
+    counter-increment: bib-item;
+}*/
+
+
