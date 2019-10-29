@@ -52,3 +52,8 @@
     not_numbered: true
   - title: Завдання
     url: /lab1/problems
+
+- title: Рекомендовані джерела
+  url: /bibliography
+  not_numbered: true
+  

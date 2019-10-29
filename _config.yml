@@ -32,7 +32,7 @@ url: https://gasperpaul.github.io/          # the base hostname & protocol for y
 
 # Main page settings
 footer_text: >-
-    This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.
+    This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br />
     "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
 
 # Sidebar settings
@@ -84,7 +84,9 @@ download_page_header: Made with Jupyter Book    # A header that will be displaye
 
 # Bibliography and citation settings. See https://github.com/inukshuk/jekyll-scholar#configuration for options
 scholar:
-  style: apa
+  style: ieee-with-url
+  locale: uk
+  bibliography_template: bibliography
 
 #######################################################################################
 # Option to add a Goggle analytics tracking code
