@@ -23,7 +23,6 @@
 
 - title: Вступ
   url: /intro/intro
-  not_numbered: true
   expand_sections: true
   sections: 
     - title: Загальні вказівки до виконання лабораторних робіт
@@ -42,7 +41,6 @@
 - header: Лабораторна робота №1
 - title: Програмування лінійних алгоритмів та розгалужених процесів
   url: /lab1/intro
-  not_numbered: true
   sections:
   - title: Теоретичні відомості
     url: /lab1/theory
@@ -54,7 +52,6 @@
 - header: Лабораторна робота №4
 - title: Використання функцій
   url: /lab4/intro
-  not_numbered: true
   sections: 
   - title: Теоретичні відомості
     url: /lab4/theory
@@ -65,5 +62,4 @@
 
 - title: Рекомендовані джерела
   url: /bibliography
-  not_numbered: true
   

@@ -22,15 +22,15 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;">&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110; &#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;"> </a></h1><p>Функції - це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повторного використання коду (див. {% cite ljubanovich -l 118-130 %}).
-Функції дозволяють надати ім'я визначеному блоку команд з тим, щоб згодом запускати цей блок за вказаним ім'ям в будь-якому місці програми. Це називається викликом функції.
-Існують правила для створення функцій в Python.</p>
+<h1 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;">&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110; &#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;"> </a></h1><p>Функції — це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повторного використання коду (див. {% cite ljubanovich -l 118-130 %}).
+Функції дозволяють надати ім'я визначеному блоку команд з тим, щоб згодом запускати цей блок за вказаним ім'ям у будь-якому місці програми. Це називається викликом функції.
+Існують правила для створення функцій у Python.</p>
 <ul>
 <li>Блок функції починається з ключового слова <code>def</code>, після якого записано назву функції і круглі дужки.</li>
 <li>Будь аргументи, які приймає функція, повинні бути розміщені всередині цих дужок.</li>
-<li>Після дужок йде двокрапка і з нового рядка з відступом починається тіло функції (блок команд, які складають функцію).
-На прикладі можна побачити простоту застосування функції.</li>
+<li>Після дужок йде двокрапка і з нового рядка з відступом починається тіло функції (блок команд, які складають функцію).</li>
 </ul>
+<p>На прикладі можна побачити простоту застосування функції.</p>
 
 </div>
 </div>
@@ -47,8 +47,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sayHello</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Привіт студенти!&#39;</span><span class="p">)</span> <span class="c1"># блок, що належить функції</span>
 <span class="c1"># Кінець функції</span>
-<span class="n">sayHello</span><span class="p">()</span> <span class="c1">#виклик функції</span>
-<span class="n">sayHello</span><span class="p">()</span> <span class="c1">#ще один виклик функції</span>
+<span class="n">sayHello</span><span class="p">()</span> <span class="c1"># виклик функції</span>
+<span class="n">sayHello</span><span class="p">()</span> <span class="c1"># ще один виклик функції</span>
 </pre></div>
 
     </div>
@@ -78,10 +78,10 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>Визначено функцію з ім'ям <code>sayHello</code>, використовуючи описаний вище синтаксис. Ця функція не приймає параметрів, тому в дужках не оголошені будь-які змінні. Параметри функції - це якісь вхідні дані, які можна передати функції, щоб отримати відповідний їм результат.
-Видно, що можна викликати одну й ту ж функцію багато разів, а значить, немає необхідності писати один і той же код знову і знову.</p>
-<h1 id="&#1055;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1081;">&#1055;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080; &#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1081;<a class="anchor-link" href="#&#1055;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1081;"> </a></h1><p>Функції можуть приймати параметри, тобто деякі значення, що передаються функції для того, щоб вона щось зробила з ними. Ці параметри схожі на змінні, за винятком того, що значення цих змінних вказується при виклику функції, і під час роботи функції їм уже присвоєні їх значення.
-Параметри вказуються в дужках при оголошенні функції і розділяються комами. Аналогічно передаються значення, коли викликається функція. Слід звернути увагу на термінологію: імена, зазначені в оголошенні функції, називаються параметрами, тоді як значення, які передаються в функцію при її виклику - аргументами.</p>
+<h3 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h3><p>Визначено функцію з ім'ям <code>sayHello</code>, використовуючи описаний вище синтаксис. Ця функція не приймає параметрів, тому в дужках не оголошені будь-які змінні. Параметри функції — це якісь вхідні дані, які можна передати функції, щоб отримати відповідний їм результат.</p>
+<p>Видно, що можна викликати одну й ту ж функцію багато разів, а значить немає необхідності писати один і той же код знову і знову.</p>
+<h2 id="&#1055;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1081;">&#1055;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080; &#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1081;<a class="anchor-link" href="#&#1055;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1081;"> </a></h2><p>Функції можуть приймати параметри, тобто деякі значення, що передаються функції для того, щоб вона щось зробила з ними. Ці параметри схожі на змінні, за винятком того, що значення цих змінних вказується при виклику функції, і під час роботи функції їм уже присвоєні їх значення.</p>
+<p>Параметри вказуються в дужках при оголошенні функції і розділяються комами. Аналогічно передаються значення, коли викликається функція. Слід звернути увагу на термінологію: імена, зазначені в оголошенні функції, називаються <em>параметрами</em>, тоді як значення, які передаються в функцію при її виклику — <em>аргументами</em>.</p>
 
 </div>
 </div>
@@ -96,16 +96,16 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">printMax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">a</span><span class="o">&gt;</span><span class="n">b</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="n">b</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="s1">&#39;дорівнює &#39;</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39;дорівнює &#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
-<span class="n">printMax</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># пряма передача значень </span>
-<span class="n">x</span><span class="o">=</span><span class="mi">5</span>
-<span class="n">y</span><span class="o">=</span><span class="mi">7</span>
-<span class="n">printMax</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="c1"># передача змінних в якості аргументів </span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
+<span class="n">printMax</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="c1"># пряма передача значень </span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">printMax</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># передача змінних в якості аргументів </span>
 </pre></div>
 
     </div>
@@ -135,16 +135,16 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>Тут визначена функція з ім'ям <code>printMax</code>, яка використовує два параметри з іменами $a$ і $b$. Знаходиться найбільше число із застосуванням простого оператора <code>if..else</code> і виводиться це число.
-При першому виклику функції <code>printMax</code> безпосередньо передаються числа в якості аргументів. У другому випадку викликається функція зі змінними в якості аргументів. <code>printMax(x, y)</code> призначає значення аргументу $x$ параметру $a$, а значення аргументу $y$ - параметру $b$. В обох випадках функція <code>printMax</code> працює однаково.</p>
-<h1 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-&#1074;-Python">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111; &#1074; Python<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-&#1074;-Python"> </a></h1><p>Викликаючи функцію, можна передавати їй такі типи аргументів:</p>
+<h3 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h3><p>Тут визначена функція з ім'ям <code>printMax</code>, яка використовує два параметри з іменами $a$ і $b$. Знаходиться найбільше число із застосуванням простого оператора <code>if..else</code> і виводиться це число.
+При першому виклику функції <code>printMax</code> безпосередньо передаються числа в якості аргументів. У другому випадку викликається функція зі змінними в якості аргументів. <code>printMax(x, y)</code> призначає значення аргументу $x$ параметру $a$, а значення аргументу $y$ — параметру $b$. В обох випадках функція <code>printMax</code> працює однаково.</p>
+<h2 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-&#1074;-Python">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111; &#1074; Python<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-&#1074;-Python"> </a></h2><p>Викликаючи функцію, можна передавати їй такі типи аргументів:</p>
 <ul>
 <li>Обов'язкові аргументи (Required arguments)</li>
 <li>Аргументи за замовчуванням (Default argument)</li>
 <li>Аргументи-ключові слова (Keyword argument)</li>
 <li>Аргументи довільної довжини (Variable-length argumens)</li>
 </ul>
-<h2 id="&#1054;&#1073;&#1086;&#1074;'&#1103;&#1079;&#1082;&#1086;&#1074;&#1110;-&#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;">&#1054;&#1073;&#1086;&#1074;'&#1103;&#1079;&#1082;&#1086;&#1074;&#1110; &#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;<a class="anchor-link" href="#&#1054;&#1073;&#1086;&#1074;'&#1103;&#1079;&#1082;&#1086;&#1074;&#1110;-&#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;"> </a></h2><p>Якщо при створенні функції ми вказали кількість переданих їй аргументів і їх порядок, то і викликати її ми повинні з тією ж кількістю аргументів, заданих в потрібному порядку.</p>
+<h3 id="&#1054;&#1073;&#1086;&#1074;'&#1103;&#1079;&#1082;&#1086;&#1074;&#1110;-&#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;">&#1054;&#1073;&#1086;&#1074;'&#1103;&#1079;&#1082;&#1086;&#1074;&#1110; &#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;<a class="anchor-link" href="#&#1054;&#1073;&#1086;&#1074;'&#1103;&#1079;&#1082;&#1086;&#1074;&#1110;-&#1072;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;"> </a></h3><p>Якщо при створенні функції ми вказали кількість переданих їй аргументів і їх порядок, то і викликати її ми повинні з тією ж кількістю аргументів, заданих в потрібному порядку.</p>
 
 </div>
 </div>
@@ -158,14 +158,14 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bigger</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bigger</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
 <span class="c1"># В описі функції зазначено, що вона приймає 2 аргументи</span>
 <span class="c1"># Коректне використання функції</span>
-<span class="n">bigger</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>  
+<span class="n">bigger</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>  
 </pre></div>
 
     </div>
@@ -200,7 +200,7 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Некоректне використання функції </span>
 <span class="n">bigger</span><span class="p">()</span>
 <span class="n">bigger</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">bigger</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">bigger</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -217,11 +217,11 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-13-f4c54de49819&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-6-67f6a73dfbf1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">      1</span> <span class="ansi-red-intense-fg ansi-bold"># Некоректне використання функції</span>
 <span class="ansi-green-intense-fg ansi-bold">----&gt; 2</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>bigger<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
 <span class="ansi-green-fg">      3</span> bigger<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">      4</span> bigger<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">12</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">7</span><span class="ansi-yellow-intense-fg ansi-bold">,</span><span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">      4</span> bigger<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">12</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">7</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
 
 <span class="ansi-red-intense-fg ansi-bold">TypeError</span>: bigger() missing 2 required positional arguments: &#39;a&#39; and &#39;b&#39;</pre>
 </div>
@@ -237,8 +237,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1079;&#1072;-&#1079;&#1072;&#1084;&#1086;&#1074;&#1095;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;&#1084;">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1079;&#1072; &#1079;&#1072;&#1084;&#1086;&#1074;&#1095;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;&#1084;<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1079;&#1072;-&#1079;&#1072;&#1084;&#1086;&#1074;&#1095;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;&#1084;"> </a></h1><p>Найчастіше частина параметрів функцій можуть бути необов'язковими, і для них будуть використовуватися деякі задані значення за замовчуванням, якщо користувач не вкаже власних. Цього можна досягти за допомогою значень аргументів за замовчуванням. Їх можна вказати, додавши до імені параметра у визначенні функції оператор присвоювання (=) з подальшим значенням.
-Значення за замовчуванням має бути константою. Або точніше кажучи, воно має бути незмінним.</p>
+<h3 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1079;&#1072;-&#1079;&#1072;&#1084;&#1086;&#1074;&#1095;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;&#1084;">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1079;&#1072; &#1079;&#1072;&#1084;&#1086;&#1074;&#1095;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;&#1084;<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1079;&#1072;-&#1079;&#1072;&#1084;&#1086;&#1074;&#1095;&#1091;&#1074;&#1072;&#1085;&#1085;&#1103;&#1084;"> </a></h3><p>Найчастіше частина параметрів функцій можуть бути необов'язковими, і для них будуть використовуватися деякі задані значення за замовчуванням, якщо користувач не вкаже власних. Цього можна досягти за допомогою значень аргументів за замовчуванням. Їх можна вказати, додавши до імені параметра у визначенні функції оператор присвоювання (<code>=</code>) з подальшим значенням.</p>
+<p>Значення за замовчуванням має бути константою. Або точніше кажучи, воно має бути незмінним.</p>
 
 </div>
 </div>
@@ -252,8 +252,8 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="n">message</span><span class="p">,</span><span class="n">times</span> <span class="o">=</span> <span class="mi">1</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">message</span> <span class="o">*</span><span class="n">times</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">times</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">message</span> <span class="o">*</span> <span class="n">times</span><span class="p">)</span>
 <span class="n">say</span><span class="p">(</span><span class="s1">&#39;Привіт&#39;</span><span class="p">)</span>
 <span class="n">say</span><span class="p">(</span><span class="s1">&#39;Світ&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
@@ -285,17 +285,17 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>Функція під ім'ям <code>say</code> використовується для виведення на екран рядку вказане число раз. Якщо не вказується значення, за замовчанням рядок виводиться один раз. Це досягається вказанням значення аргументу за замовчуванням, рівного $1$ для параметра $times$.
+<h3 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h3><p>Функція під ім'ям <code>say</code> використовується для виведення на екран рядку вказане число раз. Якщо не вказується значення, за замовчанням рядок виводиться один раз. Це досягається вказанням значення аргументу за замовчуванням, рівного $1$ для параметра $times$.
 При першому виклику <code>say</code> вказується тільки рядок, і функція виводить його один раз. При другому виклику <code>say</code> вказується також і аргумент $5$, позначаючи таким чином, що фраза сказана $5$ разів.
 Важливо:
 Значеннями за замовчанням можуть бути наділені тільки ті параметри, що знаходяться в кінці списку параметрів. Таким чином, в списку параметрів функції параметр із значенням за замовчанням не може передувати параметру без значення за замовчанням. Це пов'язано з тим, що значення присвоюються параметрам відповідно до їх положення. Наприклад,</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 <p>допустимо, а</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
 <p>не допустимо.</p>
-<h1 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1089;&#1083;&#1086;&#1074;&#1072;">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110; &#1089;&#1083;&#1086;&#1074;&#1072;<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1089;&#1083;&#1086;&#1074;&#1072;"> </a></h1><p>Якщо є деяка функція з великим числом параметрів, і при її виклику потрібно вказати тільки деякі з них, значення цих параметрів можуть задаватися по їх імені - це називається ключові параметри. В цьому випадку для передачі аргументів функції використовується ім'я (ключ) замість позиції (як було досі).
+<h3 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1089;&#1083;&#1086;&#1074;&#1072;">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110; &#1089;&#1083;&#1086;&#1074;&#1072;<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1089;&#1083;&#1086;&#1074;&#1072;"> </a></h3><p>Якщо є деяка функція з великим числом параметрів, і при її виклику потрібно вказати тільки деякі з них, значення цих параметрів можуть задаватися по їх імені - це називається ключові параметри. В цьому випадку для передачі аргументів функції використовується ім'я (ключ) замість позиції (як було досі).
 Є дві переваги такого підходу: по-перше, використання функції стає легше, оскільки немає необхідності відстежувати порядок аргументів; по-друге, можна задавати значення тільки деяким обраним аргументів, за умови, що інші параметри мають значення аргументу за замовчуванням.</p>
 
 </div>
@@ -345,11 +345,11 @@ a дорівнює 100 , b дорівнює 5 , а c дорівнює 50
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>Функція з ім'ям <code>func</code> має один параметр без значення за замовчуванням, за яким слідують два параметра із значеннями за замовчуванням.
-При першому виклику <code>func(3,7)</code> параметр a отримує значення $3$, параметр $b$ отримує значення $7$, а $c$ отримує своє значення за замовчуванням, яке дорівнює $10$.
-При другому виклику <code>func(25,c=24)</code> змінна a отримує значення $25$ в через позицію аргументу. Після цього параметр $c$ отримує значення $24$ по імені, тобто як ключовий параметр. Змінна $b$ отримує значення за замовчуванням, яке дорівнює $5$.
-При третьому зверненні <code>func(c=50,a=100)</code> ключові аргументи використовуються для всіх вказаних значень. Звертається увага на те, що значення для параметра $c$ указується перед значенням для $a$, навіть, незважаючи на те, що у визначенні функції параметр a вказано раніше $c$.</p>
-<h1 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1076;&#1086;&#1074;&#1110;&#1083;&#1100;&#1085;&#1086;&#1111;-&#1076;&#1086;&#1074;&#1078;&#1080;&#1085;&#1080;">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1076;&#1086;&#1074;&#1110;&#1083;&#1100;&#1085;&#1086;&#1111; &#1076;&#1086;&#1074;&#1078;&#1080;&#1085;&#1080;<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1076;&#1086;&#1074;&#1110;&#1083;&#1100;&#1085;&#1086;&#1111;-&#1076;&#1086;&#1074;&#1078;&#1080;&#1085;&#1080;"> </a></h1><p>Іноді буває потрібно визначити функцію, здатну приймати будь-яке число параметрів. Цього можна досягти за допомогою зірочок. <strong><em>норм ли вводить такую терминологию для kvargs и args?</em></strong></p>
+<h4 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h4><p>Функція з ім'ям <code>func</code> має один параметр без значення за замовчуванням, за яким слідують два параметра із значеннями за замовчуванням.</p>
+<p>При першому виклику <code>func(3, 7)</code> параметр a отримує значення $3$, параметр <code>b</code> отримує значення $7$, а <code>c</code> отримує своє значення за замовчуванням, яке дорівнює $10$.</p>
+<p>При другому виклику <code>func(25, c=24)</code> змінна a отримує значення $25$ в через позицію аргументу. Після цього параметр <code>c</code> отримує значення $24$ по імені, тобто як ключовий параметр. Змінна <code>b</code> отримує значення за замовчуванням, яке дорівнює $5$.</p>
+<p>При третьому зверненні <code>func(c=50, a=100)</code> ключові аргументи використовуються для всіх вказаних значень. Звертається увага на те, що значення для параметра <code>c</code> указується перед значенням для <code>a</code>, навіть, незважаючи на те, що у визначенні функції параметр <code>a</code> вказано раніше <code>c</code>.</p>
+<h3 id="&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1076;&#1086;&#1074;&#1110;&#1083;&#1100;&#1085;&#1086;&#1111;-&#1076;&#1086;&#1074;&#1078;&#1080;&#1085;&#1080;">&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080; &#1076;&#1086;&#1074;&#1110;&#1083;&#1100;&#1085;&#1086;&#1111; &#1076;&#1086;&#1074;&#1078;&#1080;&#1085;&#1080;<a class="anchor-link" href="#&#1040;&#1088;&#1075;&#1091;&#1084;&#1077;&#1085;&#1090;&#1080;-&#1076;&#1086;&#1074;&#1110;&#1083;&#1100;&#1085;&#1086;&#1111;-&#1076;&#1086;&#1074;&#1078;&#1080;&#1085;&#1080;"> </a></h3><p>Іноді буває потрібно визначити функцію, здатну приймати будь-яке число параметрів. Цього можна досягти за допомогою синтаксису із використанням зірочок (так званого <code>*args/**kwargs</code> синтаксису).</p>
 
 </div>
 </div>
@@ -369,8 +369,8 @@ a дорівнює 100 , b дорівнює 5 , а c дорівнює 50
     <span class="k">for</span> <span class="n">single_item</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;single_item&#39;</span><span class="p">,</span> <span class="n">single_item</span><span class="p">)</span> <span class="c1"># прохід по всіх елементах словника</span>
     <span class="k">for</span> <span class="n">first_part</span><span class="p">,</span> <span class="n">second_part</span> <span class="ow">in</span> <span class="n">phonebook</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">first_part</span><span class="p">,</span><span class="n">second_part</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">Jack</span><span class="o">=</span><span class="mi">1123</span><span class="p">,</span><span class="n">John</span><span class="o">=</span><span class="mi">2231</span><span class="p">,</span><span class="n">Inge</span><span class="o">=</span><span class="mi">1560</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">first_part</span><span class="p">,</span> <span class="n">second_part</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Jack</span><span class="o">=</span><span class="mi">1123</span><span class="p">,</span> <span class="n">John</span><span class="o">=</span><span class="mi">2231</span><span class="p">,</span> <span class="n">Inge</span><span class="o">=</span><span class="mi">1560</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -406,20 +406,9 @@ None
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong><em>^ Вывод не совпадает с выводом в методичке ВВ</em></strong></p>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>Коли оголошується параметр із зірочкою (наприклад, *$param$), всі позиційні аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в кортеж під ім'ям $param$.
-Аналогічно, коли оголошуються параметри зі двома зірочками (**$param$), всі ключові аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в словник під ім'ям $param$.</p>
-<h1 id="&#1058;&#1110;&#1083;&#1100;&#1082;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;">&#1058;&#1110;&#1083;&#1100;&#1082;&#1080; &#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;<a class="anchor-link" href="#&#1058;&#1110;&#1083;&#1100;&#1082;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;"> </a></h1><p>Якщо деякі ключові параметри повинні бути доступні тільки по ключу, а не як позиційні аргументи, їх можна оголосити після параметра із зірочкою</p>
+<h4 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h4><p>Коли оголошується параметр із зірочкою (наприклад, <code>*param</code>), всі позиційні аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в кортеж під ім'ям <code>param</code>.</p>
+<p>Аналогічно, коли оголошуються параметри зі двома зірочками (<code>**param</code>), всі ключові аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в словник під ім'ям <code>param</code>.</p>
+<h3 id="&#1058;&#1110;&#1083;&#1100;&#1082;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;">&#1058;&#1110;&#1083;&#1100;&#1082;&#1080; &#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110; &#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;<a class="anchor-link" href="#&#1058;&#1110;&#1083;&#1100;&#1082;&#1080;-&#1082;&#1083;&#1102;&#1095;&#1086;&#1074;&#1110;-&#1087;&#1072;&#1088;&#1072;&#1084;&#1077;&#1090;&#1088;&#1080;"> </a></h3><p>Якщо деякі ключові параметри повинні бути доступні тільки по ключу, а не як позиційні аргументи, їх можна оголосити після параметра із зірочкою</p>
 
 </div>
 </div>
@@ -433,12 +422,15 @@ None
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="o">*</span><span class="n">numbers</span><span class="p">,</span><span class="n">extra_number</span><span class="p">):</span>
-    <span class="n">count</span><span class="o">=</span><span class="n">initial</span>
-<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
-        <span class="n">count</span><span class="o">+=</span><span class="n">number</span>
-    <span class="n">count</span><span class="o">+=</span><span class="n">extra_number</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">,</span> <span class="n">extra_number</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">initial</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="n">number</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="n">extra_number</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    
+<span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">extra_number</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="c1"># викличе помилку, оскільки ми не вказали значення</span>
 <span class="c1"># аргументу за замовчуванням для &#39;extra_number&#39;.</span>
 </pre></div>
@@ -453,54 +445,27 @@ None
 <div class="jb_output_wrapper }}">
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;tokenize&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">5</span>
-<span class="ansi-yellow-intense-fg ansi-bold">    count+=extra_number</span>
-<span class="ansi-white-intense-fg ansi-bold">    ^</span>
-<span class="ansi-red-intense-fg ansi-bold">IndentationError</span><span class="ansi-red-intense-fg ansi-bold">:</span> unindent does not match any outer indentation level
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>66
 </pre>
 </div>
 </div>
 </div>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">extra_number</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
-<span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
 <div class="jb_output_wrapper }}">
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>a 10
-single_item 1
-single_item 2
-single_item 3
-extra_number 50
-a 10
-single_item 1
-single_item 2
-single_item 3
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-14-bb778dc9f85d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      7</span> 
+<span class="ansi-green-fg">      8</span> total<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">2</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> extra_number<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-cyan-intense-fg ansi-bold">50</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 9</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>total<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">10</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">1</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">2</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-cyan-intense-fg ansi-bold">3</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     10</span> <span class="ansi-red-intense-fg ansi-bold"># викличе помилку, оскільки ми не вказали значення</span>
+<span class="ansi-green-fg">     11</span> <span class="ansi-red-intense-fg ansi-bold"># аргументу за замовчуванням для &#39;extra_number&#39;.</span>
+
+<span class="ansi-red-intense-fg ansi-bold">TypeError</span>: total() missing 1 required keyword-only argument: &#39;extra_number&#39;</pre>
 </div>
 </div>
 </div>
@@ -514,16 +479,16 @@ single_item 3
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>Оголошення параметрів після параметра із зірочкою дає тільки ключові аргументи. Якщо для таких аргументів не вказано значення за замовчуванням, і воно не передано при виклику, звернення до функції викличе помилку, що показано в прикладі.
-Використання <code>+=</code>, який представляє собою скорочений оператор, дозволяє замість <code>x=x+y</code> просто написати <code>x+=y</code>.
-Якщо потрібні аргументи, що передаються тільки по ключу, але не потрібен параметр із зірочкою, то можна просто вказати одну зірочку без вказівки імені: <code>def total (initial = 5, *, extra_number)</code>.</p>
-<h1 id="&#1054;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100;-&#1074;&#1080;&#1076;&#1080;&#1084;&#1086;&#1089;&#1090;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1080;&#1093;">&#1054;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100; &#1074;&#1080;&#1076;&#1080;&#1084;&#1086;&#1089;&#1090;&#1110; &#1079;&#1084;&#1110;&#1085;&#1085;&#1080;&#1093;<a class="anchor-link" href="#&#1054;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100;-&#1074;&#1080;&#1076;&#1080;&#1084;&#1086;&#1089;&#1090;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1080;&#1093;"> </a></h1><p>Деякі змінні скрипта можуть бути недоступні деяким областям програми. Все залежить від того, де оголошені ці змінні.
-В Python дві базових області видимості змінних:</p>
+<h4 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h4><p>Оголошення параметрів після параметра із зірочкою дає тільки ключові аргументи. Якщо для таких аргументів не вказано значення за замовчуванням, і воно не передано при виклику, звернення до функції викличе помилку, що показано в прикладі.</p>
+<p>Використання <code>+=</code>, який представляє собою скорочений оператор, дозволяє замість <code>x = x+y</code> просто написати <code>x += y</code>.</p>
+<p>Якщо потрібні аргументи, що передаються тільки по ключу, але не потрібен параметр із зірочкою, то можна просто вказати одну зірочку без вказівки імені: <code>def total (initial = 5, *, extra_number)</code>.</p>
+<h2 id="&#1054;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100;-&#1074;&#1080;&#1076;&#1080;&#1084;&#1086;&#1089;&#1090;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1080;&#1093;">&#1054;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100; &#1074;&#1080;&#1076;&#1080;&#1084;&#1086;&#1089;&#1090;&#1110; &#1079;&#1084;&#1110;&#1085;&#1085;&#1080;&#1093;<a class="anchor-link" href="#&#1054;&#1073;&#1083;&#1072;&#1089;&#1090;&#1100;-&#1074;&#1080;&#1076;&#1080;&#1084;&#1086;&#1089;&#1090;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1080;&#1093;"> </a></h2><p>Деякі змінні скрипта можуть бути недоступні деяким областям програми. Все залежить від того, де оголошені ці змінні.</p>
+<p>У Python є дві базових області видимості змінних:</p>
 <ul>
 <li>Локальні змінні</li>
 <li>Глобальні змінні</li>
 </ul>
-<h2 id="&#1051;&#1086;&#1082;&#1072;&#1083;&#1100;&#1085;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1110;">&#1051;&#1086;&#1082;&#1072;&#1083;&#1100;&#1085;&#1110; &#1079;&#1084;&#1110;&#1085;&#1085;&#1110;<a class="anchor-link" href="#&#1051;&#1086;&#1082;&#1072;&#1083;&#1100;&#1085;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1110;"> </a></h2><p>При оголошенні змінних всередині визначення функції, вони жодним чином не пов'язані з іншими змінними з таким же ім'ям за межами функції - тобто імена змінних є локальними в функції. Це називається областю видимості змінної. Область видимості всіх змінних обмежена блоком, в якому вони оголошені, починаючи з точки оголошення імені.</p>
+<h3 id="&#1051;&#1086;&#1082;&#1072;&#1083;&#1100;&#1085;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1110;">&#1051;&#1086;&#1082;&#1072;&#1083;&#1100;&#1085;&#1110; &#1079;&#1084;&#1110;&#1085;&#1085;&#1110;<a class="anchor-link" href="#&#1051;&#1086;&#1082;&#1072;&#1083;&#1100;&#1085;&#1110;-&#1079;&#1084;&#1110;&#1085;&#1085;&#1110;"> </a></h3><p>При оголошенні змінних всередині визначення функції, вони жодним чином не пов'язані з іншими змінними з таким же ім'ям за межами функції — тобто імена змінних є локальними в функції. Це називається областю видимості змінної. Область видимості всіх змінних обмежена блоком, в якому вони оголошені, починаючи з точки оголошення імені.</p>
 
 </div>
 </div>
@@ -537,11 +502,12 @@ single_item 3
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="mi">50</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
 <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-    <span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Заміна локального x на &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    
 <span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x як і раніше &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -574,11 +540,11 @@ x як і раніше  50
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>При першому виведенні значення, присвоєного імені $x$, в першому рядку функції Python використовує значення параметра, оголошеного в основному блоці, вище визначення функції.
-Далі $x$ призначається значення $2$.  Ім'я $x$ локально для даної функції. Тому коли замінюється значення $x$ в функції, $x$, оголошений в основному блоці, залишається незмінним.
-Останнім викликом функції print виводиться значення $x$, вказане в основному блоці, підтверджуючи таким чином, що воно не змінилося при локальному присвоєнні значення в раніше викликаної функції.</p>
-<h1 id="&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-global">&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077; &#1089;&#1083;&#1086;&#1074;&#1086; <code>global</code><a class="anchor-link" href="#&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-global"> </a></h1><p>Щоб надати деяке значення змінної, визначеної на вищому рівні програми (тобто не в якій-небудь області видимості, як-то функції або класи), необхідно вказати Python, що її ім'я не локально, а глобально(global). Робиться це за допомогою зарезервованого слова <code>global</code>. Без застосування зарезервованого слова <code>global</code> неможливо привласнити значення змінної, визначеної за межами функції.
-Можна використовувати вже існуючі значення змінних, визначених за межами функції (за умови, що всередині функції не було оголошено змінної з таким же ім'ям). Однак, це не вітається (<strong><em>\&lt;-Можно ли так сказать в украинском языке?</em></strong>), і його слід уникати, оскільки людині, що читає текст програми, буде незрозуміло, де знаходиться оголошення змінної. Використання зарезервованого слова <code>global</code> досить чітко показує, що змінна оголошена в самому зовнішньому блоці.</p>
+<h4 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h4><p>При першому виведенні значення, присвоєного імені <code>x</code>, в першому рядку функції Python використовує значення параметра, оголошеного в основному блоці, вище визначення функції.</p>
+<p>Далі <code>x</code> призначається значення $2$.  Ім'я <code>x</code> локально для даної функції. Тому коли замінюється значення <code>x</code> в функції, <code>x</code>, оголошений в основному блоці, залишається незмінним.</p>
+<p>Останнім викликом функції <code>print</code> виводиться значення <code>x</code>, вказане в основному блоці, підтверджуючи таким чином, що воно не змінилося при локальному присвоєнні значення в раніше викликаної функції.</p>
+<h2 id="&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-global">&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077; &#1089;&#1083;&#1086;&#1074;&#1086; <code>global</code><a class="anchor-link" href="#&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-global"> </a></h2><p>Щоб надати деяке значення змінної, визначеної на вищому рівні програми (тобто не в якій-небудь області видимості, як-то функції або класи), необхідно вказати Python, що її ім'я не локально, а глобально (global). Робиться це за допомогою зарезервованого слова <code>global</code>. Без застосування зарезервованого слова <code>global</code> неможливо привласнити значення змінної, визначеної за межами функції.</p>
+<p>Можна використовувати вже існуючі значення змінних, визначених за межами функції (за умови, що всередині функції не було оголошено змінної з таким же ім'ям). Однак, це не вітається, і такого слід уникати, оскільки людині, що читає текст програми, буде незрозуміло, де знаходиться оголошення змінної. Використання зарезервованого слова <code>global</code> досить чітко показує, що змінна оголошена в самому зовнішньому блоці.</p>
 
 </div>
 </div>
@@ -595,9 +561,10 @@ x як і раніше  50
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
 <span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">x</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює&#39;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Замінюємо глобальне значення x на&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
 <span class="n">func</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Значення x становить&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -630,12 +597,12 @@ x як і раніше  50
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h2><p>Зарезервоване слово <code>global</code> використовується для того, щоб оголосити, що $x$ - це глобальна змінна, а значить, коли присвоюється значення імені $x$ всередині функції, це зміна відіб'ється на значенні змінної $x$ в основному блоці програми.
-Використовуючи одне зарезервоване слово <code>global</code>, можна оголосити відразу кілька змінних:</p>
+<h3 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h3><p>Зарезервоване слово <code>global</code> використовується для того, щоб оголосити, що <code>x</code> — це глобальна змінна, а значить, коли присвоюється значення імені <code>x</code> всередині функції, це зміна відіб'ється на значенні змінної <code>x</code> в основному блоці програми.</p>
+<p>Використовуючи одне зарезервоване слово <code>global</code>, можна оголосити відразу кілька змінних:</p>
 <div class="highlight"><pre><span></span><span class="k">global</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span>
 </pre></div>
-<h1 id="&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-nonlocal">&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077; &#1089;&#1083;&#1086;&#1074;&#1086; <code>nonlocal</code><a class="anchor-link" href="#&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-nonlocal"> </a></h1><p>Раніше розглянуто отримання доступу до змінних в локальній і глобальній області видимості. Є ще один тип області видимості, званий "нелокальної" (nonlocal) областю видимості, який є чимось середнім між першими двома. Нелокальні області видимості зустрічаються, коли визначається функція всередині функцій.
-Оскільки в Python все є виконуваним кодом, функції можна визначати де завгодно.</p>
+<h2 id="&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-nonlocal">&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077; &#1089;&#1083;&#1086;&#1074;&#1086; <code>nonlocal</code><a class="anchor-link" href="#&#1047;&#1072;&#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1086;&#1074;&#1072;&#1085;&#1077;-&#1089;&#1083;&#1086;&#1074;&#1086;-nonlocal"> </a></h2><p>Раніше розглянуто отримання доступу до змінних в локальній і глобальній області видимості. Є ще один тип області видимості, званий "нелокальною" (nonlocal) областю видимості, який є чимось середнім між першими двома. Нелокальні області видимості зустрічаються, коли визначається функція всередині функцій.</p>
+<p>Оскільки в Python все є виконуваним кодом, функції можна визначати де завгодно.</p>
 
 </div>
 </div>
@@ -650,13 +617,13 @@ x як і раніше  50
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func_outer</span><span class="p">():</span>
-    <span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">func_inner</span><span class="p">():</span>
         <span class="k">nonlocal</span> <span class="n">x</span>
-        <span class="n">x</span><span class="o">=</span><span class="mi">5</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
     <span class="n">func_inner</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Локальне x змінилося на&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Локальне x змінилося на&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="n">func_outer</span><span class="p">()</span>
 </pre></div>
 
@@ -671,8 +638,8 @@ x як і раніше  50
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Локальне x змінилося на 2
-x дорівнює 2
+<pre>x дорівнює 2
+Локальне x змінилося на 5
 </pre>
 </div>
 </div>
@@ -687,21 +654,10 @@ x дорівнює 2
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>***^Очень странная функция. Вывод не совпадает с методичкой ВВ</p>
-
-</div>
-</div>
-</div>
-</div>
-
-<div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h1><p>Усередині <code>func_inner</code>, змінна $x$, визначена в першому рядку <code>func_outer</code> розташована ні в локальній області видимості (визначення змінної не входить в блок <code>func_inner</code>), ні в глобальному контексті (вона також і не в основному блоці програми). Оголошується використання саме цієї змінної $x$ наступним чином:</p>
+<h3 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h3><p>Усередині <code>func_inner</code>, змінна <code>x</code>, визначена в першому рядку <code>func_outer</code> розташована ані в локальній області видимості (визначення змінної не входить в блок <code>func_inner</code>), ані в глобальному контексті (вона також і не в основному блоці програми). Оголошується використання саме цієї змінної <code>x</code> наступним чином:</p>
 <div class="highlight"><pre><span></span><span class="n">nonlocal</span> <span class="n">x</span>
 </pre></div>
-<h1 id="&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-return">&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088; return<a class="anchor-link" href="#&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-return"> </a></h1><p>Оператор <code>return</code> використовується для повернення з функції, тобто для припинення її роботи і виходу з неї. При цьому можна також повернути деяке значення з функції.</p>
+<h2 id="&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-return">&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088; return<a class="anchor-link" href="#&#1054;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;-return"> </a></h2><p>Оператор <code>return</code> використовується для повернення з функції, тобто для припинення її роботи і виходу з неї. При цьому можна також повернути деяке значення з функції.</p>
 
 </div>
 </div>
@@ -722,6 +678,7 @@ x дорівнює 2
         <span class="k">return</span> <span class="s1">&#39;Числа рівні.&#39;</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">y</span>
+    
 <span class="nb">print</span><span class="p">(</span><span class="n">maximum</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
@@ -751,16 +708,16 @@ x дорівнює 2
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h1><p>Функція <code>maximum</code> повертає максимальний з двох параметрів, які в даному випадку передаються їй при виклику. Вона використовує звичайний умовний оператор <code>if..else</code> для визначення найбільшого числа, а потім повертає це число.
-Оператор <code>return</code> без вказівки значення, що повертається, еквівалентний вислову <code>return None</code>. <code>None</code> - це спеціальний тип даних в Python, що позначає “нічого”. Наприклад, якщо значення змінної встановлено в <code>None</code>, це означає, що їй не присвоєно ніякого значення.
-Кожна функція містить в неявній формі оператор <code>return None</code> в кінці, якщо не вказано свій власний оператор <code>return</code>. У цьому можна переконатися, запустивши <code>print(someFunction())</code>, де функція <code>someFunction</code> - це якась функція, яка не має оператора <code>return</code> в явному вигляді. наприклад:</p>
+<h3 id="&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;">&#1071;&#1082; &#1094;&#1077; &#1087;&#1088;&#1072;&#1094;&#1102;&#1108;<a class="anchor-link" href="#&#1071;&#1082;-&#1094;&#1077;-&#1087;&#1088;&#1072;&#1094;&#1102;&#1108;"> </a></h3><p>Функція <code>maximum</code> повертає максимальний з двох параметрів, які в даному випадку передаються їй при виклику. Вона використовує звичайний умовний оператор <code>if..else</code> для визначення найбільшого числа, а потім повертає це число.</p>
+<p>Оператор <code>return</code> без вказівки значення, що повертається, еквівалентний вислову <code>return None</code>. <code>None</code> — це спеціальний тип даних в Python, що позначає "нічого". Наприклад, якщо значення змінної встановлено в <code>None</code>, це означає, що їй не присвоєно ніякого значення.</p>
+<p>Кожна функція містить в неявній формі оператор <code>return None</code> в кінці, якщо не вказано свій власний оператор <code>return</code>. У цьому можна переконатися, запустивши <code>print(someFunction())</code>, де функція <code>someFunction</code> — це якась функція, яка не має оператора <code>return</code> в явному вигляді. Наприклад:</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">someFunction</span><span class="p">():</span>
     <span class="k">pass</span>
 </pre></div>
-<p>Оператор <code>pass</code> використовується в Python для позначення порожнього блоку команд. 
-<strong><em>Порада</em></strong>
-Існує вбудована функція <code>max</code>, в якій вже реалізований функціонал "пошук максимуму", так що рекомендується користуватися цією вбудованою функцією, де це можливо.</p>
-<h1 id="lambda-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;"><code>lambda</code>-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;<a class="anchor-link" href="#lambda-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;"> </a></h1><p><code>lambda</code>-функція - це безіменна функція з довільним числом аргументів і обчислює один вираз. Тіло такої функції не може містити більше однієї інструкції (або виразу). Дану функцію можна використовувати в рамках будь-яких конвеєрних обчислень (наприклад,  всередині <code>filter()</code>, <code>map()</code> і <code>reduce()</code>) або самостійно, в тих місцях, де потрібно провести якісь обчислення, які зручно "загорнути" в функцію.</p>
+<p>Оператор <code>pass</code> використовується в Python для позначення порожнього блоку команд.</p>
+<p><strong><em>Порада:</em></strong></p>
+<p>Існує вбудована функція <code>max</code>, в якій вже реалізований функціонал "пошук максимуму", тому рекомендується користуватися цією вбудованою функцією, де це можливо.</p>
+<h2 id="lambda-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;"><code>lambda</code>-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;<a class="anchor-link" href="#lambda-&#1092;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;"> </a></h2><p><code>lambda</code>-функція — це безіменна функція з довільним числом аргументів і обчислює один вираз. Тіло такої функції не може містити більше однієї інструкції (або виразу). Дану функцію можна використовувати в рамках будь-яких конвеєрних обчислень (наприклад,  всередині <code>filter()</code>, <code>map()</code> і <code>reduce()</code>) або самостійно, в тих місцях, де потрібно провести якісь обчислення, які зручно "загорнути" у функцію.</p>
 
 </div>
 </div>
@@ -819,7 +776,7 @@ x дорівнює 2
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sqrt</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mf">0.5</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sqrt</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mf">0.5</span>
 <span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 
@@ -867,6 +824,7 @@ x дорівнює 2
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+
 <span class="n">g</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
 </pre></div>
@@ -898,10 +856,10 @@ x дорівнює 2
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Як видно, <code>f()</code> і <code>g()</code> роблять одне і теж, і можуть використовуватися в одних і тих же місцях. Визначення <code>lambda</code>-функції не включає оператор <code>return</code> - ця конструкція завжди містить вираз, результат якого повертається. Визначення <code>lambda</code>-функції може використовуватися скрізь, де очікується функція і немає потреби присвоювати значення змінній.
-Узагальнюючи, можна констатувати, що <code>lambda</code>-функція - це функція, яка має довільне число аргументів (включаючи необов'язкові аргументи) і повертає значення одного виразу. <code>lambda</code>-функції не можуть містити інструкцій або більше одного виразу. Не треба включати в <code>lambda</code>-функцію занадто багато. Якщо необхідно щось більш складне - визначайте звичайну функцію.
-Використання <code>lambda</code>-функцій - справа стилю. Скрізь, де можна використовувати <code>lambda</code>-функцію, можна визначити і використовувати звичайну функцію. Доцільно використовувати в місцях, де потрібно інкапсулювати характерний код, який не підлягає повторному використанню, без засмічення програми безліччю маленьких однорядкових функцій.
-Основну частину можливостей Python, які демонструє <code>lambda</code>-функція можна побачити в зворотних викликах $Tkinter$. $Tkinter$ - це включений в Python набір інструментів, для створення графічних інтерфейсів.
+<p>Як видно, <code>f()</code> і <code>g()</code> роблять одне і теж, і можуть використовуватися в одних і тих же місцях. Визначення <code>lambda</code>-функції не включає оператор <code>return</code> - ця конструкція завжди містить вираз, результат якого повертається. Визначення <code>lambda</code>-функції може використовуватися скрізь, де очікується функція і немає потреби присвоювати значення змінній.</p>
+<p>Узагальнюючи, можна констатувати, що <code>lambda</code>-функція — це функція, яка має довільне число аргументів (включаючи необов'язкові аргументи) і повертає значення одного виразу. <code>lambda</code>-функції не можуть містити інструкцій або більше одного виразу. Не треба включати в <code>lambda</code>-функцію занадто багато. Якщо необхідно щось більш складне — визначайте звичайну функцію.</p>
+<p>Використання <code>lambda</code>-функцій — справа стилю. Скрізь, де можна використовувати <code>lambda</code>-функцію, можна визначити і використовувати звичайну функцію. Доцільно використовувати в місцях, де потрібно інкапсулювати характерний код, який не підлягає повторному використанню, без засмічення програми безліччю маленьких однорядкових функцій.</p>
+<p>Основну частину можливостей Python, які демонструє <code>lambda</code>-функція можна побачити в зворотних викликах <code>Tkinter</code>. <code>Tkinter</code> — це включений в Python набір інструментів, для створення графічних інтерфейсів.
 Розглянуто досить багато аспектів функцій, але, тим не менше, треба розуміти, що це далеко не всі їхні аспекти. У той же час, представлено більшість того, з чим можна зіткнутися при повсякденному використанні функцій в Python.</p>
 
 </div>
