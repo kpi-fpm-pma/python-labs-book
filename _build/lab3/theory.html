@@ -1,0 +1,1137 @@
+---
+interact_link: content/lab3/theory.ipynb
+kernel_name: python3
+has_widgets: false
+title: |-
+  Теоретичні відомості
+prev_page:
+  url: /lab3/intro.html
+  title: |-
+    Рядки
+next_page:
+  url: /lab3/questions.html
+  title: |-
+    Питання для самопервірки
+suffix: .ipynb
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;">&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110; &#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;<a class="anchor-link" href="#&#1058;&#1077;&#1086;&#1088;&#1077;&#1090;&#1080;&#1095;&#1085;&#1110;-&#1074;&#1110;&#1076;&#1086;&#1084;&#1086;&#1089;&#1090;&#1110;"> </a></h1><p>Рядок представляє послідовність символів у кодуванні Unicode. До окремих символів рядка можна звернутися за індексом в квадратних дужках:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
+<span class="n">c0</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1">#h</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>h
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c6</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>  <span class="c1"># w</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c6</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>w
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">c11</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span> <span class="c1"># помилка IndexError: string index out of range</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c11</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">IndexError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-10-a03a61ba36bc&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>c11 <span class="ansi-yellow-intense-fg ansi-bold">=</span> string<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">11</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-red-intense-fg ansi-bold"># помилка IndexError: string index out of range</span>
+<span class="ansi-green-fg">      2</span> print<span class="ansi-yellow-intense-fg ansi-bold">(</span>c11<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">IndexError</span>: string index out of range</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Індексація починається з нуля, тому перший символ рядка буде мати індекс $0$. А якщо спробувати звернутися до індексу, якого немає в рядку, то виникає помилка − виключення <code>IndexError</code>. Наприклад, в випадку вище довжина рядка $11$ символів, тому її символи матимуть індекси від $0$ до $10$.
+Щоб отримати доступ до символів, починаючи з кінця рядка, можна використовувати від'ємні індекси. Так, індекс <code>-1</code> представлятиме останній символ, а <code>-2</code> — передостанній символ і так далі.</p>
+<p>При роботі з рядками треба враховувати те, що в Python, на відміну від інших мов програмування, рядки незмінні, тобто змінити символи в рядку в принципі не можна. Тому є два альтернативних варіанти:</p>
+<ul>
+<li>сформувати новий змінений рядок</li>
+<li>замінити певні символи або слова (в залежності від задачі) при виведенні їх на екран.</li>
+</ul>
+<p>Сформувати новий рядок також можна двома способами (як мінімум):</p>
+<ul>
+<li>перетворити вихідний в список, виконати в ньому заміну, а потім елементи списку з'єднати в новий рядок;</li>
+<li>використовувати механізм зрізів, без використання нового рядка.</li>
+</ul>
+<p>Спроба простим присвоєнням змінити символ у певній позиції або підрядок викличе помилку. Але можна зробити так:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;strength&#39;</span>
+<span class="n">word</span> <span class="o">=</span> <span class="n">word</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;!&#39;</span> <span class="o">+</span> <span class="n">word</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+<span class="c1"># &#39;str!ngth&#39;  результат заміни символа</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>str!ngth
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>або так:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;!&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+<span class="c1"># &#39;strength&#39;   результат заміни символа</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>strength
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1054;&#1090;&#1088;&#1080;&#1084;&#1072;&#1085;&#1085;&#1103;-&#1087;&#1110;&#1076;&#1088;&#1103;&#1076;&#1082;&#1072;">&#1054;&#1090;&#1088;&#1080;&#1084;&#1072;&#1085;&#1085;&#1103; &#1087;&#1110;&#1076;&#1088;&#1103;&#1076;&#1082;&#1072;<a class="anchor-link" href="#&#1054;&#1090;&#1088;&#1080;&#1084;&#1072;&#1085;&#1085;&#1103;-&#1087;&#1110;&#1076;&#1088;&#1103;&#1076;&#1082;&#1072;"> </a></h1><p>При необхідності можна отримати з рядка не тільки окремі символи, а й підрядок. Для цього використовується наступний синтаксис:</p>
+<blockquote><p><code>string[:end]</code>: вилучається послідовність символів, починаючи з $0$-го індексу по індекс <code>end</code></p>
+<p><code>string[start: end]</code>: вилучається послідовність символів, починаючи з індексу <code>start</code> по індекс <code>end</code></p>
+<p><code>string[start: end: step]</code>: вилучається послідовність символів, починаючи з індексу <code>start</code> по індекс <code>end</code> через крок <code>step</code></p>
+<h2 id="&#1059;&#1089;&#1110;-&#1074;&#1072;&#1088;&#1110;&#1072;&#1085;&#1090;&#1080;-&#1086;&#1090;&#1088;&#1080;&#1084;&#1072;&#1085;&#1085;&#1103;-&#1087;&#1110;&#1076;&#1088;&#1103;&#1076;&#1082;&#1072;:">&#1059;&#1089;&#1110; &#1074;&#1072;&#1088;&#1110;&#1072;&#1085;&#1090;&#1080; &#1086;&#1090;&#1088;&#1080;&#1084;&#1072;&#1085;&#1085;&#1103; &#1087;&#1110;&#1076;&#1088;&#1103;&#1076;&#1082;&#1072;:<a class="anchor-link" href="#&#1059;&#1089;&#1110;-&#1074;&#1072;&#1088;&#1110;&#1072;&#1085;&#1090;&#1080;-&#1086;&#1090;&#1088;&#1080;&#1084;&#1072;&#1085;&#1085;&#1103;-&#1087;&#1110;&#1076;&#1088;&#1103;&#1076;&#1082;&#1072;:"> </a></h2>
+</blockquote>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
+<span class="c1"># з 0 до 5 символа</span>
+<span class="n">sub_string1</span> <span class="o">=</span> <span class="n">string</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sub_string1</span><span class="p">)</span>  <span class="c1">#hello</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>hello
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># з 2 до 5 символа</span>
+<span class="n">sub_string2</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sub_string2</span><span class="p">)</span>  <span class="c1">#llo</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>llo
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># з 2 по 9 символ через один символ</span>
+<span class="n">sub_string3</span> <span class="o">=</span> <span class="n">string</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">9</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sub_string3</span><span class="p">)</span>  <span class="c1">#lowr</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>lowr
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1060;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-ord-&#1110;-len">&#1060;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111; <code>ord</code> &#1110; <code>len</code><a class="anchor-link" href="#&#1060;&#1091;&#1085;&#1082;&#1094;&#1110;&#1111;-ord-&#1110;-len"> </a></h1><p>Оскільки рядок містить символи $Unicode$, то за допомогою функції <code>ord()</code> можна отримати числове значення для символа в кодуванні $Unicode$:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">))</span> <span class="c1"># 65</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>65
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Для отримання довжини рядка можна використовувати функцію <code>len()</code>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
+<span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="c1"># 11</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>11
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1055;&#1086;&#1096;&#1091;&#1082;-&#1091;-&#1088;&#1103;&#1076;&#1082;&#1091;">&#1055;&#1086;&#1096;&#1091;&#1082; &#1091; &#1088;&#1103;&#1076;&#1082;&#1091;<a class="anchor-link" href="#&#1055;&#1086;&#1096;&#1091;&#1082;-&#1091;-&#1088;&#1103;&#1076;&#1082;&#1091;"> </a></h1><p>За допомогою виразу $term$ <code>in</code> $string$ можна знайти підрядок $term$ у рядку $string$. Якщо підрядок знайдений, то вираз поверне значення <code>True</code>, інакше повертається значення <code>False</code>:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
+<span class="n">exist</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span> <span class="ow">in</span> <span class="n">string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">exist</span><span class="p">)</span> <span class="c1"># True</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">exist</span> <span class="o">=</span> <span class="s2">&quot;sword&quot;</span> <span class="ow">in</span> <span class="n">string</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">exist</span><span class="p">)</span> <span class="c1"># False</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>False
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1055;&#1077;&#1088;&#1077;&#1073;&#1110;&#1088;-&#1088;&#1103;&#1076;&#1082;&#1072;">&#1055;&#1077;&#1088;&#1077;&#1073;&#1110;&#1088; &#1088;&#1103;&#1076;&#1082;&#1072;<a class="anchor-link" href="#&#1055;&#1077;&#1088;&#1077;&#1073;&#1110;&#1088;-&#1088;&#1103;&#1076;&#1082;&#1072;"> </a></h1><p>За допомогою циклу <code>for</code> можна перебрати всі символи рядка:</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">string</span> <span class="o">=</span> <span class="s2">&quot;hello world&quot;</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>h
+e
+l
+l
+o
+ 
+w
+o
+r
+l
+d
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#1041;&#1072;&#1079;&#1086;&#1074;&#1110;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1110;&#1111;-&#1079;-&#1088;&#1103;&#1076;&#1082;&#1072;&#1084;&#1080;">&#1041;&#1072;&#1079;&#1086;&#1074;&#1110; &#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1110;&#1111; &#1079; &#1088;&#1103;&#1076;&#1082;&#1072;&#1084;&#1080;<a class="anchor-link" href="#&#1041;&#1072;&#1079;&#1086;&#1074;&#1110;-&#1086;&#1087;&#1077;&#1088;&#1072;&#1094;&#1110;&#1111;-&#1079;-&#1088;&#1103;&#1076;&#1082;&#1072;&#1084;&#1080;"> </a></h1><h3 id="&#1050;&#1086;&#1085;&#1082;&#1072;&#1090;&#1077;&#1085;&#1072;&#1094;&#1110;&#1103;-(&#1076;&#1086;&#1076;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103;)">&#1050;&#1086;&#1085;&#1082;&#1072;&#1090;&#1077;&#1085;&#1072;&#1094;&#1110;&#1103; (&#1076;&#1086;&#1076;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103;)<a class="anchor-link" href="#&#1050;&#1086;&#1085;&#1082;&#1072;&#1090;&#1077;&#1085;&#1072;&#1094;&#1110;&#1103;-(&#1076;&#1086;&#1076;&#1072;&#1074;&#1072;&#1085;&#1085;&#1103;)"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="s1">&#39;spam&#39;</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="s1">&#39;eggs&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>spameggs
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1044;&#1091;&#1073;&#1083;&#1102;&#1074;&#1072;&#1085;&#1085;&#1103;-&#1088;&#1103;&#1076;&#1082;&#1072;">&#1044;&#1091;&#1073;&#1083;&#1102;&#1074;&#1072;&#1085;&#1085;&#1103; &#1088;&#1103;&#1076;&#1082;&#1072;<a class="anchor-link" href="#&#1044;&#1091;&#1073;&#1083;&#1102;&#1074;&#1072;&#1085;&#1085;&#1103;-&#1088;&#1103;&#1076;&#1082;&#1072;"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;spam&#39;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>spamspamspam
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1044;&#1086;&#1074;&#1078;&#1080;&#1085;&#1072;-&#1088;&#1103;&#1076;&#1082;&#1072;">&#1044;&#1086;&#1074;&#1078;&#1080;&#1085;&#1072; &#1088;&#1103;&#1076;&#1082;&#1072;<a class="anchor-link" href="#&#1044;&#1086;&#1074;&#1078;&#1080;&#1085;&#1072;-&#1088;&#1103;&#1076;&#1082;&#1072;"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;spam&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>4</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1044;&#1086;&#1089;&#1090;&#1091;&#1087;-&#1079;&#1072;-&#1110;&#1085;&#1076;&#1077;&#1082;&#1089;&#1086;&#1084;">&#1044;&#1086;&#1089;&#1090;&#1091;&#1087; &#1079;&#1072; &#1110;&#1085;&#1076;&#1077;&#1082;&#1089;&#1086;&#1084;<a class="anchor-link" href="#&#1044;&#1086;&#1089;&#1090;&#1091;&#1087;-&#1079;&#1072;-&#1110;&#1085;&#1076;&#1077;&#1082;&#1089;&#1086;&#1084;"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">S</span> <span class="o">=</span> <span class="s1">&#39;spam&#39;</span>
+<span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;s&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">S</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;a&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">S</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;a&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1047;&#1088;&#1110;&#1079;">&#1047;&#1088;&#1110;&#1079;<a class="anchor-link" href="#&#1047;&#1088;&#1110;&#1079;"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;spameggs&#39;</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;me&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;ameg&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;spameg&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;pameggs&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[:]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;spameggs&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#1050;&#1088;&#1086;&#1082;-&#1074;&#1080;&#1083;&#1091;&#1095;&#1077;&#1085;&#1085;&#1103;-&#1079;&#1088;&#1110;&#1079;&#1091;">&#1050;&#1088;&#1086;&#1082; &#1074;&#1080;&#1083;&#1091;&#1095;&#1077;&#1085;&#1085;&#1103; &#1079;&#1088;&#1110;&#1079;&#1091;<a class="anchor-link" href="#&#1050;&#1088;&#1086;&#1082;-&#1074;&#1080;&#1083;&#1091;&#1095;&#1077;&#1085;&#1085;&#1103;-&#1079;&#1088;&#1110;&#1079;&#1091;"> </a></h3>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;sggemaps&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">5</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;aeg&#39;</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Повний перелік функцій і методів роботи з рядками представлений у <a href="../appendices/appendix5">Додатку 5</a>. Більш докладно з принципами роботи з рядками можна ознайомитися із {% cite ljubanovich -l 56-69 %}. Що стосується форматування рядків, то рекомендується подивитися матеріал за посиланнями:</p>
+<ul>
+<li><a href="https://pyformat.info">https://pyformat.info</a></li>
+<li><a href="https://docs.python.org/3/library/string.html#formatstrings">https://docs.python.org/3/library/string.html#formatstrings</a></li>
+<li><a href="https://metanit.com/python/tutorial/5.3.php">https://metanit.com/python/tutorial/5.3.php</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+
+    </main>
+    
