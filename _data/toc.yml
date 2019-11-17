@@ -37,7 +37,7 @@
       url: /intro/formating
     - title: Типи і структури даних в Python
       url: /intro/types
-    
+
 - header: Лабораторна робота №1
 - title: Програмування лінійних алгоритмів та розгалужених процесів
   url: /lab1/intro
@@ -48,6 +48,17 @@
     url: /lab1/questions
   - title: Завдання
     url: /lab1/problems
+
+- header: Лабораторна робота №3
+- title: Рядки
+  url: /lab3/intro
+  sections:
+  - title: Теоретичні відомості
+    url: /lab3/theory
+  - title: Питання для самопервірки
+    url: /lab3/questions
+  - title: Завдання
+    url: /lab3/problems
 
 - header: Лабораторна робота №4
 - title: Використання функцій
