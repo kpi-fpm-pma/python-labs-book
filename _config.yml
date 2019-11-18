@@ -87,6 +87,7 @@ scholar:
   style: ieee-with-url
   locale: uk
   bibliography_template: bibliography
+  relative: /bibliography.html
 
 #######################################################################################
 # Option to add a Goggle analytics tracking code
