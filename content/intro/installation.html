@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Встановлення і робота з інтерпретатором Python &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/intro/installation.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Структура програми Python" href="structure.html" />
+    <link rel="prev" title="Загальні вказівки до виконання лабораторних робіт" href="guidlines.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://gasperpaul.github.io/python-labs-book/content/intro/installation.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Встановлення і робота з інтерпретатором Python" />
+<meta property="og:description" content="Встановлення і робота з інтерпретатором Python  Зайти на сайт Python і завантажити свіжу версію інтерпретатора, яка співвідноситься з ОС, встановленої на комп’ю" />
+<meta property="og:image"       content="https://gasperpaul.github.io/python-labs-book/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="guidlines.html">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="structure.html">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="types.html">
+   Типи і структури даних в Python
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №1
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab3/intro.html">
+   Рядки
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №4
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab4/intro.html">
+   Використання функцій
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/intro/installation.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/GasperPaul/python-labs-book/master?urlpath=lab/tree/content/intro/installation.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/GasperPaul/python-labs-book/blob/master/content/intro/installation.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python">
+<h1>Встановлення і робота з інтерпретатором Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Зайти на сайт <a class="reference external" href="http://python.org/downloads/">Python</a> і завантажити свіжу версію інтерпретатора, яка співвідноситься з ОС, встановленої на комп’ютері.</p></li>
+</ul>
+<p><img alt="" src="../../_images/Python_install.bmp" /></p>
+<ul class="simple">
+<li><p>Запустити інтегровану середу Python IDLE.</p></li>
+</ul>
+<p><img alt="" src="../../_images/IDLE_Open.bmp" /></p>
+<ul class="simple">
+<li><p>З’явиться вікно середовища інтерпретатора, готового до інтерактивної роботи.</p></li>
+</ul>
+<p><img alt="" src="../../_images/IDLE_Opened.bmp" /></p>
+<p>Середовище IDLE забезпечує три ключових можливості:</p>
+<ul class="simple">
+<li><p>Введення виразів і програмного коду на мові Python з отриманням результатів прямо в командній оболонці Python;</p></li>
+<li><p>Надає редактор програмного коду з підсвічуванням синтаксису мови Python і підтримкою функції оформлення відступів</p></li>
+<li><p>Покрокове виконання програмного коду яке полегшує пошук і усунення помилок.</p></li>
+</ul>
+<!--М. замінити на опис можливостей, які більш можливі за потужний калькулятор-->
+<p>Інтегроване середовище розробки особливо зручне при опробуванні простих алгоритмів, фрагментів програмного коду і регулярних виразів і може використовуватися як дуже потужний і гнучкий калькулятор.</p>
+<p>Програмний код на мові Python можна записати за допомогою будь- якого простого текстового редактора, який здатний завантажувати і зберігати текст або в кодуванні ASCII, або UTF-8.
+За замовчуванням передбачається, що файли на мові Python зберігаються в кодуванні UTF-8, підмножині кодування ASCII, за допомогою якої можна представити практично будь-який символ алфавіту.</p>
+<p>Файл на мові Python можна запустити наступним чином:</p>
+<ul>
+<li><p>Створити файл в IDLE File-&gt;New File</p>
+<p>Приклад:</p>
+</li>
+</ul>
+<p><img alt="" src="../../_images/IDLE_Code.bmp" /></p>
+<ul>
+<li><p>Для запуску натиснути Run-&gt;Run Module :</p>
+<p>Якщо є помилки, вони будуть локалізовані.</p>
+</li>
+</ul>
+<p><img alt="" src="../../_images/IDLE_Error.bmp" /></p>
+<p>Файл або код також можна протестувати за допомогою терміналу.</p>
+<ul>
+<li><p>Відкрийте термінал</p>
+<p><em>Windows: Win+R, введіть cmd так натисніть ok</em></p>
+<p><em>Linux: Ctrl+Alt+T</em></p>
+</li>
+<li><p>Введіть python (у разі помилки: <a class="reference external" href="https://geek-university.com/python/add-python-to-the-windows-path/">https://geek-university.com/python/add-python-to-the-windows-path/</a>)</p></li>
+<li><p>Построково скопіюйте та вставте свій код</p></li>
+</ul>
+<p>Окрім терміналу та IDLE також існують спеціальні редактори коду: Notepad++, SumblimeText, VisualCode, та середовище розробки PyCharm <a class="reference external" href="http://link">Докладніше</a></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "GasperPaul/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="guidlines.html" title="previous page">Загальні вказівки до виконання лабораторних робіт</a>
+    <a class='right-next' id="next-link" href="structure.html" title="next page">Структура програми Python</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Громова В.В.<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>
