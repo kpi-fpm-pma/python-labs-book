@@ -1,0 +1,61 @@
+# This file contains the order and numbering for all sections in the book.
+
+- title: Вступ
+  file: content/intro/intro
+
+- part:
+  chapters: 
+    - title: Загальні вказівки до виконання лабораторних робіт
+      file: content/intro/guidlines
+    - title: Встановлення і робота з інтерпретатором Python
+      file: content/intro/installation
+    - title: Структура програми на мові Python та основні модулі
+      file: content/intro/structure
+    - title: Вбудовані функції
+      file: content/intro/functions
+    - title: Основні вказівки до форматування коду
+      file: content/intro/formating
+    - title: Типи і структури даних в Python
+      file: content/intro/types
+
+- part: Лабораторна робота №1
+  chapters:
+  - title: Програмування лінійних алгоритмів та розгалужених процесів
+    file: content/lab1/intro
+    sections:
+    - title: Теоретичні відомості
+      file: content/lab1/theory
+    - title: Питання для самопервірки
+      file: content/lab1/questions
+    - title: Завдання
+      file: content/lab1/problems
+
+- part: Лабораторна робота №3
+  chapters:
+  - title: Рядки
+    file: content/lab3/intro
+    sections:
+    - title: Теоретичні відомості
+      file: content/lab3/theory
+    - title: Питання для самопервірки
+      file: content/lab3/questions
+    - title: Завдання
+      file: content/lab3/problems
+
+- part: Лабораторна робота №4
+  chapters:
+  - title: Використання функцій
+    file: content/lab4/intro
+    sections: 
+    - title: Теоретичні відомості
+      file: content/lab4/theory
+    - title: Питання для самопервірки
+      file: content/lab4/questions
+    - title: Завдання
+      file: content/lab4/problems
+
+- part: 
+  chapters:
+  - title: Рекомендовані джерела
+    file: content/bibliography
+  

@@ -1,0 +1,518 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Структура програми Python &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/intro/structure.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Вбудовані функції" href="functions.html" />
+    <link rel="prev" title="Встановлення і робота з інтерпретатором Python" href="installation.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://gasperpaul.github.io/python-labs-book/content/intro/structure.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Структура програми Python" />
+<meta property="og:description" content="Структура програми Python  Програми на мові Python можна розкласти на такі складові, як модулі, інструкції, вирази і об’єкти. При цьому:  Програми діляться на м" />
+<meta property="og:image"       content="https://gasperpaul.github.io/python-labs-book/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="guidlines.html">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="types.html">
+   Типи і структури даних в Python
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №1
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab3/intro.html">
+   Рядки
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №4
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab4/intro.html">
+   Використання функцій
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/intro/structure.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/GasperPaul/python-labs-book/master?urlpath=lab/tree/content/intro/structure.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/GasperPaul/python-labs-book/blob/master/content/intro/structure.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Основні стандартні модулі Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Поняття модуля
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Підключення модуля зі стандартної бібліотеки
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Використання псевдонімів
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#from">
+       Інструкція
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         from
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python">
+<h1>Структура програми Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<p>Програми на мові Python можна розкласти на такі складові, як модулі,
+інструкції, вирази і об’єкти. При цьому:</p>
+<ol class="simple">
+<li><p>Програми діляться на модулі.</p></li>
+<li><p>Модулі містять інструкції.</p></li>
+<li><p>Інструкції складаються з виразів.</p></li>
+<li><p>Вирази створюють і обробляють об’єкти.</p></li>
+</ol>
+<!--М. переформулювати  -->
+<p>Синтаксис мови Python побудований на інструкціях і виразах.
+Вирази обробляють об’єкти і вбудовуються в інструкції. Інструкції є більші
+логічні блоки програми - вони безпосередньо використовують вирази для
+обробки об’єктів. Крім того, інструкції - це місце, де створюються об’єкти
+(наприклад, в інструкціях присвоювання), а в деяких інструкціях створюються
+абсолютно нові види об’єктів (функції, класи і так далі). Інструкції завжди
+присутні в модулях, які самі керуються інструкціями.</p>
+<div class="section" id="id1">
+<h2>Основні стандартні модулі Python<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Поняття модуля<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Перед тим як приступити до вивчення модулів стандартної бібліотеки,
+необхідно визначити те, що в Python називається модулем.
+Відповідно до модульним підходом до програмування велике завдання
+розбивається на кілька дрібніших, кожну з яких (в ідеалі) вирішує окремий
+модуль. У різних методиках даються різні обмеження на розмір модулів, однак
+при побудові модульної структури програми важливіше скласти таку
+композицію модулів, яка дозволила б звести до мінімуму зв’язки між ними. Набір
+класів і функцій, що має безліч зв’язків між своїми елементами, було б логічно
+розташувати в одному модулі. Є і ще одне корисне зауваження: модулі повинно
+бути легше використовувати, ніж написати заново. Це означає, що модуль
+повинен мати зручний інтерфейс: набір функцій, класів і констант, який він
+пропонує своїм користувачам.</p>
+<p>У мові Python набір модулів, присвячених одній проблемі, можна
+помістити в пакет.
+Більш детально можна ознайомитися про перелік і склад модулів на ресурсі
+<a class="reference external" href="https://pythonworld.ru/moduli">https://pythonworld.ru/moduli</a>.</p>
+</div>
+<div class="section" id="id3">
+<h3>Підключення модуля зі стандартної бібліотеки<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Підключити модуль можна за допомогою інструкції import. Наприклад,
+підключимо модуль os для отримання поточної директорії:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;C:\\Users\\Paul\\Desktop\\python-labs-book\\content\\intro&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Після ключового слова <code class="docutils literal notranslate"><span class="pre">import</span></code> вказується назва модуля. Після імпортування
+модуля його назва стає змінною, через яку можна отримати доступ до атрибутів
+модуля. Наприклад, можна звернутися до константи <code class="docutils literal notranslate"><span class="pre">e</span></code>, розташованої в модулі
+<code class="docutils literal notranslate"><span class="pre">math</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">math</span><span class="o">.</span><span class="n">e</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.718281828459045
+</pre></div>
+</div>
+</div>
+</div>
+<p>Варто відзначити, що якщо зазначений атрибут модуля не буде знайдений,
+викличеться виняток <code class="docutils literal notranslate"><span class="pre">AttributeError</span></code>. А якщо не вдасться знайти модуль для
+імпортування, то <code class="docutils literal notranslate"><span class="pre">ImportError</span></code>.</p>
+</div>
+<div class="section" id="id4">
+<h3>Використання псевдонімів<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Якщо назва модуля занадто довга, або вона вам не подобається з якихось
+інших причин, то для нього можна створити псевдонім, за допомогою ключового
+слова as.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span> <span class="k">as</span> <span class="nn">m</span>
+
+<span class="n">m</span><span class="o">.</span><span class="n">e</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.718281828459045
+</pre></div>
+</div>
+</div>
+</div>
+<p>Доступ до всіх атрибутів модуля <code class="docutils literal notranslate"><span class="pre">math</span></code> здійснюється тільки за допомогою
+змінної <code class="docutils literal notranslate"><span class="pre">m</span></code> , а змінної <code class="docutils literal notranslate"><span class="pre">math</span></code> в цій програмі вже не буде (якщо, звичайно, ви після цього не напишете <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">math</span></code>, тоді модуль буде доступний під ім’ям <code class="docutils literal notranslate"><span class="pre">m</span></code> і <code class="docutils literal notranslate"><span class="pre">math</span></code>).</p>
+<div class="section" id="from">
+<h4>Інструкція <code class="docutils literal notranslate"><span class="pre">from</span></code><a class="headerlink" href="#from" title="Permalink to this headline">¶</a></h4>
+<p>Підключити певні атрибути модуля можна за допомогою інструкції from.
+Вона має кілька форматів:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="o">&lt;</span><span class="n">Назва</span> <span class="n">модуля</span><span class="o">&gt;</span> <span class="kn">import</span> <span class="o">&lt;</span><span class="n">Атрибут</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="p">[</span><span class="k">as</span> <span class="o">&lt;</span><span class="n">Ім</span><span class="s1">&#39;я користувача 1&gt;], [&lt;Атрибут 2&gt; [as &lt;Ім&#39;</span><span class="n">я</span> <span class="n">користувача</span> <span class="mi">2</span><span class="o">&gt;</span><span class="p">]</span> <span class="o">...</span><span class="p">]</span>
+<span class="kn">from</span> <span class="o">&lt;</span><span class="n">Назва</span> <span class="n">модуля</span><span class="o">&gt;</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Перший формат дозволяє підключити з модуля тільки зазначені вами
+атрибути. Для довгих імен також можна призначити псевдонім, вказавши його
+після ключового слова <code class="docutils literal notranslate"><span class="pre">as</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">e</span><span class="p">,</span> <span class="n">ceil</span> <span class="k">as</span> <span class="n">c</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="n">c</span><span class="p">(</span><span class="mf">4.6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2.718281828459045
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
+</pre></div>
+</div>
+</div>
+</div>
+<p>Другий формат інструкції <code class="docutils literal notranslate"><span class="pre">from</span></code> дозволяє підключити всі (точніше, майже
+все) змінні з модуля. Для прикладу імпортуємо всі атрибути з модуля <code class="docutils literal notranslate"><span class="pre">sys</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3.6.3 (v3.6.3:2c5fed8, Oct  3 2017, 17:26:49) [MSC v.1900 32 bit (Intel)]
+sys.version_info(major=3, minor=6, micro=3, releaselevel=&#39;final&#39;, serial=0)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Слід зауважити, що не всі атрибути будуть імпортовані. Якщо в модулі
+визначена змінна <code class="docutils literal notranslate"><span class="pre">__all__</span></code> (список атрибутів, які можуть бути підключені), то
+будуть підключені тільки атрибути з цього списку. Якщо змінна <code class="docutils literal notranslate"><span class="pre">__all__</span></code> не
+визначена, то будуть підключені всі атрибути, які не починаються з нижнього
+підкреслення. Крім того, необхідно враховувати, що імпортування всіх атрибутів
+з модуля може конфлікт імен головної програми, так як змінні, що
+мають однакові імена, будуть перезаписані.</p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "GasperPaul/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content\intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="installation.html" title="previous page">Встановлення і робота з інтерпретатором Python</a>
+    <a class='right-next' id="next-link" href="functions.html" title="next page">Вбудовані функції</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Громова В.В.<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>

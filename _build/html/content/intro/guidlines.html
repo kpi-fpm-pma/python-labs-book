@@ -1,0 +1,480 @@
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Загальні вказівки до виконання лабораторних робіт &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/intro/guidlines.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Встановлення і робота з інтерпретатором Python" href="installation.html" />
+    <link rel="prev" title="Вступ" href="intro.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://gasperpaul.github.io/python-labs-book/content/intro/guidlines.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Загальні вказівки до виконання лабораторних робіт" />
+<meta property="og:description" content="Загальні вказівки до виконання лабораторних робіт  Правила роботи з методичними вказівками  &lt;!--М. прибрати  --&gt;   Важливо! Студент повинен уважно і вдумливо чи" />
+<meta property="og:image"       content="https://gasperpaul.github.io/python-labs-book/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="structure.html">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="types.html">
+   Типи і структури даних в Python
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №1
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab3/intro.html">
+   Рядки
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Лабораторна робота №4
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab4/intro.html">
+   Використання функцій
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/intro/guidlines.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/GasperPaul/python-labs-book/master?urlpath=lab/tree/content/intro/guidlines.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/GasperPaul/python-labs-book/blob/master/content/intro/guidlines.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Правила роботи з методичними вказівками
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Виконання лабораторної роботи
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Розробка алгоритму рішення
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Написання тексту програми
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Вимоги до програми
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Вимоги до оформлення звіту
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <!--М.=можливо  -->
+<div class="section" id="id1">
+<h1>Загальні вказівки до виконання лабораторних робіт<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Правила роботи з методичними вказівками<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<!--М. прибрати  -->
+<p><strong>Важливо! Студент повинен уважно і вдумливо читати опис кожної лабораторної роботи!</strong></p>
+<p>Методичні вказівки побудовані за принципом «від простого до складного».
+У першій лабораторній роботі студент ознайомиться з дуже важливими елементами мови Python - типами даних, операціями над ними, функціями введення і виведення.</p>
+<!-- М. прибрати цей абзац, оскільки він не несе користної інформації-->
+<p>Нічого складного в першій лабораторній роботі немає, тому будь-який студент з нею впорається без напруження, якщо приділить їй деякий час.
+В результаті студент повинен чітко розуміти принцип роботи цих операторів.
+Якщо студент, в силу яких-небудь обставин, не зможе впоратися з даною лабораторною роботою, то немає сенсу приступати до наступних, тому що всі вони засновані на базових поняттях цієї теми.
+Не можна приступати до наступної лабораторної роботі, якщо не зроблена попередня, тому що всі вони взаємопов’язані.
+Кожна чергова лабораторна робота заснована на попередній.</p>
+<p>Перед тим, як приступити до виконання лабораторної роботи, необхідно ознайомиться з її описом.</p>
+<!-- М. потрібно перефразувати  -->
+<p>Для кожної лабораторної роботи дано достатній для її виконання опис.
+Передбачається, що студент може самостійно з ним ознайомитися.</p>
+<!-- М. Замінити цей абзац на посилання на літературу, або сайти. М. прибрати "в мережі Інтернет"  -->
+<p>Методичні вказівки містять всю необхідну теоретичну частину, тому додаткова література з мови Python не потрібно.
+Однак, при необхідності студент може посилити свої знання за допомогою літератури, яку він без зусиль зможе знайти в мережі Інтернет або із запропонованого списку в методичних вказівках.
+Якщо після прочитання методичних вказівок в студента залишаються питання, слід звернутися до викладача.</p>
+<p>Опис кожної лабораторної роботи починається з розділів “<strong>Мета роботи</strong>” і “<strong>Теоретичні відомості</strong>”.
+Зазначені в цих розділах теми та матеріали обов’язково повинні бути розглянуті до початку виконання лабораторної роботи.
+Завдання до виконання кожної роботи складається з загальної частини, яка сформульована в розділі “<strong>Узагальнена формулювання завдання</strong>”, і індивідуального завдання, яке наведено в розділі “<strong>Варіанти завдань</strong>”.</p>
+<p>Студент повинен заздалегідь ознайомитися зі своїм завданням і, якщо у нього виникають будь-які питання щодо завдання, поставити ці питання викладачеві до початку роботи.</p>
+</div>
+<div class="section" id="id3">
+<h2>Виконання лабораторної роботи<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Розробка алгоритму рішення<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Виконання починається з розробки алгоритму розв’язання задачі.
+На цьому етапі повинні бути детально проаналізовані умови завдання і розроблений
+алгоритм програми.</p>
+<!-- Не зрозуміло -->
+<p>Алгоритм повинен бути представлений в графічному вигляді.</p>
+<p>Хоча представлення схеми алгоритму не є обов’язковим елементом проектування програми (для програм з лінійним алгоритмом можна обійтися і без нього), але схема є зручним інструментом для осмислення завдання і оптимізації рішення.</p>
+<!-- Яким чином обгрунтовані -->
+<p>Графічне представлення алгоритму не звільняє від необхідності його текстового опису, в якому повинні бути обгрунтовані ключові алгоритмічні рішення.</p>
+<!-- М. замінити на "оптимальність та масштабованість" і розробити додаток, який пояснює ці поняття -->
+<p>При розробці алгоритму слід приділяти увагу його спрощенню, мінімізації обсягу обчислень, видаленню зайвих операцій і т.п.</p>
+</div>
+<div class="section" id="id5">
+<h3>Написання тексту програми<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Написання тексту програми починається з визначення об’єктів, які необхідні для функціонування алгоритму.
+Велика частина об’єктів може бути визначена ще на етапі проектування схеми алгоритму.
+Якщо схема алгоритму зроблена ретельно, написання кодової частини програми зводиться до запису кожного елемента схеми відповідним елементом мови програмування.
+і
+Якщо в складі оператора зустрічається звернення до функції, негайно перевірте:</p>
+<ul class="simple">
+<li><p>Відповідність послідовності та типів параметрів, а також return-statement специфікаціям функції.</p></li>
+<li><p>Підключення потрібного модуля (‘import’).</p></li>
+<li><p>Формат виведення результатів.</p></li>
+<li><p>При виконанні функції введення, обов’язково виведіть на монітор відповідне повідомлення.</p></li>
+</ul>
+<p>Передбачте можливість повторного тестування програми і обробку помилкових ситуацій.
+Програма повинна “відловлювати”, наприклад, ділення на нуль в математичних задачах і видавати відповідне повідомлення.
+Тобто подібні конфлікти повинна обробляти програма, а не внутрішнє переривання процесора.
+В Python для обробки винятків передбачена конструкція ‘try-except’.
+Більш детально з нею можна ознайомитися в розділі <a class="reference external" href="http://link">“Винятки в Python. Конструкція ‘try-except’ для обробки винятків”</a> або з джерела <a class="bibtex reference internal" href="../bibliography.html#ljubanovich" id="id6">[2]</a>, стор.44-45.</p>
+<!--М. Приклади коментарів  -->
+<p>Ніколи не лінуйтеся писати коментарі до Вашої програми. Добре написані коментарі полегшують як Вашу роботу, так і роботу того, хто буде читати Вашу
+програму.</p>
+</div>
+<div class="section" id="id7">
+<h3>Вимоги до програми<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Програма повинна виводити:</p>
+<ul class="simple">
+<li><p>номер варіанта і повідомлення про призначення програми(мету лабораторної роботи);</p></li>
+<li><p>прізвище та ініціали автора програми, групу;</p></li>
+<li><p>інформаційні повідомлення про необхідність введення даних;</p></li>
+<li><p>повідомлення з результатами, отриманими в ході роботи програми;</p></li>
+</ul>
+<!--М. замінит прикладом  -->
+<p>При цьому текст повідомлення повинен включати найменування результату і обчислене значення результату, наприклад «Отримана сума: 123.45»;
+при використанні змінних, оголошених як дробові, значення результату повинно бути представлено в отформатированном вигляді (із зазначенням кількості знаків після десяткового дробу).</p>
+</div>
+<div class="section" id="id8">
+<h3>Вимоги до оформлення звіту<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Шрифт - Times New Roman 14. Міжрядковий відстань - 1.5.</p>
+<p>Звіт з лабораторної роботи складається з наступних розділів:</p>
+<ul class="simple">
+<li><p>Титульна сторінка</p></li>
+<li><p>Зміст</p></li>
+<li><p>Мета роботи</p></li>
+<li><p>Постановка задачі</p></li>
+<li><p>Основна частина</p></li>
+<li><p>Висновки</p></li>
+<li><p>Список літератури,</p></li>
+<li><p>Додатки.</p></li>
+</ul>
+<p>Зразок титульного аркуша представлений в <span class="xref myst">Додатку 6</span>.</p>
+<p>Необхідно вказати: тему лабораторної роботи, П.І.Б. студента, провідних викладачів та ін.</p>
+<!--Розділи та підрозділи нумеруються, але нумеруються тільки "Постановка задачі" та "Основна частина"  -->
+<p>Зміст обов’язково має бути створено в електронній формі, містити номери сторінок розділів і підрозділів, їх назви.
+Розділи «<strong>Постановка задачі</strong>», «<strong>Основна частина</strong>» нумеруються (починаючи з 1).</p>
+<!--"Наскрізна нумерація"? М. приклади нумерації -->
+<p>Решта розділів не нумеруються. Схеми і таблиці мають наскрізну нумерацію або нумерацію в межах розділу з лідируючим номером розділу і наступного за ним точкою.
+Мета роботи містить формулювання індивідуального завдання. У розділі «<strong>Постановка задачі</strong>» необхідно вказати, які задачі повинна виконувати програма.
+Розділ «<strong>Основна частина</strong>» включає:</p>
+<ul class="simple">
+<li><p>Опис алгоритму програми</p></li>
+<li><p>Опис об’єктів, які застосовуються в програмі</p></li>
+</ul>
+<!--"Ключових програмних рішень"  -->
+<ul class="simple">
+<li><p>Опис ключових програмних рішень, прийнятих при реалізації алгоритму в тексті програми.</p></li>
+</ul>
+<p>Для розробки схеми алгоритму програми допускається використовувати будь-який програмний засіб, що надає відповідні можливості, в тому числі Diagram Designer, MS Word, MS Visio.</p>
+<!--"Трудовитрати"  -->
+<p>У розділі «Висновки» перераховуються основні пункти виконаної роботи, трудовитрати.
+Робиться висновок про рівень працездатності програми, сфері її застосування і про шляхи можливих модифікацій, розширення функціональних можливостей та ін.
+Для лабораторних робіт допускаються висновки, що збігаються з основними положеннями, наведеними в пункті «Постановка завдання», тільки, природно, в минулому часі.
+У «Додатках» розміщується текст програми і зразок результату роботи програми.
+Текст програми повинен задовольняти вимогам до синтаксису програми.
+Необхідно забезпечити вирівнювання операторів в тексті програми.
+Дизайн коду програми повинен відповідати угодам про написання програм на мові Python.
+Для отримання скріншота вікна з результатами роботи програми можна скористатися клавішами <code class="docutils literal notranslate"><span class="pre">Alt</span></code>+<code class="docutils literal notranslate"><span class="pre">PrintScreen</span></code>.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "GasperPaul/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content\intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Вступ</a>
+    <a class='right-next' id="next-link" href="installation.html" title="next page">Встановлення і робота з інтерпретатором Python</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Громова В.В.<br/>
+        
+            &copy; Copyright 2020.<br/>
+          <div class="extra_footer">
+            This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>

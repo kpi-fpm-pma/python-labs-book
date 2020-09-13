@@ -89,5 +89,5 @@ You can open pull requests for unfinished work, just remember to note that in it
 Use this checklist before making a PR to ensure you're good to go:
 - [ ] Check that you've added all changes to the content
 - [ ] Check that any code you touched runs correctly
-- [ ] If you added new files, check the `_data/toc.yaml` has a reference to it
+- [ ] If you added new files, check the `_toc.yaml` has a reference to it
 - [ ] Build the book
