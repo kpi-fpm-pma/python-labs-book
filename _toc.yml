@@ -26,6 +26,17 @@ parts:
       title: "Питання для самоперевірки"
     - file: content/lab1/problems
       title: "Завдання"
+- caption: "Лабораторна робота №2"
+  chapters:
+  - file: content/lab2/intro
+    title: "Програмування циклічних алгоритмів"
+    sections:
+    - file: content/lab2/theory
+      title: "Теоретичні відомості"
+    - file: content/lab2/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab2/problems
+      title: "Завдання"
 - caption: "Лабораторна робота №3"
   chapters:
   - file: content/lab3/intro
@@ -47,6 +58,17 @@ parts:
     - file: content/lab4/questions
       title: "Питання для самоперевірки"
     - file: content/lab4/problems
+      title: "Завдання"
+- caption: "Лабораторна робота №5"
+  chapters:
+  - file: content/lab5/intro
+    title: "Структури даних: списки, кортежі, множини"
+    sections:
+    - file: content/lab5/theory
+      title: "Теоретичні відомості"
+    - file: content/lab5/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab5/problems
       title: "Завдання"
 - chapters:
   - file: content/bibliography
