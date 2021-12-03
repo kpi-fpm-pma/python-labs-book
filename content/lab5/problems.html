@@ -1,0 +1,817 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/lab5/problems.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Рекомендовані джерела" href="../bibliography.html" />
+    <link rel="prev" title="Питання для самоперевірки" href="questions.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/guidlines.html">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/installation.html">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/structure.html">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/types.html">
+   Типи і структури даних у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робоат №1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №2
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab2/intro.html">
+   Мета роботи
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab3/intro.html">
+   Рядки
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна рообта №4
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab4/intro.html">
+   Використання функцій
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №5
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="intro.html">
+   Структури даних: списки, кортежі, множини
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/lab5/problems.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Узагальнене формулювання завдання до лабораторної роботи
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Варіанти завдань до лабораторної роботи
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Завдання на списки (Перше завдання)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Завдання на множини (Друге завдання)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Завдання<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Узагальнене формулювання завдання до лабораторної роботи<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Вивчити принципи створення списків і множин у мові Python.</p></li>
+<li><p>Розробити програми відповідно до варіанта завдання.</p></li>
+<li><p>Вхідні дані і результат роботи супроводжувати відповідною інформацією на екрані.</p></li>
+<li><p>Показати розроблену програму викладачеві.</p></li>
+<li><p>Письмово відповісти на <a class="reference internal" href="questions.html"><span class="doc std std-doc">Питання для самоперевірки</span></a>.</p></li>
+<li><p>Оформити звіт відповідно до вимог.</p></li>
+</ol>
+<p>Завдання на виконання лабораторної роботи складається з 2-х частин:</p>
+<ul class="simple">
+<li><p>робота зі списками;</p></li>
+<li><p>робота з множинами.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>Варіанти завдань до лабораторної роботи<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Завдання на списки (Перше завдання)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Створити змінну <code class="docutils literal notranslate"><span class="pre">seasons</span></code>, у яку занести список пір року. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити скрипт, який друкує номер елемента у списку і вміст елемента;</p></li>
+<li><p>створити скрипт, який запитує номер і друкує елементи з початку і до елемента з цим номером;</p></li>
+<li><p>передбачити перевірку відповідності номера кількості елементів — у разі, якщо номер перевищує число елементів у списку передбачити друк повідомлення про помилку і завершення скрипта.</p></li>
+</ul>
+<p><em>Порада</em>: для того, щоб скрипт друкував номер елемента і вміст елемента, необхідно скористатися вбудованою функцією <code class="docutils literal notranslate"><span class="pre">enumerate</span></code>.</p>
+<ol class="simple">
+<li><p>Створити 2 списка, елементами яких є числа. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити новий список, елементами якого будуть всі можливі комбінації (попарно) чисел, що становлять ці списки (елемент зі списку 1, елемент зі списку 2 і т.д.);</p></li>
+<li><p>вивести на екран результуючий список.</p></li>
+</ul>
+<p><em>Порада</em>: із модуля <code class="docutils literal notranslate"><span class="pre">itertools</span></code>, який представляє збірник ітераторів, використовувати функцію <code class="docutils literal notranslate"><span class="pre">product</span></code>.</p>
+<ol class="simple">
+<li><p>Ввести список чисел одним рядком. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>для кожного елемента цього списку вивести суму двох його сусідів. Для елементів списку, які є крайніми, одним із сусідів вважається елемент, що знаходиться на протилежному кінці цього списку.</p></li>
+<li><p>якщо на вхід прийшло тільки одне число, треба вивести його ж.</p></li>
+<li><p>вивід повинен містити один рядок з числами нового списку, розділеними пробілом.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити два списки, однакових за кількістю слів. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>порівняти слова на однакових позиціях і видалити більше;</p></li>
+<li><p>якщо слова однакові по довжині, видалити обидва;</p></li>
+<li><p>вивести на екран обидва модифікованих списку.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Написати генератор списку, який генерує список від 1 до 25 і кожне непарне число підносить до квадрату. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>вивести на екран отриманий список;</p></li>
+<li><p>впорядкувати отриманий список, поставивши спочатку всі непарні числа;</p></li>
+<li><p>вивести на екран.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Знайти перетин двох списків з повторюваними елементами. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити два списки цілих чисел;</p></li>
+<li><p>упорядкувати їх по зростанню;</p></li>
+<li><p>знайти загальні елементи, включаючи повтори (оформити як функцію);</p></li>
+<li><p>зберегти у третьому списку і вивести на екран.</p></li>
+</ul>
+<p><em>Порада</em>: не використовувати множини, тому що не будуть враховані повтори.</p>
+<ol class="simple">
+<li><p>Перетворити однорівневий список у список із вкладеними списками, згідно з визначеними умовами. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити список, у якому елементи можуть чергуватися з роздільниками. Тип роздільника вибирається самостійно. Це може бути що завгодно, навіть якесь слово;</p></li>
+<li><p>написати функцію, яка буде формувати новий список, елементами якого будуть вкладені списки, що складаються зі значень, що знаходяться між роздільниками;</p></li>
+<li><p>результат вивести на екран.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Перетворити список, у якому елементи представляють групи символів, у список з поодинокими символами, вибраними з цих груп. Необхідно виконати це завдання 4-ма варіантами, визначити час виконання кожним і знайти найбільш швидкодіючий:</p></li>
+</ol>
+<ul class="simple">
+<li><p>1-ий варіант: працювати з оператором <code class="docutils literal notranslate"><span class="pre">for</span></code> (це найпростіший варіант);</p></li>
+<li><p>2-ий варіант: застосувати функціональне програмування, а саме, функції <code class="docutils literal notranslate"><span class="pre">reduce</span></code>, <code class="docutils literal notranslate"><span class="pre">map</span></code>, <code class="docutils literal notranslate"><span class="pre">lambda</span></code> (один рядок);</p></li>
+<li><p>3-ий варіант: застосувати функцію <code class="docutils literal notranslate"><span class="pre">sum</span></code> (один рядок);</p></li>
+<li><p>4-ий варіант: застосувати функцію <code class="docutils literal notranslate"><span class="pre">join</span></code> (один рядок).</p></li>
+</ul>
+<ol class="simple">
+<li><p>Визначити індекси елементів списку, значення яких належать заданому діапазону (тобто не менше заданого мінімуму і не більше заданого максимуму). Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>заповнити список випадковими числами;</p></li>
+<li><p>запросити для введення мінімум і максимум діапазону;</p></li>
+<li><p>знайти індекси елементів, значення яких входять в діапазон. Додавати знайдені індекси до нового списку;</p></li>
+<li><p>вивести загальне число знайдених індексів і окремо всі індекси;</p></li>
+<li><p>елементи списку, які знаходяться за певним індексом, видалити зі списку і занести у новий список.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список з не менше ніж 20 цілих чисел. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>підсумувати елементи списку;</p></li>
+<li><p>з отриманого числа зробити список;</p></li>
+<li><p>продовжувати такі обчислення над отриманими списком цифр, поки не залишиться одна цифра;</p></li>
+<li><p>всі проміжні результати демонструвати на екрані.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список, елементами якого будуть слова. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>підрахувати, скільки разів кожен символ зустрічається у списку;</p></li>
+<li><p>створити новий список, елементами якого будуть вкладені списки, що складаються з двох елементів: символ і кількість його повторень у вихідному списку. Наприклад, <code class="docutils literal notranslate"><span class="pre">['s',</span> <span class="pre">10]</span></code>;</p></li>
+<li><p>упорядкувати новий список або по символу або по числу;</p></li>
+<li><p>типом даних <code class="docutils literal notranslate"><span class="pre">dict</span></code> у цьому завданні не користуватися.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Задати деяке число n. Створити список з цілих чисел, число елементів якого не перевищує n. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>сформувати новий список з відсутніх чисел. Наприклад, <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">10</span></code>, список — <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">6,</span> <span class="pre">7]</span></code>, тоді результат <code class="docutils literal notranslate"><span class="pre">[4,</span> <span class="pre">5,</span> <span class="pre">8,</span> <span class="pre">9]</span></code>;</p></li>
+<li><p>з’єднати два списки і впорядкувати.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити два списки: список ключів <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'c',</span> <span class="pre">'d'</span> <span class="pre">...]</span></code> і список значень <code class="docutils literal notranslate"><span class="pre">[4,</span> <span class="pre">3,</span> <span class="pre">6,</span> <span class="pre">20</span> <span class="pre">...]</span></code>. Кількість елементів у обох списках однакова. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити новий список, елементами якого будуть вкладені списки, що складаються з двох елементів: (ключ і значення);</p></li>
+<li><p>порахувати середнє арифметичне з усіх значень;</p></li>
+<li><p>типом даних <code class="docutils literal notranslate"><span class="pre">dict</span></code> у цьому завданні не користуватися.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити 2 списка. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>другий список скласти з тих же елементів, що і перший, але, однозначно, більше його;</p></li>
+<li><p>елементи у першому списку не дублюються;</p></li>
+<li><p>у другому списку можливі дублікати;</p></li>
+<li><p>написати функцію, яка заповнить третій список позиціями символів другого списку у першому. Наприклад, перший список — <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'c']</span></code> і другий — <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'a',</span> <span class="pre">'c',</span> <span class="pre">'b']</span></code>. Отриманий третій список — <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">2,</span> <span class="pre">1]</span></code>.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити три списки <code class="docutils literal notranslate"><span class="pre">W</span></code>, <code class="docutils literal notranslate"><span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">Y</span></code>. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Знайти у списку <code class="docutils literal notranslate"><span class="pre">W</span></code> елементи, наявні у списку <code class="docutils literal notranslate"><span class="pre">X</span></code> і замінити їх відповідними елементами списку <code class="docutils literal notranslate"><span class="pre">Y</span></code>, інші елементи залишити без зміни. Наприклад, вихідні спискі: список <code class="docutils literal notranslate"><span class="pre">X</span></code>: <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b']</span></code>, список <code class="docutils literal notranslate"><span class="pre">Y</span></code>: <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2]</span></code>, список <code class="docutils literal notranslate"><span class="pre">W</span></code>: <code class="docutils literal notranslate"><span class="pre">[['a',</span> <span class="pre">'b'],</span> <span class="pre">'a',</span> <span class="pre">['c</span> <span class="pre">'['</span> <span class="pre">a</span> <span class="pre">',</span> <span class="pre">['</span> <span class="pre">a</span> <span class="pre">','</span> <span class="pre">d</span> <span class="pre">']]]]</span></code>. Після перетворення список <code class="docutils literal notranslate"><span class="pre">W</span></code> повинен прийняти такий вигляд: <code class="docutils literal notranslate"><span class="pre">[[1,</span> <span class="pre">2],</span> <span class="pre">1,</span> <span class="pre">['c'</span> <span class="pre">[1,</span> <span class="pre">[1,</span> <span class="pre">'d']]]]</span></code>.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Визначити індекси елементів списку, значення яких належать заданому діапазону (тобто не менше заданого мінімуму і не більше заданого максимуму). Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>заповнити список випадковими числами;</p></li>
+<li><p>запросити для введення мінімум і максимум діапазону і число, з яким треба порівнювати числа з діапазону;</p></li>
+<li><p>знайти індекси елементів, значення яких входять в діапазон. Додавати знайдені індекси до нового списку;</p></li>
+<li><p>вивести загальне число знайдених індексів і окремо всі індекси;</p></li>
+<li><p>елементи списку, які знаходяться згідно з певними індексами, порівняти з введенним числом. Ті числа, які більше введеного, організувати у список.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список з символьними елементами одно-дво-і трирівневими вкладеннями. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>перетворити у однорівневий список;</p></li>
+<li><p>впорядкувати список за алфавітом.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список із не менше 20 елементів. Визначити яку-небудь ознаку для пошуку слова. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>замінити всі елементи спискузнайдені, згідно з ознакою, на символ <code class="docutils literal notranslate"><span class="pre">'*'</span></code>.</p></li>
+<li><p>виконати циклічний зсув списку вправо на задане число елементів (без використання методу <code class="docutils literal notranslate"><span class="pre">insert</span></code> і циклічного зсуву елементів).</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список з <code class="docutils literal notranslate"><span class="pre">n</span></code> слів. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>вибрати зі списку випадкове слово;</p></li>
+<li><p>з обраного випадкового слова випадково вибрати букву;</p></li>
+<li><p>попросити користувача її вгадати (вивести на екран слово зі знаком питання замість букви);</p></li>
+<li><p>відновити слово.</p></li>
+</ul>
+<p><em>Порада</em>: використовувати метод <code class="docutils literal notranslate"><span class="pre">choice</span></code> модуля <code class="docutils literal notranslate"><span class="pre">random</span></code>.</p>
+<ol class="simple">
+<li><p>Створити список дійсних чисел. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>замінити всі парні (за номером) елементи списку, на довільну константу.</p></li>
+<li><p>отримати суму чисел, що є сусідами з константою.</p></li>
+<li><p>занести їх в новий список.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список елементами якого є цілі числа. Обов’язково має бути кілька нулів. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>поміняти місцями елементи в списку: перший з останнім, другий з передостаннім і т.д.</p></li>
+<li><p>всі нулі замінити на суму сусідніх (для крайніх нулів брати значення з іншої сторони списку.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити 4 списка. Кожен із них складається із 3-х елементів. Перший список — це дні тижня. Другий — страви сніданку. Третій — напої. І четвертий — десерт. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>використовуючи функцію <code class="docutils literal notranslate"><span class="pre">zip</span></code>, скласти меню сніданку на будь-який день;</p></li>
+<li><p>вивести на екран.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Злиття двох списків. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити два упорядкованих списку по неспаданню;</p></li>
+<li><p>отримати новий список, що складається з елементів двох заданих списків, таким же чином упорядкований;</p></li>
+<li><p>сортування не використовувати.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список, елементами якого є слова. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>визначити середню «довжину» слова;</p></li>
+<li><p>визначити кількість слів, в яких більше п’яти символів;</p></li>
+<li><p>визначити кількість символів в найдовшому слові;</p></li>
+<li><p>визначити номер першого найкоротшого слова.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список, елементами якого є вкладені списки. Кількість елементів не менше 15. Вкладений список складається з двох елементів: країна і місто в цій країні. необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>знайти міста, що знаходяться в Італії;</p></li>
+<li><p>знайти країну, міста якої найбільше вказані в списку.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список, елементами якого є двозначні цілі числа в діапазоні 00-66. Ці числа відповідають кісткам доміно. Наприклад, число 42 відповідає кістці доміно <code class="docutils literal notranslate"><span class="pre">4-2</span></code> або <code class="docutils literal notranslate"><span class="pre">2-4</span></code>. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>визначити, чи відповідає послідовність чисел ряду кісток доміно, викладеному по правилам цієї гри;</p></li>
+<li><p>розглянути можливість ситуації в грі, званою «рибою». Подібна ситуація можлива тоді, коли на стіл викладені всі шість (не рахуючи дубля) кісточок з однаковим значенням і обидва кінці ланцюга замикають кістки з цим же значенням.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити список з цілочисельних елементів, кількість яких не перевищує 25. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>ввести індекси чисел <span class="math notranslate nohighlight">\(i\)</span> та <span class="math notranslate nohighlight">\(j\)</span> такі, що задовольняють умові: (<span class="math notranslate nohighlight">\(1&lt;i&lt;j&lt;25\)</span>);</p></li>
+<li><p>числа, що знаходяться між індексами, включаючи самі індекси, замінити на символи латинського алфавіту, що знаходяться на тих же позиціях;</p></li>
+<li><p>впорядкувати вставку за алфавітом.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Створити випадковим чином, використовуючи random, список з 15 чисел. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>якщо перший елемент в списку непарний, то сортувати елементи на парних місцях, інакше на непарних. Сортування відбувається по неспаданню.</p></li>
+<li><p>зробити 2 варіанти: з використанням вбудованих функцій Python і без них.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Ввести цілочисельний список розміру <code class="docutils literal notranslate"><span class="pre">n</span></code>. Серія — це група однакових елементів, що йдуть поспіль, а її довжина — кількість цих елементів. Якщо довжина серії дорівнює 1, то її не змінювати. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>перетворити список, збільшивши кожну його серію на один елемент.</p></li>
+<li><p>створити новий список, в який записати кількість елементів кожної серії (якщо довжина серії дорівнює 1, то не записувати).</p></li>
+</ul>
+<ol class="simple">
+<li><p>Ввести 2 рядки і сформувати з цих рядків список. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>якщо рядки складаються тільки з чисел, то додати в середину списку суму введених чисел;</p></li>
+<li><p>інакше додати рядок, утворений від об’єднань двох раніше введених рядків;</p></li>
+<li><p>підсумковий рядок вивести на екран.</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>Завдання на множини (Друге завдання)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Звертаємо вашу увагу на наступні моменти:</p>
+<ol class="simple">
+<li><p>Майже всі завдання можна виконати в одному рядку.</p></li>
+<li><p>Вся робота полягає в перекладі дій дискретної математики з множинами на Python.</p></li>
+</ol>
+<p>У всіх наступних завданнях універсум має вигляд:</p>
+<div class="math notranslate nohighlight">
+\[U = \{1,2,3,4,a,b,c,d,ee,tt,ww\}\]</div>
+<p>Спираючись на визначення базових операцій на множинах, у завданнях 1-25 знайти:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(C = A \cup B\)</span> — об’єднання двох множин;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = A \cap B\)</span> — перетин двох множин;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = A / B\)</span>    — різницю першої і другої множини ;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = B / A\)</span>    — різницю другої і першої множини;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = A \oplus B\)</span> — симетрична різниця двох множин;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = \bar{A} \)</span>   — доповнення першої множини;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = \bar{B}\)</span>    — доповнення другої множини ;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = A \times B\)</span> — декартовий добуток першої множини на другу;</p></li>
+<li><p><span class="math notranslate nohighlight">\(C = A \times B\)</span> — декартовий добуток другої множини на першу;</p></li>
+<li><p>множину <span class="math notranslate nohighlight">\(C\)</span> задана зазначеною у завданні формулою <span class="math notranslate nohighlight">\(F(A, B)\)</span>.</p></li>
+</ol>
+<p>Варіанти завдань на тип множина (set):</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, d\},            B=\{a, ee, 4, d\},        F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{ee, a, d\},           B=\{a, ee, 4, 2\},        F=((A \cup B) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{a, ee, 4, 2\},        F=((A \cap B) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{d, ee, 4, 3\},        F=((A \oplus B) \cap (A \cup B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{1, d, ee, 4, 3\},     F=((A \oplus B) \cap (A \cap B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{1, d, tt, 4, 3\},     F=((A \cup B) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{1, d, tt, 4, 3\},     F=((A \cup B) / (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{1, a, c, tt, 4, 3\},  F=((A / B) \cap (A \oplus B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, c, tt, 4, 3\},  F=((A \cap B) \cup (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, b, tt, 4, 3\},  F=((A \cup B) / (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, b, tt, 4, 3\},  F=((A \oplus B) \cup (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, b, tt, 1, 3\},  F=((A \oplus B) \cap (B / A))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, c, d\}, B=\{2, a, b, tt, 1, 3\},  F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, c, d\}, B=\{4, a, b, tt, 1, 3\},  F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, ww, ee, c, d\}, B=\{4, a, b, tt, 1, 3\},  F=((A / B) / (A \cap B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, ww, ee, c, d\}, B=\{4, a, b, ee, 1, 3\},  F=((A \oplus B) \cup (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, ww, ee, c, d\}, B=\{c, a, b, ee, 1, 3\},  F=((A \cup B) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, c, d\},  B=\{c, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (\bar{B}))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, 2, d\},  B=\{tt, a, b, ee, 1, 3\}, F=((\bar{B}) \cap (A / B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, 2, d\},  B=\{c, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (\bar{B}))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, 2, d\},  B=\{2, a, b, ee, 1, 3\},  F=((A \cup B) \cap (\bar{A}))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, tt, d\}, B=\{2, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (A \cup B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, d\},     B=\{2, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (A \cap B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, d\},     B=\{2, a, c, ee, 1, 3\},  F=((A / B) \cup (A \cap B))\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, d\},     B=\{1, a, c, ee, 4, 3\},  F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
+<li><p>Ввести два списки цілих чисел. Всі числа кожного списку знаходяться на окремому рядку. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>вивести всі числа, які входять як в перший, так і в другій список;</p></li>
+<li><p>вивести числа в порядку зростання;</p></li>
+<li><p>завдання вирішити в один рядок.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Ввести два списки цілих чисел. Всі числа кожного списку знаходяться на окремому рядку. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>порахувати, скільки чисел міститься одночасно як в першому списку, так і в другому;</p></li>
+<li><p>результат вивести на екран;</p></li>
+<li><p>завдання вирішити в один рядок.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Згенерувати 2 випадкові рядки з будь-яких ASCII символів. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити 2 множини <code class="docutils literal notranslate"><span class="pre">А</span></code> і <code class="docutils literal notranslate"><span class="pre">M</span></code> з цих рядків;</p></li>
+<li><p>порахувати кількість елементів у множині <code class="docutils literal notranslate"><span class="pre">А</span></code> типу <code class="docutils literal notranslate"><span class="pre">М</span></code>;</p></li>
+<li><p>вивести на екран елементи і їх кількість.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Згенерувати рядок, що містить символи, цифри, роздільники. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити з рядка 3 множини: з символів, цифр і роздільників;</p></li>
+<li><p>вивести на екран і підрахувати потужність кожного.</p></li>
+</ul>
+<ol class="simple">
+<li><p>Виконати операцію <span class="math notranslate nohighlight">\(A \times B\)</span> декартового добутки (всілякі комбінації значень) двох множин. Цікавий приклад декартового добутку двох множин виникає, якщо взяти <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">{a,b,c,d,e,f,g,h}</span></code>, а <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">{1,2,3,4,5,6,7,8}</span></code>. У цьому випадку множина <span class="math notranslate nohighlight">\(A \times B\)</span> означає набір полів шахової дошки. Необхідно:</p></li>
+</ol>
+<ul class="simple">
+<li><p>створити 2 множини <code class="docutils literal notranslate"><span class="pre">А</span></code> і <code class="docutils literal notranslate"><span class="pre">В</span></code>;</p></li>
+<li><p>виконати операцію декартового добутки в одному рядку;</p></li>
+<li><p>результат вивести на екран.</p></li>
+</ul>
+<p><em>Порада</em>: використовувати метод <code class="docutils literal notranslate"><span class="pre">itertools.product</span></code> з модуля <code class="docutils literal notranslate"><span class="pre">itertools</span></code>.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "GasperPaul/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/lab5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="questions.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Питання для самоперевірки</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../bibliography.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Рекомендовані джерела</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Громова В.В.<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
