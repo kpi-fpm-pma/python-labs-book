@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Керівництов за написання коду на Python &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    <title>Керівництов з написання коду на Python &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -463,7 +463,7 @@
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     Пробіли в виразах і інструкціях
+     Пробіли у виразах й інструкціях
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -500,7 +500,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Керівництов за написання коду на Python</h1>
+                <h1>Керівництов з написання коду на Python</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -527,7 +527,7 @@
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     Пробіли в виразах і інструкціях
+     Пробіли у виразах й інструкціях
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -564,22 +564,21 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="python">
-<h1>Керівництов за написання коду на Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
+<h1>Керівництов з написання коду на Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
 <h2>Зовнішній вигляд коду<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id2">
 <h3>Відступи<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <p>Варто відзначити цікаву особливість Python.
-Він не містить операторних дужок (<code class="docutils literal notranslate"><span class="pre">begin..end</span> <span class="pre">в</span> <span class="pre">pascal</span></code> або <code class="docutils literal notranslate"><span class="pre">{..}</span> <span class="pre">в</span> <span class="pre">С</span></code>), замість цього блоки виділяються відступами: пробілами, а вхід в блок з операторів здійснюється двокрапкою.</p>
-<ul>
+Він не містить операторних дужок (<code class="docutils literal notranslate"><span class="pre">begin..end</span></code> в Pascal або <code class="docutils literal notranslate"><span class="pre">{..}</span></code> в С), замість цього блоки виділяються відступами: пробілами, а вхід в блок з операторів здійснюється двокрапкою.</p>
+<ul class="simple">
 <li><p>Використовуйте 4 пробіли на кожен рівень відступу.</p></li>
-<li><p>Круглі/квадратні/фігурні дужки, що закривають вираз, в багаторядкових конструкціях можуть перебувати під першим символом(крім пробілу) останнього рядка списку</p>
-<p>Наприклад:</p>
-</li>
+<li><p>Круглі/квадратні/фігурні дужки, що закривають вираз, в багаторядкових конструкціях можуть перебувати під першим символом(крім пробілу) останнього рядка списку</p></li>
 </ul>
+<p>Наприклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span><span class="p">[</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span>
     <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>
     <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
     <span class="p">]</span>
@@ -595,7 +594,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span><span class="p">[</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span>
     <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>
     <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>
 <span class="p">]</span>
@@ -609,8 +608,7 @@
 </div>
 </div>
 </div>
-<!-- Tab > space -->
-<p>Пробіли - найкращий спосіб зробити відступ.</p>
+<p>Пробіли — найкращий спосіб зробити відступ.</p>
 <p>Python 3 забороняє змішування табуляції і пробілів для відступів.
 Переважний спосіб перенесення довгих рядків є використання круглих, квадратних і фігурних дужок.
 Довгі рядки можуть бути розбиті на декілька рядків, загорнутих в дужки.
@@ -620,22 +618,22 @@
 <h3>Імпорти<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Кожен імпорт, як правило, повинен бути на окремому рядку.</p>
 <p>Правильно:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 </pre></div>
 </div>
 <p>Неправильно:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span>
 </pre></div>
 </div>
 <p>У той же час, можна писати так:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span><span class="p">,</span> <span class="n">PIPE</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span><span class="p">,</span> <span class="n">PIPE</span>
 </pre></div>
 </div>
 <p>Імпорти завжди поміщаються на початку файлу, відразу після коментарів до модуля і рядків документації, і перед оголошенням констант.
 Імпорти повинні бути згруповані в наступному порядку:</p>
 <ol class="simple">
-<li><p>Імпорти з стандартної бібліотеки;</p></li>
+<li><p>Імпорти зі стандартної бібліотеки;</p></li>
 <li><p>Імпорти сторонніх бібліотек;</p></li>
 <li><p>Обсяги імпорту модулів поточного проекту.</p></li>
 </ol>
@@ -643,14 +641,13 @@
 Вказуйте специфікації <code class="docutils literal notranslate"><span class="pre">__all__</span></code> після імпорту.</p>
 </div>
 <div class="section" id="id4">
-<h3>Пробіли в виразах і інструкціях<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3>Пробіли у виразах й інструкціях<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Уникайте використання пробілів в наступних ситуаціях:</p>
 <ul class="simple">
 <li><p>безпосередньо всередині круглих, квадратних або фігурних дужках;</p></li>
 <li><p>безпосередньо перед комою, крапкою з комою або двокрапкою;</p></li>
-<li><p>відразу перед дужкою,яка відкриває список аргументів при виклику функції;</p></li>
-<li><p>відразу перед дужкою,після якої слідує індекс або зріз;</p></li>
-<li><p>використання більше одного пробіла навколо оператора присвоювання (або будь-якого іншого) для того, щоб вирівняти його з іншим.</p></li>
+<li><p>відразу перед дужкою, яка відкриває список аргументів при виклику функції;</p></li>
+<li><p>відразу перед дужкою, після якої слідує індекс або зріз.</p></li>
 </ul>
 </div>
 <div class="section" id="id5">
@@ -658,11 +655,10 @@
 <p>Коментарі, що суперечать коду, гірше, ніж відсутність коментарів.
 Завжди виправляйте коментарі, якщо міняєте код!
 Коментарі повинні бути закінченими реченнями.
-Якщо коментар - фраза або пропозиція, перше слово повинно бути написано з великої літери, якщо тільки це не ім’я змінної, яка починається з маленької літери (ніколи не змінюйте регістр змінної!).
+Якщо коментар — фраза або пропозиція, перше слово повинно бути написано з великої літери, якщо тільки це не ім’я змінної, яка починається з маленької літери (ніколи не змінюйте регістр змінної!).
 Якщо коментар короткий, можна опустити точку в кінці речення.
-Блок коментарів зазвичай складається з одного або більше абзаців, що складаються з повноцінних пропозицій, тому кожне речення має закінчуватися точкою.
-Ставте два пробіла після точки в кінці речення.
-Програмісти, які не говорять англійською мовою, будь ласка, пишіть коментарі англійською, якщо тільки ви не впевнені на 120%, що ваш код ніколи не будуть читати люди, які не знають вашого рідної мови.</p>
+Блок коментарів зазвичай складається з одного або більше абзаців, що складаються з повноцінних пропозицій, тому кожне речення має закінчуватися точкою.</p>
+<p>Програмісти, які не говорять англійською мовою, будь ласка, пишіть коментарі англійською, якщо тільки ви не впевнені на 120%, що ваш код ніколи не будуть читати люди, які не знають вашого рідної мови.</p>
 <div class="section" id="id6">
 <h4>Блоки коментарів<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p>Блок коментарів зазвичай пояснює код (весь, або тільки деяку частину), що йде після блоку, і повинен мати той же відступ, що і сам код.
@@ -680,11 +676,10 @@
 <div class="section" id="id8">
 <h3>Синтаксис<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Синтаксис мови Python, як і сама мова, дуже простий.
-Кінець рядка є кінцем інструкції (крапка з комою не потрібна).
+Кінець рядка є кінцем інструкції (крапка чи крапка з комою не потрібна).
 Вкладені інструкції об’єднуються в блоки по величині відступів.
 Відступ може бути будь-яким, головне, щоб в межах одного вкладеного блоку відступ був однаковий.
-І про читаність коду не забувайте. В
-ідступ в 1 пробіл, наприклад, не найкраще рішення.
+І про читаність коду не забувайте. Відступ в 1 пробіл, наприклад, не найкраще рішення.
 Використовуйте 4 пробіли.
 Вкладені інструкції в Python записуються відповідно до такого шаблону, коли основна інструкція завершується двокрапкою, слідом за якою розташовується вкладений блок коду, зазвичай з відступом під рядком основної інструкції.</p>
 <p>Схема:</p>
@@ -713,7 +708,7 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">1</span> 
-<span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span> <span class="c1"># Не забуваємо про двокрапку</span>
+    <span class="ow">and</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span> <span class="c1"># Не забуваємо про двокрапку</span>
     <span class="nb">print</span> <span class="p">(</span> <span class="s1">&#39;spam&#39;</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -724,11 +719,11 @@
 </div>
 </div>
 </div>
-<p>Тіло складеної інструкції може розташовуватися в томуж рядку,що і тіло основної, якщо тіло складеної інструкції не містить складених інструкцій.
-Приклад:</p>
+<p>Тіло складеної інструкції може розташовуватися в тому ж рядку, що і тіло основної, якщо тіло складеної інструкції не містить складених інструкцій.</p>
+<p>Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">b</span><span class="o">&gt;</span><span class="n">a</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="n">a</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -742,11 +737,11 @@
 <p>Отже, можна коротко резюмувати наступне:</p>
 <ul class="simple">
 <li><p>Програма на Python являє собою послідовність команд для уведення даних, обчислень і інших операцій з даними і виведення результатів.</p></li>
-<li><p>Однорядкові коментарі починаються зі знака фунта <code class="docutils literal notranslate"><span class="pre">#</span></code>, багаторядкові - починаються і закінчуються трьома подвійними лапками <code class="docutils literal notranslate"><span class="pre">&quot;</span> <span class="pre">&quot;&quot;</span> <span class="pre">&quot;</span></code>.</p></li>
+<li><p>Однорядкові коментарі починаються зі знака фунта <code class="docutils literal notranslate"><span class="pre">#</span></code>, багаторядкові — починаються і закінчуються трьома лапками, <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code> чи <code class="docutils literal notranslate"><span class="pre">'''</span></code>.</p></li>
 <li><p>Щоб присвоїти значення змінній використовується знак <code class="docutils literal notranslate"><span class="pre">=</span></code>, а для порівняння <code class="docutils literal notranslate"><span class="pre">==</span></code>.</p></li>
-<li><p>Для збільшення значення змінної, або додавання до рядка використовується оператор <code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">=</span></code>, а для зменшення <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">=</span></code>. Всі ці операції можуть взаємодіяти з більшістю типів.</p></li>
-<li><p>Python не вимагає явного оголошення змінних, є регістровозалежим (змінна var не є еквівалентною змінним Var або VAR - це три різні змінні).</p></li>
-<li><p>Python — це мова з суворою динамічною типізацією. Це означає, що тип змінної трактується в залежності від присвоєного значення. Неявні перетворення типів мова Python не допускає, тобто, наприклад, не можна скласти рядок ‘123’ і число 456.</p></li>
+<li><p>Для збільшення значення змінної, або додавання до рядка використовується оператор <code class="docutils literal notranslate"><span class="pre">+=</span></code>, а для зменшення <code class="docutils literal notranslate"><span class="pre">-=</span></code>. Всі ці операції можуть взаємодіяти з більшістю типів.</p></li>
+<li><p>Python не вимагає явного оголошення змінних, є регістровозалежим (змінна <code class="docutils literal notranslate"><span class="pre">var</span></code> не є еквівалентною змінним <code class="docutils literal notranslate"><span class="pre">Var</span></code> або <code class="docutils literal notranslate"><span class="pre">VAR</span></code> — це три різні змінні).</p></li>
+<li><p>Python — це мова з суворою динамічною типізацією. Це означає, що тип змінної трактується в залежності від присвоєного значення. Неявні перетворення типів мова Python не допускає, тобто, наприклад, не можна додати рядок <code class="docutils literal notranslate"><span class="pre">'123'</span></code> і число <code class="docutils literal notranslate"><span class="pre">456</span></code>.</p></li>
 </ul>
 </div>
 </div>

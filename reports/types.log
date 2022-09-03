@@ -17,13 +17,13 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-list[7]
+lst[7]
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mIndexError[0m                                Traceback (most recent call last)
 Input [0;32mIn [16][0m, in [0;36m<cell line: 1>[0;34m()[0m
-[0;32m----> 1[0m [38;5;28;43mlist[39;49m[43m[[49m[38;5;241;43m7[39;49m[43m][49m
+[0;32m----> 1[0m [43mlst[49m[43m[[49m[38;5;241;43m7[39;49m[43m][49m
 
 [0;31mIndexError[0m: list index out of range
 IndexError: list index out of range

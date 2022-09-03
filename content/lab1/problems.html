@@ -561,7 +561,7 @@
 <li><p>Число Армстронга — це таке натуральне число, яке дорівнює сумі своїх цифр, зведених в ступінь, рівну кількості його цифр. Знайти всі такі числа від 1 до <span class="math notranslate nohighlight">\(n\)</span>, де <span class="math notranslate nohighlight">\(n\)</span> вводиться на вимогу з клавіатури.</p></li>
 <li><p>Користувач вводить кількість тижнів, місяців, років і отримує кількість днів за цей час. Вважати, що в місяці 30 днів.</p></li>
 <li><p>Потрібно обчислити, скільки банок фарби потрібно, щоб пофарбувати поверхню бака циліндричної форми. Пофарбувати треба і зовні, і зсередини. Користувач вводить діаметр і висоту бака, а також, яку площу можна забарвити однієї банкою фарби.</p></li>
-<li><p>Обчислити тривалість року на двох планетах по введеним їх радіусів орбіт і швидкості руху по орбітах. З’ясувати, чи правда, що рік на першій планеті довше, ніж на другий. Тривалість року обчислюється за формулою: <span class="math notranslate nohighlight">\(2 \frac{радіус орбіти}{орбітальна швидкість}\)</span>.</p></li>
+<li><p>Обчислити тривалість року на двох планетах по введеним їх радіусів орбіт і швидкості руху по орбітах. З’ясувати, чи правда, що рік на першій планеті довше, ніж на другий. Тривалість року обчислюється за формулою: <span class="math notranslate nohighlight">\(2 \frac{\text{радіус орбіти}}{\text{орбітальна швидкість}}\)</span>.</p></li>
 <li><p>Уводяться два числа в двійковій системі числення. Потрібно виконати над ними побітові операції І, АБО і виключення АБО. В кінці вивести результат операцій також в двійковому поданні.</p></li>
 <li><p>Знайти суму членів арифметичної прогресії, якщо відомі її перший член, знаменник і число членів прогресії.</p></li>
 <li><p>Розрахуйте <span class="math notranslate nohighlight">\(\|x\| + x^5\)</span>, якщо <span class="math notranslate nohighlight">\(x = -2\)</span>.</p></li>
@@ -616,6 +616,224 @@
 </div>
 <div class="section" id="id6">
 <h3>Обчислення конкретної функції, в залежності від введеного значення <span class="math notranslate nohighlight">\(х\)</span> (Третє завдання)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  x^2 - 3x + 9,      &amp; \quad x \le 3; \\
+  \frac{1}{x^3 + 6}, &amp; \quad x &gt; 3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -x^2 + 3x + 9,     &amp; \quad x \ge 3; \\
+  \frac{1}{x^3 - 6}, &amp; \quad x &lt; 3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  9,                 &amp; \quad x \le -3; \\
+  \frac{1}{x^2 + 1}, &amp; \quad x &gt; -3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  0,               &amp; \quad x \le 1; \\
+  \frac{1}{x + 6}, &amp; \quad x &gt; 1.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -3x + 9,         &amp; \quad x \le 7; \\
+  \frac{1}{x - 7}, &amp; \quad x &gt; 7.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  3x - 9,            &amp; \quad x \le 7; \\
+  \frac{1}{x^2 - 4}, &amp; \quad x &gt; 7.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  x^2, &amp; \quad 0 \le x \le 3; \\
+  4,   &amp; \quad x &gt; 3 \text{ or } x &lt; 0.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  x^2 + 4x + 5,           &amp; \quad x \le 2; \\
+  \frac{1}{x^2 + 4x + 5}, &amp; \quad x &gt; 2.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  x^2 - x,           &amp; \quad 0 \le x \le 1; \\
+  x^2 - \sin{\pi x^2}, &amp; \quad x &gt; 1 \text{ or } x &lt; 0.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -x^2 + x - 9,      &amp; \quad x \le 8; \\
+  \frac{1}{x^4 - 6}, &amp; \quad x &gt; 8.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  4x^2 + 2x - 19,      &amp; \quad x \ge 8; \\
+  -\frac{2x}{-4x + 1}, &amp; \quad x &lt; 3.5.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -x^2 + 3x + 9,     &amp; \quad x \le 3; \\
+  \frac{x}{x^2 + 1}, &amp; \quad x &gt; 3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -3x + 9,             &amp; \quad x &gt; 3; \\
+  \frac{x^3}{x^2 + 8}, &amp; \quad x \le 3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -x^3 + 9,         &amp; \quad x \le 13; \\
+  -\frac{3}{x + 1}, &amp; \quad x &gt; 13.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  45x^2 + 5,            &amp; \quad x &gt; 3.6; \\
+  \frac{5x}{10x^2 + 1}, &amp; \quad x \le 3.6.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  x^4 + 9,                 &amp; \quad x &lt; 3.2; \\
+  \frac{54x^4}{-5x^2 + 7}, &amp; \quad x \ge 3.2.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  1.2x^2 - 3x - 9,       &amp; \quad x &gt; 3; \\
+  \frac{12.1}{2x^2 + 1}, &amp; \quad x \le 3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  x^2 + 3x + 9,           &amp; \quad x \le 3; \\
+  \frac{\sin x}{x^2 - 9}, &amp; \quad x &gt; 3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  \cos 2x + 9,           &amp; \quad x &gt; -4; \\
+  -\frac{\cos x}{x - 9}, &amp; \quad x \le -4.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  \ln x + 9,          &amp; \quad x &gt; 0; \\
+  -\frac{x}{x^2 - 7}, &amp; \quad x \le 0.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -x^2 - 1.1x + 9,              &amp; \quad x \le -3; \\
+  \frac{\ln{(x + 3)}}{x^2 + 9}, &amp; \quad x &gt; -3.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  9 - x,                    &amp; \quad x &gt; 1.1; \\
+  \frac{\sin{3x}}{x^4 + 1}, &amp; \quad x &lt; 1.1.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -x^2,                   &amp; \quad x \ge 7; \\
+  \frac{2^{-x}}{x^2 - 9}, &amp; \quad x \le 7.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  -x^2 - 9,           &amp; \quad x \ge 13; \\
+  -\frac{1}{x^2 + 9}, &amp; \quad x \le 13.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  0,   &amp; \quad x \le 0; \\
+  x,   &amp; \quad 0 &lt; x \le 1; \\ 
+  x^4, &amp; \quad x \ge 1.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  \frac{x^2 \sin x}{\pi + \cos x}, &amp; \quad x &lt; -1; \\
+  x\cos x + \pi,                   &amp; \quad -1 \le x &lt; 0; \\ 
+  \frac{x}{\pi + \sin x + \cos x}, &amp; \quad x \ge 0.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  \pi\sin x, &amp; \quad x &lt; -1.5; \\
+  x\sin x,   &amp; \quad -1.5 \le x &lt; 2.5; \\
+  \pi x,     &amp; \quad x\ge 2.5.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  \sqrt{|x|},      &amp; \quad x \le 0.5; \\
+  \sin{\pi x}, &amp; \quad 0 &lt; x \le 1; \\
+  \pi^2 x^2, &amp; \quad x &gt; 1.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  \sin x + x^2,    &amp; \quad x &lt; 0; \\
+  \cos x + \sin x, &amp; \quad 0 \le x \le \pi/2; \\ 
+  x - \cos x,      &amp; \quad x &gt; \pi/2.
+\end{cases}\end{split}\]</div>
+</li>
+<li><div class="math notranslate nohighlight">
+\[\begin{split}F(x) = 
+\begin{cases} 
+  \pi x^2,            &amp; \quad x &lt; 1; \\
+  \sin{x^3},          &amp; \quad 1 \le x \le 4; \\
+  x\sin\frac{x}{\pi}, &amp; \quad x &gt; 4.
+\end{cases}\end{split}\]</div>
+</li>
+</ol>
 </div>
 </div>
 </div>

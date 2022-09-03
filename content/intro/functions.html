@@ -56,7 +56,7 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Керівництов за написання коду на Python" href="formating.html" />
+    <link rel="next" title="Керівництов з написання коду на Python" href="formating.html" />
     <link rel="prev" title="Структура програми Python" href="structure.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -461,31 +461,32 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Вбудовані функції<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>У середовищі Python без операцій імпорту є більш сотні вбудованих об’єктів, в основному, функцій і винятків.
+<p>У середовищі Python без операцій імпорту є більше сотні вбудованих об’єктів, в основному, функцій і виключень (exception).
 Для зручності функції умовно розділені за категоріями:</p>
 <ul class="simple">
-<li><p>Функції перетворення типів і класи: <code class="docutils literal notranslate"><span class="pre">coerce,str,repr,int,list,tuple,long,float,complex,dict,super,file,bool,object</span></code>.</p></li>
-<li><p>Числові і рядкові функції: <code class="docutils literal notranslate"><span class="pre">abs</span> <span class="pre">,divmod,ord,pow,len,chr,unichr,hex,oct,cmp,round,unicode</span></code>.</p></li>
-<li><p>Функції обробки даних: <code class="docutils literal notranslate"><span class="pre">apply,map,filter,reduce,zip,range,xrange,max,min,iter,enumerate,sum</span></code>.</p></li>
-<li><p>Функції визначення властивостей: <code class="docutils literal notranslate"><span class="pre">hash,id,callable,issubclass,</span> <span class="pre">isinstance,type</span></code>.</p></li>
-<li><p>Функції для доступу до внутрішніх структурам: <code class="docutils literal notranslate"><span class="pre">locals,globals,</span> <span class="pre">vars,intern,dir</span></code>.</p></li>
-<li><p>Функції компіляції та виконання: <code class="docutils literal notranslate"><span class="pre">eval,execfile,reload,</span> <span class="pre">__import__,compile</span></code>.</p></li>
-<li><p>Функції введення-виведення: <code class="docutils literal notranslate"><span class="pre">input,raw_input,open</span></code>.</p></li>
-<li><p>Функції для роботи з атрибутами: <code class="docutils literal notranslate"><span class="pre">getattr,setattr,delattr,</span> <span class="pre">hasattr</span></code>.</p></li>
-<li><p>Функції-“прикрашувачи” методів класів: <code class="docutils literal notranslate"><span class="pre">staticmethod,classmethod,</span> <span class="pre">property</span></code>.</p></li>
-<li><p>Інші функції:<code class="docutils literal notranslate"><span class="pre">buffer,</span> <span class="pre">slice</span></code>.</p></li>
+<li><p>Функції перетворення типів і класи: <code class="docutils literal notranslate"><span class="pre">coerce</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">repr</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">list</span></code>, <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <code class="docutils literal notranslate"><span class="pre">long</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">complex</span></code>, <code class="docutils literal notranslate"><span class="pre">dict</span></code>, <code class="docutils literal notranslate"><span class="pre">super</span></code>, <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">object</span></code>.</p></li>
+<li><p>Числові і рядкові функції: <code class="docutils literal notranslate"><span class="pre">abs</span></code>, <code class="docutils literal notranslate"><span class="pre">divmod</span></code>, <code class="docutils literal notranslate"><span class="pre">ord</span></code>, <code class="docutils literal notranslate"><span class="pre">pow</span></code>, <code class="docutils literal notranslate"><span class="pre">len</span></code>, <code class="docutils literal notranslate"><span class="pre">chr</span></code>, <code class="docutils literal notranslate"><span class="pre">unichr</span></code>, <code class="docutils literal notranslate"><span class="pre">hex</span></code>, <code class="docutils literal notranslate"><span class="pre">oct</span></code>, <code class="docutils literal notranslate"><span class="pre">cmp</span></code>, <code class="docutils literal notranslate"><span class="pre">round</span></code>, <code class="docutils literal notranslate"><span class="pre">unicode</span></code>.</p></li>
+<li><p>Функції обробки даних: <code class="docutils literal notranslate"><span class="pre">apply</span></code>, <code class="docutils literal notranslate"><span class="pre">map</span></code>, <code class="docutils literal notranslate"><span class="pre">filter</span></code>, <code class="docutils literal notranslate"><span class="pre">reduce</span></code>, <code class="docutils literal notranslate"><span class="pre">zip</span></code>, <code class="docutils literal notranslate"><span class="pre">range</span></code>, <code class="docutils literal notranslate"><span class="pre">xrange</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">iter</span></code>, <code class="docutils literal notranslate"><span class="pre">enumerate</span></code>, <code class="docutils literal notranslate"><span class="pre">sum</span></code>.</p></li>
+<li><p>Функції визначення властивостей: <code class="docutils literal notranslate"><span class="pre">hash</span></code>, <code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">callable</span></code>, <code class="docutils literal notranslate"><span class="pre">issubclass</span></code>, <code class="docutils literal notranslate"><span class="pre">isinstance</span></code>, <code class="docutils literal notranslate"><span class="pre">type</span></code>.</p></li>
+<li><p>Функції для доступу до внутрішніх структурам: <code class="docutils literal notranslate"><span class="pre">locals</span></code>, <code class="docutils literal notranslate"><span class="pre">globals</span></code>, <code class="docutils literal notranslate"><span class="pre">vars</span></code>, <code class="docutils literal notranslate"><span class="pre">intern</span></code>, <code class="docutils literal notranslate"><span class="pre">dir</span></code>.</p></li>
+<li><p>Функції компіляції та виконання: <code class="docutils literal notranslate"><span class="pre">eval</span></code> ,<code class="docutils literal notranslate"><span class="pre">execfile</span></code>, <code class="docutils literal notranslate"><span class="pre">reload</span></code>, <code class="docutils literal notranslate"><span class="pre">__import__</span></code>, <code class="docutils literal notranslate"><span class="pre">compile</span></code>.</p></li>
+<li><p>Функції введення-виведення: <code class="docutils literal notranslate"><span class="pre">input</span></code>, <code class="docutils literal notranslate"><span class="pre">raw_input</span></code>, <code class="docutils literal notranslate"><span class="pre">open</span></code>.</p></li>
+<li><p>Функції для роботи з атрибутами: <code class="docutils literal notranslate"><span class="pre">getattr</span></code>, <code class="docutils literal notranslate"><span class="pre">setattr</span></code>, <code class="docutils literal notranslate"><span class="pre">delattr</span></code>, <code class="docutils literal notranslate"><span class="pre">hasattr</span></code>.</p></li>
+<li><p>Функції-“прикрашувачи” методів класів: <code class="docutils literal notranslate"><span class="pre">staticmethod</span></code>, <code class="docutils literal notranslate"><span class="pre">classmethod</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>.</p></li>
+<li><p>Інші функції: <code class="docutils literal notranslate"><span class="pre">buffer</span></code>, <code class="docutils literal notranslate"><span class="pre">slice</span></code>.</p></li>
 </ul>
 <p>Уточнити призначення функції, її аргументів і результату можна в інтерактивній сесії інтерпретатора Python :
 <img alt="" src="../../_images/Func_Info.bmp" /></p>
 <p>Ще один варіант отримати інформацію про функції можна, звернувшись за адресою: <a class="reference external" href="https://docs.python.org/3.4/library/functions.html#help">https://docs.python.org/3.4/library/functions.html#help</a>.</p>
-<p>У <span class="xref myst">Додатку 2</span> описаний синтаксис вбудованих функцій, найбільш уживаних у курсі вивчення мови Python.
-У <span class="xref myst">Додатку 3</span> перераховані ключові слова мови Python.
+<p>У <span class="xref myst">Додатку 2</span> описаний синтаксис вбудованих функцій, найбільш уживаних у курсі вивчення мови Python.</p>
+<p>У <span class="xref myst">Додатку 3</span> перераховані ключові слова мови Python.
 Ці зарезервовані слова не можна використовувати в якості імені змінної або будь-якого іншого ідентифікатора.
 Всі ключові слова Python складаються тільки з букв в нижньому регістрі.</p>
 <p>Отримати список ключових слів можливо в інтерпретаторі командою:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">keyword</span>
+
 <span class="nb">print</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -533,7 +534,7 @@
     <a class='right-next' id="next-link" href="formating.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Керівництов за написання коду на Python</p>
+        <p class="prev-next-title">Керівництов з написання коду на Python</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
