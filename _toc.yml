@@ -70,6 +70,28 @@ parts:
       title: "Питання для самоперевірки"
     - file: content/lab5/problems
       title: "Завдання"
+- caption: "Лабораторна робота №6"
+  chapters:
+  - file: content/lab6/intro
+    title: "Рекурсія та обробка матриць"
+    sections:
+    - file: content/lab6/theory
+      title: "Теоретичні відомості"
+    - file: content/lab6/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab6/problems
+      title: "Завдання"
+- caption: "Лабораторна робота №7"
+  chapters:
+  - file: content/lab7/intro
+    title: "Робота з файлами"
+    sections:
+    - file: content/lab7/theory
+      title: "Теоретичні відомості"
+    - file: content/lab7/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab7/problems
+      title: "Завдання"
 - chapters:
   - file: content/bibliography
     title: "Рекомендовані джерела"
