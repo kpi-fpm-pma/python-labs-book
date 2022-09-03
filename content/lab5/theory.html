@@ -45,6 +45,8 @@
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -187,7 +189,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab3/intro.html">
-   Рядки
+   Структури даних: списки, кортежі, множини
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -215,13 +217,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Лабораторна рообта №4
+  Лабораторна робота №4
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab4/intro.html">
-   Використання функцій
+   Рядки
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -249,13 +251,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Лабораторна робота №5
+  Лабораторна рообта №5
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
-   Структури даних: списки, кортежі, множини
+   Використання функцій
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -447,69 +449,74 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Списки
+  <a class="reference internal nav-link" href="#id4">
+   Як це працює
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Параметри функцій
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Створення, зміна, видалення списків і робота з його елементами. Базові операції
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     Створення копії списку
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-     Вбудовані функції для роботи зі списками
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id6">
-     Вбудовані методи для роботи зі списками
+     Як це працює
     </a>
    </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python">
+   Аргументи функції в Python
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id7">
-     Функції вищого порядку для обробки послідовностей
+     Обов’язкові аргументи функції
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Аргументи за замовчуванням
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Як це працює
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Аргументи-ключові слова
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#map">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         map
-        </span>
-       </code>
+      <a class="reference internal nav-link" href="#id11">
+       Як це працює
       </a>
      </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Аргументи довільної довжини
+    </a>
+    <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#zip">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         zip
-        </span>
-       </code>
+      <a class="reference internal nav-link" href="#id13">
+       Як це працює
       </a>
      </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Тільки ключові параметри
+    </a>
+    <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#filter">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         filter
-        </span>
-       </code>
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reduce">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         reduce
-        </span>
-       </code>
+      <a class="reference internal nav-link" href="#id15">
+       Як це працює
       </a>
      </li>
     </ul>
@@ -517,38 +524,79 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
-   Кортежі
+  <a class="reference internal nav-link" href="#id16">
+   Область видимості змінних
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-     Спільності і відмінності між кортежами і списками
+    <a class="reference internal nav-link" href="#id17">
+     Локальні змінні
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id18">
+       Як це працює
+      </a>
+     </li>
+    </ul>
    </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#global">
+   Зарезервоване слово
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     global
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
-     Основні операції з кортежами
+    <a class="reference internal nav-link" href="#id19">
+     Як це працює
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
-   Множини
+  <a class="reference internal nav-link" href="#nonlocal">
+   Зарезервоване слово
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nonlocal
+    </span>
+   </code>
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id12">
-     Робота з елементами множин
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
-     Операції з множинами
+    <a class="reference internal nav-link" href="#id20">
+     Як це працює
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#return">
+   Оператор return
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     Як це працює
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lambda">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     lambda
+    </span>
+   </code>
+   -функції
+  </a>
  </li>
 </ul>
 
@@ -571,69 +619,74 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Списки
+  <a class="reference internal nav-link" href="#id4">
+   Як це працює
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Параметри функцій
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Створення, зміна, видалення списків і робота з його елементами. Базові операції
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     Створення копії списку
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-     Вбудовані функції для роботи зі списками
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id6">
-     Вбудовані методи для роботи зі списками
+     Як це працює
     </a>
    </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python">
+   Аргументи функції в Python
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id7">
-     Функції вищого порядку для обробки послідовностей
+     Обов’язкові аргументи функції
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Аргументи за замовчуванням
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Як це працює
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Аргументи-ключові слова
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#map">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         map
-        </span>
-       </code>
+      <a class="reference internal nav-link" href="#id11">
+       Як це працює
       </a>
      </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Аргументи довільної довжини
+    </a>
+    <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#zip">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         zip
-        </span>
-       </code>
+      <a class="reference internal nav-link" href="#id13">
+       Як це працює
       </a>
      </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Тільки ключові параметри
+    </a>
+    <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#filter">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         filter
-        </span>
-       </code>
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#reduce">
-       <code class="docutils literal notranslate">
-        <span class="pre">
-         reduce
-        </span>
-       </code>
+      <a class="reference internal nav-link" href="#id15">
+       Як це працює
       </a>
      </li>
     </ul>
@@ -641,38 +694,79 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
-   Кортежі
+  <a class="reference internal nav-link" href="#id16">
+   Область видимості змінних
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-     Спільності і відмінності між кортежами і списками
+    <a class="reference internal nav-link" href="#id17">
+     Локальні змінні
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id18">
+       Як це працює
+      </a>
+     </li>
+    </ul>
    </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#global">
+   Зарезервоване слово
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     global
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
-     Основні операції з кортежами
+    <a class="reference internal nav-link" href="#id19">
+     Як це працює
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
-   Множини
+  <a class="reference internal nav-link" href="#nonlocal">
+   Зарезервоване слово
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     nonlocal
+    </span>
+   </code>
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id12">
-     Робота з елементами множин
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
-     Операції з множинами
+    <a class="reference internal nav-link" href="#id20">
+     Як це працює
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#return">
+   Оператор return
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     Як це працює
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lambda">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     lambda
+    </span>
+   </code>
+   -функції
+  </a>
  </li>
 </ul>
 
@@ -685,195 +779,92 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Теоретичні відомості<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Послідовності (списки, кортежі, множини) створюються на основі базових типів даних, вивчених раніше. Послідовність представляється у вигляді об’єктів, проіндексованих за допомогою їх позиції, висловленої цілим числом: перший, другий і далі до останнього.</p>
-<div class="section" id="id2">
-<h2>Списки<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Списки — найбільш багатофункціональний тип даних, який записується як список елементів, розділених комами, і укладених в квадратні дужки. Список є одним з найбільш використовуваних типів даних в мові Python. Кожне окреме значення списку називається “елемент списку”. Елементи списку при зберіганні списку в пам’яті мають унікальні порядкові номери — “індекси” (нумерація безперервна і починається з 0).</p>
-<p>Список дуже схожий на масив, який реалізований в процедурних мовах програмування. Різниця полягає в тому, що елементами списку можуть бути об’єкти різних типів. Розмір списку не статичний, його можна змінювати.</p>
-<p>Список за своєю природою є змінним типом даних на відміну, наприклад, від рядків. Змінна, яка визначається як список, містить посилання на структуру в пам’яті, яка в свою чергу зберігає посилання на будь-які інші об’єкти або структури. При створенні списку в пам’яті резервується область, яку можна умовно назвати деяким “контейнером”, в якому зберігаються посилання на інші елементи даних в пам’яті. На відміну від таких типів даних, як число або рядок, вміст “контейнера” списку можна змінювати.</p>
-<div class="section" id="id3">
-<h3>Створення, зміна, видалення списків і робота з його елементами. Базові операції<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>Список можна створити за допомогою оператора <code class="docutils literal notranslate"><span class="pre">[]</span></code> або методу <code class="docutils literal notranslate"><span class="pre">list</span></code>.
-Список можна створити з нуля або більше елементів:</p>
+<p>Функції — це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повторного використання коду (див. <a href="#id2"><span class="problematic" id="id3">:cite:`ljubanovich`</span></a>, стр. 118-130).
+Функції дозволяють надати ім’я визначеному блоку команд з тим, щоб згодом запускати цей блок за вказаним ім’ям у будь-якому місці програми. Це називається викликом функції.
+Існують правила для створення функцій у Python.</p>
+<ul class="simple">
+<li><p>Блок функції починається з ключового слова <code class="docutils literal notranslate"><span class="pre">def</span></code>, після якого записано назву функції і круглі дужки.</p></li>
+<li><p>Будь аргументи, які приймає функція, повинні бути розміщені всередині цих дужок.</p></li>
+<li><p>Після дужок йде двокрапка і з нового рядка з відступом починається тіло функції (блок команд, які складають функцію).</p></li>
+</ul>
+<p>На прикладі можна побачити простоту застосування функції.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">empty_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">weekdays</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">]</span>
-<span class="n">weekdays</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sayHello</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Привіт студенти!&#39;</span><span class="p">)</span> <span class="c1"># блок, що належить функції</span>
+<span class="c1"># Кінець функції</span>
+<span class="n">sayHello</span><span class="p">()</span> <span class="c1"># виклик функції</span>
+<span class="n">sayHello</span><span class="p">()</span> <span class="c1"># ще один виклик функції</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Monday&#39;, &#39;Tuesday&#39;, &#39;Wednesday&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Привіт студенти!
+Привіт студенти!
 </pre></div>
 </div>
 </div>
 </div>
-<p>або</p>
+<div class="section" id="id4">
+<h2>Як це працює<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Визначено функцію з ім’ям <code class="docutils literal notranslate"><span class="pre">sayHello</span></code>, використовуючи описаний вище синтаксис. Ця функція не приймає параметрів, тому в дужках не оголошені будь-які змінні. Параметри функції — це якісь вхідні дані, які можна передати функції, щоб отримати відповідний їм результат.</p>
+<p>Видно, що можна викликати одну й ту ж функцію багато разів, а значить немає необхідності писати один і той же код знову і знову.</p>
+</div>
+<div class="section" id="id5">
+<h2>Параметри функцій<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Функції можуть приймати параметри, тобто деякі значення, що передаються функції для того, щоб вона щось зробила з ними. Ці параметри схожі на змінні, за винятком того, що значення цих змінних вказується при виклику функції, і під час роботи функції їм уже присвоєні їх значення.</p>
+<p>Параметри вказуються в дужках при оголошенні функції і розділяються комами. Аналогічно передаються значення, коли викликається функція. Слід звернути увагу на термінологію: імена, зазначені в оголошенні функції, називаються <em>параметрами</em>, тоді як значення, які передаються в функцію при її виклику — <em>аргументами</em>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">another_empty_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-<span class="n">another_empty_list</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printMax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39;дорівнює &#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
+<span class="n">printMax</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="c1"># пряма передача значень </span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">printMax</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="c1"># передача змінних в якості аргументів </span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4 максимально
+7 максимально
 </pre></div>
 </div>
 </div>
 </div>
-<p>Створивши порожній список, можна заповнити його за допомогою методу <code class="docutils literal notranslate"><span class="pre">append</span></code>, який додає елемент в кінець списку.</p>
-<p>Крім того, мова Python надає можливість швидкого створення списків цілих значень, без необхідності їх перераховувати:</p>
+<div class="section" id="id6">
+<h3>Як це працює<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Тут визначена функція з ім’ям <code class="docutils literal notranslate"><span class="pre">printMax</span></code>, яка використовує два параметри з іменами <span class="math notranslate nohighlight">\(a\)</span> і <span class="math notranslate nohighlight">\(b\)</span>. Знаходиться найбільше число із застосуванням простого оператора <code class="docutils literal notranslate"><span class="pre">if..else</span></code> і виводиться це число.
+При першому виклику функції <code class="docutils literal notranslate"><span class="pre">printMax</span></code> безпосередньо передаються числа в якості аргументів. У другому випадку викликається функція зі змінними в якості аргументів. <code class="docutils literal notranslate"><span class="pre">printMax(x,</span> <span class="pre">y)</span></code> призначає значення аргументу <span class="math notranslate nohighlight">\(x\)</span> параметру <span class="math notranslate nohighlight">\(a\)</span>, а значення аргументу <span class="math notranslate nohighlight">\(y\)</span> — параметру <span class="math notranslate nohighlight">\(b\)</span>. В обох випадках функція <code class="docutils literal notranslate"><span class="pre">printMax</span></code> працює однаково.</p>
+</div>
+</div>
+<div class="section" id="python">
+<h2>Аргументи функції в Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<p>Викликаючи функцію, можна передавати їй такі типи аргументів:</p>
+<ul class="simple">
+<li><p>Обов’язкові аргументи (Required arguments)</p></li>
+<li><p>Аргументи за замовчуванням (Default argument)</p></li>
+<li><p>Аргументи-ключові слова (Keyword argument)</p></li>
+<li><p>Аргументи довільної довжини (Variable-length argumens)</p></li>
+</ul>
+<div class="section" id="id7">
+<h3>Обов’язкові аргументи функції<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Якщо при створенні функції ми вказали кількість переданих їй аргументів і їх порядок, то і викликати її ми повинні з тією ж кількістю аргументів, заданих в потрібному порядку.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, 4]
-</pre></div>
-</div>
-</div>
-</div>
-<p>В даному прикладі функція <code class="docutils literal notranslate"><span class="pre">range</span></code> приймає два цілих аргумента і повертає список, який містить всі цілі числа в проміжку між заданими значеннями, включаючи перше і виключаючи друге.</p>
-<p>Існує ще два способи виклику функції <code class="docutils literal notranslate"><span class="pre">range</span></code>. Якщо їй передано тільки одне значення, то в результаті вона поверне список з цілими значеннями від 0 до <code class="docutils literal notranslate"><span class="pre">N</span></code>, де <code class="docutils literal notranslate"><span class="pre">N</span></code> — значення параметра:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-</pre></div>
-</div>
-</div>
-</div>
-<p>Якщо ж <code class="docutils literal notranslate"><span class="pre">range</span></code> викликана з трьома аргументами, то останній з них інтерпретується як розмір кроку, тобто в результуючому списку значення йтимуть через проміжки, рівні кроку:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 3, 5, 7, 9]
-</pre></div>
-</div>
-</div>
-</div>
-<p>І ще один спосіб створити список — це генератори списків. Генератор списків — спосіб побудувати новий список, застосовуючи вираз до кожного елементу послідовності. Генератори списків дуже схожі на цикл <code class="docutils literal notranslate"><span class="pre">for</span></code>. Загальний вигляд генератора наступний:</p>
-<p><code class="docutils literal notranslate"><span class="pre">[вираз</span> <span class="pre">for</span> <span class="pre">змінна</span> <span class="pre">in</span> <span class="pre">послідовність]</span></code>,</p>
-<p>де <code class="docutils literal notranslate"><span class="pre">змінна</span></code> — ідентифікатор деякої змінної, <code class="docutils literal notranslate"><span class="pre">послідовність</span></code> — послідовність значень, які приймає дана змінна (це може бути список, рядок або об’єкт, отриманий за допомогою функції <code class="docutils literal notranslate"><span class="pre">range</span></code>), <code class="docutils literal notranslate"><span class="pre">вираз</span></code> — деякий вираз, як правило, залежить від використаної в генераторі змінної, яким будуть заповнені елементи списку.</p>
-<p>Приклади використання генераторів:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span><span class="o">*</span><span class="mi">3</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s1">&#39;list&#39;</span><span class="p">]</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;l&#39;, &#39;i&#39;, &#39;s&#39;, &#39;t&#39;]
-[&#39;lll&#39;, &#39;iii&#39;, &#39;sss&#39;, &#39;ttt&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<p>Можлива і більш складна конструкція генератора списків:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="o">*</span> <span class="mi">3</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s1">&#39;list&#39;</span> <span class="k">if</span> <span class="n">c</span> <span class="o">!=</span> <span class="s1">&#39;i&#39;</span><span class="p">]</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="n">c</span> <span class="o">+</span> <span class="n">d</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s1">&#39;list&#39;</span> <span class="k">if</span> <span class="n">c</span><span class="o">!=</span><span class="s1">&#39;i&#39;</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="s1">&#39;spam&#39;</span> <span class="k">if</span> <span class="n">d</span> <span class="o">!=</span> <span class="s1">&#39;a&#39;</span><span class="p">]</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;lll&#39;, &#39;sss&#39;, &#39;ttt&#39;]
-[&#39;ls&#39;, &#39;lp&#39;, &#39;lm&#39;, &#39;ss&#39;, &#39;sp&#39;, &#39;sm&#39;, &#39;ts&#39;, &#39;tp&#39;, &#39;tm&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<p>При створенні списку в змінній зберігається посилання на об’єкт, а не сам об’єкт. Це обов’язково слід враховувати при груповому присвоюванні. Групове присвоювання можна використовувати для чисел і рядків, але для списків цього робити не можна. При зміні однієї змінної в одному списку змінюватиметься змінна і в іншому списку, так як обидві змінні посилаються на один об’єкт.</p>
-<p>Синтаксис звернення до елементів списку точно такий же, як і при зверненні до символів рядків — використовуємо оператор індексування (<code class="docutils literal notranslate"><span class="pre">[]</span></code>).</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">numbers</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Індексом може бути будь-який вираз, що повертає ціле число, зокрема негативне. Якщо індекс менше нуля, то відлік індексу буде розпочато з кінця списку.</p>
-<p>Список, який є елементом іншого списку, називають вкладеним і розглядається, як один елемент списку.</p>
-<p>Довжина списку обчислюється за допомогою функції <code class="docutils literal notranslate"><span class="pre">len</span></code>. Одне з застосувань цієї функції — визначення довжини списку в циклах, які здійснюють перебір елементів списку.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;two&#39;</span><span class="p">,</span><span class="s1">&#39;three&#39;</span><span class="p">,</span><span class="s1">&#39;four&#39;</span><span class="p">,</span><span class="s1">&#39;five&#39;</span><span class="p">]</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">mylist</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>one
-two
-three
-four
-five
-</pre></div>
-</div>
-</div>
-</div>
-<p>Приклад для вкладеного списку:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mylist</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">],</span> <span class="s1">&#39;four&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">mylist</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
-</pre></div>
-</div>
-</div>
-</div>
-<p>Обробка списків дозволяє застосовувати такі дії, як “слайсинг” або “зріз”. Для списку можна отримати зріз, об’єднати кілька списків і так далі:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;trees&#39;</span><span class="p">,</span> <span class="s1">&#39;grass&#39;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="mi">1234</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;forest&#39;</span><span class="p">,</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">5</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">a</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;green&#39;</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>trees
-1234
-123
-[&#39;trees&#39;, &#39;grass&#39;, &#39;forest&#39;, 25]
-[&#39;trees&#39;, &#39;grass&#39;, 123, &#39;trees&#39;, &#39;grass&#39;, 123, &#39;trees&#39;, &#39;grass&#39;, 123, &#39;green&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<p>Ще цікавий приклад, який здійснює доступ до потрібного елементу списку. Це нагадує непряму адресацію в процедурних мовах. Необхідно вивести на екран, наприклад, число 6.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">87</span><span class="p">,</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mylist</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">3</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bigger</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="c1"># В описі функції зазначено, що вона приймає 2 аргументи</span>
+<span class="c1"># Коректне використання функції</span>
+<span class="n">bigger</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>  
 </pre></div>
 </div>
 </div>
@@ -883,639 +874,373 @@ five
 </div>
 </div>
 </div>
-<p>Нижче наведені додаткові операції, що дозволяють додавати, видаляти і замінювати елементи списку (<code class="docutils literal notranslate"><span class="pre">x</span></code> — довільний об’єкт, <code class="docutils literal notranslate"><span class="pre">s</span></code> і <code class="docutils literal notranslate"><span class="pre">t</span></code> — послідовності однакового типу):</p>
-<p><code class="docutils literal notranslate"><span class="pre">s[i]</span> <span class="pre">=</span> <span class="pre">x</span></code>− замінює елемент послідовності, на який вказує індекс <code class="docutils literal notranslate"><span class="pre">i</span></code> на <code class="docutils literal notranslate"><span class="pre">x</span></code>.
-<code class="docutils literal notranslate"><span class="pre">dels[i]</span></code> − видаляє елемент послідовності, на який вказує індекс <code class="docutils literal notranslate"><span class="pre">i</span></code>.
-<code class="docutils literal notranslate"><span class="pre">s[i:j]</span> <span class="pre">=</span> <span class="pre">t</span></code> − замінює зріз послідовності від <code class="docutils literal notranslate"><span class="pre">i</span></code> до <code class="docutils literal notranslate"><span class="pre">j</span></code> на <code class="docutils literal notranslate"><span class="pre">t</span></code> (видаляє з послідовності елементи, що входять до зрізу, і вставляє елементи з <code class="docutils literal notranslate"><span class="pre">t</span></code>).
-<code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">s[i:j]</span></code> − видаляє з послідовності елементи, що входять до зрізу. Еквівалентно: <code class="docutils literal notranslate"><span class="pre">s[i:j]</span> <span class="pre">=</span> <span class="pre">[]</span></code>.</p>
-<p>Ще до базових операцій належать операції конкатенації (додавання) і дублювання списку.
-<code class="docutils literal notranslate"><span class="pre">+</span></code> — операція конкатенації (додавання списків);
-<code class="docutils literal notranslate"><span class="pre">*</span></code> — операція дублювання списку <code class="docutils literal notranslate"><span class="pre">n</span></code> раз.</p>
-</div>
-<div class="section" id="id4">
-<h3>Створення копії списку<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>Раніше стверджувалося, що значення змінної зберігається в якомусь місці пам’яті комп’ютера і викликається в програму по імені цієї змінної. Це означає, що змінна “пов’язана” або “посилається” на відповідне місце в пам’яті. Точно так же зі значенням в пам’яті пов’язано і назву списку (і інших об’єктів Python).</p>
-<p>Якщо спробувати отримати список <code class="docutils literal notranslate"><span class="pre">b</span></code> шляхом привласнення йому значень всіх елементів списку <code class="docutils literal notranslate"><span class="pre">а</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
-</pre></div>
-</div>
-<p>то дві змінні <code class="docutils literal notranslate"><span class="pre">a</span></code> і <code class="docutils literal notranslate"><span class="pre">b</span></code> будуть пов’язані з одним і тим же списком, тому при зміні одного списку буде змінюватися і другий (адже це фактично один і той же список, до якого можна звертатися за двома різними іменами). Цю особливість Python потрібно враховувати при роботі зі списками.</p>
-<p>Якщо в програмі потрібна саме копія списку (а не ще одне посилання на нього), можна використовувати зріз списку, який формує його повну копію:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">[:]</span>
-</pre></div>
-</div>
-<p>В результаті <code class="docutils literal notranslate"><span class="pre">a</span></code> і <code class="docutils literal notranslate"><span class="pre">b</span></code> будуть незалежними списками, і зміна одного з них не змінить другого.</p>
-</div>
-<div class="section" id="id5">
-<h3>Вбудовані функції для роботи зі списками<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">max(list)</span></code></p>
-<p>Функція <code class="docutils literal notranslate"><span class="pre">max</span></code> повертає елементи зі списку <code class="docutils literal notranslate"><span class="pre">list</span></code> з максимальним значенням.</p>
-<p>У наступному прикладі показано використання функції <code class="docutils literal notranslate"><span class="pre">max</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;123&#39;</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;zara&#39;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">456</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">200</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max value element : &quot;</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max value element : &quot;</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">list2</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Некоректне використання функції </span>
+<span class="n">bigger</span><span class="p">()</span>
+<span class="n">bigger</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">bigger</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Max value element :  zara
-Max value element :  700
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">6</span><span class="o">-</span><span class="mi">67</span><span class="n">f6a73dfbf1</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Некоректне використання функції</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">bigger</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">bigger</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">bigger</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: bigger() missing 2 required positional arguments: &#39;a&#39; and &#39;b&#39;
 </pre></div>
 </div>
-</div>
-</div>
-<p><code class="docutils literal notranslate"><span class="pre">min(list)</span></code></p>
-<p>Функція <code class="docutils literal notranslate"><span class="pre">min</span></code> повертає елементи зі списку <code class="docutils literal notranslate"><span class="pre">list</span></code> з мінімальним значенням.</p>
-<p>У наступному прикладі показано використання методу <code class="docutils literal notranslate"><span class="pre">min</span></code>.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list1</span><span class="p">,</span><span class="n">list2</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;123&#39;</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;zara&#39;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">456</span><span class="p">,</span> <span class="mi">700</span><span class="p">,</span> <span class="mi">200</span><span class="p">]</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;min value element: &quot;</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">list1</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;min value element: &quot;</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">list2</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>min value element:  123
-min value element:  200
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="id6">
-<h3>Вбудовані методи для роботи зі списками<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.append(x)</span></code></p></li>
-</ol>
-<p>Додавання елементу <code class="docutils literal notranslate"><span class="pre">х</span></code> у кінець списку. Еквівалентно: <code class="docutils literal notranslate"><span class="pre">s[len(s):]</span> <span class="pre">=</span> <span class="pre">[x]</span></code></p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sss&#39;</span><span class="p">,</span> <span class="s1">&#39;fff&#39;</span><span class="p">,</span> <span class="s1">&#39;kkk&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-<span class="n">lst</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;sss&#39;, &#39;fff&#39;, &#39;kkk&#39;, 1, 2, 100]
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.extend(t)</span></code></p></li>
-</ol>
-<p>Додавання кортежу або списку <code class="docutils literal notranslate"><span class="pre">t</span></code> у кінець списку. Схоже на об’єднання списків, але створення  нового  списку  не відбувається. Еквівалентно: <code class="docutils literal notranslate"><span class="pre">s[len(s):]</span> <span class="pre">=</span> <span class="pre">t</span></code></p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">lst2</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">]</span>
-<span class="n">lst1</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">lst2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lst1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1, 2, 3, &#39;one&#39;, &#39;two&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.count(x)</span></code></p></li>
-</ol>
-<p>Повертає число входжень елементу <code class="docutils literal notranslate"><span class="pre">х</span></code> у список.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sss&#39;</span><span class="p">,</span> <span class="s1">&#39;fff&#39;</span><span class="p">,</span> <span class="s1">&#39;kkk&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;sss&#39;</span><span class="p">,</span> <span class="s1">&#39;sss&#39;</span><span class="p">,</span> <span class="s1">&#39;ddd&#39;</span><span class="p">,</span> <span class="s1">&#39;sss&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;sss&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.index(x)</span></code></p></li>
-</ol>
-<p>Визначення першої зліва позиції елементу <code class="docutils literal notranslate"><span class="pre">x</span></code> у списку <code class="docutils literal notranslate"><span class="pre">lst</span></code>. Якщо такого елементу немає, з’являється повідомлення про помилку.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;fff&#39;</span><span class="p">,</span> <span class="s1">&#39;kkk&#39;</span><span class="p">,</span> <span class="s1">&#39;sss&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;sss&#39;</span><span class="p">,</span> <span class="s1">&#39;ddd&#39;</span><span class="p">,</span> <span class="s1">&#39;sss&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lst</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;sss&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.insert(i,</span> <span class="pre">х)</span></code></p></li>
-</ol>
-<p>Вставка у послідовність елементу <code class="docutils literal notranslate"><span class="pre">х</span></code> перед <code class="docutils literal notranslate"><span class="pre">i</span></code>-м елементом. Еквівалентно: <code class="docutils literal notranslate"><span class="pre">s[i:i]</span> <span class="pre">=</span> <span class="pre">[x]</span></code>, якщо <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">≥</span> <span class="pre">0</span></code>.  Якщо значення індексу менше 0, то вставляється у початок списку, а якщо більше довжини послідовності, то — у кінець списку.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;zara&#39;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="p">]</span>
-<span class="n">aList</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2017</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final List: &quot;</span><span class="p">,</span> <span class="n">aList</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Final List:  [123, &#39;xyz&#39;, &#39;zara&#39;, 2017, &#39;abc&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.pop(</span> <span class="pre">[i])</span></code></p></li>
-</ol>
-<p>Повертає <code class="docutils literal notranslate"><span class="pre">i</span></code>-й елемент послідовності, одночасно видаляючи його зі списку. Якщо індекс не вказано, мається на увазі останній елемент списку. Положення елементу можна відраховувати з кінця, вказуючи негативний індекс. Якщо індекс виходить за межі діапазону, генерується виключення <code class="docutils literal notranslate"><span class="pre">IndexError</span></code>.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;zara&#39;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A List: &quot;</span><span class="p">,</span> <span class="n">aList</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B List: &quot;</span><span class="p">,</span> <span class="n">aList</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">aList</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>A List:  abc
-B List:  zara
-[123, &#39;xyz&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.remove(x)</span></code></p></li>
-</ol>
-<p>Видаляє зі списку перший елемент зі значенням <code class="docutils literal notranslate"><span class="pre">х</span></code>. Еквівалентно: <code class="docutils literal notranslate"><span class="pre">del</span> <span class="pre">lst[lst.index(x)]</span></code>. Якщо такого у списку немає, то генерується виключення <code class="docutils literal notranslate"><span class="pre">ValueError</span></code>.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;zara&#39;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">]</span>
-<span class="n">aList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;xyz&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List: &quot;</span><span class="p">,</span> <span class="n">aList</span><span class="p">)</span>
-<span class="n">aList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List: &quot;</span><span class="p">,</span> <span class="n">aList</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>List:  [123, &#39;zara&#39;, &#39;abc&#39;, &#39;xyz&#39;]
-List:  [123, &#39;zara&#39;, &#39;xyz&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.reverse()</span></code></p></li>
-</ol>
-<p>Розташовує елементи послідовності у зворотному порядку. Новий список не створюється.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;zara&#39;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">]</span>
-<span class="n">aList</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List: &quot;</span><span class="p">,</span> <span class="n">aList</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>List:  [&#39;xyz&#39;, &#39;abc&#39;, &#39;zara&#39;, &#39;xyz&#39;, 123]
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.sort()</span></code></p></li>
-</ol>
-<p>Розташовує елементи послідовності у порядку зростання. Новий список не створюється.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">aList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;123&#39;</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;zara&#39;</span><span class="p">,</span> <span class="s1">&#39;abc&#39;</span><span class="p">,</span> <span class="s1">&#39;xyz&#39;</span><span class="p">]</span>
-<span class="n">aList</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List: &quot;</span><span class="p">,</span> <span class="n">aList</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>List:  [&#39;123&#39;, &#39;abc&#39;, &#39;xyz&#39;, &#39;xyz&#39;, &#39;zara&#39;]
-</pre></div>
-</div>
-</div>
-</div>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lst.clear()</span></code></p></li>
-</ol>
-<p>Очищує список.</p>
-</div>
-<div class="section" id="id7">
-<h3>Функції вищого порядку для обробки послідовностей<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<p>Функцію, яка приймає іншу функцію як аргумент або повертає іншу функцію, називають функцією вищого порядку або “first-class-function”.</p>
-<p>Функції <code class="docutils literal notranslate"><span class="pre">mар</span></code>, <code class="docutils literal notranslate"><span class="pre">zip</span></code>, <code class="docutils literal notranslate"><span class="pre">filter</span></code>, <code class="docutils literal notranslate"><span class="pre">reduce</span></code>, <code class="docutils literal notranslate"><span class="pre">lambda</span></code> дозволяють досить просто виконувати різні маніпуляції з даними, для чого у “звичайному” процедурному стилі доводиться писати трохи більше коду. Все нижче написане відноситься до так званого функціонального програмування.</p>
-<div class="section" id="map">
-<h4><code class="docutils literal notranslate"><span class="pre">map</span></code><a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h4>
-<p>Вбудована функція <code class="docutils literal notranslate"><span class="pre">map</span></code> дозволяє застосувати функцію до кожного елементу послідовності. Функція має наступний формат:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mар</span><span class="p">(</span><span class="o">&lt;</span><span class="n">функція</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">послідовність</span> <span class="mi">1</span><span class="o">&gt;</span> <span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">послідовність</span> <span class="n">n</span><span class="o">&gt;</span><span class="p">])</span>
-</pre></div>
-</div>
-<p>Функція <code class="docutils literal notranslate"><span class="pre">map</span></code> повертає об’єкт, що підтримує ітерації. Щоб отримати список, необхідно результат передати в функцію <code class="docutils literal notranslate"><span class="pre">list</span></code>. Як параметр <code class="docutils literal notranslate"><span class="pre">&lt;функція&gt;</span></code> вказується посилання на функцію (назва функції без круглих дужок), якій буде передаватися поточний елемент послідовності. Усередині функції зворотного виклику необхідно повернути нове значення.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Додати до кожного елементу списку число 10</span>
-<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">elem</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">elem</span> <span class="o">+</span> <span class="mi">10</span>
-<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">arr</span><span class="p">)))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[11, 12, 13, 14, 15]
-</pre></div>
-</div>
-</div>
-</div>
-<p>Функції <code class="docutils literal notranslate"><span class="pre">map</span></code> можна передати кілька послідовностей. В цьому випадку в функцію зворотного виклику будуть передаватися відразу кілька елементів, розташованих в послідовності на однаковому зміщенні.</p>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Підсумувати елементи 3-х різних списків</span>
-<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">е2</span><span class="p">,</span> <span class="n">еЗ</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">el</span> <span class="o">+</span> <span class="n">е2</span> <span class="o">+</span> <span class="n">еЗ</span>  <span class="c1"># повертає нове значення</span>
-<span class="n">arrl</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="n">arr3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="n">arrl</span><span class="p">,</span><span class="n">arr2</span><span class="p">,</span><span class="n">arr3</span><span class="p">)))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[111, 222, 333, 444, 555]
-</pre></div>
-</div>
-</div>
-</div>
-<p>Якщо кількість елементів в послідовності буде різною, то вибирається послідовність з мінімальною кількістю елементів.</p>
-</div>
-<div class="section" id="zip">
-<h4><code class="docutils literal notranslate"><span class="pre">zip</span></code><a class="headerlink" href="#zip" title="Permalink to this headline">¶</a></h4>
-<p>Функція <code class="docutils literal notranslate"><span class="pre">zip</span></code> на кожній ітерації повертає кортеж, що містить елементи послідовностей, які розташовані на однаковому зміщенні. Щоб отримати список, необхідно результат передати в функцію <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
-<p>Приклад 1:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
-<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(1, 3, 5), (2, 4, 6)]
-</pre></div>
-</div>
-</div>
-</div>
-<p>В якості ще одного прикладу переробимо програму підсумовування елементів трьох списків і використаємо функцію <code class="docutils literal notranslate"><span class="pre">zip</span></code> замість функції <code class="docutils literal notranslate"><span class="pre">map</span></code>.</p>
-<p>Приклад 2:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">arr2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="n">arr3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">]</span>
-<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span> <span class="k">for</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">arr1</span><span class="p">,</span> <span class="n">arr2</span><span class="p">,</span> <span class="n">arr3</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[111, 222, 333, 444, 555]
-</pre></div>
-</div>
-</div>
-</div>
-<blockquote>
-<div><blockquote>
-<div></div></blockquote>
-</div></blockquote>
-</div>
-<div class="section" id="filter">
-<h4><code class="docutils literal notranslate"><span class="pre">filter</span></code><a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h4>
-<p>Функція <code class="docutils literal notranslate"><span class="pre">filter</span></code> дозволяє фільтрувати значення послідовності. В результуючому списку тільки ті значення, для яких значення функції для елемента істинно. Формат функції:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">filter</span><span class="p">(</span><span class="o">&lt;</span><span class="n">функція</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">послідовність</span><span class="o">&gt;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># видалити всі від&#39;ємні значення зі списку</span>
-<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span>
-<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
-<span class="n">arr</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">arr</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2, 4, 0, 10]
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># використання генераторів списків</span>
-<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
-<span class="n">arr</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span> <span class="k">if</span> <span class="n">func</span><span class="p">(</span><span class="n">i</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[2, 4, 0, 10]
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="reduce">
-<h4><code class="docutils literal notranslate"><span class="pre">reduce</span></code><a class="headerlink" href="#reduce" title="Permalink to this headline">¶</a></h4>
-<p>Функція <code class="docutils literal notranslate"><span class="pre">reduce</span></code> із модуля <code class="docutils literal notranslate"><span class="pre">functools</span></code> бере два перших елемента, застосовує до них функцію, бере значення і третій елемент, і таким чином згортає об’єкт, який підтримує ітерації, до єдиного значення. Формат функції:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">reduce</span><span class="p">(</span><span class="o">&lt;</span><span class="n">функція</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">послідовність</span><span class="o">&gt;</span> <span class="p">[,</span><span class="o">&lt;</span><span class="n">початкове</span> <span class="n">значення</span><span class="o">&gt;</span><span class="p">])</span>
-</pre></div>
-</div>
-<p>Приклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
-<span class="n">func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">el_prev</span><span class="p">,</span> <span class="n">el</span><span class="p">:</span> <span class="n">el_prev</span> <span class="o">+</span> <span class="n">el</span>
-<span class="n">reduce</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
-</pre></div>
-</div>
-</div>
-</div>
-<p>Але рекомендується використовувати звичайний прохід по елементам за допомогою <code class="docutils literal notranslate"><span class="pre">for</span></code> для підвищення читання коду.</p>
 </div>
 </div>
 </div>
 <div class="section" id="id8">
-<h2>Кортежі<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
-<p>Кортеж — це незмінний список. Кортеж не може бути змінений ніяким способом після його створення. Іншими словами, можна отримати елемент за індексом, але змінити його не можна.</p>
-<p>Приклади:</p>
+<h3>Аргументи за замовчуванням<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Найчастіше частина параметрів функцій можуть бути необов’язковими, і для них будуть використовуватися деякі задані значення за замовчуванням, якщо користувач не вкаже власних. Цього можна досягти за допомогою значень аргументів за замовчуванням. Їх можна вказати, додавши до імені параметра у визначенні функції оператор присвоювання (<code class="docutils literal notranslate"><span class="pre">=</span></code>) з подальшим значенням.</p>
+<p>Значення за замовчуванням має бути константою. Або точніше кажучи, воно має бути незмінним.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;z&quot;</span><span class="p">,</span> <span class="s2">&quot;example&quot;</span><span class="p">)</span> <span class="c1"># створюємо кортеж</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_tuple</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># отримуємо елемент за індексом</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_tuple</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># отримати останній елемент &#39;example&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a_tuple</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>   <span class="c1"># отримуємо зріз</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">times</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">message</span> <span class="o">*</span> <span class="n">times</span><span class="p">)</span>
+<span class="n">say</span><span class="p">(</span><span class="s1">&#39;Привіт&#39;</span><span class="p">)</span>
+<span class="n">say</span><span class="p">(</span><span class="s1">&#39;Світ&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;a&#39;, &#39;b&#39;, &#39;z&#39;, &#39;example&#39;)
-a
-example
-(&#39;b&#39;, &#39;z&#39;)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Привіт
+СвітСвітСвітСвітСвіт
 </pre></div>
+</div>
 </div>
 </div>
 </div>
 <div class="section" id="id9">
-<h3>Спільності і відмінності між кортежами і списками<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p>Кортеж визначається так само, як список, за винятком того, що набір елементів укладається в круглі дужки, а не в квадратні.</p></li>
-<li><p>Елементи кортежу задані в певному порядку, як і в списку. Елементи кортежу індексуються з нуля, як і елементи списку, таким чином, перший елемент не порожнього кортежу — це завжди <code class="docutils literal notranslate"><span class="pre">a_tuple[0]</span></code>.</p></li>
-<li><p>Від’ємні значення індексу відраховуються від кінця кортежу, як і в списку. Останній елемент має індекс -1.</p></li>
-<li><p>Створення зрізу кортежу (“slicing”) аналогічно створенню зрізу списку. Коли створюється зріз списку, виходить новий список; коли створюється зріз кортежу, виходить новий кортеж.</p></li>
-<li><p>Основна відмінність між кортежами і списками полягає в тому, що кортежі не можуть бути змінені. На практиці це означає, що у них немає методів, які б дозволили їх змінити. У списків є такі методи, як <code class="docutils literal notranslate"><span class="pre">append</span></code>, <code class="docutils literal notranslate"><span class="pre">extend</span></code>, <code class="docutils literal notranslate"><span class="pre">insert</span></code>, <code class="docutils literal notranslate"><span class="pre">remove</span></code>, <code class="docutils literal notranslate"><span class="pre">pop</span></code>. У кортежів жодного із цих методів немає.</p></li>
-</ol>
+<h3>Як це працює<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Функція під ім’ям <code class="docutils literal notranslate"><span class="pre">say</span></code> використовується для виведення на екран рядку вказане число раз. Якщо не вказується значення, за замовчанням рядок виводиться один раз. Це досягається вказанням значення аргументу за замовчуванням, рівного <span class="math notranslate nohighlight">\(1\)</span> для параметра <span class="math notranslate nohighlight">\(times\)</span>.
+При першому виклику <code class="docutils literal notranslate"><span class="pre">say</span></code> вказується тільки рядок, і функція виводить його один раз. При другому виклику <code class="docutils literal notranslate"><span class="pre">say</span></code> вказується також і аргумент <span class="math notranslate nohighlight">\(5\)</span>, позначаючи таким чином, що фраза сказана <span class="math notranslate nohighlight">\(5\)</span> разів.
+Важливо:
+Значеннями за замовчанням можуть бути наділені тільки ті параметри, що знаходяться в кінці списку параметрів. Таким чином, в списку параметрів функції параметр із значенням за замовчанням не може передувати параметру без значення за замовчанням. Це пов’язано з тим, що значення присвоюються параметрам відповідно до їх положення. Наприклад,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>допустимо, а</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>не допустимо.</p>
 </div>
 <div class="section" id="id10">
-<h3>Основні операції з кортежами<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">len(t)</span></code></p></li>
-</ol>
-<p>Визначає кількість елементів кортежу (результатом є число, довжина <code class="docutils literal notranslate"><span class="pre">t</span></code>).</p>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">t1</span> <span class="pre">+</span> <span class="pre">t2</span></code></p></li>
-</ol>
-<p>Об’єднання кортежів. Виходить новий кортеж, в якому після елементів кортежу <code class="docutils literal notranslate"><span class="pre">t1</span></code> знаходяться елементи кортежу <code class="docutils literal notranslate"><span class="pre">t2</span></code>.</p>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">*</span> <span class="pre">n</span></code> чи <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">*</span> <span class="pre">t</span></code></p></li>
-</ol>
-<p><code class="docutils literal notranslate"><span class="pre">n</span></code>-кратне повторення кортежу.</p>
-<ol class="simple">
-<li><p>min(t)</p></li>
-</ol>
-<p>Визначається елемент з найменшим значенням відповідно до алфавітного (“словникового”) порядку.</p>
-<ol class="simple">
-<li><p>max(t)</p></li>
-</ol>
-<p>Визначається елемент з найбільшим значенням відповідно до алфавітного (“словникового”) порядку.</p>
-<p>Важливо розуміти, що “словниковий” порядок — спочатку числа по зростанню, потім рядки, що починаються на цифри в порядку їх зростання, потім рядки, що починаються на великі літери в алфавітному порядку, а потім рядки, що починаються на малі літери також в алфавітному порядку, − завжди використовується в обчислювальній техніці при сортуванні імен об’єктів.</p>
-<p>Так де ж можуть стати в нагоді кортежі?</p>
-<ol class="simple">
-<li><p>Кортежі в деяких випадках швидші, ніж списки. Але такі оптимізації в кожному конкретному випадку вимагають додаткових досліджень.</p></li>
-<li><p>Кортежі роблять код безпечніше в тому випадку, якщо у вас є “захищені від запису” дані, які не повинні змінюватися.</p></li>
-<li><p>Деякі кортежі можуть використовуватися в якості елементів множини і ключів словника (конкретно, кортежі, що містять незмінні значення, наприклад, рядки, числа та інші кортежі). Списки ніколи не можуть використовуватися в якості ключів словника, тому що списки — змінювані об’єкти.</p></li>
-</ol>
-<p>Кортежі можуть бути перетворені в списки і навпаки. Вбудована функція <code class="docutils literal notranslate"><span class="pre">tuple</span></code> приймає список і повертає кортеж із усіх його елементів, функція <code class="docutils literal notranslate"><span class="pre">list</span></code> приймає кортеж і повертає список. По суті справи, <code class="docutils literal notranslate"><span class="pre">tuple</span></code> заморожує список, а <code class="docutils literal notranslate"><span class="pre">list</span></code> розморожує кортеж.</p>
-<p>Приклад:</p>
+<h3>Аргументи-ключові слова<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Якщо є деяка функція з великим числом параметрів, і при її виклику потрібно вказати тільки деякі з них, значення цих параметрів можуть задаватися по їх імені - це називається ключові параметри. В цьому випадку для передачі аргументів функції використовується ім’я (ключ) замість позиції (як було досі).
+Є дві переваги такого підходу: по-перше, використання функції стає легше, оскільки немає необхідності відстежувати порядок аргументів; по-друге, можна задавати значення тільки деяким обраним аргументів, за умови, що інші параметри мають значення аргументу за замовчуванням.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;spring&#39;</span>
-<span class="n">t</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a дорівнює&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s1">&#39;, b дорівнює&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s1">&#39;, а c дорівнює&#39;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<span class="n">func</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<span class="n">func</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
+<span class="n">func</span><span class="p">(</span><span class="n">c</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(&#39;s&#39;, &#39;p&#39;, &#39;r&#39;, &#39;i&#39;, &#39;n&#39;, &#39;g&#39;)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a дорівнює 3 , b дорівнює 7 , а c дорівнює 10
+a дорівнює 25 , b дорівнює 5 , а c дорівнює 24
+a дорівнює 100 , b дорівнює 5 , а c дорівнює 50
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div class="section" id="id11">
-<h2>Множини<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
-<p>Множина в мові Python — це структура даних, еквівалентна множинам в математиці. Множина може складатися з різних елементів. Цей тип даних є неврегульованим, як наслідок неіндексованим, змінним і ітеративним. Також множина не зберігає в собі два однакових елемента:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-</pre></div>
+<h4>Як це працює<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<p>Функція з ім’ям <code class="docutils literal notranslate"><span class="pre">func</span></code> має один параметр без значення за замовчуванням, за яким слідують два параметра із значеннями за замовчуванням.</p>
+<p>При першому виклику <code class="docutils literal notranslate"><span class="pre">func(3,</span> <span class="pre">7)</span></code> параметр a отримує значення <span class="math notranslate nohighlight">\(3\)</span>, параметр <code class="docutils literal notranslate"><span class="pre">b</span></code> отримує значення <span class="math notranslate nohighlight">\(7\)</span>, а <code class="docutils literal notranslate"><span class="pre">c</span></code> отримує своє значення за замовчуванням, яке дорівнює <span class="math notranslate nohighlight">\(10\)</span>.</p>
+<p>При другому виклику <code class="docutils literal notranslate"><span class="pre">func(25,</span> <span class="pre">c=24)</span></code> змінна a отримує значення <span class="math notranslate nohighlight">\(25\)</span> в через позицію аргументу. Після цього параметр <code class="docutils literal notranslate"><span class="pre">c</span></code> отримує значення <span class="math notranslate nohighlight">\(24\)</span> по імені, тобто як ключовий параметр. Змінна <code class="docutils literal notranslate"><span class="pre">b</span></code> отримує значення за замовчуванням, яке дорівнює <span class="math notranslate nohighlight">\(5\)</span>.</p>
+<p>При третьому зверненні <code class="docutils literal notranslate"><span class="pre">func(c=50,</span> <span class="pre">a=100)</span></code> ключові аргументи використовуються для всіх вказаних значень. Звертається увага на те, що значення для параметра <code class="docutils literal notranslate"><span class="pre">c</span></code> указується перед значенням для <code class="docutils literal notranslate"><span class="pre">a</span></code>, навіть, незважаючи на те, що у визначенні функції параметр <code class="docutils literal notranslate"><span class="pre">a</span></code> вказано раніше <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1, 2, 3, 4}
-</pre></div>
-</div>
-</div>
-</div>
-<p>У множину можна додавати і видаляти елементи, можна перебирати елементи множини, можна виконувати операції над множинами (об’єднання, перетин, різниця). Можна перевіряти приналежність елементу множини.</p>
-<p>У множину можна перетворювати списки, кортежі і рядки, а множини, в свою чергу, можна перетворювати в списки і кортежі. Оскільки множини − ітеріративні, їх можна передавати безпосередньо в цикл for:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
-2
-3
-</pre></div>
-</div>
-</div>
-</div>
-<p>Елементами множини може бути будь-який незмінний тип даних: числа, рядки, кортежі. Змінні типи даних не можуть бути елементами множини, зокрема, не можна зробити елементом множини список (але можна зробити кортеж) або іншу множину. Вимога незмінності елементів множини визначена особливостями подання множини в пам’яті комп’ютера.</p>
-<p>Множина задається перерахуванням всіх його елементів в фігурних дужках. Наприклад: <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">{1,</span> <span class="pre">2,</span> <span class="pre">3}</span></code></p>
-<p>Винятком є порожня множина, яку можна створити за допомогою функції <code class="docutils literal notranslate"><span class="pre">set</span></code>. Якщо функції <code class="docutils literal notranslate"><span class="pre">set</span></code> передати в якості параметра список, рядок або кортеж, то вона поверне множина, складену із елементів списку, рядки, кортежу. наприклад:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;qwerty&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;e&#39;, &#39;q&#39;, &#39;r&#39;, &#39;w&#39;, &#39;y&#39;, &#39;t&#39;}
-</pre></div>
-</div>
-</div>
-</div>
-<p>Кожен елемент може входити у множину тільки один раз, порядок проходження елементів не важливий. Наприклад, програма:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span> <span class="o">==</span> <span class="n">B</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
-</pre></div>
-</div>
-</div>
-</div>
-<p>виведе <code class="docutils literal notranslate"><span class="pre">True</span></code>, так як <code class="docutils literal notranslate"><span class="pre">A</span></code> і <code class="docutils literal notranslate"><span class="pre">B</span></code> — рівні множини.</p>
-<p>Кожен елемент може входити в множину тільки один раз. <code class="docutils literal notranslate"><span class="pre">set('Hello')</span></code> поверне множину із чотирьох елементів: <code class="docutils literal notranslate"><span class="pre">{'H','e','l','o'}</span></code>.</p>
 <div class="section" id="id12">
-<h3>Робота з елементами множин<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
-<p>Дізнатися число елементів у множині можна за допомогою функції <code class="docutils literal notranslate"><span class="pre">len</span></code>.</p>
-<p>Перебрати всі елементи множини (в невизначеному порядку!) можна за допомогою циклу <code class="docutils literal notranslate"><span class="pre">for</span></code>:</p>
+<h3>Аргументи довільної довжини<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>Іноді буває потрібно визначити функцію, здатну приймати будь-яке число параметрів. Цього можна досягти за допомогою синтаксису із використанням зірочок (так званого <code class="docutils literal notranslate"><span class="pre">*args/**kwargs</span></code> синтаксису).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
-<span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">c</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">,</span> <span class="o">**</span><span class="n">phonebook</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> 
+    <span class="c1"># Прохід по всіх елементах кортежу</span>
+    <span class="k">for</span> <span class="n">single_item</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;single_item&#39;</span><span class="p">,</span> <span class="n">single_item</span><span class="p">)</span> <span class="c1"># прохід по всіх елементах словника</span>
+    <span class="k">for</span> <span class="n">first_part</span><span class="p">,</span> <span class="n">second_part</span> <span class="ow">in</span> <span class="n">phonebook</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">first_part</span><span class="p">,</span> <span class="n">second_part</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Jack</span><span class="o">=</span><span class="mi">1123</span><span class="p">,</span> <span class="n">John</span><span class="o">=</span><span class="mi">2231</span><span class="p">,</span> <span class="n">Inge</span><span class="o">=</span><span class="mi">1560</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
-2
-3
-4
-5
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a 10
+single_item 1
+single_item 2
+single_item 3
+Jack 1123
+John 2231
+Inge 1560
+None
 </pre></div>
 </div>
 </div>
-</div>
-<p>Перевірити, чи належить елемент множини, можна за допомогою операції <code class="docutils literal notranslate"><span class="pre">in</span></code>, що повертає значення типу <code class="docutils literal notranslate"><span class="pre">bool</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="ow">in</span> <span class="n">A</span>
-</pre></div>
-</div>
-<p>Аналогічно є протилежна операція <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code>.</p>
-<p>Щоб додати елемент в множину є метод <code class="docutils literal notranslate"><span class="pre">add</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Для видалення елемента <code class="docutils literal notranslate"><span class="pre">x</span></code> із множини є два методи: <code class="docutils literal notranslate"><span class="pre">discard</span></code> і <code class="docutils literal notranslate"><span class="pre">remove</span></code>. Їх поведінка відрізняється лише в разі, коли видаляється елемент відсутній у множині. У цьому випадку метод <code class="docutils literal notranslate"><span class="pre">discard</span></code> не робить нічого, а метод <code class="docutils literal notranslate"><span class="pre">remove</span></code> генерує виняток <code class="docutils literal notranslate"><span class="pre">KeyError</span></code>.</p>
-<p>Нарешті, метод <code class="docutils literal notranslate"><span class="pre">pop</span></code> видаляє із множини один випадковий елемент і повертає його значення. Якщо ж множина порожня, то генерується виключення <code class="docutils literal notranslate"><span class="pre">KeyError</span></code>.</p>
-<p>З множини можна зробити список за допомогою функції <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
 </div>
 <div class="section" id="id13">
-<h3>Операції з множинами<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
-<p>З множинами в Python можна виконувати звичайні для математики операції над множинами.</p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p></p></th>
-<th class="text-align:left head"><p></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">|</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.union(B)</span></code></p></td>
-<td class="text-align:left"><p>Повертає множину, що є об’єднанням множин <code class="docutils literal notranslate"><span class="pre">A</span></code> і <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">|=</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.update(B)</span></code></p></td>
-<td class="text-align:left"><p>Додає у множину <code class="docutils literal notranslate"><span class="pre">A</span></code> все елементи із множини <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&amp;</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.intersection(B)</span></code></p></td>
-<td class="text-align:left"><p>Повертає множину, що є перетином множин <code class="docutils literal notranslate"><span class="pre">A</span></code> і <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&amp;=</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.intersection_update(B)</span></code></p></td>
-<td class="text-align:left"><p>Залишає у множині <code class="docutils literal notranslate"><span class="pre">A</span></code> тількі ті елементи, які є у множині <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">-</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.difference(B)</span></code></p></td>
-<td class="text-align:left"><p>Повертає різницю множин <code class="docutils literal notranslate"><span class="pre">A</span></code> і <code class="docutils literal notranslate"><span class="pre">B</span></code> (елементи, що входять до <code class="docutils literal notranslate"><span class="pre">A</span></code>, але не входять до <code class="docutils literal notranslate"><span class="pre">B</span></code>).</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">-=</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.difference_update(B)</span></code></p></td>
-<td class="text-align:left"><p>Видаляє із множини <code class="docutils literal notranslate"><span class="pre">A</span></code> все елементи, що входять до <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">^</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.symmetric_difference(B)</span></code></p></td>
-<td class="text-align:left"><p>Повертає симметрическую різницю множин <code class="docutils literal notranslate"><span class="pre">A</span></code> і <code class="docutils literal notranslate"><span class="pre">B</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">^=</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.symmetric_difference_update(B)</span></code></p></td>
-<td class="text-align:left"><p>Записує до <code class="docutils literal notranslate"><span class="pre">A</span></code> симетричну різницю множин <code class="docutils literal notranslate"><span class="pre">A</span></code> і <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&lt;=</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.issubset(B)</span></code></p></td>
-<td class="text-align:left"><p>Повертає <code class="docutils literal notranslate"><span class="pre">true</span></code>, якщо <code class="docutils literal notranslate"><span class="pre">A</span></code> − підмножина <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;=</span> <span class="pre">B</span></code> <br/> <code class="docutils literal notranslate"><span class="pre">A.issuperset(B)</span></code></p></td>
-<td class="text-align:left"><p>Повертає <code class="docutils literal notranslate"><span class="pre">true</span></code>, якщо <code class="docutils literal notranslate"><span class="pre">B</span></code> − підмножина <code class="docutils literal notranslate"><span class="pre">A</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&lt;</span> <span class="pre">B</span></code></p></td>
-<td class="text-align:left"><p>Еквивалентно <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&lt;=</span> <span class="pre">B</span></code> and <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">!=</span> <span class="pre">B</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span></code></p></td>
-<td class="text-align:left"><p>Еквивалентно <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;=</span> <span class="pre">B</span></code> and <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">!=</span> <span class="pre">B</span></code></p></td>
-</tr>
-</tbody>
-</table>
+<h4>Як це працює<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<p>Коли оголошується параметр із зірочкою (наприклад, <code class="docutils literal notranslate"><span class="pre">*param</span></code>), всі позиційні аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в кортеж під ім’ям <code class="docutils literal notranslate"><span class="pre">param</span></code>.</p>
+<p>Аналогічно, коли оголошуються параметри зі двома зірочками (<code class="docutils literal notranslate"><span class="pre">**param</span></code>), всі ключові аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в словник під ім’ям <code class="docutils literal notranslate"><span class="pre">param</span></code>.</p>
 </div>
+</div>
+<div class="section" id="id14">
+<h3>Тільки ключові параметри<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>Якщо деякі ключові параметри повинні бути доступні тільки по ключу, а не як позиційні аргументи, їх можна оголосити після параметра із зірочкою</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">,</span> <span class="n">extra_number</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">initial</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="n">number</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="n">extra_number</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    
+<span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">extra_number</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="c1"># викличе помилку, оскільки ми не вказали значення</span>
+<span class="c1"># аргументу за замовчуванням для &#39;extra_number&#39;.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>66
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">14</span><span class="o">-</span><span class="n">bb778dc9f85d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">extra_number</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># викличе помилку, оскільки ми не вказали значення</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="c1"># аргументу за замовчуванням для &#39;extra_number&#39;.</span>
+
+<span class="ne">TypeError</span>: total() missing 1 required keyword-only argument: &#39;extra_number&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id15">
+<h4>Як це працює<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<p>Оголошення параметрів після параметра із зірочкою дає тільки ключові аргументи. Якщо для таких аргументів не вказано значення за замовчуванням, і воно не передано при виклику, звернення до функції викличе помилку, що показано в прикладі.</p>
+<p>Використання <code class="docutils literal notranslate"><span class="pre">+=</span></code>, який представляє собою скорочений оператор, дозволяє замість <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x+y</span></code> просто написати <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+=</span> <span class="pre">y</span></code>.</p>
+<p>Якщо потрібні аргументи, що передаються тільки по ключу, але не потрібен параметр із зірочкою, то можна просто вказати одну зірочку без вказівки імені: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">total</span> <span class="pre">(initial</span> <span class="pre">=</span> <span class="pre">5,</span> <span class="pre">*,</span> <span class="pre">extra_number)</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>Область видимості змінних<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<p>Деякі змінні скрипта можуть бути недоступні деяким областям програми. Все залежить від того, де оголошені ці змінні.</p>
+<p>У Python є дві базових області видимості змінних:</p>
+<ul class="simple">
+<li><p>Локальні змінні</p></li>
+<li><p>Глобальні змінні</p></li>
+</ul>
+<div class="section" id="id17">
+<h3>Локальні змінні<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>При оголошенні змінних всередині визначення функції, вони жодним чином не пов’язані з іншими змінними з таким же ім’ям за межами функції — тобто імена змінних є локальними в функції. Це називається областю видимості змінної. Область видимості всіх змінних обмежена блоком, в якому вони оголошені, починаючи з точки оголошення імені.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Заміна локального x на &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    
+<span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x як і раніше &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x дорівнює  50
+Заміна локального x на  2
+x як і раніше  50
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id18">
+<h4>Як це працює<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<p>При першому виведенні значення, присвоєного імені <code class="docutils literal notranslate"><span class="pre">x</span></code>, в першому рядку функції Python використовує значення параметра, оголошеного в основному блоці, вище визначення функції.</p>
+<p>Далі <code class="docutils literal notranslate"><span class="pre">x</span></code> призначається значення <span class="math notranslate nohighlight">\(2\)</span>.  Ім’я <code class="docutils literal notranslate"><span class="pre">x</span></code> локально для даної функції. Тому коли замінюється значення <code class="docutils literal notranslate"><span class="pre">x</span></code> в функції, <code class="docutils literal notranslate"><span class="pre">x</span></code>, оголошений в основному блоці, залишається незмінним.</p>
+<p>Останнім викликом функції <code class="docutils literal notranslate"><span class="pre">print</span></code> виводиться значення <code class="docutils literal notranslate"><span class="pre">x</span></code>, вказане в основному блоці, підтверджуючи таким чином, що воно не змінилося при локальному присвоєнні значення в раніше викликаної функції.</p>
+</div>
+</div>
+</div>
+<div class="section" id="global">
+<h2>Зарезервоване слово <code class="docutils literal notranslate"><span class="pre">global</span></code><a class="headerlink" href="#global" title="Permalink to this headline">¶</a></h2>
+<p>Щоб надати деяке значення змінної, визначеної на вищому рівні програми (тобто не в якій-небудь області видимості, як-то функції або класи), необхідно вказати Python, що її ім’я не локально, а глобально (global). Робиться це за допомогою зарезервованого слова <code class="docutils literal notranslate"><span class="pre">global</span></code>. Без застосування зарезервованого слова <code class="docutils literal notranslate"><span class="pre">global</span></code> неможливо привласнити значення змінної, визначеної за межами функції.</p>
+<p>Можна використовувати вже існуючі значення змінних, визначених за межами функції (за умови, що всередині функції не було оголошено змінної з таким же ім’ям). Однак, це не вітається, і такого слід уникати, оскільки людині, що читає текст програми, буде незрозуміло, де знаходиться оголошення змінної. Використання зарезервованого слова <code class="docutils literal notranslate"><span class="pre">global</span></code> досить чітко показує, що змінна оголошена в самому зовнішньому блоці.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">x</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Замінюємо глобальне значення x на&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">func</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Значення x становить&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x дорівнює 50
+Замінюємо глобальне значення x на 2
+Значення x становить 2
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id19">
+<h3>Як це працює<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>Зарезервоване слово <code class="docutils literal notranslate"><span class="pre">global</span></code> використовується для того, щоб оголосити, що <code class="docutils literal notranslate"><span class="pre">x</span></code> — це глобальна змінна, а значить, коли присвоюється значення імені <code class="docutils literal notranslate"><span class="pre">x</span></code> всередині функції, це зміна відіб’ється на значенні змінної <code class="docutils literal notranslate"><span class="pre">x</span></code> в основному блоці програми.</p>
+<p>Використовуючи одне зарезервоване слово <code class="docutils literal notranslate"><span class="pre">global</span></code>, можна оголосити відразу кілька змінних:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">global</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="nonlocal">
+<h2>Зарезервоване слово <code class="docutils literal notranslate"><span class="pre">nonlocal</span></code><a class="headerlink" href="#nonlocal" title="Permalink to this headline">¶</a></h2>
+<p>Раніше розглянуто отримання доступу до змінних в локальній і глобальній області видимості. Є ще один тип області видимості, званий “нелокальною” (nonlocal) областю видимості, який є чимось середнім між першими двома. Нелокальні області видимості зустрічаються, коли визначається функція всередині функцій.</p>
+<p>Оскільки в Python все є виконуваним кодом, функції можна визначати де завгодно.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func_outer</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">func_inner</span><span class="p">():</span>
+        <span class="k">nonlocal</span> <span class="n">x</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">func_inner</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Локальне x змінилося на&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">func_outer</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>x дорівнює 2
+Локальне x змінилося на 5
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id20">
+<h3>Як це працює<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<p>Усередині <code class="docutils literal notranslate"><span class="pre">func_inner</span></code>, змінна <code class="docutils literal notranslate"><span class="pre">x</span></code>, визначена в першому рядку <code class="docutils literal notranslate"><span class="pre">func_outer</span></code> розташована ані в локальній області видимості (визначення змінної не входить в блок <code class="docutils literal notranslate"><span class="pre">func_inner</span></code>), ані в глобальному контексті (вона також і не в основному блоці програми). Оголошується використання саме цієї змінної <code class="docutils literal notranslate"><span class="pre">x</span></code> наступним чином:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">nonlocal</span> <span class="n">x</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="return">
+<h2>Оператор return<a class="headerlink" href="#return" title="Permalink to this headline">¶</a></h2>
+<p>Оператор <code class="docutils literal notranslate"><span class="pre">return</span></code> використовується для повернення з функції, тобто для припинення її роботи і виходу з неї. При цьому можна також повернути деяке значення з функції.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">maximum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span>
+    <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;Числа рівні.&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">y</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">maximum</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id21">
+<h3>Як це працює<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>Функція <code class="docutils literal notranslate"><span class="pre">maximum</span></code> повертає максимальний з двох параметрів, які в даному випадку передаються їй при виклику. Вона використовує звичайний умовний оператор <code class="docutils literal notranslate"><span class="pre">if..else</span></code> для визначення найбільшого числа, а потім повертає це число.</p>
+<p>Оператор <code class="docutils literal notranslate"><span class="pre">return</span></code> без вказівки значення, що повертається, еквівалентний вислову <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">None</span></code>. <code class="docutils literal notranslate"><span class="pre">None</span></code> — це спеціальний тип даних в Python, що позначає “нічого”. Наприклад, якщо значення змінної встановлено в <code class="docutils literal notranslate"><span class="pre">None</span></code>, це означає, що їй не присвоєно ніякого значення.</p>
+<p>Кожна функція містить в неявній формі оператор <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">None</span></code> в кінці, якщо не вказано свій власний оператор <code class="docutils literal notranslate"><span class="pre">return</span></code>. У цьому можна переконатися, запустивши <code class="docutils literal notranslate"><span class="pre">print(someFunction())</span></code>, де функція <code class="docutils literal notranslate"><span class="pre">someFunction</span></code> — це якась функція, яка не має оператора <code class="docutils literal notranslate"><span class="pre">return</span></code> в явному вигляді. Наприклад:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">someFunction</span><span class="p">():</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Оператор <code class="docutils literal notranslate"><span class="pre">pass</span></code> використовується в Python для позначення порожнього блоку команд.</p>
+<p><em><strong>Порада:</strong></em></p>
+<p>Існує вбудована функція <code class="docutils literal notranslate"><span class="pre">max</span></code>, в якій вже реалізований функціонал “пошук максимуму”, тому рекомендується користуватися цією вбудованою функцією, де це можливо.</p>
+</div>
+</div>
+<div class="section" id="lambda">
+<h2><code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функції<a class="headerlink" href="#lambda" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функція — це безіменна функція з довільним числом аргументів і обчислює один вираз. Тіло такої функції не може містити більше однієї інструкції (або виразу). Дану функцію можна використовувати в рамках будь-яких конвеєрних обчислень (наприклад,  всередині <code class="docutils literal notranslate"><span class="pre">filter()</span></code>, <code class="docutils literal notranslate"><span class="pre">map()</span></code> і <code class="docutils literal notranslate"><span class="pre">reduce()</span></code>) або самостійно, в тих місцях, де потрібно провести якісь обчислення, які зручно “загорнути” у функцію.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>25
+</pre></div>
+</div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функцію можна присвоїти будь-якій змінній і надалі використовувати її в якості імені функції.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sqrt</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mf">0.5</span>
+<span class="n">sqrt</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Наступний фрагмент коду показує різницю між звичайним визначенням функції <code class="docutils literal notranslate"><span class="pre">f</span></code> і <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функції <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>64
+64
+</pre></div>
+</div>
+</div>
+</div>
+<p>Як видно, <code class="docutils literal notranslate"><span class="pre">f()</span></code> і <code class="docutils literal notranslate"><span class="pre">g()</span></code> роблять одне і теж, і можуть використовуватися в одних і тих же місцях. Визначення <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функції не включає оператор <code class="docutils literal notranslate"><span class="pre">return</span></code> - ця конструкція завжди містить вираз, результат якого повертається. Визначення <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функції може використовуватися скрізь, де очікується функція і немає потреби присвоювати значення змінній.</p>
+<p>Узагальнюючи, можна констатувати, що <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функція — це функція, яка має довільне число аргументів (включаючи необов’язкові аргументи) і повертає значення одного виразу. <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функції не можуть містити інструкцій або більше одного виразу. Не треба включати в <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функцію занадто багато. Якщо необхідно щось більш складне — визначайте звичайну функцію.</p>
+<p>Використання <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функцій — справа стилю. Скрізь, де можна використовувати <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функцію, можна визначити і використовувати звичайну функцію. Доцільно використовувати в місцях, де потрібно інкапсулювати характерний код, який не підлягає повторному використанню, без засмічення програми безліччю маленьких однорядкових функцій.</p>
+<p>Основну частину можливостей Python, які демонструє <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функція можна побачити в зворотних викликах <code class="docutils literal notranslate"><span class="pre">Tkinter</span></code>. <code class="docutils literal notranslate"><span class="pre">Tkinter</span></code> — це включений в Python набір інструментів, для створення графічних інтерфейсів.
+Розглянуто досить багато аспектів функцій, але, тим не менше, треба розуміти, що це далеко не всі їхні аспекти. У той же час, представлено більшість того, з чим можна зіткнутися при повсякденному використанні функцій в Python.</p>
 </div>
 </div>
 

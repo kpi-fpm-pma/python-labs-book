@@ -189,7 +189,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab3/intro.html">
-   Рядки
+   Структури даних: списки, кортежі, множини
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -217,13 +217,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Лабораторна рообта №4
+  Лабораторна робота №4
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab4/intro.html">
-   Використання функцій
+   Рядки
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -251,13 +251,13 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Лабораторна робота №5
+  Лабораторна рообта №5
  </span>
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
-   Структури даних: списки, кортежі, множини
+   Використання функцій
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -440,12 +440,12 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     Завдання на списки (Перше завдання)
+     Функції на обчислення і логіку (Перше завдання)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id5">
-     Завдання на множини (Друге завдання)
+     Функції для роботи з рядками (Друге завдання)
     </a>
    </li>
   </ul>
@@ -482,12 +482,12 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     Завдання на списки (Перше завдання)
+     Функції на обчислення і логіку (Перше завдання)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id5">
-     Завдання на множини (Друге завдання)
+     Функції для роботи з рядками (Друге завдання)
     </a>
    </li>
   </ul>
@@ -506,8 +506,11 @@
 <div class="section" id="id2">
 <h2>Узагальнене формулювання завдання до лабораторної роботи<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>Вивчити принципи створення списків і множин у мові Python.</p></li>
-<li><p>Розробити програми відповідно до варіанта завдання.</p></li>
+<li><p>Вивчити принципи створення функцій мови Python.</p></li>
+<li><p>Розробити програми із визначенням і викликом функцій, які призначені для користувача, відповідно до варіанта завдання. Функції повинні працювати з параметрами.</p></li>
+</ol>
+<p>У звіті обов’язково повинно бути описано, які типи аргументів передаються при виклику функції.</p>
+<ol class="simple">
 <li><p>Вхідні дані і результат роботи супроводжувати відповідною інформацією на екрані.</p></li>
 <li><p>Показати розроблену програму викладачеві.</p></li>
 <li><p>Письмово відповісти на <a class="reference internal" href="questions.html"><span class="doc std std-doc">Питання для самоперевірки</span></a>.</p></li>
@@ -515,347 +518,120 @@
 </ol>
 <p>Завдання на виконання лабораторної роботи складається з 2-х частин:</p>
 <ul class="simple">
-<li><p>робота зі списками;</p></li>
-<li><p>робота з множинами.</p></li>
+<li><p>функції на обчислення і логіку;</p></li>
+<li><p>функції для роботи з рядками.</p></li>
 </ul>
 </div>
 <div class="section" id="id3">
 <h2>Варіанти завдань до лабораторної роботи<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id4">
-<h3>Завдання на списки (Перше завдання)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<h3>Функції на обчислення і логіку (Перше завдання)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
-<li><p>Створити змінну <code class="docutils literal notranslate"><span class="pre">seasons</span></code>, у яку занести список пір року. Необхідно:</p></li>
+<li><p>Ввести два дроби: <span class="math notranslate nohighlight">\(\frac{A}{B}\)</span> і <span class="math notranslate nohighlight">\(\frac{C}{D}\)</span>. (<span class="math notranslate nohighlight">\(A\)</span> , <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(D\)</span> — натуральні числа). Написати функцію для складання цих дробів. Результат має бути нескоротним дробом. Вхідні параметри: <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(D\)</span>. Вихідний параметр: нескоротний дріб.</p></li>
+<li><p>Ввести координати вершин двох трикутників (<span class="math notranslate nohighlight">\((x_1, y_1)(x_2,y_2)(x_3,y_3)\)</span>). Визначити, який з них має більшу площу. Написати функцію, яка обчислює площу трикутника. Вихідні параметри: <span class="math notranslate nohighlight">\(S\)</span> — площа трикутника.</p></li>
+<li><p>Ввести число <span class="math notranslate nohighlight">\(Х\)</span>. Вивести на екран в порядку зростання результат обчислення наступних математичних функцій : <code class="docutils literal notranslate"><span class="pre">sin(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">cos(x)</span></code>, <code class="docutils literal notranslate"><span class="pre">ln(x)</span></code>. Написати функцію, яка, залежно від вхідних параметрів, виконує обчислення. Вихідні параметри: результат обчисленої функції.</p></li>
+<li><p>Написати функцію, яка б по введеному номеру пори року в якості параметра (<span class="math notranslate nohighlight">\(1\)</span> — зима, <span class="math notranslate nohighlight">\(2\)</span> — весна, <span class="math notranslate nohighlight">\(3\)</span> — літо, <span class="math notranslate nohighlight">\(4\)</span> — осінь) повертала місяці, кількість днів в кожному з місяців, що відповідають цій порі року.</p></li>
+<li><p>Ввести координати точки <span class="math notranslate nohighlight">\(А(х, у)\)</span>. Написати функцію, яка визначає, чи належить вона трикутнику з вершинами в точках <span class="math notranslate nohighlight">\((x_1, y_1)(x_2, y_2)(x_3, y_3)\)</span>. Усі значення передавати у функцію. Результат у вигляді булевої змінної.</p></li>
+<li><p>Ввести два дійсних додатних числа <span class="math notranslate nohighlight">\(Х\)</span> і <span class="math notranslate nohighlight">\(У\)</span>. Арифметичні дії над числами пронумеровані (<span class="math notranslate nohighlight">\(1\)</span> — додавання, <span class="math notranslate nohighlight">\(2\)</span> — віднімання, <span class="math notranslate nohighlight">\(3\)</span> — множення, <span class="math notranslate nohighlight">\(4\)</span> — ділення). Написати функцію, яка по введеному номеру виконує ту чи іншу дію над числами. Числа, операції передаються в якості параметрів. Результат операції повертається.</p></li>
+<li><p>Ввести дійсні числа <span class="math notranslate nohighlight">\(х_1, у_1, х_2, у_2, \ldots, х_{10}, у_{10}\)</span>. Знайти периметр десятикутника, вершини якого мають відповідно координати <span class="math notranslate nohighlight">\((х_1, у_1), (х_2, у_2), \ldots, (х_{10}, у_{10})\)</span>. Написати функцію обчислення відстані між двома точками, заданими своїми координатами, які передаються при виклику функції.</p></li>
+<li><p>Ввести відрізки <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span>, <span class="math notranslate nohighlight">\(c\)</span> і <span class="math notranslate nohighlight">\(d\)</span>. Для кожної трійки цих відрізків, з яких можна побудувати трикутник, надрукувати площу даного трикутника. Написати функцію, яка обчислює площу трикутника зі сторонами <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> і <span class="math notranslate nohighlight">\(z\)</span>, якщо такий трикутник існує.</p></li>
+<li><p>Мішень для стрільби являє собою  концентричні кільця з центром на початку координат. Радіус внутрішнього кільця (“десятки”) — 1 см. Ширина всіх інших кілець — по 1 см. Написати функцію, яка за координатами трьох точок попадання <span class="math notranslate nohighlight">\((х_1, у_1)\)</span>, <span class="math notranslate nohighlight">\((х_2, у_2)\)</span> і <span class="math notranslate nohighlight">\((х_3, у_3)\)</span> обчислює суму вибитих очок.</p></li>
+</ol>
+<p><strong>Зауваження</strong>: cеред аналізованих пострілів можуть виявитися і попадання “в молоко” (за межі мішені), що не приносять очок.</p>
+<ol class="simple">
+<li><p>Ввести оцінки спортсмена 8-ма суддями. Написати функцію підрахунку середньої оцінки спортсмена за показаннями 8 суддів. При підрахунку середньої оцінки необхідно відкинути найбільшу і найменшу оцінки.</p></li>
+<li><p>На площині задано кільце з центром в точці <span class="math notranslate nohighlight">\((х_0, у_0)\)</span>, внутрішнім радіусом <span class="math notranslate nohighlight">\(r_1\)</span> і зовнішнім <span class="math notranslate nohighlight">\(r_2\)</span>. Скласти функцію, яка для заданого масиву точок <span class="math notranslate nohighlight">\(ХY\)</span> обчислює кількість точок, що належать кільцю. Точки, розташовані на межі кільця, вважати належним кільцю.</p></li>
+<li><p>Скласти функцію, яка повертає ціле число з діапазону <span class="math notranslate nohighlight">\([1 \ldots 6]\)</span>, що відповідає номеру ситуації при взаємному розташуванні двох кіл. Кола <span class="math notranslate nohighlight">\(О_1\)</span> і <span class="math notranslate nohighlight">\(О_2\)</span> задаються своїми центрами <span class="math notranslate nohighlight">\((х_1, у_1)\)</span>, <span class="math notranslate nohighlight">\((х_2, у_2)\)</span> і радіусами <span class="math notranslate nohighlight">\(r_1\)</span> і <span class="math notranslate nohighlight">\(r_2\)</span>.</p></li>
 </ol>
 <ul class="simple">
-<li><p>створити скрипт, який друкує номер елемента у списку і вміст елемента;</p></li>
-<li><p>створити скрипт, який запитує номер і друкує елементи з початку і до елемента з цим номером;</p></li>
-<li><p>передбачити перевірку відповідності номера кількості елементів — у разі, якщо номер перевищує число елементів у списку передбачити друк повідомлення про помилку і завершення скрипта.</p></li>
-</ul>
-<p><em>Порада</em>: для того, щоб скрипт друкував номер елемента і вміст елемента, необхідно скористатися вбудованою функцією <code class="docutils literal notranslate"><span class="pre">enumerate</span></code>.</p>
-<ol class="simple">
-<li><p>Створити 2 списка, елементами яких є числа. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>створити новий список, елементами якого будуть всі можливі комбінації (попарно) чисел, що становлять ці списки (елемент зі списку 1, елемент зі списку 2 і т.д.);</p></li>
-<li><p>вивести на екран результуючий список.</p></li>
-</ul>
-<p><em>Порада</em>: із модуля <code class="docutils literal notranslate"><span class="pre">itertools</span></code>, який представляє збірник ітераторів, використовувати функцію <code class="docutils literal notranslate"><span class="pre">product</span></code>.</p>
-<ol class="simple">
-<li><p>Ввести список чисел одним рядком. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>для кожного елемента цього списку вивести суму двох його сусідів. Для елементів списку, які є крайніми, одним із сусідів вважається елемент, що знаходиться на протилежному кінці цього списку.</p></li>
-<li><p>якщо на вхід прийшло тільки одне число, треба вивести його ж.</p></li>
-<li><p>вивід повинен містити один рядок з числами нового списку, розділеними пробілом.</p></li>
+<li><p>Ситуація 1. Кола знаходяться досить далеко одне від одного.</p></li>
+<li><p>Ситуація 2. Кола перетинаються, але, по щонайменше, центр одного з них не належить іншому.</p></li>
+<li><p>Ситуація 3. Коло <span class="math notranslate nohighlight">\(О_2\)</span> цілком знаходиться всередині кола <span class="math notranslate nohighlight">\(О_1\)</span>, але їх центри не співпадають.</p></li>
+<li><p>Ситуація 4. Коло <span class="math notranslate nohighlight">\(О_1\)</span> цілком знаходиться всередині кола <span class="math notranslate nohighlight">\(О_2\)</span>, але їх центри не співпадають.</p></li>
+<li><p>Ситуація 5. Кола концентричні, і <span class="math notranslate nohighlight">\(О_2\)</span> має менший радіус.</p></li>
+<li><p>Ситуація 6. Кола концентричні, і <span class="math notranslate nohighlight">\(О_1\)</span> має менший радіус.</p></li>
 </ul>
 <ol class="simple">
-<li><p>Створити два списки, однакових за кількістю слів. Необхідно:</p></li>
+<li><p>Задати коло радіуса <span class="math notranslate nohighlight">\(r\)</span> з центром в точці <span class="math notranslate nohighlight">\((x_0, y_0)\)</span> і досліджувану точку з координатами <span class="math notranslate nohighlight">\((x, y)\)</span>. Написати функцію, що визначає, який чверті кола, належить досліджувана точка. Номери чвертей окружності повторюють номера квадрантів в декартовій системі координат (<span class="math notranslate nohighlight">\(N = 1,2,3\)</span> або <span class="math notranslate nohighlight">\(4\)</span>). Якщо точка знаходиться поза колом, то покласти <span class="math notranslate nohighlight">\(N = 0\)</span>. Граничними ефектами (попадання в центр, на контур кола, на горизонтальний або вертикальний діаметри) — знехтувати.</p></li>
+<li><p>Написати функцію <code class="docutils literal notranslate"><span class="pre">Ro(n1,n2)</span></code>, яка обчислює відстань між двійковими кодами, відповідними машинному представленню цілочисельних аргументів n1 і n2. Відстанню між двома двійковими кодами називається кількість незбіжних двійкових розрядів. Наприклад:</p></li>
 </ol>
-<ul class="simple">
-<li><p>порівняти слова на однакових позиціях і видалити більше;</p></li>
-<li><p>якщо слова однакові по довжині, видалити обидва;</p></li>
-<li><p>вивести на екран обидва модифікованих списку.</p></li>
-</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span>
+<span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">1</span>
+<span class="o">=</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">=</span> <span class="o">=</span> <span class="o">=</span> 
+<span class="p">(</span><span class="n">відстань</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
 <ol class="simple">
-<li><p>Написати генератор списку, який генерує список від 1 до 25 і кожне непарне число підносить до квадрату. Необхідно:</p></li>
+<li><p>Два прямокутники задати парами чисел <span class="math notranslate nohighlight">\((a_1, b_1)\)</span> і <span class="math notranslate nohighlight">\((a_2, b_2)\)</span>, що визначають довжини їх сторін. Написати функцію, яка з’ясовує, чи можна один з прямокутників цілком помістити в іншому. Передбачається таке розташування прямокутників, при якому зберігається паралельність сторін.</p></li>
+<li><p>Ввести два дробу: <span class="math notranslate nohighlight">\(\frac{A}{B}\)</span> і <span class="math notranslate nohighlight">\(\frac{C}{D}\)</span>. (<span class="math notranslate nohighlight">\(A\)</span> , <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(D\)</span> — натуральні числа). Написати функцію множення дробу на дріб. Результат повинен бути нескоротним дробом. Вхідні параметри: <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(B\)</span>, <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(D\)</span>. Вихідні параметри: нескоротний дріб.</p></li>
+<li><p>Ввести координати вершин трикутника (<span class="math notranslate nohighlight">\((x_1, y_1), (x_2, y_2), (x_3, y_3)\)</span>) і координати деякої точки всередині нього <span class="math notranslate nohighlight">\((х, у)\)</span>. Написати функцію, яка знаходить відстань від даної точки до найближчої сторони трикутника. (При визначенні відстаней врахувати, що площа трикутника обчислюється і через три його сторони, і через основу і висоту.)</p></li>
+<li><p>Написати програму обчислення виразу: $<span class="math notranslate nohighlight">\(U = \frac{max^2(x, y,z) - 2^xmin(x, y, z)}{sin(2) + max(x, y , z)/min(x, y, z)}\)</span><span class="math notranslate nohighlight">\( за заданими з клавіатури числами \)</span>x<span class="math notranslate nohighlight">\(, \)</span>y<span class="math notranslate nohighlight">\(, \)</span>z$. Знаходження максимального і мінімального значення з 3-х чисел оформити у вигляді функцій <code class="docutils literal notranslate"><span class="pre">maxim(x,</span> <span class="pre">y,</span> <span class="pre">z)</span></code> і <code class="docutils literal notranslate"><span class="pre">minim(x,</span> <span class="pre">y,</span> <span class="pre">z)</span></code>. (Для цього варіанту вбудовані функції <code class="docutils literal notranslate"><span class="pre">max</span></code> і <code class="docutils literal notranslate"><span class="pre">min</span></code> не застосовувати.)</p></li>
+<li><p>Для двох квадратних рівнянь <span class="math notranslate nohighlight">\(a_1x^2 + b_1x + c_1 = 0\)</span> і <span class="math notranslate nohighlight">\(a_2x^2 + b_2x + c_2 = 0\)</span> визначити, чи мають вони спільні корені. Вивести на екран корені рівняння, які не збігаються. Рішення рівняння оформити у вигляді функцій. Коефіцієнти <span class="math notranslate nohighlight">\(a_1\)</span>, <span class="math notranslate nohighlight">\(b_1\)</span>, <span class="math notranslate nohighlight">\(c_1\)</span>, <span class="math notranslate nohighlight">\(a_2\)</span>, <span class="math notranslate nohighlight">\(b_2\)</span>, <span class="math notranslate nohighlight">\(c_2\)</span> вводяться з клавіатури.</p></li>
+<li><p>Ввести натуральне число <span class="math notranslate nohighlight">\(n\)</span>. Серед чисел <span class="math notranslate nohighlight">\(1, 2, \ldots, n\)</span> знайти всі ті, які можна представити у вигляді суми квадратів натуральних чисел. Написати функцію, що дозволяє розпізнавати повні квадрати.</p></li>
+<li><p>Один з алгоритмів перевірки числа на “простоту” полягає в наступному: вихідне число <span class="math notranslate nohighlight">\(N\)</span> послідовно ділять на  <span class="math notranslate nohighlight">\(2, 3, 5, 7, 9, ..., 2*p+1\ \ (n \le (2*p+1)^2 \le n+1)\)</span>. Якщо жоден із залишків від ділення не дорівнює нулю, то <span class="math notranslate nohighlight">\(n\)</span> — просте. Написати логічну функцію, аргументом якої є довге ціле додатне число. Функція повинна повертати значення <code class="docutils literal notranslate"><span class="pre">true</span></code>, якщо її аргумент є простим числом.</p></li>
+<li><p>Скласти функцію, що визначає максимальне число підряд розташованих одиниць в двійковому представленні числа <span class="math notranslate nohighlight">\(n\)</span>. Число <span class="math notranslate nohighlight">\(n\)</span> є вхідним параметром для функції.</p></li>
+<li><p>На площині виділена полоса, яка утворена двома паралельними прямими <span class="math notranslate nohighlight">\(Ax + By + C_1 = 0\)</span> і <span class="math notranslate nohighlight">\(Ax + By + C_2 = 0\)</span>. Написати логічну функцію, що приймає значення <code class="docutils literal notranslate"><span class="pre">true</span></code>, якщо точка з координатами <span class="math notranslate nohighlight">\((x_0, y_0)\)</span> належить вказаній полосі.</p></li>
+<li><p>Скласти програму, яка вводить <span class="math notranslate nohighlight">\(k\)</span> натуральних чисел <span class="math notranslate nohighlight">\(n_1, n_2, \ldots , n_k\ \ (k &lt; 10)\)</span> і сортує їх, розташовуючи “пірамідкою” (найбільше число — в середині, найменші — по краях). У припущенні, що <span class="math notranslate nohighlight">\(n_i &lt; 80\)</span> організувати виведення відсортованих чисел, представляючи кожне з них відповідною кількістю зірочок в <span class="math notranslate nohighlight">\(i\)</span>-тому рядку. Наприклад, для <span class="math notranslate nohighlight">\(n_1 = 3, n_2 = 7\)</span>:</p></li>
 </ol>
-<ul class="simple">
-<li><p>вивести на екран отриманий список;</p></li>
-<li><p>впорядкувати отриманий список, поставивши спочатку всі непарні числа;</p></li>
-<li><p>вивести на екран.</p></li>
-</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">***</span>
+<span class="o">*******</span>
+</pre></div>
+</div>
 <ol class="simple">
-<li><p>Знайти перетин двох списків з повторюваними елементами. Необхідно:</p></li>
+<li><p>Скласти програму, яка вводить два значення <span class="math notranslate nohighlight">\(x\)</span> і <span class="math notranslate nohighlight">\(q\)</span>, типу <code class="docutils literal notranslate"><span class="pre">float</span></code> і <code class="docutils literal notranslate"><span class="pre">str</span></code> відповідно. Перше (<span class="math notranslate nohighlight">\(x\)</span>) розглядається як значення температури, а друге є ознакою системи вимірювання:</p></li>
 </ol>
 <ul class="simple">
-<li><p>створити два списки цілих чисел;</p></li>
-<li><p>упорядкувати їх по зростанню;</p></li>
-<li><p>знайти загальні елементи, включаючи повтори (оформити як функцію);</p></li>
-<li><p>зберегти у третьому списку і вивести на екран.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">q</span> <span class="pre">=</span> <span class="pre">'C'</span></code> — для шкали Цельсія;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">q</span> <span class="pre">=</span> <span class="pre">'F'</span></code> — для шкали Фаренгейта;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">q</span> <span class="pre">=</span> <span class="pre">'K'</span></code> — для шкали Кельвіна.</p></li>
 </ul>
-<p><em>Порада</em>: не використовувати множини, тому що не будуть враховані повтори.</p>
+<p>Написати функцію, яка повинна видати значення температури в кожній із трьох систем вимірювань. Зв’язок між системами визначається наступними формулами:
+$<span class="math notranslate nohighlight">\(F = \frac{9}{5}C + 32 \\
+K = 273 + C\)</span>$</p>
 <ol class="simple">
-<li><p>Перетворити однорівневий список у список із вкладеними списками, згідно з визначеними умовами. Необхідно:</p></li>
+<li><p>Ввести довжини сторін прямокутника. Написати функцію, яка обчислює кут (в градусах) між його діагоналями.</p></li>
+<li><p>З початку доби минуло <span class="math notranslate nohighlight">\(H\)</span> годин, <span class="math notranslate nohighlight">\(M\)</span> хвилин, <span class="math notranslate nohighlight">\(S\)</span> секунд (<span class="math notranslate nohighlight">\(0 \le H &lt; 12.0 \le M &lt; 60.0 \le S &lt; 60\)</span>). Написати функцію, яка за даними числами <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(M\)</span>, <span class="math notranslate nohighlight">\(S\)</span> повинна визначити кут (в градусах), на який повернулаcь годинникова стрілка з початку доби і вивести його у вигляді дійсного числа. При вирішенні цього завдання не можна користуватися умовними інструкціями і циклами.</p></li>
+<li><p>Є дві ємності: кубічна з ребром <span class="math notranslate nohighlight">\(A\)</span>, циліндрична з висотою <span class="math notranslate nohighlight">\(H\)</span> і радіусом основи <span class="math notranslate nohighlight">\(R\)</span>. Написати функцію із вхідними параметрами <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(H\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, <span class="math notranslate nohighlight">\(M\)</span>, яка визначить, чи поміститься рідина об’єму <span class="math notranslate nohighlight">\(M\)</span> у першу ємність, у другу, в обидві.</p></li>
+<li><p>Написати функцію, яка переводить число з десяткової системи числення у двійкову або вісімкову.</p></li>
+<li><p>Написати функцію, яка підраховує  кількість парних і непарних цифр в числі, переданому в якості параметра.</p></li>
 </ol>
-<ul class="simple">
-<li><p>створити список, у якому елементи можуть чергуватися з роздільниками. Тип роздільника вибирається самостійно. Це може бути що завгодно, навіть якесь слово;</p></li>
-<li><p>написати функцію, яка буде формувати новий список, елементами якого будуть вкладені списки, що складаються зі значень, що знаходяться між роздільниками;</p></li>
-<li><p>результат вивести на екран.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Перетворити список, у якому елементи представляють групи символів, у список з поодинокими символами, вибраними з цих груп. Необхідно виконати це завдання 4-ма варіантами, визначити час виконання кожним і знайти найбільш швидкодіючий:</p></li>
-</ol>
-<ul class="simple">
-<li><p>1-ий варіант: працювати з оператором <code class="docutils literal notranslate"><span class="pre">for</span></code> (це найпростіший варіант);</p></li>
-<li><p>2-ий варіант: застосувати функціональне програмування, а саме, функції <code class="docutils literal notranslate"><span class="pre">reduce</span></code>, <code class="docutils literal notranslate"><span class="pre">map</span></code>, <code class="docutils literal notranslate"><span class="pre">lambda</span></code> (один рядок);</p></li>
-<li><p>3-ий варіант: застосувати функцію <code class="docutils literal notranslate"><span class="pre">sum</span></code> (один рядок);</p></li>
-<li><p>4-ий варіант: застосувати функцію <code class="docutils literal notranslate"><span class="pre">join</span></code> (один рядок).</p></li>
-</ul>
-<ol class="simple">
-<li><p>Визначити індекси елементів списку, значення яких належать заданому діапазону (тобто не менше заданого мінімуму і не більше заданого максимуму). Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>заповнити список випадковими числами;</p></li>
-<li><p>запросити для введення мінімум і максимум діапазону;</p></li>
-<li><p>знайти індекси елементів, значення яких входять в діапазон. Додавати знайдені індекси до нового списку;</p></li>
-<li><p>вивести загальне число знайдених індексів і окремо всі індекси;</p></li>
-<li><p>елементи списку, які знаходяться за певним індексом, видалити зі списку і занести у новий список.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список з не менше ніж 20 цілих чисел. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>підсумувати елементи списку;</p></li>
-<li><p>з отриманого числа зробити список;</p></li>
-<li><p>продовжувати такі обчислення над отриманими списком цифр, поки не залишиться одна цифра;</p></li>
-<li><p>всі проміжні результати демонструвати на екрані.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список, елементами якого будуть слова. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>підрахувати, скільки разів кожен символ зустрічається у списку;</p></li>
-<li><p>створити новий список, елементами якого будуть вкладені списки, що складаються з двох елементів: символ і кількість його повторень у вихідному списку. Наприклад, <code class="docutils literal notranslate"><span class="pre">['s',</span> <span class="pre">10]</span></code>;</p></li>
-<li><p>упорядкувати новий список або по символу або по числу;</p></li>
-<li><p>типом даних <code class="docutils literal notranslate"><span class="pre">dict</span></code> у цьому завданні не користуватися.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Задати деяке число n. Створити список з цілих чисел, число елементів якого не перевищує n. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>сформувати новий список з відсутніх чисел. Наприклад, <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">10</span></code>, список — <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">6,</span> <span class="pre">7]</span></code>, тоді результат <code class="docutils literal notranslate"><span class="pre">[4,</span> <span class="pre">5,</span> <span class="pre">8,</span> <span class="pre">9]</span></code>;</p></li>
-<li><p>з’єднати два списки і впорядкувати.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити два списки: список ключів <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'c',</span> <span class="pre">'d'</span> <span class="pre">...]</span></code> і список значень <code class="docutils literal notranslate"><span class="pre">[4,</span> <span class="pre">3,</span> <span class="pre">6,</span> <span class="pre">20</span> <span class="pre">...]</span></code>. Кількість елементів у обох списках однакова. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>створити новий список, елементами якого будуть вкладені списки, що складаються з двох елементів: (ключ і значення);</p></li>
-<li><p>порахувати середнє арифметичне з усіх значень;</p></li>
-<li><p>типом даних <code class="docutils literal notranslate"><span class="pre">dict</span></code> у цьому завданні не користуватися.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити 2 списка. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>другий список скласти з тих же елементів, що і перший, але, однозначно, більше його;</p></li>
-<li><p>елементи у першому списку не дублюються;</p></li>
-<li><p>у другому списку можливі дублікати;</p></li>
-<li><p>написати функцію, яка заповнить третій список позиціями символів другого списку у першому. Наприклад, перший список — <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'c']</span></code> і другий — <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b',</span> <span class="pre">'a',</span> <span class="pre">'c',</span> <span class="pre">'b']</span></code>. Отриманий третій список — <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">0,</span> <span class="pre">2,</span> <span class="pre">1]</span></code>.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити три списки <code class="docutils literal notranslate"><span class="pre">W</span></code>, <code class="docutils literal notranslate"><span class="pre">X</span></code>, <code class="docutils literal notranslate"><span class="pre">Y</span></code>. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>Знайти у списку <code class="docutils literal notranslate"><span class="pre">W</span></code> елементи, наявні у списку <code class="docutils literal notranslate"><span class="pre">X</span></code> і замінити їх відповідними елементами списку <code class="docutils literal notranslate"><span class="pre">Y</span></code>, інші елементи залишити без зміни. Наприклад, вихідні спискі: список <code class="docutils literal notranslate"><span class="pre">X</span></code>: <code class="docutils literal notranslate"><span class="pre">['a',</span> <span class="pre">'b']</span></code>, список <code class="docutils literal notranslate"><span class="pre">Y</span></code>: <code class="docutils literal notranslate"><span class="pre">[1,</span> <span class="pre">2]</span></code>, список <code class="docutils literal notranslate"><span class="pre">W</span></code>: <code class="docutils literal notranslate"><span class="pre">[['a',</span> <span class="pre">'b'],</span> <span class="pre">'a',</span> <span class="pre">['c</span> <span class="pre">'['</span> <span class="pre">a</span> <span class="pre">',</span> <span class="pre">['</span> <span class="pre">a</span> <span class="pre">','</span> <span class="pre">d</span> <span class="pre">']]]]</span></code>. Після перетворення список <code class="docutils literal notranslate"><span class="pre">W</span></code> повинен прийняти такий вигляд: <code class="docutils literal notranslate"><span class="pre">[[1,</span> <span class="pre">2],</span> <span class="pre">1,</span> <span class="pre">['c'</span> <span class="pre">[1,</span> <span class="pre">[1,</span> <span class="pre">'d']]]]</span></code>.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Визначити індекси елементів списку, значення яких належать заданому діапазону (тобто не менше заданого мінімуму і не більше заданого максимуму). Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>заповнити список випадковими числами;</p></li>
-<li><p>запросити для введення мінімум і максимум діапазону і число, з яким треба порівнювати числа з діапазону;</p></li>
-<li><p>знайти індекси елементів, значення яких входять в діапазон. Додавати знайдені індекси до нового списку;</p></li>
-<li><p>вивести загальне число знайдених індексів і окремо всі індекси;</p></li>
-<li><p>елементи списку, які знаходяться згідно з певними індексами, порівняти з введенним числом. Ті числа, які більше введеного, організувати у список.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список з символьними елементами одно-дво-і трирівневими вкладеннями. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>перетворити у однорівневий список;</p></li>
-<li><p>впорядкувати список за алфавітом.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список із не менше 20 елементів. Визначити яку-небудь ознаку для пошуку слова. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>замінити всі елементи спискузнайдені, згідно з ознакою, на символ <code class="docutils literal notranslate"><span class="pre">'*'</span></code>.</p></li>
-<li><p>виконати циклічний зсув списку вправо на задане число елементів (без використання методу <code class="docutils literal notranslate"><span class="pre">insert</span></code> і циклічного зсуву елементів).</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список з <code class="docutils literal notranslate"><span class="pre">n</span></code> слів. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>вибрати зі списку випадкове слово;</p></li>
-<li><p>з обраного випадкового слова випадково вибрати букву;</p></li>
-<li><p>попросити користувача її вгадати (вивести на екран слово зі знаком питання замість букви);</p></li>
-<li><p>відновити слово.</p></li>
-</ul>
-<p><em>Порада</em>: використовувати метод <code class="docutils literal notranslate"><span class="pre">choice</span></code> модуля <code class="docutils literal notranslate"><span class="pre">random</span></code>.</p>
-<ol class="simple">
-<li><p>Створити список дійсних чисел. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>замінити всі парні (за номером) елементи списку, на довільну константу.</p></li>
-<li><p>отримати суму чисел, що є сусідами з константою.</p></li>
-<li><p>занести їх в новий список.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список елементами якого є цілі числа. Обов’язково має бути кілька нулів. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>поміняти місцями елементи в списку: перший з останнім, другий з передостаннім і т.д.</p></li>
-<li><p>всі нулі замінити на суму сусідніх (для крайніх нулів брати значення з іншої сторони списку.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити 4 списка. Кожен із них складається із 3-х елементів. Перший список — це дні тижня. Другий — страви сніданку. Третій — напої. І четвертий — десерт. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>використовуючи функцію <code class="docutils literal notranslate"><span class="pre">zip</span></code>, скласти меню сніданку на будь-який день;</p></li>
-<li><p>вивести на екран.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Злиття двох списків. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>створити два упорядкованих списку по неспаданню;</p></li>
-<li><p>отримати новий список, що складається з елементів двох заданих списків, таким же чином упорядкований;</p></li>
-<li><p>сортування не використовувати.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список, елементами якого є слова. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>визначити середню «довжину» слова;</p></li>
-<li><p>визначити кількість слів, в яких більше п’яти символів;</p></li>
-<li><p>визначити кількість символів в найдовшому слові;</p></li>
-<li><p>визначити номер першого найкоротшого слова.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список, елементами якого є вкладені списки. Кількість елементів не менше 15. Вкладений список складається з двох елементів: країна і місто в цій країні. необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>знайти міста, що знаходяться в Італії;</p></li>
-<li><p>знайти країну, міста якої найбільше вказані в списку.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список, елементами якого є двозначні цілі числа в діапазоні 00-66. Ці числа відповідають кісткам доміно. Наприклад, число 42 відповідає кістці доміно <code class="docutils literal notranslate"><span class="pre">4-2</span></code> або <code class="docutils literal notranslate"><span class="pre">2-4</span></code>. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>визначити, чи відповідає послідовність чисел ряду кісток доміно, викладеному по правилам цієї гри;</p></li>
-<li><p>розглянути можливість ситуації в грі, званою «рибою». Подібна ситуація можлива тоді, коли на стіл викладені всі шість (не рахуючи дубля) кісточок з однаковим значенням і обидва кінці ланцюга замикають кістки з цим же значенням.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити список з цілочисельних елементів, кількість яких не перевищує 25. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>ввести індекси чисел <span class="math notranslate nohighlight">\(i\)</span> та <span class="math notranslate nohighlight">\(j\)</span> такі, що задовольняють умові: (<span class="math notranslate nohighlight">\(1&lt;i&lt;j&lt;25\)</span>);</p></li>
-<li><p>числа, що знаходяться між індексами, включаючи самі індекси, замінити на символи латинського алфавіту, що знаходяться на тих же позиціях;</p></li>
-<li><p>впорядкувати вставку за алфавітом.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Створити випадковим чином, використовуючи random, список з 15 чисел. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>якщо перший елемент в списку непарний, то сортувати елементи на парних місцях, інакше на непарних. Сортування відбувається по неспаданню.</p></li>
-<li><p>зробити 2 варіанти: з використанням вбудованих функцій Python і без них.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Ввести цілочисельний список розміру <code class="docutils literal notranslate"><span class="pre">n</span></code>. Серія — це група однакових елементів, що йдуть поспіль, а її довжина — кількість цих елементів. Якщо довжина серії дорівнює 1, то її не змінювати. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>перетворити список, збільшивши кожну його серію на один елемент.</p></li>
-<li><p>створити новий список, в який записати кількість елементів кожної серії (якщо довжина серії дорівнює 1, то не записувати).</p></li>
-</ul>
-<ol class="simple">
-<li><p>Ввести 2 рядки і сформувати з цих рядків список. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>якщо рядки складаються тільки з чисел, то додати в середину списку суму введених чисел;</p></li>
-<li><p>інакше додати рядок, утворений від об’єднань двох раніше введених рядків;</p></li>
-<li><p>підсумковий рядок вивести на екран.</p></li>
-</ul>
 </div>
 <div class="section" id="id5">
-<h3>Завдання на множини (Друге завдання)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p>Звертаємо вашу увагу на наступні моменти:</p>
+<h3>Функції для роботи з рядками (Друге завдання)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Якщо є аналог заданої фунції в методах по роботі з рядками або у вбудованих функціях, їх не застосовувати, а писати свою. Функція повинна реалізовувати поставлену задачу — і нічого більше. Це означає, що функцію можна буде, наприклад, перенести без змін у будь-яку іншу програму, якщо специфікації функції задовольняють умовам задачі.</p>
+<p>Примітка: під “словом” всюди розуміється послідовність символів, яка не містить пробілів.</p>
 <ol class="simple">
-<li><p>Майже всі завдання можна виконати в одному рядку.</p></li>
-<li><p>Вся робота полягає в перекладі дій дискретної математики з множинами на Python.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Copies(s,s1,n)</span></code>. Призначення — копіювання рядка <span class="math notranslate nohighlight">\(s\)</span> в рядок <span class="math notranslate nohighlight">\(s_1\)</span> <span class="math notranslate nohighlight">\(n\)</span> раз.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Words(s)</span></code>. Призначення — підрахунок слів в рядку <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Concat(s1,s2)</span></code>. Призначення — конкатенація рядків <span class="math notranslate nohighlight">\(s_1\)</span> і <span class="math notranslate nohighlight">\(s_2\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Parse(s,t)</span></code>. Призначення — поділ рядка <span class="math notranslate nohighlight">\(s\)</span> на дві частини: до першого входження символу <span class="math notranslate nohighlight">\(t\)</span> і після нього.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">StrCenter(s1,s2,l)</span></code>. Призначення — центрування — розміщення рядка <span class="math notranslate nohighlight">\(s_1\)</span> в середині рядка <span class="math notranslate nohighlight">\(s2\)</span> довжиною <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Delete(s,n,l)</span></code>. Призначення — видалення з рядка <span class="math notranslate nohighlight">\(s\)</span> підрядка, починаючи з позиції <span class="math notranslate nohighlight">\(n\)</span>, довжиною l.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Left(s,l)</span></code>. Призначення — вирівнювання рядка <span class="math notranslate nohighlight">\(s\)</span> по лівому краю до довжини <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Right(s,l)</span></code>. Призначення — вирівнювання рядка <span class="math notranslate nohighlight">\(s\)</span> по правому краю до довжини <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Insert(s,s1,n)</span></code>. Призначення — вставка в рядок <span class="math notranslate nohighlight">\(s\)</span> підрядка <span class="math notranslate nohighlight">\(s_1\)</span>, починаючи з позиції <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Reverse(s)</span></code>. Призначення — зміна порядку символів в рядку <span class="math notranslate nohighlight">\(s\)</span> на протилежний.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Pos(s,s1)</span></code>. Призначення — пошук першого входження підрядка <span class="math notranslate nohighlight">\(s_1\)</span> у рядок <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">LastPos(s,s1)</span></code>. Призначення — пошук останнього входження підрядка <span class="math notranslate nohighlight">\(s_1\)</span> у рядок <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">WordIndex(s,n)</span></code>. Призначення — визначення позиції початку в рядку <span class="math notranslate nohighlight">\(s\)</span> слова з номером <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">WordLength(s,n)</span></code>. Призначення — визначення довжини слова з номером <span class="math notranslate nohighlight">\(n\)</span> в рядку <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">SubWord(s,n,l)</span></code>. Призначення — виділення з рядка <span class="math notranslate nohighlight">\(s\)</span> <span class="math notranslate nohighlight">\(l\)</span> слів, починаючи зі слова з номером <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">WordCmp(s1,s2)</span></code>. Призначення — порівняння рядків (з ігноруванням множинних пробілів).</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">StrSpn(s,s1)</span></code>. Призначення — визначення довжини тієї частини рядка <span class="math notranslate nohighlight">\(s\)</span>, яка містить тільки символи з рядка <span class="math notranslate nohighlight">\(s_1\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">StrCSpn(s,s1)</span></code>. Призначення — визначення довжини тієї частини рядка <span class="math notranslate nohighlight">\(s\)</span>, яка не містить символи з рядка <span class="math notranslate nohighlight">\(s_1\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Overlay(s,s1,n)</span></code>. Призначення — перекриття частини рядка <span class="math notranslate nohighlight">\(s\)</span>, починаючи з позиції <span class="math notranslate nohighlight">\(n\)</span>, рядком <span class="math notranslate nohighlight">\(s_1\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">SymbReplace(s,s1,s2)</span></code>. Призначення — заміна в рядку <span class="math notranslate nohighlight">\(s\)</span> комбінації символів <span class="math notranslate nohighlight">\(s_1\)</span> на <span class="math notranslate nohighlight">\(s_2\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Compress(s,t)</span></code>. Призначення — заміна в рядку <span class="math notranslate nohighlight">\(s\)</span> множинних входжень символу <span class="math notranslate nohighlight">\(t\)</span> на одне.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Trim(s)</span></code>. Призначення — видалення початкових і кінцевих пробілів в рядку <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">StrSet(s,n,l,t)</span></code>. Призначення — установка <span class="math notranslate nohighlight">\(l\)</span> символів рядка <span class="math notranslate nohighlight">\(s\)</span>, починаючи з позиції <span class="math notranslate nohighlight">\(n\)</span>, в значення <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Space(s,l)</span></code>. Призначення — доведення рядка <span class="math notranslate nohighlight">\(s\)</span> до довжини <span class="math notranslate nohighlight">\(l\)</span> шляхом вставки пробілів між словами.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Findwords(s,s1)</span></code>. Призначення — пошук входження в рядок s заданої фрази (послідовності слів) <span class="math notranslate nohighlight">\(s_1\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">StrType(s)</span></code>. Призначення — визначення типу рядка <span class="math notranslate nohighlight">\(s\)</span> (можливі типи — рядок букв, десяткове число, 16-кове число, двійкове число і т.д.).</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Compul(s1,s2)</span></code>. Призначення — порівняння рядків <span class="math notranslate nohighlight">\(s_1\)</span> і та <span class="math notranslate nohighlight">\(s_2\)</span> з ігноруванням відмінностей в регістрах.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Translate(s,s1,s2)</span></code>. Призначення — переклад в рядку <span class="math notranslate nohighlight">\(s\)</span> символів, які входять в алфавіт <span class="math notranslate nohighlight">\(s_1\)</span>, в символи, які входять в алфавіт <span class="math notranslate nohighlight">\(s_2\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Word(s)</span></code>. Призначення — виділення першого слова з рядка <span class="math notranslate nohighlight">\(s\)</span>.</p></li>
+<li><p>Функція — <code class="docutils literal notranslate"><span class="pre">Substr(s,n,l)</span></code>. Призначення — виділення з рядка <span class="math notranslate nohighlight">\(s\)</span> підрядка, починаючи з позиції <span class="math notranslate nohighlight">\(n\)</span>, довжиною <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
 </ol>
-<p>У всіх наступних завданнях універсум має вигляд:</p>
-<div class="math notranslate nohighlight">
-\[U = \{1,2,3,4,a,b,c,d,ee,tt,ww\}\]</div>
-<p>Спираючись на визначення базових операцій на множинах, у завданнях 1-25 знайти:</p>
-<ol class="simple">
-<li><p><span class="math notranslate nohighlight">\(C = A \cup B\)</span> — об’єднання двох множин;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = A \cap B\)</span> — перетин двох множин;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = A / B\)</span>    — різницю першої і другої множини ;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = B / A\)</span>    — різницю другої і першої множини;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = A \oplus B\)</span> — симетрична різниця двох множин;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = \bar{A} \)</span>   — доповнення першої множини;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = \bar{B}\)</span>    — доповнення другої множини ;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = A \times B\)</span> — декартовий добуток першої множини на другу;</p></li>
-<li><p><span class="math notranslate nohighlight">\(C = A \times B\)</span> — декартовий добуток другої множини на першу;</p></li>
-<li><p>множину <span class="math notranslate nohighlight">\(C\)</span> задана зазначеною у завданні формулою <span class="math notranslate nohighlight">\(F(A, B)\)</span>.</p></li>
-</ol>
-<p>Варіанти завдань на тип множина (set):</p>
-<ol class="simple">
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, d\},            B=\{a, ee, 4, d\},        F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{ee, a, d\},           B=\{a, ee, 4, 2\},        F=((A \cup B) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{a, ee, 4, 2\},        F=((A \cap B) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{d, ee, 4, 3\},        F=((A \oplus B) \cap (A \cup B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{1, d, ee, 4, 3\},     F=((A \oplus B) \cap (A \cap B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, a, d\},     B=\{1, d, tt, 4, 3\},     F=((A \cup B) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{1, d, tt, 4, 3\},     F=((A \cup B) / (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{1, a, c, tt, 4, 3\},  F=((A / B) \cap (A \oplus B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, c, tt, 4, 3\},  F=((A \cap B) \cup (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, b, tt, 4, 3\},  F=((A \cup B) / (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, b, tt, 4, 3\},  F=((A \oplus B) \cup (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, a, d\}, B=\{2, a, b, tt, 1, 3\},  F=((A \oplus B) \cap (B / A))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, c, d\}, B=\{2, a, b, tt, 1, 3\},  F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, 2, ee, ww, c, d\}, B=\{4, a, b, tt, 1, 3\},  F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, ww, ee, c, d\}, B=\{4, a, b, tt, 1, 3\},  F=((A / B) / (A \cap B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, ww, ee, c, d\}, B=\{4, a, b, ee, 1, 3\},  F=((A \oplus B) \cup (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, ww, ee, c, d\}, B=\{c, a, b, ee, 1, 3\},  F=((A \cup B) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, c, d\},  B=\{c, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (\bar{B}))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, 2, d\},  B=\{tt, a, b, ee, 1, 3\}, F=((\bar{B}) \cap (A / B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, 2, d\},  B=\{c, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (\bar{B}))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, 2, d\},  B=\{2, a, b, ee, 1, 3\},  F=((A \cup B) \cap (\bar{A}))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, tt, d\}, B=\{2, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (A \cup B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, d\},     B=\{2, a, b, ee, 1, 3\},  F=((A \oplus B) \cap (A \cap B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, d\},     B=\{2, a, c, ee, 1, 3\},  F=((A / B) \cup (A \cap B))\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(A=\{1, a, b, ww, d\},     B=\{1, a, c, ee, 4, 3\},  F=((A \oplus B) \cap (A / B))\)</span>.</p></li>
-<li><p>Ввести два списки цілих чисел. Всі числа кожного списку знаходяться на окремому рядку. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>вивести всі числа, які входять як в перший, так і в другій список;</p></li>
-<li><p>вивести числа в порядку зростання;</p></li>
-<li><p>завдання вирішити в один рядок.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Ввести два списки цілих чисел. Всі числа кожного списку знаходяться на окремому рядку. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>порахувати, скільки чисел міститься одночасно як в першому списку, так і в другому;</p></li>
-<li><p>результат вивести на екран;</p></li>
-<li><p>завдання вирішити в один рядок.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Згенерувати 2 випадкові рядки з будь-яких ASCII символів. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>створити 2 множини <code class="docutils literal notranslate"><span class="pre">А</span></code> і <code class="docutils literal notranslate"><span class="pre">M</span></code> з цих рядків;</p></li>
-<li><p>порахувати кількість елементів у множині <code class="docutils literal notranslate"><span class="pre">А</span></code> типу <code class="docutils literal notranslate"><span class="pre">М</span></code>;</p></li>
-<li><p>вивести на екран елементи і їх кількість.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Згенерувати рядок, що містить символи, цифри, роздільники. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>створити з рядка 3 множини: з символів, цифр і роздільників;</p></li>
-<li><p>вивести на екран і підрахувати потужність кожного.</p></li>
-</ul>
-<ol class="simple">
-<li><p>Виконати операцію <span class="math notranslate nohighlight">\(A \times B\)</span> декартового добутки (всілякі комбінації значень) двох множин. Цікавий приклад декартового добутку двох множин виникає, якщо взяти <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">{a,b,c,d,e,f,g,h}</span></code>, а <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">{1,2,3,4,5,6,7,8}</span></code>. У цьому випадку множина <span class="math notranslate nohighlight">\(A \times B\)</span> означає набір полів шахової дошки. Необхідно:</p></li>
-</ol>
-<ul class="simple">
-<li><p>створити 2 множини <code class="docutils literal notranslate"><span class="pre">А</span></code> і <code class="docutils literal notranslate"><span class="pre">В</span></code>;</p></li>
-<li><p>виконати операцію декартового добутки в одному рядку;</p></li>
-<li><p>результат вивести на екран.</p></li>
-</ul>
-<p><em>Порада</em>: використовувати метод <code class="docutils literal notranslate"><span class="pre">itertools.product</span></code> з модуля <code class="docutils literal notranslate"><span class="pre">itertools</span></code>.</p>
 </div>
 </div>
 </div>
