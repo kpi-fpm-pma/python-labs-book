@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 
 <html>
@@ -7,29 +6,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Теоретичні відомості &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link href="../../_static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/sphinx-book-theme.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe,.cell"
         const thebe_selector_input = "pre,.cell_input div.highlight"
         const thebe_selector_output = ".output,.cell_output"
@@ -41,23 +57,17 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Питання для самоперевірки" href="questions.html" />
     <link rel="prev" title="Вступ" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="docsearch:language" content="en">
-
-
-<!-- Opengraph tags -->
-<meta property="og:url"         content="https://gasperpaul.github.io/python-labs-book/content/lab4/theory.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Теоретичні відомості" />
-<meta property="og:description" content="Теоретичні відомості  Функції — це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повт" />
-<meta property="og:image"       content="https://gasperpaul.github.io/python-labs-book/_static/logo.png" />
-
-<meta name="twitter:card" content="summary" />
-
-
+    <!-- Google Analytics -->
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -66,30 +76,31 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../../index.html">
-  
-  <img src="../../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
-  
-</a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/intro.html">
    Вступ
   </a>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/guidlines.html">
    Загальні вказівки до виконання лабораторних робіт
@@ -121,40 +132,89 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Лабораторна робота №1
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab1/intro.html">
    Програмування лінійних алгоритмів та розгалужених процесів
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/questions.html">
+     Питання для самопервірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Лабораторна робота №3
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab3/intro.html">
    Рядки
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/questions.html">
+     Питання для самопервірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Лабораторна робота №4
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
    Використання функцій
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
@@ -174,7 +234,7 @@
   </ul>
  </li>
 </ul>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../bibliography.html">
    Рекомендовані джерела
@@ -182,9 +242,8 @@
  </li>
 </ul>
 
-</nav>
-
- <!-- To handle the deprecated key -->
+    </div>
+</nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
   <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
@@ -199,25 +258,25 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        <div class="dropdown-buttons-trigger">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -229,17 +288,18 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
-        <!-- Source interaction buttons -->
 
+            <!-- Source interaction buttons -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Launch buttons -->
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -254,11 +314,6 @@
         
         
         
-        <a class="colab-button" href="https://colab.research.google.com/github/GasperPaul/python-labs-book/blob/master/content/lab4/theory.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../../_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
                 class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
@@ -266,27 +321,28 @@
     </div>
 </div>
 
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
+  <a class="reference internal nav-link" href="#id4">
    Як це працює
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
+  <a class="reference internal nav-link" href="#id5">
    Параметри функцій
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
+    <a class="reference internal nav-link" href="#id6">
      Як це працює
     </a>
    </li>
@@ -298,51 +354,51 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
+    <a class="reference internal nav-link" href="#id7">
      Обов’язкові аргументи функції
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id7">
+    <a class="reference internal nav-link" href="#id8">
      Аргументи за замовчуванням
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
+    <a class="reference internal nav-link" href="#id9">
      Як це працює
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
+    <a class="reference internal nav-link" href="#id10">
      Аргументи-ключові слова
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id10">
+      <a class="reference internal nav-link" href="#id11">
        Як це працює
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
+    <a class="reference internal nav-link" href="#id12">
      Аргументи довільної довжини
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id12">
+      <a class="reference internal nav-link" href="#id13">
        Як це працює
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
+    <a class="reference internal nav-link" href="#id14">
      Тільки ключові параметри
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id14">
+      <a class="reference internal nav-link" href="#id15">
        Як це працює
       </a>
      </li>
@@ -351,17 +407,17 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id15">
+  <a class="reference internal nav-link" href="#id16">
    Область видимості змінних
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id16">
+    <a class="reference internal nav-link" href="#id17">
      Локальні змінні
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id17">
+      <a class="reference internal nav-link" href="#id18">
        Як це працює
       </a>
      </li>
@@ -380,7 +436,7 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id18">
+    <a class="reference internal nav-link" href="#id19">
      Як це працює
     </a>
    </li>
@@ -397,7 +453,7 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id19">
+    <a class="reference internal nav-link" href="#id20">
      Як це працює
     </a>
    </li>
@@ -409,7 +465,7 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id20">
+    <a class="reference internal nav-link" href="#id21">
      Як це працює
     </a>
    </li>
@@ -427,7 +483,8 @@
  </li>
 </ul>
 
-        </nav>
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -435,9 +492,9 @@
         
               <div>
                 
-  <div class="section" id="id1">
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Теоретичні відомості<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Функції — це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повторного використання коду (див. <a class="bibtex reference internal" href="../bibliography.html#ljubanovich" id="id2">[2]</a>, стр. 118-130).
+<p>Функції — це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повторного використання коду (див. <a href="#id2"><span class="problematic" id="id3">:cite:`ljubanovich`</span></a>, стр. 118-130).
 Функції дозволяють надати ім’я визначеному блоку команд з тим, щоб згодом запускати цей блок за вказаним ім’ям у будь-якому місці програми. Це називається викликом функції.
 Існують правила для створення функцій у Python.</p>
 <ul class="simple">
@@ -463,13 +520,13 @@
 </div>
 </div>
 </div>
-<div class="section" id="id3">
-<h2>Як це працює<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>Як це працює<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Визначено функцію з ім’ям <code class="docutils literal notranslate"><span class="pre">sayHello</span></code>, використовуючи описаний вище синтаксис. Ця функція не приймає параметрів, тому в дужках не оголошені будь-які змінні. Параметри функції — це якісь вхідні дані, які можна передати функції, щоб отримати відповідний їм результат.</p>
 <p>Видно, що можна викликати одну й ту ж функцію багато разів, а значить немає необхідності писати один і той же код знову і знову.</p>
 </div>
-<div class="section" id="id4">
-<h2>Параметри функцій<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>Параметри функцій<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Функції можуть приймати параметри, тобто деякі значення, що передаються функції для того, щоб вона щось зробила з ними. Ці параметри схожі на змінні, за винятком того, що значення цих змінних вказується при виклику функції, і під час роботи функції їм уже присвоєні їх значення.</p>
 <p>Параметри вказуються в дужках при оголошенні функції і розділяються комами. Аналогічно передаються значення, коли викликається функція. Слід звернути увагу на термінологію: імена, зазначені в оголошенні функції, називаються <em>параметрами</em>, тоді як значення, які передаються в функцію при її виклику — <em>аргументами</em>.</p>
 <div class="cell docutils container">
@@ -495,8 +552,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id5">
-<h3>Як це працює<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Як це працює<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Тут визначена функція з ім’ям <code class="docutils literal notranslate"><span class="pre">printMax</span></code>, яка використовує два параметри з іменами <span class="math notranslate nohighlight">\(a\)</span> і <span class="math notranslate nohighlight">\(b\)</span>. Знаходиться найбільше число із застосуванням простого оператора <code class="docutils literal notranslate"><span class="pre">if..else</span></code> і виводиться це число.
 При першому виклику функції <code class="docutils literal notranslate"><span class="pre">printMax</span></code> безпосередньо передаються числа в якості аргументів. У другому випадку викликається функція зі змінними в якості аргументів. <code class="docutils literal notranslate"><span class="pre">printMax(x,</span> <span class="pre">y)</span></code> призначає значення аргументу <span class="math notranslate nohighlight">\(x\)</span> параметру <span class="math notranslate nohighlight">\(a\)</span>, а значення аргументу <span class="math notranslate nohighlight">\(y\)</span> — параметру <span class="math notranslate nohighlight">\(b\)</span>. В обох випадках функція <code class="docutils literal notranslate"><span class="pre">printMax</span></code> працює однаково.</p>
 </div>
@@ -510,8 +567,8 @@
 <li><p>Аргументи-ключові слова (Keyword argument)</p></li>
 <li><p>Аргументи довільної довжини (Variable-length argumens)</p></li>
 </ul>
-<div class="section" id="id6">
-<h3>Обов’язкові аргументи функції<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Обов’язкові аргументи функції<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>Якщо при створенні функції ми вказали кількість переданих їй аргументів і їх порядок, то і викликати її ми повинні з тією ж кількістю аргументів, заданих в потрібному порядку.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -556,8 +613,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id7">
-<h3>Аргументи за замовчуванням<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>Аргументи за замовчуванням<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Найчастіше частина параметрів функцій можуть бути необов’язковими, і для них будуть використовуватися деякі задані значення за замовчуванням, якщо користувач не вкаже власних. Цього можна досягти за допомогою значень аргументів за замовчуванням. Їх можна вказати, додавши до імені параметра у визначенні функції оператор присвоювання (<code class="docutils literal notranslate"><span class="pre">=</span></code>) з подальшим значенням.</p>
 <p>Значення за замовчуванням має бути константою. Або точніше кажучи, воно має бути незмінним.</p>
 <div class="cell docutils container">
@@ -577,8 +634,8 @@
 </div>
 </div>
 </div>
-<div class="section" id="id8">
-<h3>Як це працює<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>Як це працює<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Функція під ім’ям <code class="docutils literal notranslate"><span class="pre">say</span></code> використовується для виведення на екран рядку вказане число раз. Якщо не вказується значення, за замовчанням рядок виводиться один раз. Це досягається вказанням значення аргументу за замовчуванням, рівного <span class="math notranslate nohighlight">\(1\)</span> для параметра <span class="math notranslate nohighlight">\(times\)</span>.
 При першому виклику <code class="docutils literal notranslate"><span class="pre">say</span></code> вказується тільки рядок, і функція виводить його один раз. При другому виклику <code class="docutils literal notranslate"><span class="pre">say</span></code> вказується також і аргумент <span class="math notranslate nohighlight">\(5\)</span>, позначаючи таким чином, що фраза сказана <span class="math notranslate nohighlight">\(5\)</span> разів.
 Важливо:
@@ -592,8 +649,8 @@
 </div>
 <p>не допустимо.</p>
 </div>
-<div class="section" id="id9">
-<h3>Аргументи-ключові слова<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h3>Аргументи-ключові слова<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>Якщо є деяка функція з великим числом параметрів, і при її виклику потрібно вказати тільки деякі з них, значення цих параметрів можуть задаватися по їх імені - це називається ключові параметри. В цьому випадку для передачі аргументів функції використовується ім’я (ключ) замість позиції (як було досі).
 Є дві переваги такого підходу: по-перше, використання функції стає легше, оскільки немає необхідності відстежувати порядок аргументів; по-друге, можна задавати значення тільки деяким обраним аргументів, за умови, що інші параметри мають значення аргументу за замовчуванням.</p>
 <div class="cell docutils container">
@@ -614,16 +671,16 @@ a дорівнює 100 , b дорівнює 5 , а c дорівнює 50
 </div>
 </div>
 </div>
-<div class="section" id="id10">
-<h4>Як це працює<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id11">
+<h4>Як це працює<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
 <p>Функція з ім’ям <code class="docutils literal notranslate"><span class="pre">func</span></code> має один параметр без значення за замовчуванням, за яким слідують два параметра із значеннями за замовчуванням.</p>
 <p>При першому виклику <code class="docutils literal notranslate"><span class="pre">func(3,</span> <span class="pre">7)</span></code> параметр a отримує значення <span class="math notranslate nohighlight">\(3\)</span>, параметр <code class="docutils literal notranslate"><span class="pre">b</span></code> отримує значення <span class="math notranslate nohighlight">\(7\)</span>, а <code class="docutils literal notranslate"><span class="pre">c</span></code> отримує своє значення за замовчуванням, яке дорівнює <span class="math notranslate nohighlight">\(10\)</span>.</p>
 <p>При другому виклику <code class="docutils literal notranslate"><span class="pre">func(25,</span> <span class="pre">c=24)</span></code> змінна a отримує значення <span class="math notranslate nohighlight">\(25\)</span> в через позицію аргументу. Після цього параметр <code class="docutils literal notranslate"><span class="pre">c</span></code> отримує значення <span class="math notranslate nohighlight">\(24\)</span> по імені, тобто як ключовий параметр. Змінна <code class="docutils literal notranslate"><span class="pre">b</span></code> отримує значення за замовчуванням, яке дорівнює <span class="math notranslate nohighlight">\(5\)</span>.</p>
 <p>При третьому зверненні <code class="docutils literal notranslate"><span class="pre">func(c=50,</span> <span class="pre">a=100)</span></code> ключові аргументи використовуються для всіх вказаних значень. Звертається увага на те, що значення для параметра <code class="docutils literal notranslate"><span class="pre">c</span></code> указується перед значенням для <code class="docutils literal notranslate"><span class="pre">a</span></code>, навіть, незважаючи на те, що у визначенні функції параметр <code class="docutils literal notranslate"><span class="pre">a</span></code> вказано раніше <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p>
 </div>
 </div>
-<div class="section" id="id11">
-<h3>Аргументи довільної довжини<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h3>Аргументи довільної довжини<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>Іноді буває потрібно визначити функцію, здатну приймати будь-яке число параметрів. Цього можна досягти за допомогою синтаксису із використанням зірочок (так званого <code class="docutils literal notranslate"><span class="pre">*args/**kwargs</span></code> синтаксису).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -651,14 +708,14 @@ None
 </div>
 </div>
 </div>
-<div class="section" id="id12">
-<h4>Як це працює<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id13">
+<h4>Як це працює<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <p>Коли оголошується параметр із зірочкою (наприклад, <code class="docutils literal notranslate"><span class="pre">*param</span></code>), всі позиційні аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в кортеж під ім’ям <code class="docutils literal notranslate"><span class="pre">param</span></code>.</p>
 <p>Аналогічно, коли оголошуються параметри зі двома зірочками (<code class="docutils literal notranslate"><span class="pre">**param</span></code>), всі ключові аргументи, починаючи з цієї позиції і до кінця, будуть зібрані в словник під ім’ям <code class="docutils literal notranslate"><span class="pre">param</span></code>.</p>
 </div>
 </div>
-<div class="section" id="id13">
-<h3>Тільки ключові параметри<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3>Тільки ключові параметри<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p>Якщо деякі ключові параметри повинні бути доступні тільки по ключу, а не як позиційні аргументи, їх можна оголосити після параметра із зірочкою</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -694,24 +751,24 @@ None
 </div>
 </div>
 </div>
-<div class="section" id="id14">
-<h4>Як це працює<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id15">
+<h4>Як це працює<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <p>Оголошення параметрів після параметра із зірочкою дає тільки ключові аргументи. Якщо для таких аргументів не вказано значення за замовчуванням, і воно не передано при виклику, звернення до функції викличе помилку, що показано в прикладі.</p>
 <p>Використання <code class="docutils literal notranslate"><span class="pre">+=</span></code>, який представляє собою скорочений оператор, дозволяє замість <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">=</span> <span class="pre">x+y</span></code> просто написати <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">+=</span> <span class="pre">y</span></code>.</p>
 <p>Якщо потрібні аргументи, що передаються тільки по ключу, але не потрібен параметр із зірочкою, то можна просто вказати одну зірочку без вказівки імені: <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">total</span> <span class="pre">(initial</span> <span class="pre">=</span> <span class="pre">5,</span> <span class="pre">*,</span> <span class="pre">extra_number)</span></code>.</p>
 </div>
 </div>
 </div>
-<div class="section" id="id15">
-<h2>Область видимості змінних<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id16">
+<h2>Область видимості змінних<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
 <p>Деякі змінні скрипта можуть бути недоступні деяким областям програми. Все залежить від того, де оголошені ці змінні.</p>
 <p>У Python є дві базових області видимості змінних:</p>
 <ul class="simple">
 <li><p>Локальні змінні</p></li>
 <li><p>Глобальні змінні</p></li>
 </ul>
-<div class="section" id="id16">
-<h3>Локальні змінні<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>Локальні змінні<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <p>При оголошенні змінних всередині визначення функції, вони жодним чином не пов’язані з іншими змінними з таким же ім’ям за межами функції — тобто імена змінних є локальними в функції. Це називається областю видимості змінної. Область видимості всіх змінних обмежена блоком, в якому вони оголошені, починаючи з точки оголошення імені.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -734,8 +791,8 @@ x як і раніше  50
 </div>
 </div>
 </div>
-<div class="section" id="id17">
-<h4>Як це працює<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id18">
+<h4>Як це працює<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
 <p>При першому виведенні значення, присвоєного імені <code class="docutils literal notranslate"><span class="pre">x</span></code>, в першому рядку функції Python використовує значення параметра, оголошеного в основному блоці, вище визначення функції.</p>
 <p>Далі <code class="docutils literal notranslate"><span class="pre">x</span></code> призначається значення <span class="math notranslate nohighlight">\(2\)</span>.  Ім’я <code class="docutils literal notranslate"><span class="pre">x</span></code> локально для даної функції. Тому коли замінюється значення <code class="docutils literal notranslate"><span class="pre">x</span></code> в функції, <code class="docutils literal notranslate"><span class="pre">x</span></code>, оголошений в основному блоці, залишається незмінним.</p>
 <p>Останнім викликом функції <code class="docutils literal notranslate"><span class="pre">print</span></code> виводиться значення <code class="docutils literal notranslate"><span class="pre">x</span></code>, вказане в основному блоці, підтверджуючи таким чином, що воно не змінилося при локальному присвоєнні значення в раніше викликаної функції.</p>
@@ -768,8 +825,8 @@ x як і раніше  50
 </div>
 </div>
 </div>
-<div class="section" id="id18">
-<h3>Як це працює<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id19">
+<h3>Як це працює<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p>Зарезервоване слово <code class="docutils literal notranslate"><span class="pre">global</span></code> використовується для того, щоб оголосити, що <code class="docutils literal notranslate"><span class="pre">x</span></code> — це глобальна змінна, а значить, коли присвоюється значення імені <code class="docutils literal notranslate"><span class="pre">x</span></code> всередині функції, це зміна відіб’ється на значенні змінної <code class="docutils literal notranslate"><span class="pre">x</span></code> в основному блоці програми.</p>
 <p>Використовуючи одне зарезервоване слово <code class="docutils literal notranslate"><span class="pre">global</span></code>, можна оголосити відразу кілька змінних:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">global</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span>
@@ -802,8 +859,8 @@ x як і раніше  50
 </div>
 </div>
 </div>
-<div class="section" id="id19">
-<h3>Як це працює<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id20">
+<h3>Як це працює<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <p>Усередині <code class="docutils literal notranslate"><span class="pre">func_inner</span></code>, змінна <code class="docutils literal notranslate"><span class="pre">x</span></code>, визначена в першому рядку <code class="docutils literal notranslate"><span class="pre">func_outer</span></code> розташована ані в локальній області видимості (визначення змінної не входить в блок <code class="docutils literal notranslate"><span class="pre">func_inner</span></code>), ані в глобальному контексті (вона також і не в основному блоці програми). Оголошується використання саме цієї змінної <code class="docutils literal notranslate"><span class="pre">x</span></code> наступним чином:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">nonlocal</span> <span class="n">x</span>
 </pre></div>
@@ -833,8 +890,8 @@ x як і раніше  50
 </div>
 </div>
 </div>
-<div class="section" id="id20">
-<h3>Як це працює<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3>Як це працює<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <p>Функція <code class="docutils literal notranslate"><span class="pre">maximum</span></code> повертає максимальний з двох параметрів, які в даному випадку передаються їй при виклику. Вона використовує звичайний умовний оператор <code class="docutils literal notranslate"><span class="pre">if..else</span></code> для визначення найбільшого числа, а потім повертає це число.</p>
 <p>Оператор <code class="docutils literal notranslate"><span class="pre">return</span></code> без вказівки значення, що повертається, еквівалентний вислову <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">None</span></code>. <code class="docutils literal notranslate"><span class="pre">None</span></code> — це спеціальний тип даних в Python, що позначає “нічого”. Наприклад, якщо значення змінної встановлено в <code class="docutils literal notranslate"><span class="pre">None</span></code>, це означає, що їй не присвоєно ніякого значення.</p>
 <p>Кожна функція містить в неявній формі оператор <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">None</span></code> в кінці, якщо не вказано свій власний оператор <code class="docutils literal notranslate"><span class="pre">return</span></code>. У цьому можна переконатися, запустивши <code class="docutils literal notranslate"><span class="pre">print(someFunction())</span></code>, де функція <code class="docutils literal notranslate"><span class="pre">someFunction</span></code> — це якась функція, яка не має оператора <code class="docutils literal notranslate"><span class="pre">return</span></code> в явному вигляді. Наприклад:</p>
@@ -924,23 +981,34 @@ x як і раніше  50
 
               </div>
               
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Вступ</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="questions.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Питання для самоперевірки</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
         </div>
     </div>
-    
-    
-    <div class='prev-next-bottom'>
-        
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Вступ</a>
-    <a class='right-next' id="next-link" href="questions.html" title="next page">Питання для самоперевірки</a>
-
-    </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
           By Громова В.В.<br/>
         
-            &copy; Copyright 2020.<br/>
+            &copy; Copyright 2021.<br/>
           <div class="extra_footer">
             This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
           </div>
@@ -952,8 +1020,8 @@ x як і раніше  50
 
       </div>
     </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-    <script src="../../_static/js/index.js"></script>
-    
   </body>
 </html>

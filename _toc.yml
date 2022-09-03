@@ -1,61 +1,75 @@
-# This file contains the order and numbering for all sections in the book.
-
-- title: Вступ
-  file: content/intro/intro
-
-- part:
-  chapters: 
-    - title: Загальні вказівки до виконання лабораторних робіт
-      file: content/intro/guidlines
-    - title: Встановлення і робота з інтерпретатором Python
-      file: content/intro/installation
-    - title: Структура програми на мові Python та основні модулі
-      file: content/intro/structure
-    - title: Вбудовані функції
-      file: content/intro/functions
-    - title: Основні вказівки до форматування коду
-      file: content/intro/formating
-    - title: Типи і структури даних в Python
-      file: content/intro/types
-
-- part: Лабораторна робота №1
+format: jb-book
+root: content/intro/intro
+title: "Вступ"
+parts:
+- chapters:
+  - file: content/intro/guidlines
+    title: "Загальні вказівки до виконання лабораторних робіт"
+  - file: content/intro/installation
+    title: "Встановлення і робота з інтерпретатором Python"
+  - file: content/intro/structure
+    title: "Структура програми на мові Python та основні модулі"
+  - file: content/intro/functions
+    title: "Вбудовані функції"
+  - file: content/intro/formating
+    title: "Основні вказівки до форматування коду"
+  - file: content/intro/types
+    title: "Типи і структури даних у Python"
+- caption: "Лабораторна робоат №1"
   chapters:
-  - title: Програмування лінійних алгоритмів та розгалужених процесів
-    file: content/lab1/intro
+  - file: content/lab1/intro
+    title: "Програмування лінійних алгоритмів та розгалужених процесів"
     sections:
-    - title: Теоретичні відомості
-      file: content/lab1/theory
-    - title: Питання для самопервірки
-      file: content/lab1/questions
-    - title: Завдання
-      file: content/lab1/problems
-
-- part: Лабораторна робота №3
+    - file: content/lab1/theory
+      title: "Теоретичні відомості"
+    - file: content/lab1/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab1/problems
+      title: "Завдання"
+- caption: "Лабораторна робота №2"
   chapters:
-  - title: Рядки
-    file: content/lab3/intro
+  - file: content/lab2/intro
+    title: "Програмування циклічних алгоритмів"
     sections:
-    - title: Теоретичні відомості
-      file: content/lab3/theory
-    - title: Питання для самопервірки
-      file: content/lab3/questions
-    - title: Завдання
-      file: content/lab3/problems
-
-- part: Лабораторна робота №4
+    - file: content/lab2/theory
+      title: "Теоретичні відомості"
+    - file: content/lab2/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab2/problems
+      title: "Завдання"
+- caption: "Лабораторна робота №3"
   chapters:
-  - title: Використання функцій
-    file: content/lab4/intro
-    sections: 
-    - title: Теоретичні відомості
-      file: content/lab4/theory
-    - title: Питання для самопервірки
-      file: content/lab4/questions
-    - title: Завдання
-      file: content/lab4/problems
-
-- part: 
+  - file: content/lab3/intro
+    title: "Рядки"
+    sections:
+    - file: content/lab3/theory
+      title: "Теоретичні відомості"
+    - file: content/lab3/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab3/problems
+      title: "Завдання"
+- caption: "Лабораторна рообта №4"
   chapters:
-  - title: Рекомендовані джерела
-    file: content/bibliography
-  
+  - file: content/lab4/intro
+    title: "Використання функцій"
+    sections:
+    - file: content/lab4/theory
+      title: "Теоретичні відомості"
+    - file: content/lab4/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab4/problems
+      title: "Завдання"
+- caption: "Лабораторна робота №5"
+  chapters:
+  - file: content/lab5/intro
+    title: "Структури даних: списки, кортежі, множини"
+    sections:
+    - file: content/lab5/theory
+      title: "Теоретичні відомості"
+    - file: content/lab5/questions
+      title: "Питання для самоперевірки"
+    - file: content/lab5/problems
+      title: "Завдання"
+- chapters:
+  - file: content/bibliography
+    title: "Рекомендовані джерела"
