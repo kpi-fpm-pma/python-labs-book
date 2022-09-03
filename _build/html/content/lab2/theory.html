@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Теоретичні відомості &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/lab2/theory.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Питання для самоперевірки" href="questions.html" />
+    <link rel="prev" title="Мета роботи" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/guidlines.html">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/installation.html">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/structure.html">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/types.html">
+   Типи і структури даних у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робоат №1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/questions.html">
+     Питання для самопервірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №2
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Мета роботи
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab3/intro.html">
+   Рядки
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/questions.html">
+     Питання для самопервірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна рообта №4
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab4/intro.html">
+   Використання функцій
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/questions.html">
+     Питання для самопервірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №5
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab5/intro.html">
+   Структури даних: списки, кортежі, множини
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/lab2/theory.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/GasperPaul/python-labs-book/master?urlpath=lab/tree/content/lab2/theory.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#for">
+   Цикл FOR
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#range">
+   Функция RANGE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Вкладені цикли
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#while">
+   Цикл while`
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Програма Обмінний пункт
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Теоретичні відомості<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Цикли – це інструкції, які виконують одну й туж послідовність дій, покидіє задана умова. Типова блок-схема циклу показана на рис. 13.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>             false                            true       
+</pre></div>
+</div>
+<p>Рисунок 13.  Блок-схема циклічного процесу.
+За побудовою цикли ділять на цикли типу арифметичної прогресії і ітерації. Цикл типу арифметичної прогресії має відоме кінцеве число повторень (for). У циклі типу ітерації число повторень невідомо (while`).</p>
+<div class="section" id="for">
+<h2>Цикл FOR<a class="headerlink" href="#for" title="Permalink to this headline">¶</a></h2>
+<p>Цикл for, також називається циклом з параметром, в мові Python багатий можливостями. У циклі for вказується змінна і множина значень, за яким буде пробігати змінна. Множина значень може бути задана списком, кортежем, рядком або діапазоном. Формальне визначення циклу for:
+for int_var in функція_range:
+    інструкції
+Після ключового слова for йде змінна int_var, яка зберігає цілі числа (назва змінної може бути будь-якою), потім ключове слово in, виклик функції range() і двокрапка.А з наступного рядка розташовується блок інструкцій циклу, які також повинні мати відступи від початку рядка. Ось простий приклад використання циклу, де в ролі множини значень використовується кортеж:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">,</span><span class="s1">&#39;cyan&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span><span class="s1">&#39; color of rainbow is&#39;</span><span class="p">,</span><span class="n">color</span><span class="p">,</span><span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>У цьому прикладі змінна color послідовно приймає значення ‘red’, ‘orange’ і т.д. У тілі циклу виводиться повідомлення, яке містить назву кольору, тобто значення змінної color, а також номер ітерації циклу число, яке спочатку дорівнює 1, а потім збільшується на один (інструкцією i+= 1 з кожним проходом циклу.  Інструкція i + = 1 еквівалентна конструкції i = i + 1 (це просто скорочений запис). Такий скорочений запис можна використовувати для всіх арифметичних операцій: * =, - =, / =,% = …
+У списку значень можуть бути вирази різних типів, наприклад:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;two&#39;</span><span class="p">,</span><span class="s1">&#39;three&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>При перших трьох ітераціях циклу змінна i буде приймати значення типу int, при наступних трьох - типу str.
+При виконанні циклу Python послідовно отримує все числа з колекції, яка створюється функцією range, а також зберігає числа в змінній int_var. При першому проході цикл отримує перше число з колекції, при другому - друге число і так далі, поки не перебере всі числа. Коли все числа в колекції будуть перебрані, цикл завершує свою роботу.</p>
+</div>
+<div class="section" id="range">
+<h2>Функция RANGE<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h2>
+<p>Як правило, цикли for використовуються або для повторення будь-якої послідовності дій задану кількість разів, або для зміни значення змінної в циклі від деякого початкового значення до деякого кінцевого. Для повторення циклу деяке задане число разів n можна використовувати цикл for разом з функцією range:
+for i in range(4): #рівносильноінструкції for iin 0,1,2,3:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span> <span class="c1">#рівносильноінструкції for iin 0,1,2,3:</span>
+<span class="c1"># тут можна виконувати циклічні дії </span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="c1"># цикл закінчився, оскільки закінчився блок з відступом </span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Кінець циклу&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Функція <code class="docutils literal notranslate"><span class="pre">range</span></code> має такі форми:
+• range(stop):повертає всі цілі числа від 0 до stop;
+• range(start, stop):повертає всі цілі числа в проміжку від start (включно) до stop (не включаючи);
+• range(start, stop, step):повертає цілі числа в проміжку від start(включно) до stop (не включаючи), які збільшуються на значення step.
+Приклади викликів функції range:</p>
+<p>range(5)          # 0,1,2,3,4
+range(1,5)        # 1,2,3,4
+range(2,10,2)     # 2,4,6,8
+range(5,0,-1)     # 5,4,3,2,1</p>
+<p>Наприклад, виведемо послідовно всі числа від 0 до 4:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>Вкладені цикли<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Одні цикли всередині себе можуть містити інші цикли. Розглянемо на прикладі виведення таблиці множення:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Зовнішній цикл for i in <code class="docutils literal notranslate"><span class="pre">range</span></code> (1, 10) спрацьовує 9 разів, так як в колекції, яка повертається функцією range, 9 чисел. Внутрішній цикл for j in <code class="docutils literal notranslate"><span class="pre">range</span></code> (1, 10) спрацьовує 9 разів для однієї ітерації зовнішнього циклу, і відповідно 81 разів для всіх ітерацій зовнішнього циклу. У кожній ітерації внутрішнього циклу на консоль буде виводитися добуток чисел i та j.</p>
+</div>
+<div class="section" id="while">
+<h2>Цикл while`<a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h2>
+<p>Універсальним організатором циклу в мові програмування Python (як і в багатьох інших мовах) є конструкція while<code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">Слово</span> <span class="pre">&quot;while</span></code>” з англійської мови перекладається як “поки” (“поки логічне вираження повертає істину, виконувати певні операції”). Конструкцію while<code class="docutils literal notranslate"> <span class="pre">на</span> <span class="pre">мові</span> <span class="pre">Python</span> <span class="pre">можна</span> <span class="pre">описати</span> <span class="pre">наступною</span> <span class="pre">схемою:</span> <span class="pre">while</span></code> умовний_ вираз:
+                інструкції
+Ця схема є приблизною, оскільки логічний вираз в заголовку циклу while<code class="docutils literal notranslate"> <span class="pre">може</span> <span class="pre">бути</span> <span class="pre">більш</span> <span class="pre">складним,</span> <span class="pre">а</span> <span class="pre">змінюватися</span> <span class="pre">може</span> <span class="pre">змінна</span> <span class="pre">(або</span> <span class="pre">вираз).</span> <span class="pre">Коли</span> <span class="pre">виконання</span> <span class="pre">програмного</span> <span class="pre">коду</span> <span class="pre">доходить</span> <span class="pre">до</span> <span class="pre">циклу</span> <span class="pre">while</span></code>, виконується логічний вираз в заголовку, і, якщо було отримано True (істина), виконуються вкладені вирази. Після потік виконання програми знову повертається в заголовок циклу while<code class="docutils literal notranslate"><span class="pre">,</span> <span class="pre">і</span> <span class="pre">знову</span> <span class="pre">перевіряється</span> <span class="pre">умова.Якщо</span> <span class="pre">умова</span> <span class="pre">ніколи</span> <span class="pre">не</span> <span class="pre">буде</span> <span class="pre">хибною,</span> <span class="pre">то</span> <span class="pre">не</span> <span class="pre">буде</span> <span class="pre">причин</span> <span class="pre">зупинки</span> <span class="pre">циклу</span> <span class="pre">і</span> <span class="pre">програма</span> <span class="pre">зациклиться.</span> <span class="pre">Щоб</span> <span class="pre">цього</span> <span class="pre">не</span> <span class="pre">сталося,</span> <span class="pre">необхідно</span> <span class="pre">передбачити</span> <span class="pre">можливість</span> <span class="pre">виходу</span> <span class="pre">з</span> <span class="pre">циклу</span> <span class="pre">-</span> <span class="pre">хибність</span> <span class="pre">виразу</span> <span class="pre">в</span> <span class="pre">заголовку.</span> <span class="pre">Таким</span> <span class="pre">чином,</span> <span class="pre">змінюючи</span> <span class="pre">значення</span> <span class="pre">змінної</span> <span class="pre">в</span> <span class="pre">тілі</span> <span class="pre">циклу,</span> <span class="pre">можна</span> <span class="pre">довести</span> <span class="pre">логічний</span> <span class="pre">вираз</span> <span class="pre">до</span> <span class="pre">хибності.Цю</span> <span class="pre">змінювану</span> <span class="pre">змінну,</span> <span class="pre">яка</span> <span class="pre">використовується</span> <span class="pre">в</span> <span class="pre">заголовку</span> <span class="pre">циклу</span> <span class="pre">while</span></code>, зазвичай називають лічильником. Як і будь-якій змінній їй можна давати довільні імена, однак, дуже часто використовують букви i і j. Найпростіший цикл на мові програмування Python може виглядати так:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>str1 = &quot;+&quot; 
+i = 0
+while` i &lt; 10:
+	print (str1)
+	i = i + 1
+</pre></div>
+</div>
+</div>
+</div>
+<p>В останньому рядку коду відбувається збільшення значення змінної i на одиницю, тому з кожним оборотом циклу її значення збільшується. Коли буде досягнуто число 10, логічний вираз i &lt;10 дасть помилковий результат, виконання тіла циклу буде припинено, а потік виконання програми перейде на команди, які йдуть за всією конструкцією циклу.Результатом виконання скрипта, наведеного вище, є вивід на екран десяти знаків + в стовпчик. Якщо збільшувати лічильник в тілі циклу не на одиницю, а на 2, то буде виведено лише п’ять знаків, тому що цикл зробить тільки п’ять оборотів.Всі інструкції, які відносяться до циклу while`, розташовуються на наступних рядках і повинні мати відступ від початку рядка.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>choice = &quot;y&quot;
+while` choice.lower() == &quot;y&quot;:
+    print(&quot;Привіт&quot;)
+    choice = input(&quot;Для продовження натисніть Y, а для виходу іншу клавішу: &quot;)
+    print(&quot;Робота програми завершена &quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>В даному випадку цикл while<code class="docutils literal notranslate"> <span class="pre">триватиме,</span> <span class="pre">поки</span> <span class="pre">змінна</span> <span class="pre">choice</span> <span class="pre">містить</span> <span class="pre">латинську</span> <span class="pre">букву</span> <span class="pre">&quot;Y&quot;</span> <span class="pre">або</span> <span class="pre">&quot;y&quot;.</span> <span class="pre">Сам</span> <span class="pre">блок</span> <span class="pre">циклу</span> <span class="pre">складається</span> <span class="pre">з</span> <span class="pre">двох</span> <span class="pre">інструкцій.</span> <span class="pre">Спочатку</span> <span class="pre">виводиться</span> <span class="pre">повідомлення</span> <span class="pre">&quot;Привіт&quot;,</span> <span class="pre">а</span> <span class="pre">потім</span> <span class="pre">уводиться</span> <span class="pre">нове</span> <span class="pre">значення</span> <span class="pre">для</span> <span class="pre">змінної</span>&#160; <span class="pre">choice.</span> <span class="pre">І</span> <span class="pre">якщо</span> <span class="pre">користувач</span> <span class="pre">натисне</span> <span class="pre">якусь</span> <span class="pre">іншу</span> <span class="pre">клавішу,</span> <span class="pre">відмінну</span> <span class="pre">від</span> <span class="pre">Y,</span> <span class="pre">відбудеться</span> <span class="pre">вихід</span> <span class="pre">з</span> <span class="pre">циклу,</span> <span class="pre">так</span> <span class="pre">як</span> <span class="pre">умова</span>&#160; <span class="pre">choice.lower</span> <span class="pre">()==&quot;y&quot;</span> <span class="pre">поверне</span> <span class="pre">значення</span> <span class="pre">False.</span> <span class="pre">Кожен</span> <span class="pre">такий</span> <span class="pre">прохід</span> <span class="pre">циклу</span> <span class="pre">називається</span> <span class="pre">ітерацією.Також</span> <span class="pre">зверніть</span> <span class="pre">увагу,</span> <span class="pre">що</span> <span class="pre">остання</span> <span class="pre">інструкція</span> <span class="pre">print</span> <span class="pre">(&quot;Робота</span> <span class="pre">програми</span> <span class="pre">завершена&quot;)</span> <span class="pre">не</span> <span class="pre">має</span> <span class="pre">відступів</span> <span class="pre">від</span> <span class="pre">початку</span> <span class="pre">рядка,</span> <span class="pre">тому</span> <span class="pre">вона</span> <span class="pre">не</span> <span class="pre">входить</span> <span class="pre">в</span> <span class="pre">цикл</span> <span class="pre">while</span></code>.Істотна відмінність циклу while<code class="docutils literal notranslate"> <span class="pre">від</span> <span class="pre">циклу</span> <span class="pre">for:</span> <span class="pre">while</span></code> використовується тоді, коли заздалегідь невідомо, скільки разів має повторюватися деяка дія.</p>
+<p>Вихід із циклу break і continue
+Для управління циклом можна використовувати спеціальні оператори break і continue. Оператор break здійснює вихід з циклу. А оператор continue виконує перехід до наступної ітерації циклу.
+Оператор break може використовуватися, якщо в циклі утворюються умови, які несумісні з його подальшим виконанням.
+Приклад:</p>
+</div>
+<div class="section" id="id3">
+<h2>Програма Обмінний пункт<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print(&quot;Для виходу натисніть Y&quot;)
+while` True:
+    data = input(&quot;Уведіть суму для обміну: &quot;)
+    if data.lower()==&quot;y&quot;:
+        break  #вихід з циклу
+    money = int(data)
+    cache = round(money/26,2)
+    print(&quot;До видачі &quot;, cache, &quot;доларів &quot;)
+print(&quot;Робота обмінного пункту завершена &quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Тут продемонстровано нескінченний цикл, так як умова while` True завжди істинна і завжди буде виконуватися. Це популярний прийом для створення програм, які повинні виконуватися невизначено довго.
+У самому циклі отримуємо введення з консолі. Передбачається, що користувач буде вводити число - умовну суму грошей для обміну. Якщо користувач вводить літеру “Y” або “y”, то за допомогою оператора break вихід з циклу і фінал роботи програми. Інакше ділиться введена сума на обмінний курс, за допомогою функції round округляється результат і виводиться на консоль. І так до нескінченності, поки користувач не захоче вийти з програми, натиснувши на клавішу Y.
+Образ роботи програми:</p>
+<p>Але що, якщо користувач введе від<code class="docutils literal notranslate"><span class="pre">ємне</span> <span class="pre">число?</span> <span class="pre">У</span> <span class="pre">цьому</span> <span class="pre">випадку</span> <span class="pre">програма</span> <span class="pre">також</span> <span class="pre">видасть</span> <span class="pre">від</span></code>ємний результат, що не є коректною поведінкою. І в цьому випадку перед обчисленням можна перевірити значення, менше воно нуля, і якщо менше, за допомогою оператора continue виконати перехід до наступної ітерації циклу без його завершення:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print (&quot;Для виходу натисніть Y&quot;)
+while` True:
+    data = input (&quot;Уведіть суму для обміну:&quot;)
+    if data.lower () == &quot;y&quot;:
+        break # вихід з циклу
+    money = int (data)
+    if money &lt;0:
+        print (&quot;Сума повинна бути додатньою!&quot;)
+        continue
+    cache = round (money / 26, 2)
+    print (&quot;До видачі&quot;, cache, &quot;доларів&quot;)
+print (&quot;Робота обмінного пункту завершена&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>І в цьому випадку не можна отримати результат для від’ємної суми:</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "GasperPaul/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content\lab2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Мета роботи</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="questions.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Питання для самоперевірки</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Громова В.В.<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
