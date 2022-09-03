@@ -1,0 +1,660 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/lab6/problems.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Вступ" href="../lab7/intro.html" />
+    <link rel="prev" title="Питання для самоперевірки" href="questions.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/guidlines.html">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/installation.html">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/structure.html">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/types.html">
+   Типи і структури даних у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робоат №1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №2
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab2/intro.html">
+   Мета роботи
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab3/intro.html">
+   Рядки
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна рообта №4
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab4/intro.html">
+   Використання функцій
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №5
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab5/intro.html">
+   Структури даних: списки, кортежі, множини
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №6
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="intro.html">
+   Рекурсія та обробка матриць
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №7
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab7/intro.html">
+   Робота з файлами
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/lab6/problems.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Узагальнене формулювання завдання до лабораторної роботи
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Варіанти завдань до лабораторної роботи
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Завдання на одновимірні масиви (Перше завдання)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Завдання на двовимірні масиви (матриці) (Друге завдання)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Завдання</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Узагальнене формулювання завдання до лабораторної роботи
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Варіанти завдань до лабораторної роботи
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Завдання на одновимірні масиви (Перше завдання)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Завдання на двовимірні масиви (матриці) (Друге завдання)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Завдання<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Узагальнене формулювання завдання до лабораторної роботи<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Вивчити принципи і способи створення одновимірних і двовимірних масивів у Python.</p></li>
+<li><p>Розробити програми відповідно до варіанта завдання.</p></li>
+<li><p>Вхідні дані і результат роботи супроводжувати відповідною інформацією на екрані.</p></li>
+<li><p>Показати розроблену програму викладачеві.</p></li>
+<li><p>Письмово відповісти на <a class="reference internal" href="questions.html"><span class="doc std std-doc">Питання для самоперевірки</span></a>.</p></li>
+<li><p>Оформити звіт відповідно до вимог.</p></li>
+</ol>
+<p>Завдання на виконання лабораторної роботи складається з 2-х частин:</p>
+<ul class="simple">
+<li><p>робота з одновимірними масивами (вектоорами); функції для обробки векторів повинні бути рекурсивними;</p></li>
+<li><p>робота з матрицями.</p></li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>Варіанти завдань до лабораторної роботи<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Завдання на одновимірні масиви (Перше завдання)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Поміняти місцями елементи, які стоять на парних і непарних місцях: <code class="docutils literal notranslate"><span class="pre">a[1]</span> <span class="pre">&lt;-&gt;</span> <span class="pre">a[2];</span> <span class="pre">a[3]</span> <span class="pre">&lt;-&gt;</span> <span class="pre">a[4];</span> <span class="pre">...</span></code></p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Виконати переміщення елементів масиву по колу вправо, тобто <code class="docutils literal notranslate"><span class="pre">a[1]</span> <span class="pre">-&gt;</span> <span class="pre">a[2];</span> <span class="pre">a[2]</span> <span class="pre">-&gt;</span> <span class="pre">a[3];</span> <span class="pre">...;</span> <span class="pre">a[n]</span> <span class="pre">-&gt;</span> <span class="pre">a[1]</span></code>.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Поміняти місцями першу і другу половини масиву.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Поміняти місцями групу з <code class="docutils literal notranslate"><span class="pre">m</span></code> елементів, що починаються з позиції <code class="docutils literal notranslate"><span class="pre">k</span></code> з групою з <code class="docutils literal notranslate"><span class="pre">m</span></code> елементів, що починаються з позиції <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Вставити групу з m нових елементів, починаючи з позиції <code class="docutils literal notranslate"><span class="pre">k</span></code>.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Суму елементів масиву і кількість додатних елементів поставити на перше і друге місце.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Виключити з нього m елементів, починаючи з позиції k.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Виключити всі нульові елементи.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Після кожного від’ємного елемента вставити новий елемент, рівний квадрату цього від’ємного елементу.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Визначити, чи утворюють елементи масиву, розташовані перед першим від’ємним елементом, зростаючу послідовність.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Визначити, чи утворюють елементи масиву, розташовані перед першим від’ємним елементом, спадаючу послідовність.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. З елементів вихідного масиву побудувати два нових. У перший повинні входити тільки елементи з додатними значеннями, а в другій — тільки елементи з від’ємними значеннями.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Додати стільки елементів, щоб елементів з додатними і від’ємними значеннями стало б порівну.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Додати до елементів масиву такий новий елемент, щоб сума елементів з додатними значеннями дорівнювала б модулю суми елементів з від’ємними значеннями.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Дано додатне число <code class="docutils literal notranslate"><span class="pre">t</span></code>. Розділити це число між додатними елементами масиву пропорційно значенням цих елементів і додати отримані частки до відповідних елементів.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Виключити з масиву елементи, що належать проміжку <code class="docutils literal notranslate"><span class="pre">[b</span> <span class="pre">;c]</span></code>.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Замість кожного елемента з нульовим значенням поставити суму двох попередніх елементів масиву.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Визначити, чи є в масиві два підряд нуля.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Підрахувати кількість чисел, що діляться на 3 без остачі, і середнє арифметичне чисел з парними значеннями. Поставити отримані величини на перше й останнє місця в масиві (збільшивши масив на 2 елемента).</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. З’ясувати, чи є в даному масиві 2 додатних елементи підряд. Підрахувати кількість таких пар.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Обчислити суму додатних і добуток парних членів даного масиву, якщо таких членів немає, то видати повідомлення.</p></li>
+<li><p>Дано одновимірний масив числових значень, що нараховує <code class="docutils literal notranslate"><span class="pre">n</span></code> елементів. Якщо в даному масиві дійсних чисел є хоча б один член, менший ніж -2, то всі від’ємні члени замінити їх квадратами.</p></li>
+<li><p>Сформувати в програмі масив з цілих чисел від 2 до <code class="docutils literal notranslate"><span class="pre">n</span></code>. Підрахувати суму квадpатов парних і суму квадратів непарних чисел.</p></li>
+<li><p>Дано дійсні числа <code class="docutils literal notranslate"><span class="pre">а1,</span> <span class="pre">...,</span> <span class="pre">a16</span></code>. Отримати <code class="docutils literal notranslate"><span class="pre">min(a1*a9,</span> <span class="pre">a2*a10,</span> <span class="pre">...,</span> <span class="pre">a8*a16)</span></code>. Скоригований масив вивести на екран.</p></li>
+<li><p>Дано масив дійсних чисел <code class="docutils literal notranslate"><span class="pre">a1,</span> <span class="pre">...,</span> <span class="pre">an</span></code>. Якщо серед елементів масиву є хоча б одне число більше 100, то всі елементи масиву поділити на 100. Вихідний і відкоригований масиви вивести на екран.</p></li>
+<li><p>Дано масив дійсних чисел <code class="docutils literal notranslate"><span class="pre">a1,</span> <span class="pre">...,</span> <span class="pre">an</span></code>. Знайти максимальний елемент серед від’ємних елементів і поміняти його місцями з мінімальним додатним.</p></li>
+<li><p>Дано 2 масиви цілих чисел <code class="docutils literal notranslate"><span class="pre">х1,</span> <span class="pre">...,</span> <span class="pre">хn</span></code>, <code class="docutils literal notranslate"><span class="pre">y1,</span> <span class="pre">...,</span> <span class="pre">yn</span></code>. Отримати новий масив по наступному правилу: <span class="math notranslate nohighlight">\(z_i = \frac{x_i+y_i}{y_i}\)</span>.</p></li>
+<li><p>У упорядкованому за зростанням масиві з’ясувати, більше елементів зі значенням <code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">р</span></code> або елементів зі значенням <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">р</span></code>.</p></li>
+<li><p>Дана послідовність з <code class="docutils literal notranslate"><span class="pre">n</span></code> цілих чисел. Визначити кількість інверсій в даній послідовності (тобто таких пар елементів, в яких велике число знаходиться зліва від меншого: <span class="math notranslate nohighlight">\(x_i&gt; x_j\)</span> при <span class="math notranslate nohighlight">\(i &lt; j\)</span>).</p></li>
+<li><p>Дано масив цілих чисел <code class="docutils literal notranslate"><span class="pre">a1,</span> <span class="pre">...,</span> <span class="pre">an</span></code>, кожне з яких відмінно від 0. Якщо в послідовності від’ємні і додатні числа чергуються <code class="docutils literal notranslate"><span class="pre">(+,</span> <span class="pre">-,</span> <span class="pre">+,</span> <span class="pre">-,</span> <span class="pre">...)</span></code> або <code class="docutils literal notranslate"><span class="pre">(-,</span> <span class="pre">+,</span> <span class="pre">-,</span> <span class="pre">+,</span> <span class="pre">...)</span></code>, то відповіддю має бути вихідна послідовність. Інакше, отримати всі від’ємні елементи послідовності, зберігши порядок їх слідування.</p></li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h3>Завдання на двовимірні масиви (матриці) (Друге завдання)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Знайти найбільший елемент стовпця матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, для якого сума абсолютних значень елементів максимальна.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Знайти найбільше значення серед середніх значень для кожного рядка матриці.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Знайти найменший елемент стовпця матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, для якого сума абсолютних значень елементів максимальна.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Знайти найменше значення серед середніх значень для кожного рядка матриці.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Визначити середні значення по всіх рядках і стовпцях матриці. Результат оформити у вигляді матриці з <code class="docutils literal notranslate"><span class="pre">n+1</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m+1</span></code> стовпців.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Знайти суму елементів всієї матриці. Визначити, яку частку в цій сумі становить сума елементів кожного стовпця. Результат оформити у вигляді матриці з <code class="docutils literal notranslate"><span class="pre">n+1</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Знайти суму елементів всієї матриці. Визначити, яку частку в цій сумі становить сума елементів кожного рядка. Результат оформити у вигляді матриці з <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m+1</span></code> стовпців.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Визначити, скільки від’ємних елементів міститься в кожному стовпці і в кожному рядку матриці. Результат оформити у вигляді матриці з <code class="docutils literal notranslate"><span class="pre">n+1</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m+1</span></code> стовпців.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і m стовпців. Визначити, скільки нульових елементів міститься у верхніх <code class="docutils literal notranslate"><span class="pre">f</span></code> рядках матриці і в лівих <code class="docutils literal notranslate"><span class="pre">d</span></code> стовпцях матриці.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Перемножити елементи кожного стовпця матриці з відповідними елементами <code class="docutils literal notranslate"><span class="pre">k</span></code>-го стовпця.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Підсумувати елементи кожного рядка матриці з відповідними елементами <code class="docutils literal notranslate"><span class="pre">k</span></code>-го рядка.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Розділити елементи кожного рядка на елемент цього рядка з найбільшим значенням.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Розділити елементи кожного стовпця матриці на елемент цього стовпця з найбільшим значенням.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Розділити елементи матриці на елемент матриці з максимальним значенням.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Всі елементи мають цілий тип. Дано ціле число <code class="docutils literal notranslate"><span class="pre">h</span></code>. Визначити, які стовпці мають хоча б одне таке число, а які не мають.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Виключити з матриці рядок з номером <code class="docutils literal notranslate"><span class="pre">k</span></code>. Зімкнути рядки матриці.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Додати до матриці рядок і вставити його під номером <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p></li>
+<li><p>Виконати обробку елементів квадратної матриці <code class="docutils literal notranslate"><span class="pre">A(n)</span></code>. Знайти суму елементів, що стоять на головній діагоналі, і суму елементів, що стоять на побічній діагоналі (елементи головної діагоналі мають індекси від <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0]</span></code> до <code class="docutils literal notranslate"><span class="pre">[n,</span> <span class="pre">n]</span></code>, а елементи побічної діагоналі — від <code class="docutils literal notranslate"><span class="pre">[n,</span> <span class="pre">0]</span></code> до <code class="docutils literal notranslate"><span class="pre">[0</span> <span class="pre">,</span> <span class="pre">n]</span></code>).</p></li>
+<li><p>Виконати обробку елементів квадратної матриці <code class="docutils literal notranslate"><span class="pre">A(n)</span></code>. Визначити суму елементів, розташованих паралельно головній діагоналі (найближчі до головної). Елементи головної діагоналі мають індекси від <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0]</span></code> до <code class="docutils literal notranslate"><span class="pre">[n,</span> <span class="pre">n]</span></code>.</p></li>
+<li><p>Виконати обробку елементів квадратної матриці <code class="docutils literal notranslate"><span class="pre">A(n)</span></code>. Визначити добуток елементів, розташованих паралельно побічної діагоналі (найближчі до побічної). Елементи побічної діагоналі мають індекси від <code class="docutils literal notranslate"><span class="pre">[n,</span> <span class="pre">0]</span></code> до <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">n]</span></code>.</p></li>
+<li><p>Виконати обробку елементів квадратної матриці <code class="docutils literal notranslate"><span class="pre">A(n)</span></code>. Кожній парі елементів, симетричних відносно головної діагоналі (найближчі до головної), привласнити значення, рівні напівсумі цих симетричних значень (елементи головної діагоналі мають індекси від <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0]</span></code> до <code class="docutils literal notranslate"><span class="pre">[n,</span> <span class="pre">n]</span></code>).</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Вихідна матриця складається з нулів і одиниць. Додати до матриці ще один стовпець, кожен елемент якого робить кількість одиниць в кожному рядку парним.</p></li>
+<li><p>Виконати обробку елементів квадратної матриці <code class="docutils literal notranslate"><span class="pre">A(n)</span></code>. Знайти суму елементів, розташованих вище головної діагоналі, і добуток елементів, розташованих вище побічної діагоналі (елементи головної діагоналі мають індекси від <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">0]</span></code> до <code class="docutils literal notranslate"><span class="pre">[n,</span> <span class="pre">n]</span></code>, а елементи побічної діагоналі — від <code class="docutils literal notranslate"><span class="pre">[n,</span> <span class="pre">0]</span></code> до <code class="docutils literal notranslate"><span class="pre">[0,</span> <span class="pre">n]</span></code>).</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Дано номер рядка <code class="docutils literal notranslate"><span class="pre">s</span></code> і номер стовпця <code class="docutils literal notranslate"><span class="pre">r</span></code>, за допомогою яких вихідна матриця розбивається на чотири частини. Знайти суму елементів кожної частини.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Визначити, скільки нульових елементів міститься в кожному стовпці і в кожному рядку матриці. Результат оформити у вигляді матриці з <code class="docutils literal notranslate"><span class="pre">n+1</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m+1</span></code> стовпців.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Дано номер рядка <code class="docutils literal notranslate"><span class="pre">s</span></code> і номер стовпця <code class="docutils literal notranslate"><span class="pre">r</span></code>, за допомогою яких вихідна матриця розбивається на чотири частини. Знайти середнє арифметичне елементів кожної частини.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Всі елементи мають цілий тип. Дано ціле число <code class="docutils literal notranslate"><span class="pre">h</span></code>. Визначити, які рядки мають хоча б одне таке число, а які не мають.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Виключити з матриці стовпець з номером <code class="docutils literal notranslate"><span class="pre">k</span></code>. Зімкнути стовпці матриці.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Додати до матриці стовпець чисел і вставити його під номером <code class="docutils literal notranslate"><span class="pre">k</span></code>.</p></li>
+<li><p>Виконати обробку елементів прямокутної матриці <code class="docutils literal notranslate"><span class="pre">A</span></code>, що має <code class="docutils literal notranslate"><span class="pre">n</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців. Додати до елементів кожного стовпця такий новий елемент, щоб сума позитивних елементів стала б рівна модулю суми негативних елементів. Результат оформити у вигляді матриці з <code class="docutils literal notranslate"><span class="pre">n+1</span></code> рядків і <code class="docutils literal notranslate"><span class="pre">m</span></code> стовпців.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "GasperPaul/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/lab6"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="questions.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Питання для самоперевірки</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../lab7/intro.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Вступ</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Громова В.В.<br/>
+    
+        &copy; Copyright 2021.<br/>
+      <div class="extra_footer">
+        This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

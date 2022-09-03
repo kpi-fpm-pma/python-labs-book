@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Питання для самоперевірки &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    <title>Вступ &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,12 +52,12 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/lab2/questions.html" />
+    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/lab6/intro.html" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Узагальнене формулювання завдання до лабораторної роботи" href="problems.html" />
-    <link rel="prev" title="Теоретичні відомості" href="theory.html" />
+    <link rel="next" title="Теоретичні відомості" href="theory.html" />
+    <link rel="prev" title="Завдання" href="../lab5/problems.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -172,9 +172,9 @@
   Лабораторна робота №2
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
+  <a class="reference internal" href="../lab2/intro.html">
    Мета роботи
   </a>
  </li>
@@ -286,29 +286,29 @@
   Лабораторна робота №6
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../lab6/intro.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    Рекурсія та обробка матриць
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lab6/theory.html">
+    <a class="reference internal" href="theory.html">
      Теоретичні відомості
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lab6/questions.html">
+    <a class="reference internal" href="questions.html">
      Питання для самоперевірки
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../lab6/problems.html">
+    <a class="reference internal" href="problems.html">
      Завдання
     </a>
    </li>
@@ -396,7 +396,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/content/lab2/questions.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/content/lab6/intro.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -421,6 +421,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Мета роботи
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Теми для попереднього опрацювання
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -428,11 +446,29 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Питання для самоперевірки</h1>
+                <h1>Вступ</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Мета роботи
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Теми для попереднього опрацювання
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -440,16 +476,22 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Питання для самоперевірки<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<ol class="simple">
-<li><p>Який обчислювальний процес називається циклічним?</p></li>
-<li><p>Чим відрізняється арифметичний цикл від ітераційного?</p></li>
-<li><p>Скільки операторів циклу існує в мові Python?</p></li>
-<li><p>Що називається параметром циклу, тілом циклу?</p></li>
-<li><p>Як працює оператор циклу з передумовою?</p></li>
-<li><p>Як можна вийти з циклу примусово?</p></li>
-<li><p>Які правила пунктуації необхідно дотримувати при записі операторів циклу?</p></li>
-</ol>
+<h1>Вступ<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Мета роботи<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Вивчення роботи з одновимірними та двовимірними масивами із застосуванням рекурсивних функцій</p>
+</div>
+<div class="section" id="id3">
+<h2>Теми для попереднього опрацювання<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>методи створення масивів;</p></li>
+<li><p>модулі та їх функції/методи (<code class="docutils literal notranslate"><span class="pre">array</span></code> та <code class="docutils literal notranslate"><span class="pre">NumPy</span></code>);</p></li>
+<li><p>базові операції з масивами;</p></li>
+<li><p>рекурсивні функції для роботи з масивами.</p></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -465,7 +507,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./content/lab2"
+            path: "./content/lab6"
         },
         predefinedOutput: true
     }
@@ -477,17 +519,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="theory.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../lab5/problems.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Теоретичні відомості</p>
+            <p class="prev-next-title">Завдання</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="problems.html" title="next page">
+    <a class='right-next' id="next-link" href="theory.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Узагальнене формулювання завдання до лабораторної роботи</p>
+        <p class="prev-next-title">Теоретичні відомості</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
