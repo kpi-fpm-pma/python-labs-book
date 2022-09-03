@@ -15,7 +15,7 @@ Working languages of this repo are English and Ukrainian.
 If you spot a bug, typo or any other discrepancy in the book, please open an issue with this repo. Somebody will look into it.
 
 If you want to fix it yourself or work on one of the open issues feel free to submit your changes as a pull request following the instructions below. 
-When opening a pull request make sure it is done against `master` branch, it has a descriptive name and a description of all your changes.
+When opening a pull request make sure it is done against `main` branch, it has a descriptive name and a description of all your changes.
 We suggest using our preferred tools to make any changes for the PR.
 
 # How to submit a PR
@@ -24,7 +24,7 @@ We suggest using our preferred tools to make any changes for the PR.
 
 First of all, you will need a copy of the repo and working environment, so you'll need to clone it:
 ```
-git clone https://github.com/GasperPaul/python-labs-book.git
+git clone https://github.com/kpi-fpm-pma/python-labs-book.git
 ```
 
 This will create a folder named `python-labs-book` in your current folder, containing the copy of this repo.
@@ -79,7 +79,7 @@ After you're done with making required changes, push your work branch to the mai
 git push --set-upstream origin your-branch-name
 ```
 
-After this you can go to the Github [repo page](https://github.com/GasperPaul/python-labs-book) and you'll see that you can now make a pull request from your freshly pushed branch.
+After this you can go to the Github [repo page](https://github.com/kpi-fpm-pma/python-labs-book) and you'll see that you can now make a pull request from your freshly pushed branch.
 Click "Compare &amp; pull request" and you'll be taken to a pull request creation page.
 Name it properly and describe your changes.
 If it should resolve an existing issue, put "Closes #" into the description somewhere.
