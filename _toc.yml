@@ -40,7 +40,7 @@ parts:
 - caption: "Лабораторна робота №3"
   chapters:
   - file: content/lab3/intro
-    title: "Рядки"
+    title: "Структури даних: списки, кортежі, множини"
     sections:
     - file: content/lab3/theory
       title: "Теоретичні відомості"
@@ -48,10 +48,10 @@ parts:
       title: "Питання для самоперевірки"
     - file: content/lab3/problems
       title: "Завдання"
-- caption: "Лабораторна рообта №4"
+- caption: "Лабораторна робота №4"
   chapters:
   - file: content/lab4/intro
-    title: "Використання функцій"
+    title: "Рядки"
     sections:
     - file: content/lab4/theory
       title: "Теоретичні відомості"
@@ -59,10 +59,10 @@ parts:
       title: "Питання для самоперевірки"
     - file: content/lab4/problems
       title: "Завдання"
-- caption: "Лабораторна робота №5"
+- caption: "Лабораторна рообта №5"
   chapters:
   - file: content/lab5/intro
-    title: "Структури даних: списки, кортежі, множини"
+    title: "Використання функцій"
     sections:
     - file: content/lab5/theory
       title: "Теоретичні відомості"
