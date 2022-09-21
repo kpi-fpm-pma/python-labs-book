@@ -93,5 +93,20 @@ parts:
     - file: content/lab7/problems
       title: "Завдання"
 - chapters:
+  - file: content/outro/exceptions
+    title: "Винятки у Python"
+- caption: "Додатки"
+  chapters:
+    - file: content/outro/appendixA
+      title: "Додаток 1"
+    - file: content/outro/appendixB
+      title: "Додаток 2"
+    - file: content/outro/appendixC
+      title: "Додаток 3"
+    - file: content/outro/appendixD
+      title: "Додаток 4"
+    - file: content/outro/appendixE
+      title: "Додаток 5"
+- chapters:
   - file: content/bibliography
     title: "Рекомендовані джерела"
