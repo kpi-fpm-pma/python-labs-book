@@ -17,20 +17,21 @@ html:
   favicon: content/images/logo/favicon.ico
   extra_navbar: <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
   extra_footer: >-
-      This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br />
+      This page was created by <a href="https://github.com/kpi-fpm-pma/python-labs-book/graphs/contributors">community</a>.<br />
       "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
   home_page_in_navbar: true
-  baseurl: https://gasperpaul.github.io/python-labs-book
+  baseurl: https://kpi-fpm-pma.github.io/python-labs-book
 
 #######################################################################################
 # Interact link settings
 launch_buttons:
   notebook_interface: jupyterlab
-  binderhub_url: https://mybinder.org
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
   thebe: true
 
 repository:
-  url: https://github.com/GasperPaul/python-labs-book
+  url: https://github.com/kpi-fpm-pma/python-labs-book
   branch: master
   path_to_book: ''
 
