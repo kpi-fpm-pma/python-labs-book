@@ -15,7 +15,7 @@ parts:
     title: "Основні вказівки до форматування коду"
   - file: content/intro/types
     title: "Типи і структури даних у Python"
-- caption: "Лабораторна робоат №1"
+- caption: "Лабораторна робота №1"
   chapters:
   - file: content/lab1/intro
     title: "Програмування лінійних алгоритмів та розгалужених процесів"
@@ -59,7 +59,7 @@ parts:
       title: "Питання для самоперевірки"
     - file: content/lab4/problems
       title: "Завдання"
-- caption: "Лабораторна рообта №5"
+- caption: "Лабораторна робота №5"
   chapters:
   - file: content/lab5/intro
     title: "Використання функцій"
