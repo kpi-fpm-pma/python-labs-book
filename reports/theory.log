@@ -47,7 +47,7 @@ concat3(a,b,c)
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mStdinNotImplementedError[0m                  Traceback (most recent call last)
-Input [0;32mIn [5][0m, in [0;36m<cell line: 21>[0;34m()[0m
+Cell [0;32mIn [5], line 21[0m
 [1;32m     16[0m     [38;5;28;01mreturn[39;00m a[38;5;241m+[39mb[38;5;241m+[39mc
 [1;32m     19[0m concat2, concat3 [38;5;241m=[39m my_decorator(concat2), my_decorator(concat3)
 [0;32m---> 21[0m a [38;5;241m=[39m [38;5;28;43minput[39;49m[43m([49m[38;5;124;43m'[39;49m[38;5;124;43mВведіте перший рядок[39;49m[38;5;124;43m'[39;49m[43m)[49m

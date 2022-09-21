@@ -52,7 +52,7 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/lab1/theory.html" />
+    <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/lab1/theory.html" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -351,6 +351,45 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../outro/exceptions.html">
+   Винятки у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Додатки
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixA.html">
+   Додаток 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixB.html">
+   Додаток 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixC.html">
+   Додаток 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixD.html">
+   Додаток 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixE.html">
+   Додаток 5
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../bibliography.html">
    Рекомендовані джерела
   </a>
@@ -421,13 +460,18 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/GasperPaul/python-labs-book/master?urlpath=lab/tree/content/lab1/theory.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/kpi-fpm-pma/python-labs-book/master?urlpath=lab/tree/content/lab1/theory.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/kpi-fpm-pma/python-labs-book/blob/master/content/lab1/theory.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
         
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
@@ -448,7 +492,13 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#int">
-   Цілі числа (int)
+   Цілі числа (
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     int
+    </span>
+   </code>
+   )
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -463,7 +513,13 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#float">
-   Дійсні числа (float)
+   Дійсні числа (
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     float
+    </span>
+   </code>
+   )
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -489,22 +545,22 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#if-elif-else">
-     Керуючі конструкції - оператори
+     Керуючі конструкції. Оператори
      <code class="docutils literal notranslate">
       <span class="pre">
-       IF
+       if
       </span>
       <span class="pre">
        ...
       </span>
       <span class="pre">
-       ELIF
+       elif
       </span>
       <span class="pre">
        ...
       </span>
       <span class="pre">
-       ELSE
+       else
       </span>
      </code>
     </a>
@@ -514,7 +570,7 @@
      Оператор
      <code class="docutils literal notranslate">
       <span class="pre">
-       IF
+       if
       </span>
      </code>
     </a>
@@ -528,22 +584,22 @@
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id6">
-     Операторы
+     Оператори
      <code class="docutils literal notranslate">
       <span class="pre">
-       IF
+       if
       </span>
       <span class="pre">
        ..
       </span>
       <span class="pre">
-       ELIF
+       elif
       </span>
       <span class="pre">
        ..
       </span>
       <span class="pre">
-       ELSE
+       else
       </span>
      </code>
     </a>
@@ -574,7 +630,12 @@
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id9">
-     Вкладені конструкції IF
+     Вкладені конструкції
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       if
+      </span>
+     </code>
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -608,7 +669,13 @@
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#int">
-   Цілі числа (int)
+   Цілі числа (
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     int
+    </span>
+   </code>
+   )
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -623,7 +690,13 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#float">
-   Дійсні числа (float)
+   Дійсні числа (
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     float
+    </span>
+   </code>
+   )
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -649,22 +722,22 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#if-elif-else">
-     Керуючі конструкції - оператори
+     Керуючі конструкції. Оператори
      <code class="docutils literal notranslate">
       <span class="pre">
-       IF
+       if
       </span>
       <span class="pre">
        ...
       </span>
       <span class="pre">
-       ELIF
+       elif
       </span>
       <span class="pre">
        ...
       </span>
       <span class="pre">
-       ELSE
+       else
       </span>
      </code>
     </a>
@@ -674,7 +747,7 @@
      Оператор
      <code class="docutils literal notranslate">
       <span class="pre">
-       IF
+       if
       </span>
      </code>
     </a>
@@ -688,22 +761,22 @@
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id6">
-     Операторы
+     Оператори
      <code class="docutils literal notranslate">
       <span class="pre">
-       IF
+       if
       </span>
       <span class="pre">
        ..
       </span>
       <span class="pre">
-       ELIF
+       elif
       </span>
       <span class="pre">
        ..
       </span>
       <span class="pre">
-       ELSE
+       else
       </span>
      </code>
     </a>
@@ -734,7 +807,12 @@
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id9">
-     Вкладені конструкції IF
+     Вкладені конструкції
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       if
+      </span>
+     </code>
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
@@ -760,9 +838,9 @@
 <p>Лінійний алгоритм — алгоритм, в якому обчислення виконуються строго послідовно. Такий алгоритм реалізується простими інструкціями. Прості інструкції (simple statements) є базовим елементом більшості мов програмування і Python не виняток.</p>
 <p>Прості інструкції розташовуються в одному рядку. Кілька простих інструкцій теж можна розташовувати в одному рядку, для цього вони повинні бути розділені крапкою з комою. Однак, зловживати не варто, так як це погано позначається на читання коду.</p>
 <p>Типова блок-схема лінійного алгоритму показана на рис. 1.1.</p>
-<p>[]</p>
+<p><img alt="linear algorithm" src="../../_images/linear.png" /></p>
 <div class="section" id="int">
-<h2>Цілі числа (int)<a class="headerlink" href="#int" title="Permalink to this headline">¶</a></h2>
+<h2>Цілі числа (<code class="docutils literal notranslate"><span class="pre">int</span></code>)<a class="headerlink" href="#int" title="Permalink to this headline">¶</a></h2>
 <p>Числа в Python 3 нічим не відрізняються від звичайних чисел. Вони підтримують набір звичайних математичних операцій:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -810,7 +888,7 @@
 <p>Приклади операцій:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">255</span><span class="o">+</span><span class="mi">34</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">255</span> <span class="o">+</span> <span class="mi">34</span>
 </pre></div>
 </div>
 </div>
@@ -822,7 +900,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span><span class="o">*</span><span class="mi">2</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="o">*</span> <span class="mi">2</span>
 </pre></div>
 </div>
 </div>
@@ -834,7 +912,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span><span class="o">/</span><span class="mi">3</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span><span class="o">/</span><span class="mi">3</span>
 </pre></div>
 </div>
 </div>
@@ -846,7 +924,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span><span class="o">//</span><span class="mi">3</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span><span class="o">//</span><span class="mi">3</span>
 </pre></div>
 </div>
 </div>
@@ -858,7 +936,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span><span class="o">%</span><span class="k">3</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">20</span><span class="o">%</span><span class="k">3</span>
 </pre></div>
 </div>
 </div>
@@ -870,7 +948,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mi">4</span>
 </pre></div>
 </div>
 </div>
@@ -882,7 +960,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -894,7 +972,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">27</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">pow</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">27</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -906,7 +984,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mi">150</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">3</span><span class="o">**</span><span class="mi">150</span>
 </pre></div>
 </div>
 </div>
@@ -928,13 +1006,13 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">|</span> <span class="pre">y</span></code></p></td>
-<td><p>побітове або</p></td>
+<td><p>побітове АБО</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">^</span> <span class="pre">y</span></code></p></td>
-<td><p>побітове виключення або</p></td>
+<td><p>побітове виключення АБО</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&amp;</span> <span class="pre">y</span></code></p></td>
-<td><p>побітове і</p></td>
+<td><p>побітове І</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">&lt;&lt;</span> <span class="pre">n</span></code></p></td>
 <td><p>бітовий зсув вліво</p></td>
@@ -951,22 +1029,22 @@
 <div class="section" id="id3">
 <h2>Системи числення<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Для переведення числа з однієї системи числення в іншу Python надає кілька функцій:</p>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">([object],</span> <span class="pre">[основа</span> <span class="pre">системи</span> <span class="pre">числення])</span></code> - перетворення до цілого числа в десятковій системі числення. За замовчуванням система числення десяткова, але можна задати будь-яку основу від 2 до 36 включно.</p>
-<p><code class="docutils literal notranslate"><span class="pre">bin</span> <span class="pre">(x)</span></code> - перетворення цілого числа в двійковий рядок.</p>
-<p><code class="docutils literal notranslate"><span class="pre">hex</span> <span class="pre">(х)</span></code> - перетворення цілого числа в шістнадцятковий рядок.</p>
-<p><code class="docutils literal notranslate"><span class="pre">oct</span> <span class="pre">(х)</span></code> - перетворення цілого числа в вісімковий рядок.</p>
-</div></blockquote>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">([object],</span> <span class="pre">[основа</span> <span class="pre">системи</span> <span class="pre">числення])</span></code> — перетворення до цілого числа в десятковій системі числення. За замовчуванням система числення десяткова, але можна задати будь-яку основу від 2 до 36 включно.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bin</span> <span class="pre">(x)</span></code> — перетворення цілого числа в двійковий рядок.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hex</span> <span class="pre">(х)</span></code> — перетворення цілого числа в шістнадцятковий рядок.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">oct</span> <span class="pre">(х)</span></code> — перетворення цілого числа в вісімковий рядок.</p></li>
+</ul>
 </div>
 <div class="section" id="float">
-<h2>Дійсні числа (float)<a class="headerlink" href="#float" title="Permalink to this headline">¶</a></h2>
-<p>Дійсні числа підтримують ті ж операції, що і цілі.Більш докладно про можливі операції див. <span class="xref myst">Додаток 4</span>.</p>
+<h2>Дійсні числа (<code class="docutils literal notranslate"><span class="pre">float</span></code>)<a class="headerlink" href="#float" title="Permalink to this headline">¶</a></h2>
+<p>Дійсні числа підтримують ті ж операції, що і цілі. Більш докладно про можливі операції див. <a class="reference internal" href="../outro/appendixD.html"><span class="doc std std-doc">Додаток 4</span></a>.</p>
 <p>Прості приклади роботи з числами:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span><span class="o">=</span><span class="mi">150</span> 
-<span class="n">d</span><span class="o">=</span><span class="mf">12.9</span> 
-<span class="n">c</span><span class="o">+</span><span class="n">d</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="mi">150</span> 
+<span class="n">d</span> <span class="o">=</span> <span class="mf">12.9</span> 
+<span class="n">c</span> <span class="o">+</span> <span class="n">d</span> 
 </pre></div>
 </div>
 </div>
@@ -978,7 +1056,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span><span class="o">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">d</span><span class="o">-</span><span class="n">c</span><span class="p">)</span> <span class="c1"># Модуль числа </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">d</span> <span class="o">-</span> <span class="n">c</span><span class="p">)</span> <span class="c1"># Модуль числа </span>
 <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1029,22 +1107,22 @@
 </div>
 </div>
 </div>
-<p>Модуль random реалізує генератор випадкових чисел і функції випадкового вибору.</p>
+<p>Модуль <code class="docutils literal notranslate"><span class="pre">random</span></code> реалізує генератор випадкових чисел і функції випадкового вибору.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
 
-<span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> 
+<span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.9734358296928365
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.01686419308383258
 </pre></div>
 </div>
 </div>
 </div>
-<p>Більш докладно операції з різними типами змінних описано в <span class="xref myst">Додатку 4</span>.</p>
+<p>Більш докладно операції з різними типами змінних описано в <a class="reference internal" href="../outro/appendixD.html"><span class="doc std std-doc">Додатку 4</span></a>.</p>
 </div>
 <div class="section" id="print-input">
 <h2>Функції <code class="docutils literal notranslate"><span class="pre">print</span></code> і <code class="docutils literal notranslate"><span class="pre">input</span></code><a class="headerlink" href="#print-input" title="Permalink to this headline">¶</a></h2>
@@ -1064,7 +1142,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">2.34</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mf">2.34</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1076,7 +1154,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1088,7 +1166,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a:&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a:&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1116,7 +1194,7 @@
 <p>Аргументи функції (те, що в дужках), поділяються між собою комами. У виводі замість ком значення розділені пробілом. Якщо в дужках стоїть вираз, то спочатку він виконується, після чого <code class="docutils literal notranslate"><span class="pre">print()</span></code> вже виводить результат цього виразу:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;world&quot;</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;world&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1141,7 +1219,7 @@
 <p>У <code class="docutils literal notranslate"><span class="pre">print</span></code> передбачені додаткові параметри. Наприклад, через параметр <code class="docutils literal notranslate"><span class="pre">sep</span></code> можна вказати відмінний від пробілу роздільник рядків:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">,</span> <span class="s2">&quot;Tue&quot;</span><span class="p">,</span> <span class="s2">&quot;Wed&quot;</span><span class="p">,</span> <span class="s2">&quot;Thu&quot;</span><span class="p">,</span> <span class="s2">&quot;Fri&quot;</span><span class="p">,</span> <span class="s2">&quot;Sat&quot;</span><span class="p">,</span> <span class="s2">&quot;Sun&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mon&quot;</span><span class="p">,</span> <span class="s2">&quot;Tue&quot;</span><span class="p">,</span> <span class="s2">&quot;Wed&quot;</span><span class="p">,</span> <span class="s2">&quot;Thu&quot;</span><span class="p">,</span> <span class="s2">&quot;Fri&quot;</span><span class="p">,</span> <span class="s2">&quot;Sat&quot;</span><span class="p">,</span> <span class="s2">&quot;Sun&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1163,12 +1241,12 @@
 </div>
 </div>
 </div>
-<p>Форматування виведення може виконуватися в так званому старому стилі або за допомогою строкового методу <code class="docutils literal notranslate"><span class="pre">format</span></code>. Старий стиль також називають Сі-стилем, так як він схожий з тим, як відбувається вивід на екран в мові C. Приклад:</p>
+<p>Форматування виведення може виконуватися в так званому старому стилі або за допомогою строкового методу <code class="docutils literal notranslate"><span class="pre">format</span></code>. Старий стиль також називають С-стилем, так як він схожий з тим, як відбувається вивід на екран в мові C. Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pupil</span> <span class="o">=</span> <span class="s2">&quot;Ben&quot;</span> 
-<span class="n">old</span> <span class="o">=</span> <span class="mi">16</span> 
-<span class="n">grade</span> <span class="o">=</span> <span class="mf">9.2</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pupil</span> <span class="o">=</span> <span class="s2">&quot;Ben&quot;</span>
+<span class="n">old</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">grade</span> <span class="o">=</span> <span class="mf">9.2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s </span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2">. Level: </span><span class="si">%f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pupil</span><span class="p">,</span> <span class="n">old</span><span class="p">,</span> <span class="n">grade</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -1183,7 +1261,7 @@
 <p>Хоча в якості значення змінної <code class="docutils literal notranslate"><span class="pre">grade</span></code> було зазначено число <code class="docutils literal notranslate"><span class="pre">9.2</span></code>, на екран воно вивелося з додатковими нулями. Однак, можна вказати, скільки потрібно знаків після коми, записавши перед буквою <code class="docutils literal notranslate"><span class="pre">f</span></code> точку з бажаним числом знаків в дробовій частині:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s </span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2">. Level: </span><span class="si">%.1f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pupil</span><span class="p">,</span> <span class="n">old</span><span class="p">,</span> <span class="n">grade</span><span class="p">))</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s </span><span class="si">%s</span><span class="s2">, </span><span class="si">%d</span><span class="s2">. Level: </span><span class="si">%.1f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">pupil</span><span class="p">,</span> <span class="n">old</span><span class="p">,</span> <span class="n">grade</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1196,7 +1274,7 @@
 <p>Тепер розглянемо метод <code class="docutils literal notranslate"><span class="pre">format</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;ball&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">))</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;ball&quot;</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1208,7 +1286,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">))</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;white&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1220,7 +1298,7 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2"> </span><span class="si">{2}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;number&quot;</span><span class="p">))</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a </span><span class="si">{0}</span><span class="s2">. It&#39;s </span><span class="si">{1}</span><span class="s2"> </span><span class="si">{2}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;number&quot;</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -1240,9 +1318,6 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Yes!
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Yes!&#39;
 </pre></div>
 </div>
@@ -1251,7 +1326,7 @@
 <p>Функція <code class="docutils literal notranslate"><span class="pre">input</span></code> передає введені дані у програму. Їх можна присвоїти змінній. В цьому випадку інтерпретатор не виводить рядок відразу ж:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -1279,17 +1354,13 @@
 <p><em>Приклад</em>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="nb">input</span><span class="p">()</span> 
-<span class="n">y</span><span class="o">=</span><span class="nb">input</span><span class="p">()</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> 
+<span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span> 
 <span class="nb">print</span> <span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>  <span class="c1"># до першого рядку приєднується другий</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> 5
- 12
-</pre></div>
-</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>512
 </pre></div>
 </div>
@@ -1299,9 +1370,9 @@
 <p><em>Приклад</em>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> 
-<span class="n">y</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>     <span class="c1"># перше число складається з другим </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> 
+<span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">)</span>      <span class="c1"># перше число складається з другим </span>
 </pre></div>
 </div>
 </div>
@@ -1340,41 +1411,40 @@
 <p>Таким чином, алгоритм розгалуження складається з перевірки умови (умов) і всіх можливих гілок обчислення, при цьому бажано, щоб дії, загальні для всіх гілок, описувалися один раз (до або після розгалуження).</p>
 <p>Найбільш відома інструкція, що дозволяє реалізувати логічне розгалуження, складається з трьох частин: <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code>, <code class="docutils literal notranslate"><span class="pre">else</span></code>.</p>
 <div class="section" id="if-elif-else">
-<h3>Керуючі конструкції - оператори <code class="docutils literal notranslate"><span class="pre">IF</span> <span class="pre">...</span> <span class="pre">ELIF</span> <span class="pre">...</span> <span class="pre">ELSE</span></code><a class="headerlink" href="#if-elif-else" title="Permalink to this headline">¶</a></h3>
+<h3>Керуючі конструкції. Оператори <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">...</span> <span class="pre">elif</span> <span class="pre">...</span> <span class="pre">else</span></code><a class="headerlink" href="#if-elif-else" title="Permalink to this headline">¶</a></h3>
 <p>Структура керуючої конструкції (або “прийняття рішення”) вимагає, щоб програміст поставив одне або більше умов, які будуть виконані і перевірені програмою і однієї або декількох дій, які будуть виконані, якщо умова буде визначено як істина (<code class="docutils literal notranslate"><span class="pre">true</span></code>) і, опціонально, інші вирази, які будуть виконані, якщо умова буде визначено як хибність (<code class="docutils literal notranslate"><span class="pre">false</span></code>).</p>
 <p>Нижче наведено форму типової структури форми керуючої конструкції, яка схожа в більшості мов програмування (рис.1.2):</p>
-<p><span class="xref myst"></span></p>
+<p><img alt="branching algorithm" src="../../_images/branching.png" /></p>
 <p>Рисунок 1.2.  − Приклад розгалуженого алгоритму програми.</p>
-<p>Мова програмування Python передбачає будь-яке не рівне нулю або не порожнє значення як істину (<code class="docutils literal notranslate"><span class="pre">true</span></code>), і навпаки - якщо значення буде порожнім або дорівнювати нулю - то воно буде вважатися хибним (<code class="docutils literal notranslate"><span class="pre">false</span></code>).</p>
+<p>Мова програмування Python передбачає будь-яке не рівне нулю або не порожнє значення як істину (<code class="docutils literal notranslate"><span class="pre">true</span></code>), і навпаки - якщо значення буде порожнім або дорівнювати нулю — то воно буде вважатися хибним (<code class="docutils literal notranslate"><span class="pre">false</span></code>).</p>
 </div>
 <div class="section" id="if">
-<h3>Оператор <code class="docutils literal notranslate"><span class="pre">IF</span></code><a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h3>
+<h3>Оператор <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h3>
 <p>Оператор <code class="docutils literal notranslate"><span class="pre">if</span></code> в Python подібний цьому оператору в інших мовах. Утвердження з використанням оператора <code class="docutils literal notranslate"><span class="pre">if</span></code> містить в собі логічну умову, в який проводиться порівняння даних і по результату вибирається подальша дія.</p>
 <div class="section" id="id5">
 <h4>Синтаксис<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <p>Синтаксис оператора <code class="docutils literal notranslate"><span class="pre">if</span></code> в Python такий:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span>  <span class="n">умова</span><span class="p">:</span> 
-
-   <span class="n">дія</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">умова</span><span class="o">&gt;</span><span class="p">:</span> 
+   <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Якщо логічна умова є істиною (<code class="docutils literal notranslate"><span class="pre">true</span></code>), тоді блок дій в виразі буде виконаний. Якщо умова є хибною (<code class="docutils literal notranslate"><span class="pre">false</span></code>) - тоді буде виконаний наступний блок коду після цього виразу.</p>
+<p>Якщо логічна умова є істиною (<code class="docutils literal notranslate"><span class="pre">true</span></code>), тоді блок дій в виразі буде виконаний. Якщо умова є хибною (<code class="docutils literal notranslate"><span class="pre">false</span></code>) — тоді буде виконаний наступний блок коду після цього виразу.</p>
 <p>Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span>
 
-<span class="k">if</span> <span class="n">var1</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span> 
-<span class="nb">print</span> <span class="p">(</span><span class="n">var1</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">var1</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span>
 
-<span class="n">var2</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="n">var2</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="k">if</span> <span class="n">var2</span><span class="p">:</span> 
-    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span> 
-    <span class="nb">print</span> <span class="p">(</span><span class="n">var2</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">var2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>
 
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1389,41 +1459,38 @@ Good bye!
 </div>
 </div>
 <div class="section" id="id6">
-<h3>Операторы <code class="docutils literal notranslate"><span class="pre">IF</span> <span class="pre">..</span> <span class="pre">ELIF</span> <span class="pre">..</span> <span class="pre">ELSE</span></code><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>Оператор <code class="docutils literal notranslate"><span class="pre">else</span></code> може використовуватися разом з оператором <code class="docutils literal notranslate"><span class="pre">if</span></code>. Оператор <code class="docutils literal notranslate"><span class="pre">else</span></code> містить блок  коду, який буде виконаний, якщо результат виразу дорівнює нулю або вважається хибним. Це опціональний оператор, і він може бути тільки один у всьому виразі після <code class="docutils literal notranslate"><span class="pre">if</span></code>.</p>
+<h3>Оператори <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">..</span> <span class="pre">elif</span> <span class="pre">..</span> <span class="pre">else</span></code><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Оператор <code class="docutils literal notranslate"><span class="pre">else</span></code> може використовуватися разом з оператором <code class="docutils literal notranslate"><span class="pre">if</span></code>. Оператор <code class="docutils literal notranslate"><span class="pre">else</span></code> містить блок коду, який буде виконаний, якщо результат виразу дорівнює нулю або вважається хибним. Це опціональний оператор, і він може бути тільки один у всьому виразі після <code class="docutils literal notranslate"><span class="pre">if</span></code>.</p>
 <div class="section" id="id7">
 <h4>Синтаксис<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span>  <span class="n">умова</span><span class="p">:</span> 
-
-    <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-<span class="k">else</span><span class="p">:</span> 
-
-    <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">умова</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">100</span>
 
 <span class="k">if</span> <span class="n">var1</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="n">var1</span><span class="p">)</span> 
-<span class="k">else</span><span class="p">:</span> 
-       <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a false expression value&quot;</span><span class="p">)</span> 
-       <span class="nb">print</span> <span class="p">(</span><span class="n">var1</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 - Got a false expression value&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span> 
 
-<span class="n">var2</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="n">var2</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="k">if</span> <span class="n">var2</span><span class="p">:</span> 
-    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span> 
-    <span class="nb">print</span> <span class="p">(</span><span class="n">var2</span><span class="p">)</span> 
-<span class="k">else</span><span class="p">:</span> 
-        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a false expression value&quot;</span><span class="p">)</span> 
-        <span class="nb">print</span> <span class="p">(</span><span class="n">var2</span><span class="p">)</span> 
+<span class="k">if</span> <span class="n">var2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2 - Got a false expression value&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>
 
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1445,43 +1512,36 @@ Good bye!
 <p>Як і оператор <code class="docutils literal notranslate"><span class="pre">else</span></code>, <code class="docutils literal notranslate"><span class="pre">elif</span></code> опціональний, однак, на відміну від <code class="docutils literal notranslate"><span class="pre">else</span></code>, він може використовуватися багаторазово.</p>
 <div class="section" id="id8">
 <h4>Синтаксис<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span>  <span class="n">умова</span><span class="p">:</span> 
-
-    <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-<span class="k">elif</span>   <span class="n">умова2</span><span class="p">:</span> 
-
-    <span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-<span class="k">elif</span>  <span class="n">умова3</span><span class="p">:</span> 
-
-    <span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-<span class="k">else</span><span class="p">:</span> 
-
-    <span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">умова</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="k">elif</span> <span class="o">&lt;</span><span class="n">умова2</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="k">elif</span> <span class="o">&lt;</span><span class="n">умова3</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>В Python немає таких операторів як <code class="docutils literal notranslate"><span class="pre">switch</span></code> або <code class="docutils literal notranslate"><span class="pre">case</span></code>, але можна використовувати оператори <code class="docutils literal notranslate"><span class="pre">if..elif</span> <span class="pre">...</span></code> замість них.</p>
 <p>Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span>
 
-<span class="k">if</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
-<span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">150</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
-<span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;3 - Got a true expression value&quot;</span><span class="p">)</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
-<span class="k">else</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;4 - Got a false expression value&quot;</span><span class="p">)</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> 
+<span class="k">if</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;1 - Got a true expression value&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">150</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;2 - Got a true expression value&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;3 - Got a true expression value&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4 - Got a false expression value&quot;</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
 
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1496,55 +1556,44 @@ Good bye!
 </div>
 </div>
 <div class="section" id="id9">
-<h3>Вкладені конструкції IF<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<h3>Вкладені конструкції <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Бувають випадки, коли ви хочете провести ще одну перевірку після того, як результат виразу прийнятий як істина. В такому випадку - можна використовувати вкладені керуючі конструкції <code class="docutils literal notranslate"><span class="pre">if</span></code> (або інакше каскадні).</p>
 <p>У вкладеної конструкції, ви можете додавати <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">..</span> <span class="pre">elif</span> <span class="pre">..</span> <span class="pre">else</span></code> всередині іншої такої ж конструкції.</p>
 <div class="section" id="id10">
 <h4>Синтаксис<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">умова1</span><span class="p">:</span> 
-
-   <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-   <span class="k">if</span>  <span class="n">умова2</span><span class="p">:</span> 
-
-    <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-   <span class="k">elif</span>  <span class="n">умова3</span><span class="p">:</span> 
-
-      <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-   <span class="k">else</span> 
-
-     <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-<span class="k">elif</span>  <span class="n">умова4</span><span class="p">:</span> 
-
-  <span class="n">дія</span> <span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
-
-<span class="k">else</span><span class="p">:</span> 
-
-  <span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">умова1</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+    <span class="k">if</span> <span class="o">&lt;</span><span class="n">умова2</span><span class="o">&gt;</span><span class="p">:</span>
+        <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+    <span class="k">elif</span> <span class="o">&lt;</span><span class="n">умова3</span><span class="o">&gt;</span><span class="p">:</span>
+        <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="k">elif</span> <span class="o">&lt;</span><span class="n">умова4</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">дія</span><span class="p">(</span><span class="n">ї</span><span class="p">)</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">100</span>
 
-<span class="k">if</span>  <span class="n">var</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Expression value is less than 200&quot;</span><span class="p">)</span> 
-   <span class="k">if</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">150</span><span class="p">:</span> 
-     <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Which is 150&quot;</span><span class="p">)</span> 
-   <span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span> 
-      <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Which is 100&quot;</span><span class="p">)</span> 
-   <span class="k">elif</span>  <span class="n">var</span> <span class="o">==</span> <span class="mi">50</span><span class="p">:</span> 
-      <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Which is 50&quot;</span><span class="p">)</span> 
-<span class="k">elif</span>  <span class="n">var</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span> 
-   <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Expression value is less than 50&quot;</span><span class="p">)</span> 
-<span class="k">else</span><span class="p">:</span> 
-  <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Could not find true expression&quot;</span><span class="p">)</span> 
+<span class="k">if</span> <span class="n">var</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Expression value is less than 200&quot;</span><span class="p">)</span>
+   <span class="k">if</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">150</span><span class="p">:</span>
+     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Which is 150&quot;</span><span class="p">)</span>
+   <span class="k">elif</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">100</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Which is 100&quot;</span><span class="p">)</span>
+   <span class="k">elif</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">50</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Which is 50&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">var</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Expression value is less than 50&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Could not find true expression&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Good bye!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1565,10 +1614,10 @@ Good bye!
 </thead>
 <tbody>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code></p></td>
-<td><p>Менше - умова вірна, якщо перший операнд менше другого.</p></td>
+<td><p>Менше — умова вірна, якщо перший операнд менше другого.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p></td>
-<td><p>Більше - умова вірна, якщо перший операнд більше другого.</p></td>
+<td><p>Більше — умова вірна, якщо перший операнд більше другого.</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code></p></td>
 <td><p>Менше або дорівнює.</p></td>
@@ -1577,15 +1626,15 @@ Good bye!
 <td><p>Більше або дорівнює.</p></td>
 </tr>
 <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">==</span></code></p></td>
-<td><p>Рівність. Умова вірна, якщо два операнда рівні.</p></td>
+<td><p>Рівність — Умова вірна, якщо два операнда рівні.</p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
-<td><p>Нерівність. Умова вірна, якщо два операнда нерівні.</p></td>
+<td><p>Нерівність — Умова вірна, якщо два операнда нерівні.</p></td>
 </tr>
 </tbody>
 </table>
-<p>Оператори порівняння в Python можна об’єднувати в ланцюжки (на відміну від більшості інших мов програмування, де для цього потрібно використовувати логічні зв’язки), наприклад, <code class="docutils literal notranslate"><span class="pre">a==b==c</span></code> або <code class="docutils literal notranslate"><span class="pre">1&lt;=x&lt;=10</span></code>.</p>
-<p>Оператори порівняння повертають значення спеціального логічного типу <code class="docutils literal notranslate"><span class="pre">bool</span></code>. Значення логічного типу можуть приймати одне з двох значень: True (істина) або False (хибність). Якщо перетворити логічне True до типу <code class="docutils literal notranslate"><span class="pre">int</span></code>, то вийде 1, а перетворення False дасть 0. При зворотному перетворенні число 0 перетворюється в False, а будь-яке ненульове число в True. При перетворенні <code class="docutils literal notranslate"><span class="pre">str</span></code> в <code class="docutils literal notranslate"><span class="pre">bool</span></code> порожній рядок перетворюється в False, а будь-який непорожній рядок в True.</p>
+<p>Оператори порівняння в Python можна об’єднувати в ланцюжки (на відміну від більшості інших мов програмування, де для цього потрібно використовувати логічні зв’язки), наприклад, <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">==</span> <span class="pre">b</span> <span class="pre">==</span> <span class="pre">c</span></code> або <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">&lt;=</span> <span class="pre">x</span> <span class="pre">&lt;=</span> <span class="pre">10</span></code>.</p>
+<p>Оператори порівняння повертають значення спеціального логічного типу <code class="docutils literal notranslate"><span class="pre">bool</span></code>. Значення логічного типу можуть приймати одне з двох значень: <code class="docutils literal notranslate"><span class="pre">True</span></code> (істина) або <code class="docutils literal notranslate"><span class="pre">False</span></code> (хибність). Якщо перетворити логічне True до типу <code class="docutils literal notranslate"><span class="pre">int</span></code>, то вийде 1, а перетворення False дасть 0. При зворотному перетворенні число 0 перетворюється в <code class="docutils literal notranslate"><span class="pre">False</span></code>, а будь-яке ненульове число в <code class="docutils literal notranslate"><span class="pre">True</span></code>. При перетворенні <code class="docutils literal notranslate"><span class="pre">str</span></code> в <code class="docutils literal notranslate"><span class="pre">bool</span></code> порожній рядок перетворюється в <code class="docutils literal notranslate"><span class="pre">False</span></code>, а будь-який непорожній рядок в <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
 </div>
 </div>
 </div>
@@ -1595,7 +1644,7 @@ Good bye!
     {
         requestKernel: true,
         binderOptions: {
-            repo: "GasperPaul/python-labs-book",
+            repo: "kpi-fpm-pma/python-labs-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -1641,7 +1690,7 @@ Good bye!
     
         &copy; Copyright 2021.<br/>
       <div class="extra_footer">
-        This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+        This page was created by <a href="https://github.com/kpi-fpm-pma/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
       </div>
   </p>
 </footer>

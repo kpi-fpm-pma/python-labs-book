@@ -1,0 +1,950 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Додаток 1. Глосарій &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/outro/appendixA.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Додаток 2. Вбудовані функції" href="appendixB.html" />
+    <link rel="prev" title="Винятки в Python. Конструкція try … except для оброобки винятків" href="exceptions.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/guidlines.html">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/installation.html">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/structure.html">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/types.html">
+   Типи і структури даних у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робоат №1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №2
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab2/intro.html">
+   Мета роботи
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab3/intro.html">
+   Структури даних: списки, кортежі, множини
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №4
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab4/intro.html">
+   Рядки
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна рообта №5
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab5/intro.html">
+   Використання функцій
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №6
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab6/intro.html">
+   Рекурсія та обробка матриць
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab6/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab6/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab6/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №7
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab7/intro.html">
+   Робота з файлами
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="exceptions.html">
+   Винятки у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Додатки
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Додаток 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixB.html">
+   Додаток 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixC.html">
+   Додаток 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixD.html">
+   Додаток 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixE.html">
+   Додаток 5
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/outro/appendixA.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Основні поняття і визначення
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Алгоритм
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Дані
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Тип даних
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Програма
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Алгоритмічна мова (мова програмування)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Транслятор мови програмування
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Інтерпретатор
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Компілятор
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Константа
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Змінна
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Підпрограма
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Функція
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Об’єкт
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Метод
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Ідентифікатор
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+     Вираз
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id19">
+     Операнд
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id20">
+     Арифметична операція
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     Логічна операція
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id22">
+     Операція відношення
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id23">
+     Масив (масив даних)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id24">
+     Індекс
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id25">
+     Присвоєння
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id26">
+     Цикл
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id27">
+     Зациклення
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Додаток 1. Глосарій</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Основні поняття і визначення
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Алгоритм
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Дані
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Тип даних
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Програма
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Алгоритмічна мова (мова програмування)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Транслятор мови програмування
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Інтерпретатор
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Компілятор
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Константа
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Змінна
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Підпрограма
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Функція
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Об’єкт
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Метод
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Ідентифікатор
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+     Вираз
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id19">
+     Операнд
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id20">
+     Арифметична операція
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     Логічна операція
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id22">
+     Операція відношення
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id23">
+     Масив (масив даних)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id24">
+     Індекс
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id25">
+     Присвоєння
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id26">
+     Цикл
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id27">
+     Зациклення
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Додаток 1. Глосарій<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Основні поняття і визначення<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Надалі часто доведеться використовувати терміни, пов’язані з процесом розробки та функціонування програм, тому тут наведено короткий словничок, щоб уже не повертатися до проблеми визначень.</p>
+<div class="section" id="id3">
+<h3>Алгоритм<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Алгоритм − точний припис виконавцю здійснити певну послідовність дій для досягнення поставленої мети за кінцеве число кроків.</p>
+</div>
+<div class="section" id="id4">
+<h3>Дані<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Дані − відомості отримані шляхом вимірювання, спостереження, логічних або арифметичних операцій;представлені у формі, придатній для постійного зберігання, передачі та автоматизованої) обробки.</p>
+</div>
+<div class="section" id="id5">
+<h3>Тип даних<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Тип даних − характеристика набору даних, яка визначає:</p>
+<ul class="simple">
+<li><p>діапазон можливих значень даних з набору;</p></li>
+<li><p>допустимі операції, які можна виконувати над цими значеннями;</p></li>
+<li><p>спосіб зберігання цих значень у пам’яті.</p></li>
+</ul>
+<p>Розрізняють:</p>
+<ul class="simple">
+<li><p>прості типи даних: цілі, дійсні числа, символи, рядки, логічні величини;</p></li>
+<li><p>складені типи даних: масиви, файли та ін.</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>Програма<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Програма − дані, призначені для управління конкретними компонентами системи обробки інформації з метою реалізації певного алгоритму.</p>
+</div>
+<div class="section" id="id7">
+<h3>Алгоритмічна мова (мова програмування)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Мова програмування − штучна (формальна) мова, призначена для запису алгоритмів. Мова програмування задається своїм описом і реалізується у вигляді спеціальної програми: компілятора або інтерпретатора.</p>
+</div>
+<div class="section" id="id8">
+<h3>Транслятор мови програмування<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Транслятор − у широкому сенсі − програма, яка перетворює текст, написаний на одній мові, у текст на іншій мові.</p>
+<p>Транслятор − у вузькому сенсі − програма, яка перетворює програму, написану на одному (вхідній) мові у програму, представлену на іншому (вихідній) мові.</p>
+<p>Транслятор мови програмування − програма, яка перетворює початковий текст програми на мові програмування у машинну мову обчислювальної системи, на якій ця програма повинна виконуватися.</p>
+</div>
+<div class="section" id="id9">
+<h3>Інтерпретатор<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Інтерпретатор − транслятор, здатний паралельно переводити і виконувати програму, написану на алгоритмічній мові високого рівня.</p>
+</div>
+<div class="section" id="id10">
+<h3>Компілятор<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Компілятор − програма, яка перетворює текст, написаний на алгоритмічній мові, у програму, що складається з машинних команд. Компілятор створює закінчений варіант програми на машинній мові.</p>
+</div>
+<div class="section" id="id11">
+<h3>Константа<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Константа − у програмуванні − елемент даних, який займає місце у пам’яті, має ім’я і певний тип, причому його значення ніколи не змінюється.</p>
+</div>
+<div class="section" id="id12">
+<h3>Змінна<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>Змінна − у мовах програмування − іменована частина пам’яті, у яку можуть поміщатися різні значення. Причому у кожен момент часу змінна має єдине значення (або єдиний набір значень). У процесі виконання програми значення змінної може змінюватися.Тип змінних визначається типом даних, які вони представляють.</p>
+</div>
+<div class="section" id="id13">
+<h3>Підпрограма<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<p>Підпрограма − самостійна частина програми, яка розробляється незалежно від інших частин і потім викликається по імені.</p>
+</div>
+<div class="section" id="id14">
+<h3>Функція<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>Підпрограма, яка на основі деяких даних (аргументів функції) обчислює значення деякої змінної («функція повертає значення»).</p>
+</div>
+<div class="section" id="id15">
+<h3>Об’єкт<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>Поняття об’єктно−орієнтованого програмування, програмний модуль, який об’єднує у єдине ціле дані і програми, що маніпулюють даними. Об’єкт характеризується властивостями, які є параметрами об’єкта і методами, які дозволяють впливати на об’єкт і його властивості.</p>
+</div>
+<div class="section" id="id16">
+<h3>Метод<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>Дія у вигляді процедури, яка виконується об’єктом (іноді говорять виконується над об’єктом).</p>
+</div>
+<div class="section" id="id17">
+<h3>Ідентифікатор<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>Ідентифікатор − символьне ім’я змінної або підпрограми, яке однозначно ідентифікує їх у програмі.</p>
+</div>
+<div class="section" id="id18">
+<h3>Вираз<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>Вираз − конструкція на мові програмування, призначена для виконання обчислень. Вираз складається з операндів, об’єднаних знаками операцій. Розрізняють арифметичні, логічні і символьні вирази.</p>
+</div>
+<div class="section" id="id19">
+<h3>Операнд<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>Операнд − константа, змінна, функція, вираз і інший об’єкт мови програмування, над яким проводяться операції.</p>
+</div>
+<div class="section" id="id20">
+<h3>Арифметична операція<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<p>Арифметична операція − обчислювальна операція над числами.У багатьох мовах програмування визначені двомісні арифметичні операції: додавання, віднімання, множення, ділення, ділення без остачі, обчислення залишку від ділення.</p>
+</div>
+<div class="section" id="id21">
+<h3>Логічна операція<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>Логічна операція − операція над логічними («булевського») операндами, приймають значення «істина» або «хибність». Найбільш поширеними є такі операції:</p>
+<ul class="simple">
+<li><p>багатомісне роз’єднання;</p></li>
+<li><p>багатомісне логічне множення;</p></li>
+<li><p>одномісне логічне заперечення.</p></li>
+</ul>
+<p>(«Багатомісна» операція означає, що у ній може два і більше операндів, а у «одномісній» або «унарній» операції бере участь лише один операнд).</p>
+</div>
+<div class="section" id="id22">
+<h3>Операція відношення<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<p>Операція відношення здійснює порівняння двох величин. Результат операції відношення є «булева» змінна, що приймає значення «істина» (true або логічна 1) або «хибність» (false або логічний 0).</p>
+</div>
+<div class="section" id="id23">
+<h3>Масив (масив даних)<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<p>Сукупність, як правило, однотипних даних, кожне з яких ідентифікується з ім’ям масиву та індексом (індексами).Залежно від кількості індексів масиви бувають одномірні (лінійні), двомірні і т.д.</p>
+</div>
+<div class="section" id="id24">
+<h3>Індекс<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<p>Номер (або номера, якщо масив даних багатовимірний), що додається до імені масиву, щоб ідентифікувати кожен елемент даного масиву.Наприклад, а [1, 3] означає, що визначений елемент двовимірного масиву а з індексом 1,3 (рядок − 1, стовпець − 3).</p>
+</div>
+<div class="section" id="id25">
+<h3>Присвоєння<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p>Операція запису значення у змінну. У багатьох мовах програмування визначено оператор присвоювання. Якщо у змінну записується нове значення, старе стирається.</p>
+</div>
+<div class="section" id="id26">
+<h3>Цикл<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<p>Цикл (циклічні обчислення) означають багаторазове виконання одних і тих же операцій. Залежно від завдання розрізняються цикли зі змінною (з лічильником, з відомою кількістю повторень) і цикли з умовою (цикл повторюється, поки не виконається умова завершення циклу).</p>
+</div>
+<div class="section" id="id27">
+<h3>Зациклення<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<p>Для циклів з умовою − ситуація, при якій умова завершення циклу ніколи не виконується.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "kpi-fpm-pma/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/outro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="exceptions.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Винятки в Python. Конструкція try … except для оброобки винятків</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="appendixB.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Додаток 2. Вбудовані функції</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Громова В.В.<br/>
+    
+        &copy; Copyright 2021.<br/>
+      <div class="extra_footer">
+        This page was created by <a href="https://github.com/kpi-fpm-pma/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

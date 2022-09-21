@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Додаток 2. Вбудовані функції &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/outro/appendixB.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Додаток 3. Ключові слова" href="appendixC.html" />
+    <link rel="prev" title="Додаток 1. Глосарій" href="appendixA.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Основи програмування в "обіймах" Python</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/intro.html">
+   Вступ
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/guidlines.html">
+   Загальні вказівки до виконання лабораторних робіт
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/installation.html">
+   Встановлення і робота з інтерпретатором Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/structure.html">
+   Структура програми на мові Python та основні модулі
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/functions.html">
+   Вбудовані функції
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/formating.html">
+   Основні вказівки до форматування коду
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/types.html">
+   Типи і структури даних у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робоат №1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab1/intro.html">
+   Програмування лінійних алгоритмів та розгалужених процесів
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab1/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №2
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../lab2/intro.html">
+   Мета роботи
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №3
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab3/intro.html">
+   Структури даних: списки, кортежі, множини
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab3/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №4
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab4/intro.html">
+   Рядки
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab4/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна рообта №5
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab5/intro.html">
+   Використання функцій
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab5/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №6
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab6/intro.html">
+   Рекурсія та обробка матриць
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab6/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab6/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab6/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Лабораторна робота №7
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab7/intro.html">
+   Робота з файлами
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab7/problems.html">
+     Завдання
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="exceptions.html">
+   Винятки у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Додатки
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixA.html">
+   Додаток 1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Додаток 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixC.html">
+   Додаток 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixD.html">
+   Додаток 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendixE.html">
+   Додаток 5
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../bibliography.html">
+   Рекомендовані джерела
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/outro/appendixB.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Вбудовані функції, які виконують перетворення типів
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Інші вбудовані функції
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Додаток 2. Вбудовані функції</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Вбудовані функції, які виконують перетворення типів
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Інші вбудовані функції
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Додаток 2. Вбудовані функції<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Вбудовані функції, які виконують перетворення типів<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bool(x)</span></code></p></td>
+<td><p>перетворення до типу <code class="docutils literal notranslate"><span class="pre">bool</span></code>, що використовує стандартну процедуру перевірки істинності. Якщо <code class="docutils literal notranslate"><span class="pre">х</span></code> є помилковим або пропущено, то повертається значення <code class="docutils literal notranslate"><span class="pre">false</span></code>, у іншому випадку вона повертає <code class="docutils literal notranslate"><span class="pre">true</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bytearray([джерело</span> <span class="pre">[,</span> <span class="pre">кодування</span> <span class="pre">[помилки]]])</span></code></p></td>
+<td><p>перетворення до <code class="docutils literal notranslate"><span class="pre">bytearray</span></code>. Bytearray — змінна послідовність цілих чисел у діапазоні 0 ≤ X &lt; 256. Викликана без аргументів, повертає порожній масив байт</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bytes([джерело</span> <span class="pre">[,</span> <span class="pre">кодування</span> <span class="pre">[помилки]]])</span></code></p></td>
+<td><p>повертає об’єкт типу <code class="docutils literal notranslate"><span class="pre">bytes</span></code>, який є незмінною послідовністю цілих чисел у діапазоні 0 ≤ X &lt;256. Аргументи конструктора інтерпретуються як для <code class="docutils literal notranslate"><span class="pre">bytearray</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">complex([real</span> <span class="pre">[,</span> <span class="pre">imag]])</span></code></p></td>
+<td><p>перетворення до комплексного числа</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">dict([object])</span></code></p></td>
+<td><p>перетворення до словника</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">float([x])</span></code></p></td>
+<td><p>перетворення до числа з плаваючою крапкою. Якщо аргумент не вказано, повертається 0.0</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">frozenset([послідовність])</span></code></p></td>
+<td><p>повертає незмінну множину</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">int([object],</span> <span class="pre">[основа</span> <span class="pre">системи</span> <span class="pre">числення])</span></code></p></td>
+<td><p>перетворення до цілого числа</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">list([object])</span></code></p></td>
+<td><p>створює список</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">memoryview([object])</span></code></p></td>
+<td><p>створює об’єкт <code class="docutils literal notranslate"><span class="pre">memoryview</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">object()</span></code></p></td>
+<td><p>повертає невиразний об’єкт, який є базовим для всіх об’єктів</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">range([start</span> <span class="pre">=</span> <span class="pre">0],</span> <span class="pre">stop,</span> <span class="pre">[step</span> <span class="pre">=</span> <span class="pre">1])</span></code></p></td>
+<td><p>арифметична прогресія від <code class="docutils literal notranslate"><span class="pre">start</span></code> до <code class="docutils literal notranslate"><span class="pre">stop</span></code> з кроком <code class="docutils literal notranslate"><span class="pre">step</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">set([object])</span></code></p></td>
+<td><p>створює множина</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">slice([start</span> <span class="pre">=</span> <span class="pre">0],</span> <span class="pre">stop,</span> <span class="pre">[step</span> <span class="pre">=</span> <span class="pre">1])</span></code></p></td>
+<td><p>об’єкт зрізу від <code class="docutils literal notranslate"><span class="pre">start</span></code> до <code class="docutils literal notranslate"><span class="pre">stop</span></code> з кроком <code class="docutils literal notranslate"><span class="pre">step</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">str([object],</span> <span class="pre">[кодування],</span> <span class="pre">[помилки])</span></code></p></td>
+<td><p>строкове представлення об’єкту. Використовує метод <code class="docutils literal notranslate"><span class="pre">__str__</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tuple(obj)</span></code></p></td>
+<td><p>перетворення до кортежу</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h2>Інші вбудовані функції<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>| <code class="docutils literal notranslate"><span class="pre">abs(x)</span></code> | повертає абсолютну величину (модуль числа) |
+| <code class="docutils literal notranslate"><span class="pre">all(послідовність)</span></code> | повертає true, якщо всі елементи істинні або послідовність порожня |
+| <code class="docutils literal notranslate"><span class="pre">any(послідовність)</span></code> | повертає true, якщо хоча б один елемент — істина. Для порожньої послідовності повертає false |
+| <code class="docutils literal notranslate"><span class="pre">ascii(object)</span></code> | Як <code class="docutils literal notranslate"><span class="pre">repr</span></code>, повертає рядок, що містить представлення об’єкту, але замінюючи не-ASCII символи на екрановані послідовності |
+| <code class="docutils literal notranslate"><span class="pre">bin(x)</span></code> | перетворення цілого числа у двійковий рядок |
+| <code class="docutils literal notranslate"><span class="pre">callable(x)</span></code> | повертає true для об’єкту, що підтримує виклик (як функції) |
+| <code class="docutils literal notranslate"><span class="pre">chr(x)</span></code> | повертає Односимвольний рядок, код символу якого дорівнює <code class="docutils literal notranslate"><span class="pre">x</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">classmethod(x)</span></code> | представляє зазначену функцію методом класу |
+| <code class="docutils literal notranslate"><span class="pre">compile(source,</span> <span class="pre">filename,</span> <span class="pre">mode,</span> <span class="pre">flags</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">dont_inherit</span> <span class="pre">=</span> <span class="pre">false)</span></code> | компіляція у програмний код, який згодом може виконатися функцією <code class="docutils literal notranslate"><span class="pre">eval</span></code> або <code class="docutils literal notranslate"><span class="pre">exec</span></code>. Рядок не повинен містити символів повернення каретки або нульові байти |
+| <code class="docutils literal notranslate"><span class="pre">delattr(object,</span> <span class="pre">name)</span></code> | видаляє атрибут з ім’ям <code class="docutils literal notranslate"><span class="pre">name</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">dir([object])</span></code> | список імен об’єкту, а якщо об’єкт не вказано, список імен у поточній локальній області видимості |
+| <code class="docutils literal notranslate"><span class="pre">divmod(a,</span> <span class="pre">b)</span></code> | повертає частку і залишок від ділення <code class="docutils literal notranslate"><span class="pre">a</span></code> на <code class="docutils literal notranslate"><span class="pre">b</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">enumerate(iterable,</span> <span class="pre">start</span> <span class="pre">=</span> <span class="pre">0)</span></code> | застосовується для ітеріруемих колекцій (рядки, списки, словники та ін.) і створює об’єкт, який генерує кортежі, що складаються з двох елементів — індексу елемента і самого елемента. |
+| <code class="docutils literal notranslate"><span class="pre">eval(expression,</span> <span class="pre">globals</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">locals</span> <span class="pre">=</span> <span class="pre">None)</span></code> | виконує рядок програмного коду |
+| <code class="docutils literal notranslate"><span class="pre">exec(object</span> <span class="pre">[,</span> <span class="pre">globals</span> <span class="pre">[,</span> <span class="pre">locals]])</span></code> | виконує програмний код на Python |
+| <code class="docutils literal notranslate"><span class="pre">filter(function,</span> <span class="pre">iterable)</span></code> | повертає ітератор з тих елементів, для яких <code class="docutils literal notranslate"><span class="pre">function</span></code> повертає істину |
+| <code class="docutils literal notranslate"><span class="pre">format(value</span> <span class="pre">[,</span> <span class="pre">format_spec])</span></code> | форматування (зазвичай форматування рядка) |
+| <code class="docutils literal notranslate"><span class="pre">getattr(object,</span> <span class="pre">name,</span> <span class="pre">[default])</span></code> | отримує атрибут об’єкту або <code class="docutils literal notranslate"><span class="pre">default</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">globals()</span></code> | словник глобальних імен |
+| <code class="docutils literal notranslate"><span class="pre">hasattr(object,</span> <span class="pre">name)</span></code> | чи має об’єкт атрибут з ім’ям <code class="docutils literal notranslate"><span class="pre">name</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">hash(x)</span></code> | повертає хеш вказаного об’єкту |
+| <code class="docutils literal notranslate"><span class="pre">help([object])</span></code> | виклик вбудованої довідкової системи |
+| <code class="docutils literal notranslate"><span class="pre">hex(х)</span></code> | перетворення цілого числа у шістнадцятковий рядок |
+| <code class="docutils literal notranslate"><span class="pre">id(object)</span></code> | повертає “адресу” об’єкту. Це ціле число, яке гарантовано буде унікальним і постійним для даного об’єкту протягом терміну його існування |
+| <code class="docutils literal notranslate"><span class="pre">input([prompt])</span></code> | повертає введений користувачем рядок. <code class="docutils literal notranslate"><span class="pre">prompt</span></code> — підказка користувачеві |
+| <code class="docutils literal notranslate"><span class="pre">isinstance(object,</span> <span class="pre">ClassInfo)</span></code> | істина, якщо об’єкт є екземпляром <code class="docutils literal notranslate"><span class="pre">ClassInfo</span></code> або його підкласом. Якщо об’єкт не є об’єктом даного типу, функція завжди повертає хибність |
+| <code class="docutils literal notranslate"><span class="pre">issubclass(клас,</span> <span class="pre">ClassInfo)</span></code> | істина, якщо клас є підкласом <code class="docutils literal notranslate"><span class="pre">ClassInfo</span></code>. Клас вважається подклассом себе |
+| <code class="docutils literal notranslate"><span class="pre">iter(x)</span></code> | повертає об’єкт ітератора |
+| <code class="docutils literal notranslate"><span class="pre">len(x)</span></code> | повертає число елементів у зазначеному об’єкті |
+| <code class="docutils literal notranslate"><span class="pre">locals()</span></code> | словник локальних імен |
+| <code class="docutils literal notranslate"><span class="pre">map(function,</span> <span class="pre">iterator)</span></code> | итератор, отриманий після застосування до кожного елементу послідовності функції <code class="docutils literal notranslate"><span class="pre">function</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">max(iter,</span> <span class="pre">[args</span> <span class="pre">...]</span> <span class="pre">*</span> <span class="pre">[,</span> <span class="pre">key])</span></code> | максимальний елемент послідовності |
+| <code class="docutils literal notranslate"><span class="pre">min(iter,</span> <span class="pre">[args</span> <span class="pre">...]</span> <span class="pre">*</span> <span class="pre">[,</span> <span class="pre">key])</span></code> | мінімальний елемент послідовності |
+| <code class="docutils literal notranslate"><span class="pre">next(x)</span></code> | повертає наступний елемент ітератора |
+| <code class="docutils literal notranslate"><span class="pre">oct(х)</span></code> | перетворення цілого числа у вісімковий рядок |
+| <code class="docutils literal notranslate"><span class="pre">open(file,</span> <span class="pre">mode</span> <span class="pre">=</span> <span class="pre">'r',</span> <span class="pre">buffering</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">encoding</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">errors</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">newline</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">closefd</span> <span class="pre">=</span> <span class="pre">True)</span></code> | відкриває файл і повертає відповідний потік |
+| <code class="docutils literal notranslate"><span class="pre">ord(с)</span></code> | код символу |
+| <code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y</span> <span class="pre">[,</span> <span class="pre">r])</span></code> | <code class="docutils literal notranslate"><span class="pre">(x</span> <span class="pre">**</span> <span class="pre">y)</span> <span class="pre">%</span> <span class="pre">r</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">reversed(object)</span></code> | iтератор з розгорнутого об’єкту |
+| <code class="docutils literal notranslate"><span class="pre">repr(obj)</span></code> | представлення об’єкту |
+| <code class="docutils literal notranslate"><span class="pre">print([object,</span> <span class="pre">...],</span> <span class="pre">*,</span> <span class="pre">sep</span> <span class="pre">=</span> <span class="pre">&quot;&quot;,</span> <span class="pre">end</span> <span class="pre">=</span> <span class="pre">'\</span> <span class="pre">n',</span> <span class="pre">file</span> <span class="pre">=</span> <span class="pre">sys.stdout)</span></code> | друк |
+| <code class="docutils literal notranslate"><span class="pre">property(fget</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fset</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fdel</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">doc</span> <span class="pre">=</span> <span class="pre">None)</span></code> |
+| <code class="docutils literal notranslate"><span class="pre">round(x</span> <span class="pre">[,</span> <span class="pre">n])</span> </code>| округлення до n знаків після коми |
+| <code class="docutils literal notranslate"><span class="pre">setattr(об'єкт,</span> <span class="pre">ім'я,</span> <span class="pre">значення)</span></code> | встановлює атрибут об’єкту |
+| <code class="docutils literal notranslate"><span class="pre">sorted(iterable</span> <span class="pre">[,</span> <span class="pre">key]</span> <span class="pre">[,</span> <span class="pre">reverse])</span></code> | відсортований список |
+| <code class="docutils literal notranslate"><span class="pre">staticmethod(function)</span></code> | статичний метод для функції |
+| <code class="docutils literal notranslate"><span class="pre">sum(iter,</span> <span class="pre">start</span> <span class="pre">=</span> <span class="pre">0)</span></code> | сума членів послідовності |
+| <code class="docutils literal notranslate"><span class="pre">super([тип</span> <span class="pre">[,</span> <span class="pre">об'єкт</span> <span class="pre">або</span> <span class="pre">тип]])</span></code> | доступ до батьківського класу |
+| <code class="docutils literal notranslate"><span class="pre">type(object)</span></code> | повертає тип об’єкту |
+| <code class="docutils literal notranslate"><span class="pre">type(name,</span> <span class="pre">bases,</span> <span class="pre">dict)</span></code> | повертає новий екземпляр класу name |
+| <code class="docutils literal notranslate"><span class="pre">vars([object])</span></code> | словник з атрибутів об’єкту. За замовчуванням | словник локальних імен |
+| <code class="docutils literal notranslate"><span class="pre">zip(*iters)</span></code> | iтератор, який повертає кортежі, що складаються з відповідних елементів аргументів-послідовностей |</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "kpi-fpm-pma/python-labs-book",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/outro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="appendixA.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Додаток 1. Глосарій</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="appendixC.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Додаток 3. Ключові слова</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Громова В.В.<br/>
+    
+        &copy; Copyright 2021.<br/>
+      <div class="extra_footer">
+        This page was created by <a href="https://github.com/kpi-fpm-pma/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

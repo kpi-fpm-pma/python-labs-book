@@ -52,7 +52,7 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://gasperpaul.github.io/python-labs-book/content/lab2/theory.html" />
+    <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/lab2/theory.html" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -351,6 +351,45 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../outro/exceptions.html">
+   Винятки у Python
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Додатки
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixA.html">
+   Додаток 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixB.html">
+   Додаток 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixC.html">
+   Додаток 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixD.html">
+   Додаток 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../outro/appendixE.html">
+   Додаток 5
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
   <a class="reference internal" href="../bibliography.html">
    Рекомендовані джерела
   </a>
@@ -421,13 +460,18 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/GasperPaul/python-labs-book/master?urlpath=lab/tree/content/lab2/theory.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/kpi-fpm-pma/python-labs-book/master?urlpath=lab/tree/content/lab2/theory.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
                     alt="Interact on binder">Binder</button></a>
         
         
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/kpi-fpm-pma/python-labs-book/blob/master/content/lab2/theory.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
         
         <button type="button" class="btn btn-secondary topbarbtn"
             onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
@@ -448,12 +492,22 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#for">
-   Цикл FOR
+   Цикл
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     for
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#range">
-   Функция RANGE
+   Функция
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     range
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -463,12 +517,28 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#while">
-   Цикл while`
+   Цикл
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     while
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Програма Обмінний пункт
+  <a class="reference internal nav-link" href="#break-continue">
+   Вихід із циклу,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     break
+    </span>
+   </code>
+   і
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     continue
+    </span>
+   </code>
   </a>
  </li>
 </ul>
@@ -493,12 +563,22 @@
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#for">
-   Цикл FOR
+   Цикл
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     for
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#range">
-   Функция RANGE
+   Функция
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     range
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -508,12 +588,28 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#while">
-   Цикл while`
+   Цикл
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     while
+    </span>
+   </code>
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Програма Обмінний пункт
+  <a class="reference internal nav-link" href="#break-continue">
+   Вихід із циклу,
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     break
+    </span>
+   </code>
+   і
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     continue
+    </span>
+   </code>
   </a>
  </li>
 </ul>
@@ -527,49 +623,73 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Теоретичні відомості<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Цикли – це інструкції, які виконують одну й туж послідовність дій, покидіє задана умова. Типова блок-схема циклу показана на рис. 13.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>             false                            true       
+<p>Цикли – це інструкції, які виконують одну й туж послідовність дій, покидіє задана умова. Типова блок-схема циклу показана на рис. 1.3.</p>
+<p><img alt="for loop block scheme" src="../../_images/for-loop.png" />
+Рисунок 1.3. — Блок-схема циклічного процесу.</p>
+<p>За побудовою цикли ділять на цикли типу арифметичної прогресії і ітерації. Цикл типу арифметичної прогресії має відоме кінцеве число повторень (<code class="docutils literal notranslate"><span class="pre">for</span></code>). У циклі типу ітерації число повторень невідомо (<code class="docutils literal notranslate"><span class="pre">while</span></code>).</p>
+<div class="section" id="for">
+<h2>Цикл <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#for" title="Permalink to this headline">¶</a></h2>
+<p>Цикл <code class="docutils literal notranslate"><span class="pre">for</span></code>, також називається циклом з параметром, в мові Python багатий можливостями. У циклі <code class="docutils literal notranslate"><span class="pre">for</span></code> вказується змінна і множина значень, за яким буде пробігати змінна. Множина значень може бути задана списком, кортежем, рядком або діапазоном.</p>
+<p>Формальне визначення циклу <code class="docutils literal notranslate"><span class="pre">for</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="o">&lt;</span><span class="n">int_var</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">iterable_range</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">інструкції</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Рисунок 13.  Блок-схема циклічного процесу.
-За побудовою цикли ділять на цикли типу арифметичної прогресії і ітерації. Цикл типу арифметичної прогресії має відоме кінцеве число повторень (for). У циклі типу ітерації число повторень невідомо (while`).</p>
-<div class="section" id="for">
-<h2>Цикл FOR<a class="headerlink" href="#for" title="Permalink to this headline">¶</a></h2>
-<p>Цикл for, також називається циклом з параметром, в мові Python багатий можливостями. У циклі for вказується змінна і множина значень, за яким буде пробігати змінна. Множина значень може бути задана списком, кортежем, рядком або діапазоном. Формальне визначення циклу for:
-for int_var in функція_range:
-    інструкції
-Після ключового слова for йде змінна int_var, яка зберігає цілі числа (назва змінної може бути будь-якою), потім ключове слово in, виклик функції range() і двокрапка.А з наступного рядка розташовується блок інструкцій циклу, які також повинні мати відступи від початку рядка. Ось простий приклад використання циклу, де в ролі множини значень використовується кортеж:</p>
+<p>Після ключового слова <code class="docutils literal notranslate"><span class="pre">for</span></code> йде змінна <code class="docutils literal notranslate"><span class="pre">int_var</span></code>, яка зберігає цілі числа (назва змінної може бути будь-якою), потім ключове слово <code class="docutils literal notranslate"><span class="pre">in</span></code>, ітератор (наприклад, виклик функції <code class="docutils literal notranslate"><span class="pre">range</span></code>) і двокрапка. А з наступного рядка розташовується блок інструкцій циклу, які також повинні мати відступи від початку рядка. Ось простий приклад використання циклу, де в ролі множини значень використовується кортеж:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+
 <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span><span class="s1">&#39;yellow&#39;</span><span class="p">,</span><span class="s1">&#39;green&#39;</span><span class="p">,</span><span class="s1">&#39;cyan&#39;</span><span class="p">,</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span><span class="s1">&#39; color of rainbow is&#39;</span><span class="p">,</span><span class="n">color</span><span class="p">,</span><span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-<span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span><span class="s1">&#39; color of rainbow is &#39;</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>#1 color of rainbow is red
+#2 color of rainbow is orange
+#3 color of rainbow is yellow
+#4 color of rainbow is green
+#5 color of rainbow is cyan
+#6 color of rainbow is blue
+#7 color of rainbow is violet
 </pre></div>
 </div>
 </div>
 </div>
-<p>У цьому прикладі змінна color послідовно приймає значення ‘red’, ‘orange’ і т.д. У тілі циклу виводиться повідомлення, яке містить назву кольору, тобто значення змінної color, а також номер ітерації циклу число, яке спочатку дорівнює 1, а потім збільшується на один (інструкцією i+= 1 з кожним проходом циклу.  Інструкція i + = 1 еквівалентна конструкції i = i + 1 (це просто скорочений запис). Такий скорочений запис можна використовувати для всіх арифметичних операцій: * =, - =, / =,% = …
-У списку значень можуть бути вирази різних типів, наприклад:</p>
+<p>У цьому прикладі змінна color послідовно приймає значення <code class="docutils literal notranslate"><span class="pre">'red'</span></code>, <code class="docutils literal notranslate"><span class="pre">'orange'</span></code> і т.д. У тілі циклу виводиться повідомлення, яке містить назву кольору, тобто значення змінної <code class="docutils literal notranslate"><span class="pre">color</span></code>, а також номер ітерації циклу число, яке спочатку дорівнює 1, а потім збільшується на один (інструкцією <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">+=</span> <span class="pre">1</span></code>) з кожним проходом циклу. Інструкція <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">+=</span> <span class="pre">1</span></code> еквівалентна конструкції <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">i</span> <span class="pre">+</span> <span class="pre">1</span></code> (це просто скорочений запис). Такий скорочений запис можна використовувати для всіх арифметичних операцій: <code class="docutils literal notranslate"><span class="pre">*=</span></code>, <code class="docutils literal notranslate"><span class="pre">-=</span></code>, <code class="docutils literal notranslate"><span class="pre">/=</span></code>, <code class="docutils literal notranslate"><span class="pre">%=</span></code>…</p>
+<p>У списку значень можуть бути вирази різних типів, наприклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;two&#39;</span><span class="p">,</span><span class="s1">&#39;three&#39;</span><span class="p">:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;one&#39;</span><span class="p">,</span> <span class="s1">&#39;two&#39;</span><span class="p">,</span> <span class="s1">&#39;three&#39;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+2
+3
+one
+two
+three
+</pre></div>
 </div>
-<p>При перших трьох ітераціях циклу змінна i буде приймати значення типу int, при наступних трьох - типу str.
-При виконанні циклу Python послідовно отримує все числа з колекції, яка створюється функцією range, а також зберігає числа в змінній int_var. При першому проході цикл отримує перше число з колекції, при другому - друге число і так далі, поки не перебере всі числа. Коли все числа в колекції будуть перебрані, цикл завершує свою роботу.</p>
+</div>
+</div>
+<p>При перших трьох ітераціях циклу змінна i буде приймати значення типу <code class="docutils literal notranslate"><span class="pre">int</span></code>, при наступних трьох — типу <code class="docutils literal notranslate"><span class="pre">str</span></code>.</p>
+<p>При виконанні циклу Python послідовно отримує всі значення з колекції і зберігає їх у змінній <code class="docutils literal notranslate"><span class="pre">int_var</span></code>. При першому проході цикл отримує перше значення з колекції, при другому — друге значення і так далі, поки не перебере їх усі. Коли всі значення у колекції будуть перебрані, цикл завершує свою роботу.</p>
 </div>
 <div class="section" id="range">
-<h2>Функция RANGE<a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h2>
-<p>Як правило, цикли for використовуються або для повторення будь-якої послідовності дій задану кількість разів, або для зміни значення змінної в циклі від деякого початкового значення до деякого кінцевого. Для повторення циклу деяке задане число разів n можна використовувати цикл for разом з функцією range:
-for i in range(4): #рівносильноінструкції for iin 0,1,2,3:</p>
+<h2>Функция <code class="docutils literal notranslate"><span class="pre">range</span></code><a class="headerlink" href="#range" title="Permalink to this headline">¶</a></h2>
+<p>Як правило, цикли <code class="docutils literal notranslate"><span class="pre">for</span></code> використовуються або для повторення будь-якої послідовності дій задану кількість разів, або для зміни значення змінної в циклі від деякого початкового значення до деякого кінцевого. Для повторення циклу деяке задане число разів <code class="docutils literal notranslate"><span class="pre">n</span></code> можна використовувати цикл <code class="docutils literal notranslate"><span class="pre">for</span></code> разом з функцією <code class="docutils literal notranslate"><span class="pre">range</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span> <span class="c1">#рівносильноінструкції for iin 0,1,2,3:</span>
-<span class="c1"># тут можна виконувати циклічні дії </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+<span class="c1"># рівносильно інструкції </span>
+<span class="c1"># for i in 0, 1, 2, 3:</span>
+    <span class="c1"># тут можна виконувати циклічні дії</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="c1"># цикл закінчився, оскільки закінчився блок з відступом </span>
@@ -577,21 +697,52 @@ for i in range(4): #рівносильноінструкції for iin 0,1,2,3:<
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+0
+1
+1
+2
+4
+3
+9
+Кінець циклу
+</pre></div>
 </div>
-<p>Функція <code class="docutils literal notranslate"><span class="pre">range</span></code> має такі форми:
-• range(stop):повертає всі цілі числа від 0 до stop;
-• range(start, stop):повертає всі цілі числа в проміжку від start (включно) до stop (не включаючи);
-• range(start, stop, step):повертає цілі числа в проміжку від start(включно) до stop (не включаючи), які збільшуються на значення step.
-Приклади викликів функції range:</p>
-<p>range(5)          # 0,1,2,3,4
-range(1,5)        # 1,2,3,4
-range(2,10,2)     # 2,4,6,8
-range(5,0,-1)     # 5,4,3,2,1</p>
+</div>
+</div>
+<p>Функція <code class="docutils literal notranslate"><span class="pre">range</span></code> має такі форми:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">range(stop)</span></code>: повертає всі цілі числа від 0 до <code class="docutils literal notranslate"><span class="pre">stop</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">range(start,</span> <span class="pre">stop)</span></code>: повертає всі цілі числа в проміжку від <code class="docutils literal notranslate"><span class="pre">[start,</span> <span class="pre">stop)</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">range(start,</span> <span class="pre">stop,</span> <span class="pre">step)</span></code>: повертає цілі числа в проміжку від <code class="docutils literal notranslate"><span class="pre">[start,</span> <span class="pre">stop)</span></code>, які збільшуються на значення <code class="docutils literal notranslate"><span class="pre">step</span></code>.</p></li>
+</ul>
+<p>Приклади викликів функції <code class="docutils literal notranslate"><span class="pre">range</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>          <span class="c1"># 0,1,2,3,4</span>
+<span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>        <span class="c1"># 1,2,3,4</span>
+<span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>     <span class="c1"># 2,4,6,8</span>
+<span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>     <span class="c1"># 5,4,3,2,1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>range(5, 0, -1)
+</pre></div>
+</div>
+</div>
+</div>
 <p>Наприклад, виведемо послідовно всі числа від 0 до 4:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 1 2 3 4 
 </pre></div>
 </div>
 </div>
@@ -602,90 +753,153 @@ range(5,0,-1)     # 5,4,3,2,1</p>
 <p>Одні цикли всередині себе можуть містити інші цикли. Розглянемо на прикладі виведення таблиці множення:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1	2	3	4	5	6	7	8	9	
+
+2	4	6	8	10	12	14	16	18	
+
+3	6	9	12	15	18	21	24	27	
+
+4	8	12	16	20	24	28	32	36	
+
+5	10	15	20	25	30	35	40	45	
+
+6	12	18	24	30	36	42	48	54	
+
+7	14	21	28	35	42	49	56	63	
+
+8	16	24	32	40	48	56	64	72	
+
+9	18	27	36	45	54	63	72	81	
+</pre></div>
 </div>
-<p>Зовнішній цикл for i in <code class="docutils literal notranslate"><span class="pre">range</span></code> (1, 10) спрацьовує 9 разів, так як в колекції, яка повертається функцією range, 9 чисел. Внутрішній цикл for j in <code class="docutils literal notranslate"><span class="pre">range</span></code> (1, 10) спрацьовує 9 разів для однієї ітерації зовнішнього циклу, і відповідно 81 разів для всіх ітерацій зовнішнього циклу. У кожній ітерації внутрішнього циклу на консоль буде виводитися добуток чисел i та j.</p>
+</div>
+</div>
+<p>Зовнішній цикл <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">10)</span></code> спрацьовує 9 разів, так як в колекції, яка повертається функцією <code class="docutils literal notranslate"><span class="pre">range</span></code>, 9 чисел. Внутрішній цикл <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">j</span> <span class="pre">in</span> <span class="pre">range(1,</span> <span class="pre">10)</span></code> спрацьовує 9 разів для однієї ітерації зовнішнього циклу, і відповідно 81 разів для всіх ітерацій зовнішнього циклу. У кожній ітерації внутрішнього циклу на консоль буде виводитися добуток чисел <code class="docutils literal notranslate"><span class="pre">i</span></code> та <code class="docutils literal notranslate"><span class="pre">j</span></code>.</p>
 </div>
 <div class="section" id="while">
-<h2>Цикл while`<a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h2>
-<p>Універсальним організатором циклу в мові програмування Python (як і в багатьох інших мовах) є конструкція while<code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">Слово</span> <span class="pre">&quot;while</span></code>” з англійської мови перекладається як “поки” (“поки логічне вираження повертає істину, виконувати певні операції”). Конструкцію while<code class="docutils literal notranslate"> <span class="pre">на</span> <span class="pre">мові</span> <span class="pre">Python</span> <span class="pre">можна</span> <span class="pre">описати</span> <span class="pre">наступною</span> <span class="pre">схемою:</span> <span class="pre">while</span></code> умовний_ вираз:
-                інструкції
-Ця схема є приблизною, оскільки логічний вираз в заголовку циклу while<code class="docutils literal notranslate"> <span class="pre">може</span> <span class="pre">бути</span> <span class="pre">більш</span> <span class="pre">складним,</span> <span class="pre">а</span> <span class="pre">змінюватися</span> <span class="pre">може</span> <span class="pre">змінна</span> <span class="pre">(або</span> <span class="pre">вираз).</span> <span class="pre">Коли</span> <span class="pre">виконання</span> <span class="pre">програмного</span> <span class="pre">коду</span> <span class="pre">доходить</span> <span class="pre">до</span> <span class="pre">циклу</span> <span class="pre">while</span></code>, виконується логічний вираз в заголовку, і, якщо було отримано True (істина), виконуються вкладені вирази. Після потік виконання програми знову повертається в заголовок циклу while<code class="docutils literal notranslate"><span class="pre">,</span> <span class="pre">і</span> <span class="pre">знову</span> <span class="pre">перевіряється</span> <span class="pre">умова.Якщо</span> <span class="pre">умова</span> <span class="pre">ніколи</span> <span class="pre">не</span> <span class="pre">буде</span> <span class="pre">хибною,</span> <span class="pre">то</span> <span class="pre">не</span> <span class="pre">буде</span> <span class="pre">причин</span> <span class="pre">зупинки</span> <span class="pre">циклу</span> <span class="pre">і</span> <span class="pre">програма</span> <span class="pre">зациклиться.</span> <span class="pre">Щоб</span> <span class="pre">цього</span> <span class="pre">не</span> <span class="pre">сталося,</span> <span class="pre">необхідно</span> <span class="pre">передбачити</span> <span class="pre">можливість</span> <span class="pre">виходу</span> <span class="pre">з</span> <span class="pre">циклу</span> <span class="pre">-</span> <span class="pre">хибність</span> <span class="pre">виразу</span> <span class="pre">в</span> <span class="pre">заголовку.</span> <span class="pre">Таким</span> <span class="pre">чином,</span> <span class="pre">змінюючи</span> <span class="pre">значення</span> <span class="pre">змінної</span> <span class="pre">в</span> <span class="pre">тілі</span> <span class="pre">циклу,</span> <span class="pre">можна</span> <span class="pre">довести</span> <span class="pre">логічний</span> <span class="pre">вираз</span> <span class="pre">до</span> <span class="pre">хибності.Цю</span> <span class="pre">змінювану</span> <span class="pre">змінну,</span> <span class="pre">яка</span> <span class="pre">використовується</span> <span class="pre">в</span> <span class="pre">заголовку</span> <span class="pre">циклу</span> <span class="pre">while</span></code>, зазвичай називають лічильником. Як і будь-якій змінній їй можна давати довільні імена, однак, дуже часто використовують букви i і j. Найпростіший цикл на мові програмування Python може виглядати так:</p>
+<h2>Цикл <code class="docutils literal notranslate"><span class="pre">while</span></code><a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h2>
+<p>Універсальним організатором циклу в мові програмування Python (як і в багатьох інших мовах) є конструкція <code class="docutils literal notranslate"><span class="pre">while</span></code>. Слово “while” з англійської мови перекладається як “поки” (як у фразі “поки логічне вираження повертає істину, виконувати певні операції”). Конструкцію <code class="docutils literal notranslate"><span class="pre">while</span></code> на мові Python можна описати наступною схемою:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="o">&lt;</span><span class="n">логічний_вираз</span><span class="o">&gt;</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">інструкції</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Ця схема є приблизною, оскільки логічний вираз в заголовку циклу <code class="docutils literal notranslate"><span class="pre">while</span></code> може бути більш складним, а змінюватися може змінна (або вираз).</p>
+<p>Коли виконання програмного коду доходить до циклу <code class="docutils literal notranslate"><span class="pre">while</span></code>, виконується логічний вираз в заголовку, і, якщо було отримано <code class="docutils literal notranslate"><span class="pre">True</span></code> (істина), виконуються вкладені вирази. Після потік виконання програми знову повертається в заголовок циклу <code class="docutils literal notranslate"><span class="pre">while</span></code>, і знову перевіряється умова. Якщо умова ніколи не буде хибною, то не буде причин зупинки циклу і програма зациклиться. Щоб цього не сталося, необхідно передбачити можливість виходу з циклу — хибність виразу в заголовку. Таким чином, змінюючи значення змінної в тілі циклу, можна довести логічний вираз до хибності.</p>
+<p>Цю змінювану змінну, яка використовується в заголовку циклу <code class="docutils literal notranslate"><span class="pre">while</span></code>, зазвичай називають лічильником. Як і будь-якій змінній їй можна давати довільні імена. Найпростіший цикл <code class="docutils literal notranslate"><span class="pre">while</span></code> на мові програмування Python може виглядати так:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>str1 = &quot;+&quot; 
-i = 0
-while` i &lt; 10:
-	print (str1)
-	i = i + 1
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">str1</span> <span class="o">=</span> <span class="s2">&quot;+&quot;</span> 
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span>
+	<span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>+
++
++
++
++
++
++
++
++
++
 </pre></div>
 </div>
 </div>
 </div>
-<p>В останньому рядку коду відбувається збільшення значення змінної i на одиницю, тому з кожним оборотом циклу її значення збільшується. Коли буде досягнуто число 10, логічний вираз i &lt;10 дасть помилковий результат, виконання тіла циклу буде припинено, а потік виконання програми перейде на команди, які йдуть за всією конструкцією циклу.Результатом виконання скрипта, наведеного вище, є вивід на екран десяти знаків + в стовпчик. Якщо збільшувати лічильник в тілі циклу не на одиницю, а на 2, то буде виведено лише п’ять знаків, тому що цикл зробить тільки п’ять оборотів.Всі інструкції, які відносяться до циклу while`, розташовуються на наступних рядках і повинні мати відступ від початку рядка.</p>
+<p>В останньому рядку коду відбувається збільшення значення змінної <code class="docutils literal notranslate"><span class="pre">i</span></code> на одиницю, тому з кожним оборотом циклу її значення збільшується. Коли буде досягнуто число 10, логічний вираз <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">10</span></code> дасть помилковий результат, виконання тіла циклу буде припинено, а потік виконання програми перейде на команди, які йдуть за всією конструкцією циклу. Результатом виконання скрипта, наведеного вище, є вивід на екран десяти знаків <code class="docutils literal notranslate"><span class="pre">+</span></code> в стовпчик. Якщо збільшувати лічильник в тілі циклу не на одиницю, а на 2, то буде виведено лише п’ять знаків, тому що цикл зробить тільки п’ять оборотів. Всі інструкції, які відносяться до циклу <code class="docutils literal notranslate"><span class="pre">while</span></code>, розташовуються на окремих рядках і повинні мати відступ від початку рядка.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>choice = &quot;y&quot;
-while` choice.lower() == &quot;y&quot;:
-    print(&quot;Привіт&quot;)
-    choice = input(&quot;Для продовження натисніть Y, а для виходу іншу клавішу: &quot;)
-    print(&quot;Робота програми завершена &quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">choice</span> <span class="o">=</span> <span class="s2">&quot;y&quot;</span>
+<span class="k">while</span> <span class="n">choice</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Привіт&quot;</span><span class="p">)</span>
+    <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Для продовження натисніть Y, а для виходу іншу клавішу: &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Робота програми завершена &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Привіт
+Привіт
+Робота програми завершена 
 </pre></div>
 </div>
 </div>
 </div>
-<p>В даному випадку цикл while<code class="docutils literal notranslate"> <span class="pre">триватиме,</span> <span class="pre">поки</span> <span class="pre">змінна</span> <span class="pre">choice</span> <span class="pre">містить</span> <span class="pre">латинську</span> <span class="pre">букву</span> <span class="pre">&quot;Y&quot;</span> <span class="pre">або</span> <span class="pre">&quot;y&quot;.</span> <span class="pre">Сам</span> <span class="pre">блок</span> <span class="pre">циклу</span> <span class="pre">складається</span> <span class="pre">з</span> <span class="pre">двох</span> <span class="pre">інструкцій.</span> <span class="pre">Спочатку</span> <span class="pre">виводиться</span> <span class="pre">повідомлення</span> <span class="pre">&quot;Привіт&quot;,</span> <span class="pre">а</span> <span class="pre">потім</span> <span class="pre">уводиться</span> <span class="pre">нове</span> <span class="pre">значення</span> <span class="pre">для</span> <span class="pre">змінної</span>&#160; <span class="pre">choice.</span> <span class="pre">І</span> <span class="pre">якщо</span> <span class="pre">користувач</span> <span class="pre">натисне</span> <span class="pre">якусь</span> <span class="pre">іншу</span> <span class="pre">клавішу,</span> <span class="pre">відмінну</span> <span class="pre">від</span> <span class="pre">Y,</span> <span class="pre">відбудеться</span> <span class="pre">вихід</span> <span class="pre">з</span> <span class="pre">циклу,</span> <span class="pre">так</span> <span class="pre">як</span> <span class="pre">умова</span>&#160; <span class="pre">choice.lower</span> <span class="pre">()==&quot;y&quot;</span> <span class="pre">поверне</span> <span class="pre">значення</span> <span class="pre">False.</span> <span class="pre">Кожен</span> <span class="pre">такий</span> <span class="pre">прохід</span> <span class="pre">циклу</span> <span class="pre">називається</span> <span class="pre">ітерацією.Також</span> <span class="pre">зверніть</span> <span class="pre">увагу,</span> <span class="pre">що</span> <span class="pre">остання</span> <span class="pre">інструкція</span> <span class="pre">print</span> <span class="pre">(&quot;Робота</span> <span class="pre">програми</span> <span class="pre">завершена&quot;)</span> <span class="pre">не</span> <span class="pre">має</span> <span class="pre">відступів</span> <span class="pre">від</span> <span class="pre">початку</span> <span class="pre">рядка,</span> <span class="pre">тому</span> <span class="pre">вона</span> <span class="pre">не</span> <span class="pre">входить</span> <span class="pre">в</span> <span class="pre">цикл</span> <span class="pre">while</span></code>.Істотна відмінність циклу while<code class="docutils literal notranslate"> <span class="pre">від</span> <span class="pre">циклу</span> <span class="pre">for:</span> <span class="pre">while</span></code> використовується тоді, коли заздалегідь невідомо, скільки разів має повторюватися деяка дія.</p>
-<p>Вихід із циклу break і continue
-Для управління циклом можна використовувати спеціальні оператори break і continue. Оператор break здійснює вихід з циклу. А оператор continue виконує перехід до наступної ітерації циклу.
-Оператор break може використовуватися, якщо в циклі утворюються умови, які несумісні з його подальшим виконанням.
-Приклад:</p>
+<p>В даному випадку цикл <code class="docutils literal notranslate"><span class="pre">while</span></code> триватиме, поки змінна choice містить латинську букву <code class="docutils literal notranslate"><span class="pre">&quot;Y&quot;</span></code> або <code class="docutils literal notranslate"><span class="pre">&quot;y&quot;</span></code>. Сам блок циклу складається з двох інструкцій. Спочатку виводиться повідомлення “Привіт”, а потім уводиться нове значення для змінної <code class="docutils literal notranslate"><span class="pre">choice</span></code>. І якщо користувач натисне якусь іншу клавішу, відмінну від <code class="docutils literal notranslate"><span class="pre">Y</span></code>, відбудеться вихід з циклу, так як умова <code class="docutils literal notranslate"><span class="pre">choice.lower</span> <span class="pre">()</span> <span class="pre">==</span> <span class="pre">&quot;y&quot;</span></code> поверне значення <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>Кожен такий прохід циклу називається ітерацією. Також зверніть увагу, що остання інструкція <code class="docutils literal notranslate"><span class="pre">print(&quot;Робота</span> <span class="pre">програми</span> <span class="pre">завершена&quot;)</span></code> не має відступів від початку рядка, тому вона не входить в цикл <code class="docutils literal notranslate"><span class="pre">while</span></code>. Істотна відмінність циклу <code class="docutils literal notranslate"><span class="pre">while</span></code> від циклу <code class="docutils literal notranslate"><span class="pre">for</span></code>: <code class="docutils literal notranslate"><span class="pre">while</span></code> використовується тоді, коли заздалегідь невідомо, скільки разів має повторюватися деяка дія.</p>
 </div>
-<div class="section" id="id3">
-<h2>Програма Обмінний пункт<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="break-continue">
+<h2>Вихід із циклу, <code class="docutils literal notranslate"><span class="pre">break</span></code> і <code class="docutils literal notranslate"><span class="pre">continue</span></code><a class="headerlink" href="#break-continue" title="Permalink to this headline">¶</a></h2>
+<p>Для управління циклом можна використовувати спеціальні оператори <code class="docutils literal notranslate"><span class="pre">break</span></code> і <code class="docutils literal notranslate"><span class="pre">continue</span></code>. Оператор <code class="docutils literal notranslate"><span class="pre">break</span></code> здійснює вихід з циклу. А оператор <code class="docutils literal notranslate"><span class="pre">continue</span></code> виконує перехід до наступної ітерації циклу.
+Оператор <code class="docutils literal notranslate"><span class="pre">break</span></code> може використовуватися, якщо в циклі утворюються умови, які несумісні з його подальшим виконанням.</p>
+<p>Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print(&quot;Для виходу натисніть Y&quot;)
-while` True:
-    data = input(&quot;Уведіть суму для обміну: &quot;)
-    if data.lower()==&quot;y&quot;:
-        break  #вихід з циклу
-    money = int(data)
-    cache = round(money/26,2)
-    print(&quot;До видачі &quot;, cache, &quot;доларів &quot;)
-print(&quot;Робота обмінного пункту завершена &quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Для виходу натисніть Y&quot;</span><span class="p">)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Уведіть суму для обміну: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+        <span class="k">break</span> <span class="c1"># вихід з циклу</span>
+    <span class="n">money</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">cache</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">money</span><span class="o">/</span><span class="mi">26</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;До видачі &quot;</span><span class="p">,</span> <span class="n">cache</span><span class="p">,</span> <span class="s2">&quot;доларів &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Робота обмінного пункту завершена &quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Для виходу натисніть Y
+До видачі  0.38 доларів 
+Робота обмінного пункту завершена 
 </pre></div>
 </div>
 </div>
 </div>
-<p>Тут продемонстровано нескінченний цикл, так як умова while` True завжди істинна і завжди буде виконуватися. Це популярний прийом для створення програм, які повинні виконуватися невизначено довго.
-У самому циклі отримуємо введення з консолі. Передбачається, що користувач буде вводити число - умовну суму грошей для обміну. Якщо користувач вводить літеру “Y” або “y”, то за допомогою оператора break вихід з циклу і фінал роботи програми. Інакше ділиться введена сума на обмінний курс, за допомогою функції round округляється результат і виводиться на консоль. І так до нескінченності, поки користувач не захоче вийти з програми, натиснувши на клавішу Y.
-Образ роботи програми:</p>
-<p>Але що, якщо користувач введе від<code class="docutils literal notranslate"><span class="pre">ємне</span> <span class="pre">число?</span> <span class="pre">У</span> <span class="pre">цьому</span> <span class="pre">випадку</span> <span class="pre">програма</span> <span class="pre">також</span> <span class="pre">видасть</span> <span class="pre">від</span></code>ємний результат, що не є коректною поведінкою. І в цьому випадку перед обчисленням можна перевірити значення, менше воно нуля, і якщо менше, за допомогою оператора continue виконати перехід до наступної ітерації циклу без його завершення:</p>
+<p>Тут продемонстровано нескінченний цикл, так як умова <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code> завжди істинна і завжди буде виконуватися. Це популярний прийом для створення програм, які повинні виконуватися невизначено довго.</p>
+<p>У самому циклі отримуємо введення з консолі. Передбачається, що користувач буде вводити число — умовну суму грошей для обміну. Якщо користувач вводить літеру <code class="docutils literal notranslate"><span class="pre">&quot;Y&quot;</span></code> або <code class="docutils literal notranslate"><span class="pre">&quot;y&quot;</span></code>, то за допомогою оператора <code class="docutils literal notranslate"><span class="pre">break</span></code> виходимо з циклу. Інакше ділимо його на обмінний курс, за допомогою функції <code class="docutils literal notranslate"><span class="pre">round</span></code> округляється результат і виводиться на консоль. І так до нескінченності, поки користувач не захоче вийти з програми, натиснувши на клавішу <code class="docutils literal notranslate"><span class="pre">Y</span></code>.</p>
+<p>Але що, якщо користувач введе від’ємне число? У цьому випадку програма також видасть від’ємний результат, що не є коректною поведінкою. І в цьому випадку перед обчисленням можна перевірити значення, менше воно нуля, і якщо менше, за допомогою оператора <code class="docutils literal notranslate"><span class="pre">continue</span></code> виконати перехід до наступної ітерації циклу без його завершення:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>print (&quot;Для виходу натисніть Y&quot;)
-while` True:
-    data = input (&quot;Уведіть суму для обміну:&quot;)
-    if data.lower () == &quot;y&quot;:
-        break # вихід з циклу
-    money = int (data)
-    if money &lt;0:
-        print (&quot;Сума повинна бути додатньою!&quot;)
-        continue
-    cache = round (money / 26, 2)
-    print (&quot;До видачі&quot;, cache, &quot;доларів&quot;)
-print (&quot;Робота обмінного пункту завершена&quot;)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Для виходу натисніть Y&quot;</span><span class="p">)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s2">&quot;Уведіть суму для обміну:&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">lower</span> <span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+        <span class="k">break</span> <span class="c1"># вихід з циклу</span>
+    
+    <span class="n">money</span> <span class="o">=</span> <span class="nb">int</span> <span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">money</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Сума повинна бути додатньою!&quot;</span><span class="p">)</span>
+        <span class="k">continue</span>
+    
+    <span class="n">cache</span> <span class="o">=</span> <span class="nb">round</span> <span class="p">(</span><span class="n">money</span> <span class="o">/</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;До видачі&quot;</span><span class="p">,</span> <span class="n">cache</span><span class="p">,</span> <span class="s2">&quot;доларів&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Робота обмінного пункту завершена&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Для виходу натисніть Y
+Сума повинна бути додатньою!
+До видачі 384.62 доларів
+Робота обмінного пункту завершена
 </pre></div>
 </div>
 </div>
 </div>
-<p>І в цьому випадку не можна отримати результат для від’ємної суми:</p>
+<p>І в цьому випадку не можна отримати результат для від’ємної суми.</p>
 </div>
 </div>
 
@@ -693,7 +907,7 @@ print (&quot;Робота обмінного пункту завершена&quo
     {
         requestKernel: true,
         binderOptions: {
-            repo: "GasperPaul/python-labs-book",
+            repo: "kpi-fpm-pma/python-labs-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -739,7 +953,7 @@ print (&quot;Робота обмінного пункту завершена&quo
     
         &copy; Copyright 2021.<br/>
       <div class="extra_footer">
-        This page was created by <a href="https://github.com/gasperpaul/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
+        This page was created by <a href="https://github.com/kpi-fpm-pma/python-labs-book/graphs/contributors">community</a>.<br /> "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
       </div>
   </p>
 </footer>

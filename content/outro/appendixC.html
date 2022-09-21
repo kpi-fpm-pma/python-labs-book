@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вбудовані функції &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
+    <title>Додаток 3. Ключові слова &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,12 +52,12 @@
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/intro/functions.html" />
+    <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/outro/appendixC.html" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Керівництов з написання коду на Python" href="formating.html" />
-    <link rel="prev" title="Структура програми Python" href="structure.html" />
+    <link rel="next" title="Додаток 4. Операції в мові програмування Python" href="appendixD.html" />
+    <link rel="prev" title="Додаток 2. Вбудовані функції" href="appendixB.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -96,39 +96,39 @@
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
+  <a class="reference internal" href="../intro/intro.html">
    Вступ
   </a>
  </li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="guidlines.html">
+  <a class="reference internal" href="../intro/guidlines.html">
    Загальні вказівки до виконання лабораторних робіт
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="installation.html">
+  <a class="reference internal" href="../intro/installation.html">
    Встановлення і робота з інтерпретатором Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="structure.html">
+  <a class="reference internal" href="../intro/structure.html">
    Структура програми на мові Python та основні модулі
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/functions.html">
    Вбудовані функції
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="formating.html">
+  <a class="reference internal" href="../intro/formating.html">
    Основні вказівки до форматування коду
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="types.html">
+  <a class="reference internal" href="../intro/types.html">
    Типи і структури даних у Python
   </a>
  </li>
@@ -351,7 +351,7 @@
 </ul>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../outro/exceptions.html">
+  <a class="reference internal" href="exceptions.html">
    Винятки у Python
   </a>
  </li>
@@ -361,29 +361,29 @@
   Додатки
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../outro/appendixA.html">
+  <a class="reference internal" href="appendixA.html">
    Додаток 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../outro/appendixB.html">
+  <a class="reference internal" href="appendixB.html">
    Додаток 2
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../outro/appendixC.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Додаток 3
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../outro/appendixD.html">
+  <a class="reference internal" href="appendixD.html">
    Додаток 4
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../outro/appendixE.html">
+  <a class="reference internal" href="appendixE.html">
    Додаток 5
   </a>
  </li>
@@ -435,9 +435,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/content/intro/functions.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/content/outro/appendixC.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -455,31 +455,6 @@
 
             <!-- Launch buttons -->
 
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/kpi-fpm-pma/python-labs-book/master?urlpath=lab/tree/content/intro/functions.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <a class="colab-button" href="https://colab.research.google.com/github/kpi-fpm-pma/python-labs-book/blob/master/content/intro/functions.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
-                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
-                    src="../../_static/images/logo_colab.png"
-                    alt="Interact on Colab">Colab</button></a>
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
-    </div>
-</div>
-
         </div>
 
         <!-- Table of contents -->
@@ -492,7 +467,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Вбудовані функції</h1>
+                <h1>Додаток 3. Ключові слова</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -504,43 +479,112 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Вбудовані функції<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>У середовищі Python без операцій імпорту є більше сотні вбудованих об’єктів, в основному, функцій і виключень (exception).
-Для зручності функції умовно розділені за категоріями:</p>
-<ul class="simple">
-<li><p>Функції перетворення типів і класи: <code class="docutils literal notranslate"><span class="pre">coerce</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">repr</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">list</span></code>, <code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <code class="docutils literal notranslate"><span class="pre">long</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">complex</span></code>, <code class="docutils literal notranslate"><span class="pre">dict</span></code>, <code class="docutils literal notranslate"><span class="pre">super</span></code>, <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">bool</span></code>, <code class="docutils literal notranslate"><span class="pre">object</span></code>.</p></li>
-<li><p>Числові і рядкові функції: <code class="docutils literal notranslate"><span class="pre">abs</span></code>, <code class="docutils literal notranslate"><span class="pre">divmod</span></code>, <code class="docutils literal notranslate"><span class="pre">ord</span></code>, <code class="docutils literal notranslate"><span class="pre">pow</span></code>, <code class="docutils literal notranslate"><span class="pre">len</span></code>, <code class="docutils literal notranslate"><span class="pre">chr</span></code>, <code class="docutils literal notranslate"><span class="pre">unichr</span></code>, <code class="docutils literal notranslate"><span class="pre">hex</span></code>, <code class="docutils literal notranslate"><span class="pre">oct</span></code>, <code class="docutils literal notranslate"><span class="pre">cmp</span></code>, <code class="docutils literal notranslate"><span class="pre">round</span></code>, <code class="docutils literal notranslate"><span class="pre">unicode</span></code>.</p></li>
-<li><p>Функції обробки даних: <code class="docutils literal notranslate"><span class="pre">apply</span></code>, <code class="docutils literal notranslate"><span class="pre">map</span></code>, <code class="docutils literal notranslate"><span class="pre">filter</span></code>, <code class="docutils literal notranslate"><span class="pre">reduce</span></code>, <code class="docutils literal notranslate"><span class="pre">zip</span></code>, <code class="docutils literal notranslate"><span class="pre">range</span></code>, <code class="docutils literal notranslate"><span class="pre">xrange</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">iter</span></code>, <code class="docutils literal notranslate"><span class="pre">enumerate</span></code>, <code class="docutils literal notranslate"><span class="pre">sum</span></code>.</p></li>
-<li><p>Функції визначення властивостей: <code class="docutils literal notranslate"><span class="pre">hash</span></code>, <code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">callable</span></code>, <code class="docutils literal notranslate"><span class="pre">issubclass</span></code>, <code class="docutils literal notranslate"><span class="pre">isinstance</span></code>, <code class="docutils literal notranslate"><span class="pre">type</span></code>.</p></li>
-<li><p>Функції для доступу до внутрішніх структурам: <code class="docutils literal notranslate"><span class="pre">locals</span></code>, <code class="docutils literal notranslate"><span class="pre">globals</span></code>, <code class="docutils literal notranslate"><span class="pre">vars</span></code>, <code class="docutils literal notranslate"><span class="pre">intern</span></code>, <code class="docutils literal notranslate"><span class="pre">dir</span></code>.</p></li>
-<li><p>Функції компіляції та виконання: <code class="docutils literal notranslate"><span class="pre">eval</span></code> ,<code class="docutils literal notranslate"><span class="pre">execfile</span></code>, <code class="docutils literal notranslate"><span class="pre">reload</span></code>, <code class="docutils literal notranslate"><span class="pre">__import__</span></code>, <code class="docutils literal notranslate"><span class="pre">compile</span></code>.</p></li>
-<li><p>Функції введення-виведення: <code class="docutils literal notranslate"><span class="pre">input</span></code>, <code class="docutils literal notranslate"><span class="pre">raw_input</span></code>, <code class="docutils literal notranslate"><span class="pre">open</span></code>.</p></li>
-<li><p>Функції для роботи з атрибутами: <code class="docutils literal notranslate"><span class="pre">getattr</span></code>, <code class="docutils literal notranslate"><span class="pre">setattr</span></code>, <code class="docutils literal notranslate"><span class="pre">delattr</span></code>, <code class="docutils literal notranslate"><span class="pre">hasattr</span></code>.</p></li>
-<li><p>Функції-“прикрашувачи” методів класів: <code class="docutils literal notranslate"><span class="pre">staticmethod</span></code>, <code class="docutils literal notranslate"><span class="pre">classmethod</span></code>, <code class="docutils literal notranslate"><span class="pre">property</span></code>.</p></li>
-<li><p>Інші функції: <code class="docutils literal notranslate"><span class="pre">buffer</span></code>, <code class="docutils literal notranslate"><span class="pre">slice</span></code>.</p></li>
-</ul>
-<p>Уточнити призначення функції, її аргументів і результату можна в інтерактивній сесії інтерпретатора Python :
-<img alt="" src="../../_images/Func_Info.bmp" /></p>
-<p>Ще один варіант отримати інформацію про функції можна, звернувшись за адресою: <a class="reference external" href="https://docs.python.org/3.4/library/functions.html#help">https://docs.python.org/3.4/library/functions.html#help</a>.</p>
-<p>У <a class="reference internal" href="../outro/appendixB.html"><span class="doc std std-doc">Додатку 2</span></a> описаний синтаксис вбудованих функцій, найбільш уживаних у курсі вивчення мови Python.</p>
-<p>У <a class="reference internal" href="../outro/appendixC.html"><span class="doc std std-doc">Додатку 3</span></a> перераховані ключові слова мови Python.
-Ці зарезервовані слова не можна використовувати в якості імені змінної або будь-якого іншого ідентифікатора.
-Всі ключові слова Python складаються тільки з букв в нижньому регістрі.</p>
-<p>Отримати список ключових слів можливо в інтерпретаторі командою:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">keyword</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;False&#39;, &#39;None&#39;, &#39;True&#39;, &#39;__peg_parser__&#39;, &#39;and&#39;, &#39;as&#39;, &#39;assert&#39;, &#39;async&#39;, &#39;await&#39;, &#39;break&#39;, &#39;class&#39;, &#39;continue&#39;, &#39;def&#39;, &#39;del&#39;, &#39;elif&#39;, &#39;else&#39;, &#39;except&#39;, &#39;finally&#39;, &#39;for&#39;, &#39;from&#39;, &#39;global&#39;, &#39;if&#39;, &#39;import&#39;, &#39;in&#39;, &#39;is&#39;, &#39;lambda&#39;, &#39;nonlocal&#39;, &#39;not&#39;, &#39;or&#39;, &#39;pass&#39;, &#39;raise&#39;, &#39;return&#39;, &#39;try&#39;, &#39;while&#39;, &#39;with&#39;, &#39;yield&#39;]
-</pre></div>
-</div>
-</div>
-</div>
+<h1>Додаток 3. Ключові слова<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Ключове слово</p></th>
+<th class="head"><p>Значення</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p>хибність</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p>правда</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>“порожній” об’єкт</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">and</span></code></p></td>
+<td><p>логічне І</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">...</span> <span class="pre">as</span></code></p></td>
+<td><p>менеджер контексту</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">assert</span></code></p></td>
+<td><p>викликає виключення, якщо умова помилкова</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">break</span></code></p></td>
+<td><p>вихід з циклу</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">class</span></code></p></td>
+<td><p>призначений для користувача тип, що складається з методів і атрибутів</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">continue</span></code></p></td>
+<td><p>перехід на наступну ітерацію циклу</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">def</span></code></p></td>
+<td><p>визначення функції</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">del</span></code></p></td>
+<td><p>видалення об’єкту</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">elif</span></code></p></td>
+<td><p>інакше, якщо</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">else</span></code></p></td>
+<td><p>див. <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">...</span> <span class="pre">elif</span> <span class="pre">...</span> <span class="pre">else</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">except</span></code></p></td>
+<td><p>перехопитивиключення</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">finally</span></code></p></td>
+<td><p>разом з інструкцією <code class="docutils literal notranslate"><span class="pre">try</span></code>, виконує інструкції незалежно від того, чи було виключення</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">for</span></code></p></td>
+<td><p>цикл <code class="docutils literal notranslate"><span class="pre">for</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">from</span></code></p></td>
+<td><p>імпорт декількох функцій з модуля</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">global</span></code></p></td>
+<td><p>дозволяє зробити значення змінної, присвоєне їй всередині функції, доступним і за межами цієї функції</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">if</span></code></p></td>
+<td><p>якщо</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">import</span></code></p></td>
+<td><p>імпорт модуля</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">in</span></code></p></td>
+<td><p>перевірка на входження</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">is</span></code></p></td>
+<td><p>чи посилаються 2 об’єкти на одне і те ж місце у пам’яті</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">lambda</span></code></p></td>
+<td><p>визначення анонімної функції</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">nonlocal</span></code></p></td>
+<td><p>дозволяє зробити значення змінної, присвоєне їй всередині функції, доступним у охоплюючою інструкції</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">not</span></code></p></td>
+<td><p>логічне НЕ</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">or</span></code></p></td>
+<td><p>логічне АБО</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">pass</span></code></p></td>
+<td><p>нічого не робляча конструкція</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">raise</span></code></p></td>
+<td><p>збудити виключення</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">return</span></code></p></td>
+<td><p>повернути результат</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">try</span></code></p></td>
+<td><p>виконати інструкції, перехоплюючи виключення</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">while</span></code></p></td>
+<td><p>цикл <code class="docutils literal notranslate"><span class="pre">while</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">yield</span></code></p></td>
+<td><p>визначення функції-генератора</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 
     <script type="text/x-thebe-config">
@@ -556,7 +600,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./content/intro"
+            path: "./content/outro"
         },
         predefinedOutput: true
     }
@@ -568,17 +612,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="structure.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="appendixB.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Структура програми Python</p>
+            <p class="prev-next-title">Додаток 2. Вбудовані функції</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="formating.html" title="next page">
+    <a class='right-next' id="next-link" href="appendixD.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Керівництов з написання коду на Python</p>
+        <p class="prev-next-title">Додаток 4. Операції в мові програмування Python</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
