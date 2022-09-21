@@ -173,10 +173,32 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab2/intro.html">
-   Мета роботи
+   Програмування циклічних алгоритмів
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/problems.html">
+     Узагальнене формулювання завдання до лабораторної роботи
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -189,8 +211,8 @@
   <a class="reference internal" href="../lab3/intro.html">
    Структури даних: списки, кортежі, множини
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -223,8 +245,8 @@
   <a class="reference internal" href="../lab4/intro.html">
    Рядки
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -257,8 +279,8 @@
   <a class="reference internal" href="../lab5/intro.html">
    Використання функцій
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -291,8 +313,8 @@
   <a class="reference internal" href="../lab6/intro.html">
    Рекурсія та обробка матриць
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -325,8 +347,8 @@
   <a class="reference internal" href="../lab7/intro.html">
    Робота з файлами
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -578,58 +600,171 @@
 </div>
 <div class="section" id="id3">
 <h2>Інші вбудовані функції<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>| <code class="docutils literal notranslate"><span class="pre">abs(x)</span></code> | повертає абсолютну величину (модуль числа) |
-| <code class="docutils literal notranslate"><span class="pre">all(послідовність)</span></code> | повертає true, якщо всі елементи істинні або послідовність порожня |
-| <code class="docutils literal notranslate"><span class="pre">any(послідовність)</span></code> | повертає true, якщо хоча б один елемент — істина. Для порожньої послідовності повертає false |
-| <code class="docutils literal notranslate"><span class="pre">ascii(object)</span></code> | Як <code class="docutils literal notranslate"><span class="pre">repr</span></code>, повертає рядок, що містить представлення об’єкту, але замінюючи не-ASCII символи на екрановані послідовності |
-| <code class="docutils literal notranslate"><span class="pre">bin(x)</span></code> | перетворення цілого числа у двійковий рядок |
-| <code class="docutils literal notranslate"><span class="pre">callable(x)</span></code> | повертає true для об’єкту, що підтримує виклик (як функції) |
-| <code class="docutils literal notranslate"><span class="pre">chr(x)</span></code> | повертає Односимвольний рядок, код символу якого дорівнює <code class="docutils literal notranslate"><span class="pre">x</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">classmethod(x)</span></code> | представляє зазначену функцію методом класу |
-| <code class="docutils literal notranslate"><span class="pre">compile(source,</span> <span class="pre">filename,</span> <span class="pre">mode,</span> <span class="pre">flags</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">dont_inherit</span> <span class="pre">=</span> <span class="pre">false)</span></code> | компіляція у програмний код, який згодом може виконатися функцією <code class="docutils literal notranslate"><span class="pre">eval</span></code> або <code class="docutils literal notranslate"><span class="pre">exec</span></code>. Рядок не повинен містити символів повернення каретки або нульові байти |
-| <code class="docutils literal notranslate"><span class="pre">delattr(object,</span> <span class="pre">name)</span></code> | видаляє атрибут з ім’ям <code class="docutils literal notranslate"><span class="pre">name</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">dir([object])</span></code> | список імен об’єкту, а якщо об’єкт не вказано, список імен у поточній локальній області видимості |
-| <code class="docutils literal notranslate"><span class="pre">divmod(a,</span> <span class="pre">b)</span></code> | повертає частку і залишок від ділення <code class="docutils literal notranslate"><span class="pre">a</span></code> на <code class="docutils literal notranslate"><span class="pre">b</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">enumerate(iterable,</span> <span class="pre">start</span> <span class="pre">=</span> <span class="pre">0)</span></code> | застосовується для ітеріруемих колекцій (рядки, списки, словники та ін.) і створює об’єкт, який генерує кортежі, що складаються з двох елементів — індексу елемента і самого елемента. |
-| <code class="docutils literal notranslate"><span class="pre">eval(expression,</span> <span class="pre">globals</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">locals</span> <span class="pre">=</span> <span class="pre">None)</span></code> | виконує рядок програмного коду |
-| <code class="docutils literal notranslate"><span class="pre">exec(object</span> <span class="pre">[,</span> <span class="pre">globals</span> <span class="pre">[,</span> <span class="pre">locals]])</span></code> | виконує програмний код на Python |
-| <code class="docutils literal notranslate"><span class="pre">filter(function,</span> <span class="pre">iterable)</span></code> | повертає ітератор з тих елементів, для яких <code class="docutils literal notranslate"><span class="pre">function</span></code> повертає істину |
-| <code class="docutils literal notranslate"><span class="pre">format(value</span> <span class="pre">[,</span> <span class="pre">format_spec])</span></code> | форматування (зазвичай форматування рядка) |
-| <code class="docutils literal notranslate"><span class="pre">getattr(object,</span> <span class="pre">name,</span> <span class="pre">[default])</span></code> | отримує атрибут об’єкту або <code class="docutils literal notranslate"><span class="pre">default</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">globals()</span></code> | словник глобальних імен |
-| <code class="docutils literal notranslate"><span class="pre">hasattr(object,</span> <span class="pre">name)</span></code> | чи має об’єкт атрибут з ім’ям <code class="docutils literal notranslate"><span class="pre">name</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">hash(x)</span></code> | повертає хеш вказаного об’єкту |
-| <code class="docutils literal notranslate"><span class="pre">help([object])</span></code> | виклик вбудованої довідкової системи |
-| <code class="docutils literal notranslate"><span class="pre">hex(х)</span></code> | перетворення цілого числа у шістнадцятковий рядок |
-| <code class="docutils literal notranslate"><span class="pre">id(object)</span></code> | повертає “адресу” об’єкту. Це ціле число, яке гарантовано буде унікальним і постійним для даного об’єкту протягом терміну його існування |
-| <code class="docutils literal notranslate"><span class="pre">input([prompt])</span></code> | повертає введений користувачем рядок. <code class="docutils literal notranslate"><span class="pre">prompt</span></code> — підказка користувачеві |
-| <code class="docutils literal notranslate"><span class="pre">isinstance(object,</span> <span class="pre">ClassInfo)</span></code> | істина, якщо об’єкт є екземпляром <code class="docutils literal notranslate"><span class="pre">ClassInfo</span></code> або його підкласом. Якщо об’єкт не є об’єктом даного типу, функція завжди повертає хибність |
-| <code class="docutils literal notranslate"><span class="pre">issubclass(клас,</span> <span class="pre">ClassInfo)</span></code> | істина, якщо клас є підкласом <code class="docutils literal notranslate"><span class="pre">ClassInfo</span></code>. Клас вважається подклассом себе |
-| <code class="docutils literal notranslate"><span class="pre">iter(x)</span></code> | повертає об’єкт ітератора |
-| <code class="docutils literal notranslate"><span class="pre">len(x)</span></code> | повертає число елементів у зазначеному об’єкті |
-| <code class="docutils literal notranslate"><span class="pre">locals()</span></code> | словник локальних імен |
-| <code class="docutils literal notranslate"><span class="pre">map(function,</span> <span class="pre">iterator)</span></code> | итератор, отриманий після застосування до кожного елементу послідовності функції <code class="docutils literal notranslate"><span class="pre">function</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">max(iter,</span> <span class="pre">[args</span> <span class="pre">...]</span> <span class="pre">*</span> <span class="pre">[,</span> <span class="pre">key])</span></code> | максимальний елемент послідовності |
-| <code class="docutils literal notranslate"><span class="pre">min(iter,</span> <span class="pre">[args</span> <span class="pre">...]</span> <span class="pre">*</span> <span class="pre">[,</span> <span class="pre">key])</span></code> | мінімальний елемент послідовності |
-| <code class="docutils literal notranslate"><span class="pre">next(x)</span></code> | повертає наступний елемент ітератора |
-| <code class="docutils literal notranslate"><span class="pre">oct(х)</span></code> | перетворення цілого числа у вісімковий рядок |
-| <code class="docutils literal notranslate"><span class="pre">open(file,</span> <span class="pre">mode</span> <span class="pre">=</span> <span class="pre">'r',</span> <span class="pre">buffering</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">encoding</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">errors</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">newline</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">closefd</span> <span class="pre">=</span> <span class="pre">True)</span></code> | відкриває файл і повертає відповідний потік |
-| <code class="docutils literal notranslate"><span class="pre">ord(с)</span></code> | код символу |
-| <code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y</span> <span class="pre">[,</span> <span class="pre">r])</span></code> | <code class="docutils literal notranslate"><span class="pre">(x</span> <span class="pre">**</span> <span class="pre">y)</span> <span class="pre">%</span> <span class="pre">r</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">reversed(object)</span></code> | iтератор з розгорнутого об’єкту |
-| <code class="docutils literal notranslate"><span class="pre">repr(obj)</span></code> | представлення об’єкту |
-| <code class="docutils literal notranslate"><span class="pre">print([object,</span> <span class="pre">...],</span> <span class="pre">*,</span> <span class="pre">sep</span> <span class="pre">=</span> <span class="pre">&quot;&quot;,</span> <span class="pre">end</span> <span class="pre">=</span> <span class="pre">'\</span> <span class="pre">n',</span> <span class="pre">file</span> <span class="pre">=</span> <span class="pre">sys.stdout)</span></code> | друк |
-| <code class="docutils literal notranslate"><span class="pre">property(fget</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fset</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fdel</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">doc</span> <span class="pre">=</span> <span class="pre">None)</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">round(x</span> <span class="pre">[,</span> <span class="pre">n])</span> </code>| округлення до n знаків після коми |
-| <code class="docutils literal notranslate"><span class="pre">setattr(об'єкт,</span> <span class="pre">ім'я,</span> <span class="pre">значення)</span></code> | встановлює атрибут об’єкту |
-| <code class="docutils literal notranslate"><span class="pre">sorted(iterable</span> <span class="pre">[,</span> <span class="pre">key]</span> <span class="pre">[,</span> <span class="pre">reverse])</span></code> | відсортований список |
-| <code class="docutils literal notranslate"><span class="pre">staticmethod(function)</span></code> | статичний метод для функції |
-| <code class="docutils literal notranslate"><span class="pre">sum(iter,</span> <span class="pre">start</span> <span class="pre">=</span> <span class="pre">0)</span></code> | сума членів послідовності |
-| <code class="docutils literal notranslate"><span class="pre">super([тип</span> <span class="pre">[,</span> <span class="pre">об'єкт</span> <span class="pre">або</span> <span class="pre">тип]])</span></code> | доступ до батьківського класу |
-| <code class="docutils literal notranslate"><span class="pre">type(object)</span></code> | повертає тип об’єкту |
-| <code class="docutils literal notranslate"><span class="pre">type(name,</span> <span class="pre">bases,</span> <span class="pre">dict)</span></code> | повертає новий екземпляр класу name |
-| <code class="docutils literal notranslate"><span class="pre">vars([object])</span></code> | словник з атрибутів об’єкту. За замовчуванням | словник локальних імен |
-| <code class="docutils literal notranslate"><span class="pre">zip(*iters)</span></code> | iтератор, який повертає кортежі, що складаються з відповідних елементів аргументів-послідовностей |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">abs(x)</span></code></p></td>
+<td><p>повертає абсолютну величину (модуль числа)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">all(послідовність)</span></code></p></td>
+<td><p>повертає true, якщо всі елементи істинні або послідовність порожня</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">any(послідовність)</span></code></p></td>
+<td><p>повертає true, якщо хоча б один елемент — істина. Для порожньої послідовності повертає false</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ascii(object)</span></code></p></td>
+<td><p>Як <code class="docutils literal notranslate"><span class="pre">repr</span></code>, повертає рядок, що містить представлення об’єкту, але замінюючи не-ASCII символи на екрановані послідовності</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bin(x)</span></code></p></td>
+<td><p>перетворення цілого числа у двійковий рядок</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">callable(x)</span></code></p></td>
+<td><p>повертає true для об’єкту, що підтримує виклик (як функції)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">chr(x)</span></code></p></td>
+<td><p>повертає Односимвольний рядок, код символу якого дорівнює <code class="docutils literal notranslate"><span class="pre">x</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">classmethod(x)</span></code></p></td>
+<td><p>представляє зазначену функцію методом класу</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">compile(source,</span> <span class="pre">filename,</span> <span class="pre">mode,</span> <span class="pre">flags</span> <span class="pre">=</span> <span class="pre">0,</span> <span class="pre">dont_inherit</span> <span class="pre">=</span> <span class="pre">false)</span></code></p></td>
+<td><p>компіляція у програмний код, який згодом може виконатися функцією <code class="docutils literal notranslate"><span class="pre">eval</span></code> або <code class="docutils literal notranslate"><span class="pre">exec</span></code>. Рядок не повинен містити символів повернення каретки або нульові байти</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">delattr(object,</span> <span class="pre">name)</span></code></p></td>
+<td><p>видаляє атрибут з ім’ям <code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">dir([object])</span></code></p></td>
+<td><p>список імен об’єкту, а якщо об’єкт не вказано, список імен у поточній локальній області видимості</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">divmod(a,</span> <span class="pre">b)</span></code></p></td>
+<td><p>повертає частку і залишок від ділення <code class="docutils literal notranslate"><span class="pre">a</span></code> на <code class="docutils literal notranslate"><span class="pre">b</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">enumerate(iterable,</span> <span class="pre">start</span> <span class="pre">=</span> <span class="pre">0)</span></code></p></td>
+<td><p>застосовується для ітеріруемих колекцій (рядки, списки, словники та ін.) і створює об’єкт, який генерує кортежі, що складаються з двох елементів — індексу елемента і самого елемента.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">eval(expression,</span> <span class="pre">globals</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">locals</span> <span class="pre">=</span> <span class="pre">None)</span></code></p></td>
+<td><p>виконує рядок програмного коду</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">exec(object</span> <span class="pre">[,</span> <span class="pre">globals</span> <span class="pre">[,</span> <span class="pre">locals]])</span></code></p></td>
+<td><p>виконує програмний код на Python</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">filter(function,</span> <span class="pre">iterable)</span></code></p></td>
+<td><p>повертає ітератор з тих елементів, для яких <code class="docutils literal notranslate"><span class="pre">function</span></code> повертає істину</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">format(value</span> <span class="pre">[,</span> <span class="pre">format_spec])</span></code></p></td>
+<td><p>форматування (зазвичай форматування рядка)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">getattr(object,</span> <span class="pre">name,</span> <span class="pre">[default])</span></code></p></td>
+<td><p>отримує атрибут об’єкту або <code class="docutils literal notranslate"><span class="pre">default</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">globals()</span></code></p></td>
+<td><p>словник глобальних імен</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hasattr(object,</span> <span class="pre">name)</span></code></p></td>
+<td><p>чи має об’єкт атрибут з ім’ям <code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">hash(x)</span></code></p></td>
+<td><p>повертає хеш вказаного об’єкту</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">help([object])</span></code></p></td>
+<td><p>виклик вбудованої довідкової системи</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">hex(х)</span></code></p></td>
+<td><p>перетворення цілого числа у шістнадцятковий рядок</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">id(object)</span></code></p></td>
+<td><p>повертає “адресу” об’єкту. Це ціле число, яке гарантовано буде унікальним і постійним для даного об’єкту протягом терміну його існування</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">input([prompt])</span></code></p></td>
+<td><p>повертає введений користувачем рядок. <code class="docutils literal notranslate"><span class="pre">prompt</span></code> — підказка користувачеві</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">isinstance(object,</span> <span class="pre">ClassInfo)</span></code></p></td>
+<td><p>істина, якщо об’єкт є екземпляром <code class="docutils literal notranslate"><span class="pre">ClassInfo</span></code> або його підкласом. Якщо об’єкт не є об’єктом даного типу, функція завжди повертає хибність</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">issubclass(клас,</span> <span class="pre">ClassInfo)</span></code></p></td>
+<td><p>істина, якщо клас є підкласом <code class="docutils literal notranslate"><span class="pre">ClassInfo</span></code>. Клас вважається подклассом себе</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">iter(x)</span></code></p></td>
+<td><p>повертає об’єкт ітератора</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">len(x)</span></code></p></td>
+<td><p>повертає число елементів у зазначеному об’єкті</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">locals()</span></code></p></td>
+<td><p>словник локальних імен</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">map(function,</span> <span class="pre">iterator)</span></code></p></td>
+<td><p>итератор, отриманий після застосування до кожного елементу послідовності функції <code class="docutils literal notranslate"><span class="pre">function</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max(iter,</span> <span class="pre">[args</span> <span class="pre">...]</span> <span class="pre">*</span> <span class="pre">[,</span> <span class="pre">key])</span></code></p></td>
+<td><p>максимальний елемент послідовності</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">min(iter,</span> <span class="pre">[args</span> <span class="pre">...]</span> <span class="pre">*</span> <span class="pre">[,</span> <span class="pre">key])</span></code></p></td>
+<td><p>мінімальний елемент послідовності</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">next(x)</span></code></p></td>
+<td><p>повертає наступний елемент ітератора</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">oct(х)</span></code></p></td>
+<td><p>перетворення цілого числа у вісімковий рядок</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">open(file,</span> <span class="pre">mode</span> <span class="pre">=</span> <span class="pre">'r',</span> <span class="pre">buffering</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">encoding</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">errors</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">newline</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">closefd</span> <span class="pre">=</span> <span class="pre">True)</span></code></p></td>
+<td><p>відкриває файл і повертає відповідний потік</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ord(с)</span></code></p></td>
+<td><p>код символу</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">pow(x,</span> <span class="pre">y</span> <span class="pre">[,</span> <span class="pre">r])</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">(x</span> <span class="pre">**</span> <span class="pre">y)</span> <span class="pre">%</span> <span class="pre">r</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">reversed(object)</span></code></p></td>
+<td><p>iтератор з розгорнутого об’єкту</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">repr(obj)</span></code></p></td>
+<td><p>представлення об’єкту</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">print([object,</span> <span class="pre">...],</span> <span class="pre">*,</span> <span class="pre">sep</span> <span class="pre">=</span> <span class="pre">&quot;&quot;,</span> <span class="pre">end</span> <span class="pre">=</span> <span class="pre">'\</span> <span class="pre">n',</span> <span class="pre">file</span> <span class="pre">=</span> <span class="pre">sys.stdout)</span></code></p></td>
+<td><p>друк</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">property(fget</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fset</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">fdel</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">doc</span> <span class="pre">=</span> <span class="pre">None)</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">round(x</span> <span class="pre">[,</span> <span class="pre">n])</span> </code></p></td>
+<td><p>округлення до n знаків після коми</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">setattr(об'єкт,</span> <span class="pre">ім'я,</span> <span class="pre">значення)</span></code></p></td>
+<td><p>встановлює атрибут об’єкту</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sorted(iterable</span> <span class="pre">[,</span> <span class="pre">key]</span> <span class="pre">[,</span> <span class="pre">reverse])</span></code></p></td>
+<td><p>відсортований список</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">staticmethod(function)</span></code></p></td>
+<td><p>статичний метод для функції</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sum(iter,</span> <span class="pre">start</span> <span class="pre">=</span> <span class="pre">0)</span></code></p></td>
+<td><p>сума членів послідовності</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">super([тип</span> <span class="pre">[,</span> <span class="pre">об'єкт</span> <span class="pre">або</span> <span class="pre">тип]])</span></code></p></td>
+<td><p>доступ до батьківського класу</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">type(object)</span></code></p></td>
+<td><p>повертає тип об’єкту</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">type(name,</span> <span class="pre">bases,</span> <span class="pre">dict)</span></code></p></td>
+<td><p>повертає новий екземпляр класу name</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">vars([object])</span></code></p></td>
+<td><p>словник з атрибутів об’єкту. За замовчуванням</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">zip(*iters)</span></code></p></td>
+<td><p>iтератор, який повертає кортежі, що складаються з відповідних елементів аргументів-послідовностей</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

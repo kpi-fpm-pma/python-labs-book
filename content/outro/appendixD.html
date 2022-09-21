@@ -173,10 +173,32 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab2/intro.html">
-   Мета роботи
+   Програмування циклічних алгоритмів
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/problems.html">
+     Узагальнене формулювання завдання до лабораторної роботи
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -189,8 +211,8 @@
   <a class="reference internal" href="../lab3/intro.html">
    Структури даних: списки, кортежі, множини
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -223,8 +245,8 @@
   <a class="reference internal" href="../lab4/intro.html">
    Рядки
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -257,8 +279,8 @@
   <a class="reference internal" href="../lab5/intro.html">
    Використання функцій
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -291,8 +313,8 @@
   <a class="reference internal" href="../lab6/intro.html">
    Рекурсія та обробка матриць
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -325,8 +347,8 @@
   <a class="reference internal" href="../lab7/intro.html">
    Робота з файлами
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -578,40 +600,130 @@
 </ul>
 <div class="section" id="id1">
 <h2>Арифметичні операції у Python<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>| Операція | Опис | Приклади |
-| —:—  | —- | ——– |
-| <code class="docutils literal notranslate"><span class="pre">+</span></code> | Додавання - Підсумовує значення ліворуч і праворуч від оператора | <code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">+</span> <span class="pre">5</span></code> в результаті буде 20<br/><code class="docutils literal notranslate"><span class="pre">13.4</span> <span class="pre">+</span> <span class="pre">7</span></code> в результаті буде 20.4 |
-| <code class="docutils literal notranslate"><span class="pre">-</span></code> | Віднімання - Віднімає правий операнд із лівого | <code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">-</span> <span class="pre">5</span></code> в результаті буде 10<br/><code class="docutils literal notranslate"><span class="pre">13.4</span> <span class="pre">-</span> <span class="pre">7</span></code> в результаті буде 6.4 |
-| <code class="docutils literal notranslate"><span class="pre">*</span></code> | Множення - Перемножує операнди | <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">*</span> <span class="pre">5</span></code> в результаті буде 25<br/><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">*</span> <span class="pre">3.2</span></code> в результаті буде 22.4 |
-| <code class="docutils literal notranslate"><span class="pre">/</span></code> | Ділення - Ділить лівий операнд на правий | <code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">/</span> <span class="pre">5</span></code> в результаті буде 3<br/><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">/</span> <span class="pre">2</span></code> в результаті буде 2<br/><code class="docutils literal notranslate"><span class="pre">5.0</span> <span class="pre">/</span> <span class="pre">2</span></code> в результаті буде 2.5 (Для “правильного” результату хоча б один операнд повинен бути <code class="docutils literal notranslate"><span class="pre">float</span></code>) |
-| <code class="docutils literal notranslate"><span class="pre">%</span></code> | Ділення по модулю - Ділить лівий операнд на правий і повертає залишок. | <code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">%</span> <span class="pre">2</span></code> в результаті буде 0<br/><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">%</span> <span class="pre">2</span></code> в результаті буде 1<br/><code class="docutils literal notranslate"><span class="pre">13.2</span> <span class="pre">%</span> <span class="pre">5</span></code> в результатібуде 3.2 |
-| <code class="docutils literal notranslate"><span class="pre">*</span></code> |  Піднесення до степеня - підносить лівий операнд у степінь правого | <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">**</span> <span class="pre">2</span></code> в результаті буде 25<br/><code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">**</span> <span class="pre">3</span></code> в результаті буде 8<br/><code class="docutils literal notranslate"><span class="pre">-3</span> <span class="pre">**</span> <span class="pre">2</span></code> в результаті буде -9 |
-| <code class="docutils literal notranslate"><span class="pre">/</span></code> |  Цілочисельне ділення - Ділення у якому повертається тільки ціла частина результату. Частина після коми відкидається. | <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">//</span> <span class="pre">5</span></code> в результаті буде 2<br/><code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">//</span> <span class="pre">3</span></code> в результаті буде 1<br/><code class="docutils literal notranslate"><span class="pre">25</span> <span class="pre">//</span> <span class="pre">6</span></code> в результаті буде 4 |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Операція</p></th>
+<th class="head"><p>Опис</p></th>
+<th class="head"><p>Приклади</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td><p>Додавання - Підсумовує значення ліворуч і праворуч від оператора</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">+</span> <span class="pre">5</span></code> в результаті буде 20<br/><code class="docutils literal notranslate"><span class="pre">13.4</span> <span class="pre">+</span> <span class="pre">7</span></code> в результаті буде 20.4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p>Віднімання - Віднімає правий операнд із лівого</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">-</span> <span class="pre">5</span></code> в результаті буде 10<br/><code class="docutils literal notranslate"><span class="pre">13.4</span> <span class="pre">-</span> <span class="pre">7</span></code> в результаті буде 6.4</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p>Множення - Перемножує операнди</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">*</span> <span class="pre">5</span></code> в результаті буде 25<br/><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">*</span> <span class="pre">3.2</span></code> в результаті буде 22.4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">/</span></code></p></td>
+<td><p>Ділення - Ділить лівий операнд на правий</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">15</span> <span class="pre">/</span> <span class="pre">5</span></code> в результаті буде 3<br/><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">/</span> <span class="pre">2</span></code> в результаті буде 2<br/><code class="docutils literal notranslate"><span class="pre">5.0</span> <span class="pre">/</span> <span class="pre">2</span></code> в результаті буде 2.5 (Для “правильного” результату хоча б один операнд повинен бути <code class="docutils literal notranslate"><span class="pre">float</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">%</span></code></p></td>
+<td><p>Ділення по модулю - Ділить лівий операнд на правий і повертає залишок.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">6</span> <span class="pre">%</span> <span class="pre">2</span></code> в результаті буде 0<br/><code class="docutils literal notranslate"><span class="pre">7</span> <span class="pre">%</span> <span class="pre">2</span></code> в результаті буде 1<br/><code class="docutils literal notranslate"><span class="pre">13.2</span> <span class="pre">%</span> <span class="pre">5</span></code> в результатібуде 3.2</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td><p>Піднесення до степеня - підносить лівий операнд у степінь правого</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">**</span> <span class="pre">2</span></code> в результаті буде 25<br/><code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">**</span> <span class="pre">3</span></code> в результаті буде 8<br/><code class="docutils literal notranslate"><span class="pre">-3</span> <span class="pre">**</span> <span class="pre">2</span></code> в результаті буде -9</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">/</span></code></p></td>
+<td><p>Цілочисельне ділення - Ділення у якому повертається тільки ціла частина результату. Частина після коми відкидається.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">//</span> <span class="pre">5</span></code> в результаті буде 2<br/><code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">//</span> <span class="pre">3</span></code> в результаті буде 1<br/><code class="docutils literal notranslate"><span class="pre">25</span> <span class="pre">//</span> <span class="pre">6</span></code> в результаті буде 4</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id2">
 <h2>Операції порівняння у Python<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>| Операція | Опис | Приклади |
-| —:—  | —- | ——– |
-| <code class="docutils literal notranslate"><span class="pre">==</span></code> | Перевіряє рівність операндів. Якщо так, то умова стає істинною. | <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">==</span> <span class="pre">5</span></code> в результаті буде true<br/><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">==</span> <span class="pre">False</span></code> в результаті буде false<br/><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span> <span class="pre">==</span> <span class="pre">&quot;hello&quot;</span></code> в результаті буде true |
-| <code class="docutils literal notranslate"><span class="pre">!=</span></code> | Перевіряє рівність операндів. Якщо ні, то умова стає істинною. | <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">!=</span> <span class="pre">5</span></code> в результаті буде true<br/><code class="docutils literal notranslate"><span class="pre">False</span> <span class="pre">!=</span> <span class="pre">False</span></code> в результаті буде false<br/><code class="docutils literal notranslate"><span class="pre">&quot;hi&quot;</span> <span class="pre">!=</span> <span class="pre">&quot;Hi&quot;</span></code> в результаті буде true |
-| <code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> | Перевіряє рівність операндів. Якщо  ні, то умова стає істинною. | <code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">&lt;&gt;</span> <span class="pre">5</span></code> в результаті буде true. Схоже на оператор <code class="docutils literal notranslate"><span class="pre">!=</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>  | Перевіряє,чи  більше значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною. | <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">&gt;</span> <span class="pre">2</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">&gt;</span> <span class="pre">False</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">&quot;A&quot;</span> <span class="pre">&gt;</span> <span class="pre">&quot;B&quot;</span></code> в результаті буде false. |
-| <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>  | Перевіряє,чи  менше значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною. | <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">&lt;</span> <span class="pre">5</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">&lt;</span> <span class="pre">False</span></code> в результаті буде false.<br/><code class="docutils literal notranslate"><span class="pre">&quot;A&quot;</span> <span class="pre">&lt;</span> <span class="pre">&quot;B&quot;</span></code> в результаті буде true. |
-| <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code> | Перевіряє, більше або дорівнює значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною. | <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">&gt;=</span> <span class="pre">1</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">23</span> <span class="pre">&gt;=</span> <span class="pre">3.2</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">&quot;C&quot;</span> <span class="pre">&gt;=</span> <span class="pre">&quot;D&quot;</span></code> в результаті буде false. |
-| <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> | Перевіряє, менше або дорівнює значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною. | <code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">&lt;=</span> <span class="pre">5</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;=</span> <span class="pre">0.0</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">-0.001</span> <span class="pre">&lt;=</span> <span class="pre">-36</span></code> в результаті буде false. |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Операція</p></th>
+<th class="head"><p>Опис</p></th>
+<th class="head"><p>Приклади</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">==</span></code></p></td>
+<td><p>Перевіряє рівність операндів. Якщо так, то умова стає істинною.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">==</span> <span class="pre">5</span></code> в результаті буде true<br/><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">==</span> <span class="pre">False</span></code> в результаті буде false<br/><code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span> <span class="pre">==</span> <span class="pre">&quot;hello&quot;</span></code> в результаті буде true</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
+<td><p>Перевіряє рівність операндів. Якщо ні, то умова стає істинною.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">!=</span> <span class="pre">5</span></code> в результаті буде true<br/><code class="docutils literal notranslate"><span class="pre">False</span> <span class="pre">!=</span> <span class="pre">False</span></code> в результаті буде false<br/><code class="docutils literal notranslate"><span class="pre">&quot;hi&quot;</span> <span class="pre">!=</span> <span class="pre">&quot;Hi&quot;</span></code> в результаті буде true</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code></p></td>
+<td><p>Перевіряє рівність операндів. Якщо  ні, то умова стає істинною.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">12</span> <span class="pre">&lt;&gt;</span> <span class="pre">5</span></code> в результаті буде true. Схоже на оператор <code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p></td>
+<td><p>Перевіряє,чи  більше значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">&gt;</span> <span class="pre">2</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">&gt;</span> <span class="pre">False</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">&quot;A&quot;</span> <span class="pre">&gt;</span> <span class="pre">&quot;B&quot;</span></code> в результаті буде false.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code></p></td>
+<td><p>Перевіряє,чи  менше значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">&lt;</span> <span class="pre">5</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">&lt;</span> <span class="pre">False</span></code> в результаті буде false.<br/><code class="docutils literal notranslate"><span class="pre">&quot;A&quot;</span> <span class="pre">&lt;</span> <span class="pre">&quot;B&quot;</span></code> в результаті буде true.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code></p></td>
+<td><p>Перевіряє, більше або дорівнює значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">&gt;=</span> <span class="pre">1</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">23</span> <span class="pre">&gt;=</span> <span class="pre">3.2</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">&quot;C&quot;</span> <span class="pre">&gt;=</span> <span class="pre">&quot;D&quot;</span></code> в результаті буде false.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code></p></td>
+<td><p>Перевіряє, менше або дорівнює значення лівого операнда, ніж значення правого. Якщо так, то умова стає істинною.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">4</span> <span class="pre">&lt;=</span> <span class="pre">5</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">&lt;=</span> <span class="pre">0.0</span></code> в результаті буде true.<br/><code class="docutils literal notranslate"><span class="pre">-0.001</span> <span class="pre">&lt;=</span> <span class="pre">-36</span></code> в результаті буде false.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id3">
 <h2>Операції присвоювання у Python<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>| Операція | Опис | Приклади |
-| —:—  | —- | ——– |
-| <code class="docutils literal notranslate"><span class="pre">=</span></code>  | Присвоює значення правого операнда лівому. | <code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">23</span></code> присвоює змінній  с значення 23 |
-| <code class="docutils literal notranslate"><span class="pre">+=</span></code> | Додасть значення правого операнда до лівого і присвоїть цю суму лівому операнду. | <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">+=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">+</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">с</span></code> дорівнює 7 |
-| <code class="docutils literal notranslate"><span class="pre">-=</span></code> | Віднімає значення правого операнда від лівого і присвоює результат лівому операнду. | <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">-=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">-</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">с</span></code> дорівнює 3 |
-| <code class="docutils literal notranslate"><span class="pre">*=</span></code> | Помножує правий операнд на лівий і присвоює результат лівому операнду. | <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">*=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">*</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 10 |
-| <code class="docutils literal notranslate"><span class="pre">/=</span></code> | Ділить лівий операнд на правий і присвоює результат лівому операнду. | <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">10</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">/=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">/</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 5 |
-| <code class="docutils literal notranslate"><span class="pre">%=</span></code> | Ділить по модулю операнди і присвоює результат лівому. | <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">%=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">%</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 1 |
-| <code class="docutils literal notranslate"><span class="pre">**=</span></code> | Підносить лівий операнд у ступінь правого і присвоює результат лівому операнду. | <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">3</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">**=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">**</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 9 |
-| <code class="docutils literal notranslate"><span class="pre">//=</span></code> | Виконує цілочисельне ділення лівого операнда на правий і присвоює результат лівому операнду. | <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">11</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">//=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">//</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 5 |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Операція</p></th>
+<th class="head"><p>Опис</p></th>
+<th class="head"><p>Приклади</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">=</span></code></p></td>
+<td><p>Присвоює значення правого операнда лівому.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">23</span></code> присвоює змінній  с значення 23</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">+=</span></code></p></td>
+<td><p>Додасть значення правого операнда до лівого і присвоїть цю суму лівому операнду.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">+=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">+</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">с</span></code> дорівнює 7</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">-=</span></code></p></td>
+<td><p>Віднімає значення правого операнда від лівого і присвоює результат лівому операнду.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">-=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">-</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">с</span></code> дорівнює 3</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">*=</span></code></p></td>
+<td><p>Помножує правий операнд на лівий і присвоює результат лівому операнду.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">*=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">*</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 10</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">/=</span></code></p></td>
+<td><p>Ділить лівий операнд на правий і присвоює результат лівому операнду.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">10</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">/=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">/</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 5</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">%=</span></code></p></td>
+<td><p>Ділить по модулю операнди і присвоює результат лівому.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">5</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">%=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">%</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">**=</span></code></p></td>
+<td><p>Підносить лівий операнд у ступінь правого і присвоює результат лівому операнду.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">3</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">**=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">**</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 9</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">//=</span></code></p></td>
+<td><p>Виконує цілочисельне ділення лівого операнда на правий і присвоює результат лівому операнду.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">11</span></code><br/><code class="docutils literal notranslate"><span class="pre">а</span> <span class="pre">=</span> <span class="pre">2</span></code><br/><code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">//=</span> <span class="pre">а</span></code> рівносильно: <code class="docutils literal notranslate"><span class="pre">с</span> <span class="pre">=</span> <span class="pre">с</span> <span class="pre">//</span> <span class="pre">а</span></code>. <code class="docutils literal notranslate"><span class="pre">c</span></code> дорівнює 5</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id4">
 <h2>Побітові операції у Python<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -620,45 +732,109 @@
 <span class="n">b</span> <span class="o">=</span> <span class="mi">0000</span> <span class="mi">1101</span>
 </pre></div>
 </div>
-<p>| Операція | Опис | Приклади |
-| —:—  | —- | ——– |
-| <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>  | Бінарний “І” оператор, копіює біт у результат тільки, якщо біт присутній у обох операндах. | <code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">&amp;</span> <span class="pre">b)</span></code> результат 12, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">0000</span> <span class="pre">1100</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">|</span></code>  | Бінарний “АБО” оператор копіює біт, якщо той присутній, хоча б у одному операнді. | <code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">|</span> <span class="pre">b)</span></code> результат 61, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">0011</span> <span class="pre">1101</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">^</span></code>  | Бінарний “Виключне АБО” оператор копіює біт тільки, якщо біт присутній у одному з операндів, але не у обох відразу. | <code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">^</span> <span class="pre">b)</span></code> результат 49, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">0011</span> <span class="pre">0001</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">~</span></code>  | Бінарний компліментарний оператор. Є унарним (тобто йому потрібен тільки один операнд) змінює біти на зворотні, там де була одиниця стає нуль і навпаки. | <code class="docutils literal notranslate"><span class="pre">(~a)</span></code> результат -61,у двійковому форматі <code class="docutils literal notranslate"><span class="pre">1100</span> <span class="pre">0011</span></code>. |
-| <code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code> | Побітовий зсув вліво. Значення лівого операнда “зсувається” вліво на кількість бітів, зазначених у правому операнді. | <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;&lt;</span> <span class="pre">2</span></code> результат 240, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">1111</span> <span class="pre">0000</span></code> |
-| <code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code> | Побітовий зсув вправо. Значення лівого операнда “зсувається” вправо на кількість бітів, зазначених у правому операнді. | <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&gt;&gt;</span> <span class="pre">2</span></code> результат 15, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">0000</span> <span class="pre">1111</span></code> |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Операція</p></th>
+<th class="head"><p>Опис</p></th>
+<th class="head"><p>Приклади</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&amp;</span></code></p></td>
+<td><p>Бінарний “І” оператор, копіює біт у результат тільки, якщо біт присутній у обох операндах.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">&amp;</span> <span class="pre">b)</span></code> результат 12, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">0000</span> <span class="pre">1100</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p>`</p></td>
+<td><p>`</p></td>
+<td><p>Бінарний “АБО” оператор копіює біт, якщо той присутній, хоча б у одному операнді.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
+<td><p>Бінарний “Виключне АБО” оператор копіює біт тільки, якщо біт присутній у одному з операндів, але не у обох відразу.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">(a</span> <span class="pre">^</span> <span class="pre">b)</span></code> результат 49, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">0011</span> <span class="pre">0001</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">~</span></code></p></td>
+<td><p>Бінарний компліментарний оператор. Є унарним (тобто йому потрібен тільки один операнд) змінює біти на зворотні, там де була одиниця стає нуль і навпаки.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">(~a)</span></code> результат -61,у двійковому форматі <code class="docutils literal notranslate"><span class="pre">1100</span> <span class="pre">0011</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&lt;&lt;</span></code></p></td>
+<td><p>Побітовий зсув вліво. Значення лівого операнда “зсувається” вліво на кількість бітів, зазначених у правому операнді.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&lt;&lt;</span> <span class="pre">2</span></code> результат 240, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">1111</span> <span class="pre">0000</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code></p></td>
+<td><p>Побітовий зсув вправо. Значення лівого операнда “зсувається” вправо на кількість бітів, зазначених у правому операнді.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">&gt;&gt;</span> <span class="pre">2</span></code> результат 15, у двійковому форматі <code class="docutils literal notranslate"><span class="pre">0000</span> <span class="pre">1111</span></code></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id5">
 <h2>Логічні операції у Python<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>| Операція | Опис | Приклади |
-| —:—  | —- | ——– |
-and    Логічний оператор “І”. Умова буде істинною, якщо обидва операнда істинні.    true and true дорівнює true.
-true and false дорівнює false.
-false and true дорівнює false.
-false and falseдорівнює false.
-or    Логічний оператор “АБО”. Якщо хоча б один із операндів істинний, то і весь вираз буде істинним.    true or true дорівнює true.
-true or false дорівнює true.
-false or true дорівнює true.
-false or falseдорівнює false.
-not    Логічний оператор “НЕ”. Змінює логічне значення операнда на протилежне.    not true дорівнює false.
-not false дорівнює true.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Операція</p></th>
+<th class="head"><p>Опис</p></th>
+<th class="head"><p>Приклади</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">and</span></code></p></td>
+<td><p>Логічний оператор “І”. Умова буде істинною, якщо обидва операнда істинні.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span> <span class="pre">and</span> <span class="pre">true</span></code> дорівнює true.<br/><code class="docutils literal notranslate"><span class="pre">true</span> <span class="pre">and</span> <span class="pre">false</span></code> дорівнює false.<br/><code class="docutils literal notranslate"><span class="pre">false</span> <span class="pre">and</span> <span class="pre">true</span></code> дорівнює false.<br/><code class="docutils literal notranslate"><span class="pre">false</span> <span class="pre">and</span> <span class="pre">false</span></code> дорівнює false.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">or</span></code></p></td>
+<td><p>Логічний оператор “АБО”. Якщо хоча б один із операндів істинний, то і весь вираз буде істинним.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">true</span> <span class="pre">or</span> <span class="pre">true</span></code> дорівнює true.<br/><code class="docutils literal notranslate"><span class="pre">true</span> <span class="pre">or</span> <span class="pre">false</span></code> дорівнює true.<br/><code class="docutils literal notranslate"><span class="pre">false</span> <span class="pre">or</span> <span class="pre">true</span></code> дорівнює true.<br/><code class="docutils literal notranslate"><span class="pre">false</span> <span class="pre">or</span> <span class="pre">false</span></code> дорівнює false.</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">not</span></code></p></td>
+<td><p>Логічний оператор “НЕ”. Змінює логічне значення операнда на протилежне.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">true</span></code> дорівнює false.<br/><code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">false</span></code> дорівнює true.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id6">
 <h2>Операції членства у Python<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>В додаток до перерахованих операторів, у Python присутні, так звані, операції членства, призначені для перевірки на наявність елемента у складених типах даних, таких, як рядки, списки, кортежі або словники:</p>
-<p>| Операція | Опис | Приклади |
-| —:—  | —- | ——– |
-| <code class="docutils literal notranslate"><span class="pre">in</span></code>     | Повертає істину, якщо елемент присутній у послідовності, інакше повертає хибність. | <code class="docutils literal notranslate"><span class="pre">&quot;cad&quot;</span> <span class="pre">in</span> <span class="pre">&quot;cadillac&quot;</span></code> поверне true.<br/><code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">in</span> <span class="pre">[2,3,1,6]</span></code> поверне true.<br/><code class="docutils literal notranslate"><span class="pre">&quot;hi&quot;</span> <span class="pre">in</span> <span class="pre">{&quot;hi&quot;:2,&quot;bye&quot;:1}</span></code> поверне true.<br/><code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">in</span> <span class="pre">{&quot;hi&quot;:2,&quot;bye&quot;:1}</span></code> поверне false (у словниках перевіряється наявність у ключах, а не у значеннях). |
-| <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code> | Повертає істину якщо елемента немає у послідовності. | Результати протилежні результатам оператора <code class="docutils literal notranslate"><span class="pre">in</span></code>. |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Операція</p></th>
+<th class="head"><p>Опис</p></th>
+<th class="head"><p>Приклади</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">in</span></code></p></td>
+<td><p>Повертає істину, якщо елемент присутній у послідовності, інакше повертає хибність.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;cad&quot;</span> <span class="pre">in</span> <span class="pre">&quot;cadillac&quot;</span></code> поверне true.<br/><code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">in</span> <span class="pre">[2,3,1,6]</span></code> поверне true.<br/><code class="docutils literal notranslate"><span class="pre">&quot;hi&quot;</span> <span class="pre">in</span> <span class="pre">{&quot;hi&quot;:2,&quot;bye&quot;:1}</span></code> поверне true.<br/><code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">in</span> <span class="pre">{&quot;hi&quot;:2,&quot;bye&quot;:1}</span></code> поверне false (у словниках перевіряється наявність у ключах, а не у значеннях).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">in</span></code></p></td>
+<td><p>Повертає істину якщо елемента немає у послідовності.</p></td>
+<td><p>Результати протилежні результатам оператора <code class="docutils literal notranslate"><span class="pre">in</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id7">
 <h2>Операції тотожності у Python<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Операції тотожності порівнюють розміщення двох об’єктів у пам’яті комп’ютера.</p>
-<p>| Операція | Опис | Приклади |
-| —:—  | —- | ——– |
-| <code class="docutils literal notranslate"><span class="pre">is</span></code>     | Повертає істину, якщо обидва операнда вказують на один об’єкт. | <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">is</span> <span class="pre">y</span></code> поверне истину, якщо <code class="docutils literal notranslate"><span class="pre">id(x)</span></code> дорівнює <code class="docutils literal notranslate"><span class="pre">id(y)</span></code>. |
-| <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">not</span></code> | Повертає хибність, якщо обидва операнда вказують на один об’єкт. | <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">y</span></code>, поверне истину,якщо <code class="docutils literal notranslate"><span class="pre">id(x)</span></code> не дорівнює <code class="docutils literal notranslate"><span class="pre">id(y)</span></code>. |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Операція</p></th>
+<th class="head"><p>Опис</p></th>
+<th class="head"><p>Приклади</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">is</span></code></p></td>
+<td><p>Повертає істину, якщо обидва операнда вказують на один об’єкт.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">is</span> <span class="pre">y</span></code> поверне истину, якщо <code class="docutils literal notranslate"><span class="pre">id(x)</span></code> дорівнює <code class="docutils literal notranslate"><span class="pre">id(y)</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">not</span></code></p></td>
+<td><p>Повертає хибність, якщо обидва операнда вказують на один об’єкт.</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">y</span></code>, поверне истину,якщо <code class="docutils literal notranslate"><span class="pre">id(x)</span></code> не дорівнює <code class="docutils literal notranslate"><span class="pre">id(y)</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

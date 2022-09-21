@@ -173,10 +173,32 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../lab2/intro.html">
-   Мета роботи
+   Програмування циклічних алгоритмів
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/theory.html">
+     Теоретичні відомості
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/questions.html">
+     Питання для самоперевірки
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab2/problems.html">
+     Узагальнене формулювання завдання до лабораторної роботи
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -189,8 +211,8 @@
   <a class="reference internal" href="../lab3/intro.html">
    Структури даних: списки, кортежі, множини
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -223,8 +245,8 @@
   <a class="reference internal" href="../lab4/intro.html">
    Рядки
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -257,8 +279,8 @@
   <a class="reference internal" href="../lab5/intro.html">
    Використання функцій
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -291,8 +313,8 @@
   <a class="reference internal" href="../lab6/intro.html">
    Рекурсія та обробка матриць
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -325,8 +347,8 @@
   <a class="reference internal" href="../lab7/intro.html">
    Робота з файлами
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -545,8 +567,120 @@
 </div>
 <div class="section" id="id2">
 <h2>Функції<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>| <code class="docutils literal notranslate"><span class="pre">len(S)</span></code> | Довжина рядка |
-| <code class="docutils literal notranslate"><span class="pre">S.find(str,</span> <span class="pre">[start],[end])</span></code> | Пошук підрядка у рядку. Повертає номер першого входження або -1<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">|</span></code>S.rfind(str, [start],[end])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Пошук</span> <span class="pre">підрядка</span> <span class="pre">у</span> <span class="pre">рядку.</span> <span class="pre">Повертає</span> <span class="pre">номер</span> <span class="pre">останнього</span>&#160; <span class="pre">входження</span> <span class="pre">або</span> <span class="pre">-1</span> <span class="pre">|</span> <span class="pre">|</span></code>S.index(str, [start],[end])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Пошук</span> <span class="pre">підрядка</span> <span class="pre">у</span> <span class="pre">рядку.</span> <span class="pre">Повертає</span> <span class="pre">номер</span> <span class="pre">першого</span> <span class="pre">входження</span> <span class="pre">або</span> <span class="pre">викликає</span></code>ValueError<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">|</span></code>S.rindex(str, [start],[end])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Пошук</span> <span class="pre">підрядка</span> <span class="pre">у</span> <span class="pre">рядку.</span> <span class="pre">Повертає</span> <span class="pre">номер</span> <span class="pre">останнього</span> <span class="pre">входження</span> <span class="pre">або</span> <span class="pre">викликає</span></code>ValueError<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">|</span></code>S.replace(шаблон, замена)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Заміна</span> <span class="pre">шаблону</span> <span class="pre">|</span> <span class="pre">|</span></code>S.split(символ)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Розбиття</span> <span class="pre">рядка</span> <span class="pre">по</span> <span class="pre">роздільнику</span> <span class="pre">|</span> <span class="pre">|</span></code>S.isdigit()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">складається</span> <span class="pre">рядок</span> <span class="pre">із</span> <span class="pre">цифр</span> <span class="pre">|</span> <span class="pre">|</span></code>S.isalpha()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">складається</span> <span class="pre">рядок</span> <span class="pre">із</span> <span class="pre">букв</span> <span class="pre">|</span> <span class="pre">|</span></code>S.isalnum()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">складається</span> <span class="pre">рядок</span> <span class="pre">із</span> <span class="pre">цифр</span> <span class="pre">або</span> <span class="pre">букв</span> <span class="pre">|</span> <span class="pre">|</span></code>S.islower()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">складається</span> <span class="pre">рядок</span> <span class="pre">із</span> <span class="pre">символів</span> <span class="pre">у</span> <span class="pre">нижньому</span> <span class="pre">регістрі</span> <span class="pre">|</span> <span class="pre">|</span></code>S.isupper()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">складається</span> <span class="pre">рядок</span> <span class="pre">із</span> <span class="pre">символів</span> <span class="pre">у</span> <span class="pre">верхньому</span> <span class="pre">регістрі</span> <span class="pre">|</span> <span class="pre">|</span></code>S.isspace()<code class="docutils literal notranslate"> <span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">складається</span> <span class="pre">рядок</span> <span class="pre">із</span> <span class="pre">символів,</span> <span class="pre">що</span> <span class="pre">не</span> <span class="pre">відображаються</span> <span class="pre">(пробіл,</span> <span class="pre">символ</span> <span class="pre">переведення</span> <span class="pre">сторінки</span> <span class="pre">(</span></code>\f<code class="docutils literal notranslate"><span class="pre">),</span> <span class="pre">&quot;новий</span> <span class="pre">рядок&quot;</span> <span class="pre">(</span></code>\n<code class="docutils literal notranslate"><span class="pre">),</span> <span class="pre">&quot;переведення</span> <span class="pre">каретки&quot;</span> <span class="pre">(</span></code>\r<code class="docutils literal notranslate"><span class="pre">),</span> <span class="pre">&quot;горизонтальна</span> <span class="pre">табуляція&quot;</span> <span class="pre">(</span></code>\t<code class="docutils literal notranslate"><span class="pre">)</span> <span class="pre">і</span> <span class="pre">&quot;вертикальна</span> <span class="pre">табуляція&quot;</span> <span class="pre">(</span></code>\v<code class="docutils literal notranslate"><span class="pre">))</span> <span class="pre">|</span> <span class="pre">|</span> </code>S.istitle()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">починаються</span> <span class="pre">слова</span> <span class="pre">у</span> <span class="pre">рядку</span> <span class="pre">з</span> <span class="pre">великої</span> <span class="pre">літери</span> <span class="pre">|</span> <span class="pre">|</span></code>S.upper()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перетворення</span> <span class="pre">рядка</span> <span class="pre">до</span> <span class="pre">верхнього</span> <span class="pre">регістру</span> <span class="pre">|</span> <span class="pre">|</span></code>S.lower()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перетворення</span> <span class="pre">рядка</span> <span class="pre">до</span> <span class="pre">нижнього</span> <span class="pre">регістру</span> <span class="pre">|</span> <span class="pre">|</span></code>S.startswith(str)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">починається</span> <span class="pre">рядок</span></code>S<code class="docutils literal notranslate"><span class="pre">з</span> <span class="pre">шаблону</span></code>str<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">|</span></code>S.endswith(str)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Перевірка,</span> <span class="pre">чи</span> <span class="pre">закінчується</span> <span class="pre">рядок</span></code>S<code class="docutils literal notranslate"><span class="pre">шаблоном</span></code>str<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">|</span></code>S.join(список)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Збірка</span> <span class="pre">рядку</span> <span class="pre">зі</span> <span class="pre">списку</span> <span class="pre">з</span> <span class="pre">роздільником</span></code>S<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">|</span></code>ord(символ)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Повертає</span> <span class="pre">код</span> <span class="pre">символу.</span> <span class="pre">|</span> <span class="pre">|</span></code>chr(число)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Повертає</span> <span class="pre">односимвольний</span> <span class="pre">рядок,</span> <span class="pre">код</span> <span class="pre">символу</span> <span class="pre">якого</span> <span class="pre">дорівнює</span> <span class="pre">числу.</span> <span class="pre">|</span> <span class="pre">|</span></code>S.capitalize()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Переводить</span> <span class="pre">перший</span> <span class="pre">символ</span> <span class="pre">рядку</span> <span class="pre">у</span> <span class="pre">верхній</span> <span class="pre">регістр,</span> <span class="pre">а</span> <span class="pre">всі</span> <span class="pre">інші</span> <span class="pre">у</span> <span class="pre">нижній</span> <span class="pre">|</span> <span class="pre">|</span></code>S.center(width, [fill])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Повертає</span> <span class="pre">відцентрований</span> <span class="pre">рядок,</span> <span class="pre">по</span> <span class="pre">краях</span> <span class="pre">якого</span> <span class="pre">стоїть</span> <span class="pre">символ</span></code>fill<code class="docutils literal notranslate"><span class="pre">(пробіл</span> <span class="pre">за</span> <span class="pre">замовчуванням)</span> <span class="pre">|</span> <span class="pre">|</span></code>S.count(str, [start],[end])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Повертає</span> <span class="pre">кількість</span> <span class="pre">непересічних</span> <span class="pre">входжень</span> <span class="pre">підрядка</span> <span class="pre">у</span> <span class="pre">діапазоні</span> <span class="pre">[початок,</span> <span class="pre">кінець]</span> <span class="pre">(0</span> <span class="pre">і</span> <span class="pre">довжина</span> <span class="pre">рядку</span> <span class="pre">за</span> <span class="pre">замовчуванням)</span> <span class="pre">|</span> <span class="pre">|</span></code>S.expandtabs([tabsize])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Повертає</span> <span class="pre">копію</span> <span class="pre">рядку,</span> <span class="pre">у</span> <span class="pre">якого</span> <span class="pre">всі</span> <span class="pre">символи</span> <span class="pre">табуляції</span> <span class="pre">замінюються</span> <span class="pre">одним</span> <span class="pre">або</span> <span class="pre">декількома</span> <span class="pre">пробілами,</span> <span class="pre">у</span> <span class="pre">залежності</span> <span class="pre">від</span> <span class="pre">поточного</span> <span class="pre">стовпця.</span> <span class="pre">Якщо</span></code>tabsize<code class="docutils literal notranslate"><span class="pre">не</span> <span class="pre">вказано,</span> <span class="pre">розмір</span> <span class="pre">табуляції</span> <span class="pre">вважається</span> <span class="pre">рівним</span> <span class="pre">8</span> <span class="pre">пробілам.</span> <span class="pre">|</span> <span class="pre">|</span></code>S.lstrip([chars])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Видалення</span> <span class="pre">символів</span> <span class="pre">пробілів</span> <span class="pre">на</span> <span class="pre">початку</span> <span class="pre">рядку</span> <span class="pre">|</span> <span class="pre">|</span></code>S.rstrip([chars])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Видалення</span> <span class="pre">символів</span> <span class="pre">пробілів</span> <span class="pre">у</span> <span class="pre">кінці</span> <span class="pre">рядку</span> <span class="pre">|</span> <span class="pre">|</span></code>S.strip([chars])<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Видалення</span> <span class="pre">символів</span> <span class="pre">пробілів</span> <span class="pre">на</span> <span class="pre">початку</span> <span class="pre">і</span> <span class="pre">у</span> <span class="pre">кінці</span> <span class="pre">рядку</span> <span class="pre">|</span> <span class="pre">|</span></code>S.partition(шаблон)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Повертає</span> <span class="pre">кортеж,</span> <span class="pre">що</span> <span class="pre">містить</span> <span class="pre">частину</span> <span class="pre">перед</span> <span class="pre">першим</span> <span class="pre">шаблоном,</span> <span class="pre">сам</span> <span class="pre">шаблон,</span> <span class="pre">і</span> <span class="pre">частину</span> <span class="pre">після</span> <span class="pre">шаблону.</span> <span class="pre">Якщо</span> <span class="pre">шаблон</span> <span class="pre">не</span> <span class="pre">знайдений,</span> <span class="pre">повертається</span> <span class="pre">кортеж,</span> <span class="pre">що</span> <span class="pre">містить</span> <span class="pre">сам</span> <span class="pre">рядок,</span> <span class="pre">а</span> <span class="pre">потім</span> <span class="pre">два</span> <span class="pre">порожніх</span> <span class="pre">рядки.</span> <span class="pre">|</span> <span class="pre">|</span></code>S.rpartition(sep)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Повертає</span> <span class="pre">кортеж,</span> <span class="pre">що</span> <span class="pre">містить</span> <span class="pre">частину</span> <span class="pre">перед</span> <span class="pre">останнім</span> <span class="pre">шаблоном,</span> <span class="pre">сам</span> <span class="pre">шаблон,</span> <span class="pre">і</span> <span class="pre">частину</span> <span class="pre">після</span> <span class="pre">шаблону.</span> <span class="pre">Якщо</span> <span class="pre">шаблон</span> <span class="pre">не</span> <span class="pre">знайдений,</span> <span class="pre">повертається</span> <span class="pre">кортеж,</span> <span class="pre">що</span> <span class="pre">містить</span> <span class="pre">дві</span> <span class="pre">порожні</span> <span class="pre">рядки,</span> <span class="pre">а</span> <span class="pre">потім</span> <span class="pre">сам</span> <span class="pre">рядок.</span> <span class="pre">|</span> <span class="pre">|</span></code>S.swapcase()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Переводить</span> <span class="pre">символи</span> <span class="pre">нижнього</span> <span class="pre">регістра</span> <span class="pre">у</span> <span class="pre">верхній,</span> <span class="pre">а</span> <span class="pre">верхнього</span> <span class="pre">—</span> <span class="pre">у</span> <span class="pre">нижній</span> <span class="pre">|</span> <span class="pre">|</span></code>S.title()<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Першу</span> <span class="pre">букву</span> <span class="pre">кожного</span> <span class="pre">слова</span> <span class="pre">переводить</span> <span class="pre">у</span> <span class="pre">верхній</span> <span class="pre">регістр,</span> <span class="pre">а</span> <span class="pre">всі</span> <span class="pre">інші</span> <span class="pre">у</span> <span class="pre">нижній</span> <span class="pre">|</span>&#160; <span class="pre">|</span></code>S.zfill(width)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Робить</span> <span class="pre">довжину</span> <span class="pre">рядка</span> <span class="pre">не</span> <span class="pre">меншою</span> <span class="pre">width,</span> <span class="pre">в</span> <span class="pre">разі</span> <span class="pre">потреби,</span> <span class="pre">заповнюючи</span> <span class="pre">перші</span> <span class="pre">символи</span> <span class="pre">нулями</span> <span class="pre">|</span> <span class="pre">|</span></code>S.ljust(width, fillchar=” “)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Робить</span> <span class="pre">довжину</span> <span class="pre">рядка</span> <span class="pre">не</span> <span class="pre">меншою</span> <span class="pre">width,</span> <span class="pre">в</span> <span class="pre">разі</span> <span class="pre">потреби,</span> <span class="pre">заповнюючи</span> <span class="pre">останні</span> <span class="pre">символи</span> <span class="pre">символом</span></code>fillchar<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">|</span></code>S.rjust(width, fillchar=” “)<code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">Робить</span> <span class="pre">довжину</span> <span class="pre">рядка</span> <span class="pre">не</span> <span class="pre">меншою</span> <span class="pre">width,</span> <span class="pre">в</span> <span class="pre">разі</span> <span class="pre">потреби</span> <span class="pre">заповнюючи</span> <span class="pre">перші</span> <span class="pre">символи</span> <span class="pre">символом</span></code>fillchar` |</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Назва</p></th>
+<th class="head"><p>Опис</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">len(S)</span></code></p></td>
+<td><p>Довжина рядка</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.find(str,</span> <span class="pre">[start],[end])</span></code></p></td>
+<td><p>Пошук підрядка у рядку. Повертає номер першого входження або -1</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.rfind(str,</span> <span class="pre">[start],[end])</span></code></p></td>
+<td><p>Пошук підрядка у рядку. Повертає номер останнього  входження або -1</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.index(str,</span> <span class="pre">[start],[end])</span></code></p></td>
+<td><p>Пошук підрядка у рядку. Повертає номер першого входження або викликає <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.rindex(str,</span> <span class="pre">[start],[end])</span></code></p></td>
+<td><p>Пошук підрядка у рядку. Повертає номер останнього входження або викликає <code class="docutils literal notranslate"><span class="pre">ValueError</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.replace(шаблон,</span> <span class="pre">замена)</span></code></p></td>
+<td><p>Заміна шаблону</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.split(символ)</span></code></p></td>
+<td><p>Розбиття рядка по роздільнику</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.isdigit()</span></code></p></td>
+<td><p>Перевірка, чи складається рядок із цифр</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.isalpha()</span></code></p></td>
+<td><p>Перевірка, чи складається рядок із букв</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.isalnum()</span></code></p></td>
+<td><p>Перевірка, чи складається рядок із цифр або букв</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.islower()</span></code></p></td>
+<td><p>Перевірка, чи складається рядок із символів у нижньому регістрі</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.isupper()</span></code></p></td>
+<td><p>Перевірка, чи складається рядок із символів у верхньому регістрі</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.isspace()</span></code></p></td>
+<td><p>Перевірка, чи складається рядок із символів, що не відображаються (пробіл, символ переведення сторінки (<code class="docutils literal notranslate"><span class="pre">\f</span></code>), “новий рядок” (<code class="docutils literal notranslate"><span class="pre">\n</span></code>), “переведення каретки” (<code class="docutils literal notranslate"><span class="pre">\r</span></code>), “горизонтальна табуляція” (<code class="docutils literal notranslate"><span class="pre">\t</span></code>) і “вертикальна табуляція” (<code class="docutils literal notranslate"><span class="pre">\v</span></code>))</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.istitle()</span></code></p></td>
+<td><p>Перевірка, чи починаються слова у рядку з великої літери</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.upper()</span></code></p></td>
+<td><p>Перетворення рядка до верхнього регістру</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.lower()</span></code></p></td>
+<td><p>Перетворення рядка до нижнього регістру</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.startswith(str)</span></code></p></td>
+<td><p>Перевірка, чи починається рядок <code class="docutils literal notranslate"><span class="pre">S</span></code> з шаблону <code class="docutils literal notranslate"><span class="pre">str</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.endswith(str)</span></code></p></td>
+<td><p>Перевірка, чи закінчується рядок <code class="docutils literal notranslate"><span class="pre">S</span></code> шаблоном <code class="docutils literal notranslate"><span class="pre">str</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.join(список)</span></code></p></td>
+<td><p>Збірка рядку зі списку з роздільником <code class="docutils literal notranslate"><span class="pre">S</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ord(символ)</span></code></p></td>
+<td><p>Повертає код символу.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">chr(число)</span></code></p></td>
+<td><p>Повертає односимвольний рядок, код символу якого дорівнює числу.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.capitalize()</span></code></p></td>
+<td><p>Переводить перший символ рядку у верхній регістр, а всі інші у нижній</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.center(width,</span> <span class="pre">[fill])</span></code></p></td>
+<td><p>Повертає відцентрований рядок, по краях якого стоїть символ <code class="docutils literal notranslate"><span class="pre">fill</span></code> (пробіл за замовчуванням)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.count(str,</span> <span class="pre">[start],[end])</span></code></p></td>
+<td><p>Повертає кількість непересічних входжень підрядка у діапазоні [початок, кінець] (0 і довжина рядку за замовчуванням)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.expandtabs([tabsize])</span></code></p></td>
+<td><p>Повертає копію рядку, у якого всі символи табуляції замінюються одним або декількома пробілами, у залежності від поточного стовпця. Якщо <code class="docutils literal notranslate"><span class="pre">tabsize</span></code> не вказано, розмір табуляції вважається рівним 8 пробілам.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.lstrip([chars])</span></code></p></td>
+<td><p>Видалення символів пробілів на початку рядку</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.rstrip([chars])</span></code></p></td>
+<td><p>Видалення символів пробілів у кінці рядку</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.strip([chars])</span></code></p></td>
+<td><p>Видалення символів пробілів на початку і у кінці рядку</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.partition(шаблон)</span></code></p></td>
+<td><p>Повертає кортеж, що містить частину перед першим шаблоном, сам шаблон, і частину після шаблону. Якщо шаблон не знайдений, повертається кортеж, що містить сам рядок, а потім два порожніх рядки.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.rpartition(sep)</span></code></p></td>
+<td><p>Повертає кортеж, що містить частину перед останнім шаблоном, сам шаблон, і частину після шаблону. Якщо шаблон не знайдений, повертається кортеж, що містить дві порожні рядки, а потім сам рядок.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.swapcase()</span></code></p></td>
+<td><p>Переводить символи нижнього регістра у верхній, а верхнього — у нижній</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.title()</span></code></p></td>
+<td><p>Першу букву кожного слова переводить у верхній регістр, а всі інші у нижній</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.zfill(width)</span></code></p></td>
+<td><p>Робить довжину рядка не меншою width, в разі потреби, заповнюючи перші символи нулями</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">S.ljust(width,</span> <span class="pre">fillchar=&quot;</span> <span class="pre">&quot;)</span></code></p></td>
+<td><p>Робить довжину рядка не меншою width, в разі потреби, заповнюючи останні символи символом <code class="docutils literal notranslate"><span class="pre">fillchar</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">S.rjust(width,</span> <span class="pre">fillchar=&quot;</span> <span class="pre">&quot;)</span></code></p></td>
+<td><p>Робить довжину рядка не меншою width, в разі потреби заповнюючи перші символи символом <code class="docutils literal notranslate"><span class="pre">fillchar</span></code></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
