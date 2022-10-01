@@ -45,6 +45,8 @@
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe,.cell"
@@ -504,7 +506,13 @@
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#while">
-     Організація циклу за допомогою оператора while (Друге завдання)
+     Організація циклу за допомогою оператора
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       while
+      </span>
+     </code>
+     (Друге завдання)
     </a>
    </li>
   </ul>
@@ -546,7 +554,13 @@
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#while">
-     Організація циклу за допомогою оператора while (Друге завдання)
+     Організація циклу за допомогою оператора
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       while
+      </span>
+     </code>
+     (Друге завдання)
     </a>
    </li>
   </ul>
@@ -572,8 +586,8 @@
 </ol>
 <p>Завдання на виконання лабораторної роботи складається з 2-х частин:</p>
 <ul class="simple">
-<li><p>програма, яка реалізує цикл за допомогою оператора for;</p></li>
-<li><p>програма, яка реалізує цикл через ітераційний процес − оператор while.</p></li>
+<li><p>програма, яка реалізує цикл за допомогою оператора <code class="docutils literal notranslate"><span class="pre">for</span></code>;</p></li>
+<li><p>програма, яка реалізує цикл через ітераційний процес − оператор <code class="docutils literal notranslate"><span class="pre">while</span></code>.</p></li>
 </ul>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="id2">
@@ -582,70 +596,70 @@
 <h2>Організація циклу за допомогою оператора for (Перше завдання)<a class="headerlink" href="#for" title="Permalink to this headline">¶</a></h2>
 <p>Обчислити</p>
 <ol class="simple">
-<li><p>\begin{equation}\sum_{i=1}^{n} i x\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{i}{x^{i}}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} i^{2}-x^{2}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{x+i}{i}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=0}^{n} \frac{x+i}{x^{2}}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{x-i}{i^{2}}\end{equation}</p></li>
-<li><p>\begin{equation}\prod_{i=1}^{n}(i+x)\end{equation}</p></li>
-<li><p>\begin{equation}\prod_{i=1}^{n} \frac{1}{x^{2}}+i\end{equation}</p></li>
-<li><p>\begin{equation}\prod_{i=1}^{n} x^{i}+i\end{equation}</p></li>
-<li><p>\begin{equation}\prod_{i=1}^{n} \frac{(x+i)}{i^{2}}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n}(x-i)^{2}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=0}^{n}\left(i^{2}-x^{2}\right)\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n}|x+i|^{2}\end{equation}</p></li>
-<li><p>\begin{equation}\prod_{i=1}^{n} \frac{(x-i)^{2}}{x}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{i}{\sqrt{x^{2}+1}}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} x^{i}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{x}{2^{i}}\end{equation}</p></li>
-<li><p>\begin{equation}\prod_{i=1}^{n} \frac{x}{2^{i}}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{x^{i}}{x-n}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{(x+2)^{i}}{x-1}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{\left(2 * x^{i}-1\right.)}{n-1}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{\left|2^{*} x+1\right|^{i}}{x-1}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{|n * x-1|^{i}}{x-n}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{\left|x^{i}+n\right|}{x-n}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{2^{i}}{x-n}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{x^{i}}{x-1}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{x^{i}+1}{x-1}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{\left(x^{i}-2 * n\right)}{x-n}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{n^{i}-2 * x}{x-1}\end{equation}</p></li>
-<li><p>\begin{equation}\sum_{i=1}^{n} \frac{n^{i}+x}{n-3}\end{equation}</p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} i x\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{i}{x^{i}}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} i^{2}-x^{2}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{x+i}{i}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=0}^{n} \frac{x+i}{x^{2}}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{x-i}{i^{2}}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\prod_{i=1}^{n}(i+x)\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\prod_{i=1}^{n} \frac{1}{x^{2}}+i\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\prod_{i=1}^{n} x^{i}+i\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\prod_{i=1}^{n} \frac{(x+i)}{i^{2}}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n}(x-i)^{2}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=0}^{n}\left(i^{2}-x^{2}\right)\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n}|x+i|^{2}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\prod_{i=1}^{n} \frac{(x-i)^{2}}{x}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{i}{\sqrt{x^{2}+1}}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} x^{i}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{x}{2^{i}}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\prod_{i=1}^{n} \frac{x}{2^{i}}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{x^{i}}{x-n}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{(x+2)^{i}}{x-1}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{\left(2 * x^{i}-1\right.)}{n-1}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{\left|2^x+1\right|^{i}}{x-1}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{|n * x-1|^{i}}{x-n}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{\left|x^{i}+n\right|}{x-n}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{2^{i}}{x-n}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{x^{i}}{x-1}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{x^{i}+1}{x-1}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{\left(x^{i}-2 * n\right)}{x-n}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{n^{i}-2 * x}{x-1}\end{equation}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\begin{equation}\sum_{i=1}^{n} \frac{n^{i}+x}{n-3}\end{equation}\)</span></p></li>
 </ol>
 </div>
 <div class="section" id="while">
-<h2>Організація циклу за допомогою оператора while (Друге завдання)<a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h2>
+<h2>Організація циклу за допомогою оператора <code class="docutils literal notranslate"><span class="pre">while</span></code> (Друге завдання)<a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Дано ціле число, що складається з різних цифр. Визначити, яка з цифр заданого числа більше, тобто знайти найбільшу цифру числа</p></li>
 <li><p>Із  натурального числа видалити задану цифру. Число і цифру уводити з клавіатури.</p></li>
 <li><p>Знайдіть кількість парних цифр даного натурального числа.</p></li>
 <li><p>Організувати безперервне введення чисел з клавіатури, поки користувач не введе 0. Після введення нуля, показати на екрані кількість чисел, які були введені, їх загальну суму і середнє арифметичне.</p></li>
 <li><p>Необхідно підсумувати всі непарні цілі числа в діапазоні, який введе користувач з клавіатури.</p></li>
-<li><p>Вивести всі квадрати натуральних чисел, які не перевищують числа N.</p></li>
-<li><p>Визначити і вивести на екран і цифри цілого числа n.</p></li>
-<li><p>Скласти програму розкладання натурального числа n на прості множники.</p></li>
-<li><p>Написати програму, в результаті виконання якої з’ясується, чи входить цифра 2 в запис даного цілого числа n.</p></li>
-<li><p>Скласти програму виведення всіх натуральних чисел, менших n, квадрат суми цифр яких дорівнює заданому числу m.</p></li>
-<li><p>Дано додатні числа A і B (A&gt;B). На відрізку довжиною A розміщено максимально можлива кількість відрізків довжиною B (без накладання). Не використовуючи операції множення і ділення, знайти кількість відрізків B, розміщених на відрізку A.</p></li>
-<li><p>Дано цілі додатні числа N і K. Використовуючи тільки операції додавання і віднімання, знайти частку від ділення без остачі N на K, а також залишок від цього ділення.</p></li>
-<li><p>Дано ціле число N(&gt;0). Якщо воно є ступенем числа 3, то вивести True, якщо ні - вивести False.</p></li>
-<li><p>Дано ціле число N(&gt;0), що є деяким ступенем числа 2: N = 2K. Знайти ціле число K - показник цього ступеня.</p></li>
-<li><p>Дано ціле число N(&gt;0). Знайти подвійний факторіал N: N!!= N•(N-2) •(N-4)• … (останній співмножник дорівнює 2, якщо N - парне, і 1, якщо N - непарне). Щоб уникнути цілочисельного переповнення, обчислювати цей добуток за допомогою дійсної змінної і вивести його як дійсне число.</p></li>
-<li><p>Дано ціле число N(&gt;0). Знайти найменше ціле додатне число K, квадрат якого перевершує N:K2&gt;N. Функцію добування квадратного кореня не використовувати.</p></li>
-<li><p>Дано ціле число N(&gt;0). Знайти найбільше ціле число K, квадрат якого не перевищує N: K2≤N. Функцію добування квадратного кореня не використовувати.</p></li>
-<li><p>Дано ціле число N(&gt;1). Знайти найменше ціле число K, при якому виконується нерівність 3K&gt;N.</p></li>
-<li><p>Дано ціле число N(&gt;1). Знайти найбільше ціле число K, при якому виконується нерівність 3K&lt;N.</p></li>
-<li><p>Дано ціле число N(&gt;1). Вивести найменше із цілих чисел K, для яких сума 1+2+…+K буде більше або дорівнює N, і саму цю суму.</p></li>
-<li><p>Дано ціле число N(&gt;1). Вивести найбільше із цілих чисел K, для яких сума 1+2+…+K буде менше або дорівнює N, і саму цю суму.</p></li>
-<li><p>Дано число A(&gt;1). Вивести найменше із цілих чисел K, для яких сума 1+1/2+…+1/K буде більше A, і саму цю суму.</p></li>
-<li><p>Дано число A(&gt;1). Вивести найбільше із цілих чисел K, для яких сума 1+1/2 +…+1/K буде менше A, і саму цю суму.</p></li>
+<li><p>Вивести всі квадрати натуральних чисел, які не перевищують числа <code class="docutils literal notranslate"><span class="pre">N</span></code>.</p></li>
+<li><p>Визначити і вивести на екран і цифри цілого числа <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p></li>
+<li><p>Скласти програму розкладання натурального числа <code class="docutils literal notranslate"><span class="pre">n</span></code> на прості множники.</p></li>
+<li><p>Написати програму, в результаті виконання якої з’ясується, чи входить цифра 2 в запис даного цілого числа <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p></li>
+<li><p>Скласти програму виведення всіх натуральних чисел, менших <code class="docutils literal notranslate"><span class="pre">n</span></code>, квадрат суми цифр яких дорівнює заданому числу <code class="docutils literal notranslate"><span class="pre">m</span></code>.</p></li>
+<li><p>Дано додатні числа <code class="docutils literal notranslate"><span class="pre">A</span></code> і <code class="docutils literal notranslate"><span class="pre">B</span></code> (<code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">B</span></code>). На відрізку довжиною <code class="docutils literal notranslate"><span class="pre">A</span></code> розміщено максимально можлива кількість відрізків довжиною <code class="docutils literal notranslate"><span class="pre">B</span></code> (без накладання). Не використовуючи операції множення і ділення, знайти кількість відрізків <code class="docutils literal notranslate"><span class="pre">B</span></code>, розміщених на відрізку <code class="docutils literal notranslate"><span class="pre">A</span></code>.</p></li>
+<li><p>Дано цілі додатні числа <code class="docutils literal notranslate"><span class="pre">N</span></code> і <code class="docutils literal notranslate"><span class="pre">K</span></code>. Використовуючи тільки операції додавання і віднімання, знайти частку від ділення без остачі <code class="docutils literal notranslate"><span class="pre">N</span></code> на <code class="docutils literal notranslate"><span class="pre">K</span></code>, а також залишок від цього ділення.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;0</span></code>. Якщо воно є ступенем числа 3, то вивести True, якщо ні — вивести <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;0</span></code>, що є деяким ступенем числа 2: <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">=</span> <span class="pre">2K</span></code>. Знайти ціле число <code class="docutils literal notranslate"><span class="pre">K</span></code> — показник цього ступеня.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;0</span></code>. Знайти подвійний факторіал <code class="docutils literal notranslate"><span class="pre">N</span></code>: <span class="math notranslate nohighlight">\(N!!= N(N-2)(N-4)...\)</span> (останній співмножник дорівнює 2, якщо <code class="docutils literal notranslate"><span class="pre">N</span></code> парне, і 1, якщо <code class="docutils literal notranslate"><span class="pre">N</span></code> — непарне). Щоб уникнути цілочисельного переповнення, обчислювати цей добуток за допомогою дійсної змінної і вивести його як дійсне число.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>. Знайти найменше ціле додатне число <code class="docutils literal notranslate"><span class="pre">K</span></code>, квадрат якого перевершує N:K2&gt;N. Функцію добування квадратного кореня не використовувати.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>. Знайти найбільше ціле число <code class="docutils literal notranslate"><span class="pre">K</span></code>, квадрат якого не перевищує <code class="docutils literal notranslate"><span class="pre">N</span></code>: <span class="math notranslate nohighlight">\(K^2 \le N\)</span>. Функцію добування квадратного кореня не використовувати.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;</span> <span class="pre">1</span></code>. Знайти найменше ціле число <code class="docutils literal notranslate"><span class="pre">K</span></code>, при якому виконується нерівність <span class="math notranslate nohighlight">\(3K &gt; N\)</span>.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;</span> <span class="pre">1</span></code>. Знайти найбільше ціле число <code class="docutils literal notranslate"><span class="pre">K</span></code>, при якому виконується нерівність <span class="math notranslate nohighlight">\(3K &lt; N\)</span>.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;</span> <span class="pre">1</span></code>. Вивести найменше із цілих чисел <code class="docutils literal notranslate"><span class="pre">K</span></code>, для яких сума <span class="math notranslate nohighlight">\(1+2+...+K\)</span> буде більше або дорівнює <code class="docutils literal notranslate"><span class="pre">N</span></code>, і саму цю суму.</p></li>
+<li><p>Дано ціле число <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">&gt;</span> <span class="pre">1</span></code>. Вивести найбільше із цілих чисел <code class="docutils literal notranslate"><span class="pre">K</span></code>, для яких сума <span class="math notranslate nohighlight">\(1+2+...+K\)</span> буде менше або дорівнює <code class="docutils literal notranslate"><span class="pre">N</span></code>, і саму цю суму.</p></li>
+<li><p>Дано число <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">1</span></code>. Вивести найменше із цілих чисел <code class="docutils literal notranslate"><span class="pre">K</span></code>, для яких сума <span class="math notranslate nohighlight">\(1+1/2+...+1/K\)</span> буде більше <code class="docutils literal notranslate"><span class="pre">A</span></code>, і саму цю суму.</p></li>
+<li><p>Дано число <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&gt;</span> <span class="pre">1</span></code>. Вивести найбільше із цілих чисел <code class="docutils literal notranslate"><span class="pre">K</span></code>, для яких сума <span class="math notranslate nohighlight">\(1+1/2 +...+1/K\)</span> буде менше <code class="docutils literal notranslate"><span class="pre">A</span></code>, і саму цю суму.</p></li>
 <li><p>Використовуючи алгоритм Евкліда, знайти НСД двох чисел.</p></li>
 <li><p>Для чисел, що вводяться визначити відсоток додатнихі негативних чисел. При уведенні числа − 65432 закінчити роботу.</p></li>
 <li><p>Визначити суму введених додатних чисел. Причому числа з непарними номерами (по порядку уведення) підсумовувати з протилежним знаком, а числа з парними номерами перед підсумовуванням зводити в квадрат. Підрахувати кількість доданків. При уведенні першого негативного числа закінчити роботу.</p></li>
-<li><p>Дано два числа: число P і число H. Визначити суму чисел менше P, добуток чисел більше H і кількість чисел в діапазоні значень P і H. При уведенні числа рівного P або H, закінчити роботу.</p></li>
+<li><p>Дано два числа: число <code class="docutils literal notranslate"><span class="pre">P</span></code> і число <code class="docutils literal notranslate"><span class="pre">H</span></code>. Визначити суму чисел менше <code class="docutils literal notranslate"><span class="pre">P</span></code>, добуток чисел більше <code class="docutils literal notranslate"><span class="pre">H</span></code> і кількість чисел в діапазоні значень <code class="docutils literal notranslate"><span class="pre">P</span></code> і <code class="docutils literal notranslate"><span class="pre">H</span></code>. При уведенні числа рівного <code class="docutils literal notranslate"><span class="pre">P</span></code> або <code class="docutils literal notranslate"><span class="pre">H</span></code>, закінчити роботу.</p></li>
 <li><p>Підсумувати введені числа, серед яких немає нульових. При уведенні нуля забезпечити виведення поточного значення суми. При уведенні числа 99999 закінчити роботу.</p></li>
-<li><p>Вводяться додатні числа. Визначити суму чисел, що діляться на додатне число B без остачі. При введенні негативного числа закінчити роботу.</p></li>
+<li><p>Вводяться додатні числа. Визначити суму чисел, що діляться на додатне число <code class="docutils literal notranslate"><span class="pre">B</span></code> без остачі. При введенні негативного числа закінчити роботу.</p></li>
 <li><p>Послідовно увести числа. Визначити суму чисел з непарними номерами (по порядку уведення). Підрахувати кількість доданків і кількість співмножників. При уведенні числа 55555 закінчити роботу.</p></li>
 </ol>
 </div>
