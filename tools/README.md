@@ -44,21 +44,26 @@ Running it subsequently will just start Jupyter.
 
 To install the dev environment described above run:
 ```
-cd tools
-run_jupyter
+.\tools\run_jupyter
 ```
 
 This will start the Jupyter Lab and you're good to go making changes.
 
 ## Building the book
 
-Before committing your book you can compile it by running the following code in the Jupyter Lab console:
+Before committing your book you can compile it by running:
+
+```
+.\tools\build-and-run
+```
+
+Or you can use the following code in the Jupyter Lab console:
 
 ```
 jupyter-book build ..\.
 ```
 
-This will recreate the static files associated with the book's content, ensuring you'll see this changes on the site after the merge.
+This will recreate the static files associated with the book's content, ensuring you'll see this changes on the site after the merge, and will open the local version of the rebuilt book in your browser.
 
 ## Commiting the changes
 
