@@ -1,10 +1,11 @@
 ########################################################################################
 # Book settings
 title: Основи програмування в "обіймах" Python
-author: Громова В.В.
+author: <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>
 logo: content/images/logo/logo.png
+copyright: "2020"
 
-exclude_patterns: [_*, .*, tools, README.md, content/LICENSE.md]
+exclude_patterns: [_*, .*, tools, README.md, content/LICENSE.md, content/wip*]
 
 #description: >-
 #  Інструкції до виконання лабораторних робіт
@@ -15,7 +16,6 @@ exclude_patterns: [_*, .*, tools, README.md, content/LICENSE.md]
 
 html:
   favicon: content/images/logo/favicon.ico
-  extra_navbar: <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>, 2020
   extra_footer: >-
       This page was created by <a href="https://github.com/kpi-fpm-pma/python-labs-book/graphs/contributors">community</a>.<br />
       "Python" and Python logos are trademarks or registered trademarks of Python Software Fundation.
@@ -32,10 +32,18 @@ launch_buttons:
 
 repository:
   url: https://github.com/kpi-fpm-pma/python-labs-book
-  branch: master
+  branch: main
   path_to_book: ''
 
 #######################################################################################
 # Execution settings
 execute:
-  execute_notebooks: cache
+  execute_notebooks: off
+  allow_errors: true
+
+#######################################################################################
+# Sphinx settings
+#sphinx:
+#  config:
+#    bibtex_reference_style: numbers
+bibtex_bibfiles: references.bib
