@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Додаток 1. Глосарій &#8212; Основи програмування в &#34;обіймах&#34; Python</title>
   
@@ -15,56 +14,52 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/outro/appendixA';</script>
     <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/outro/appendixA.html" />
-    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Додаток 2. Вбудовані функції" href="appendixB.html" />
@@ -78,27 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -120,8 +111,13 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -145,6 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../intro/intro.html">
   
@@ -162,7 +160,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -182,35 +191,35 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Лабораторна робота №1</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lab1/intro.html">Програмування лінійних алгоритмів та розгалужених процесів</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lab1/intro.html">Програмування лінійних алгоритмів та розгалужених процесів</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lab1/theory.html">Теоретичні відомості</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab1/questions.html">Питання для самоперевірки</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab1/problems.html">Завдання</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Лабораторна робота №2</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lab2/intro.html">Програмування циклічних алгоритмів</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lab2/intro.html">Програмування циклічних алгоритмів</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lab2/theory.html">Теоретичні відомості</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab2/questions.html">Питання для самоперевірки</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab2/problems.html">Узагальнене формулювання завдання до лабораторної роботи</a></li>
 
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Лабораторна робота №3</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lab3/intro.html">Структури даних: списки, кортежі, множини</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lab3/intro.html">Структури даних: списки, кортежі, множини</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lab3/theory.html">Теоретичні відомості</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab3/questions.html">Питання для самоперевірки</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab3/problems.html">Завдання</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Лабораторна робота №4</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lab4/intro.html">Рядки</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lab4/intro.html">Рядки</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lab4/theory.html">Теоретичні відомості</a></li>
 
 
@@ -220,34 +229,34 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../lab4/questions.html">Питання для самоперевірки</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab4/problems.html">Завдання</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Лабораторна робота №5</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lab5/intro.html">Використання функцій</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lab5/intro.html">Використання функцій</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lab5/theory.html">Теоретичні відомості</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab5/questions.html">Питання для самоперевірки</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab5/problems.html">Завдання</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Лабораторна робота №6</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lab6/intro.html">Рекурсія та обробка матриць</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lab6/intro.html">Рекурсія та обробка матриць</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lab6/theory.html">Теоретичні відомості</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab6/questions.html">Питання для самоперевірки</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab6/problems.html">Завдання</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Лабораторна робота №7</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../lab7/intro.html">Робота з файлами</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lab7/intro.html">Робота з файлами</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lab7/theory.html">Теоретичні відомості</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab7/questions.html">Питання для самоперевірки</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lab7/problems.html">Завдання</a></li>
 </ul>
-</li>
+</details></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Винятки у Python</a></li>
@@ -277,7 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -286,14 +295,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -371,10 +380,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -382,14 +391,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -450,20 +459,20 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>Додаток 1. Глосарій<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<h1>Додаток 1. Глосарій<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>Основні поняття і визначення<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>Основні поняття і визначення<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>Надалі часто доведеться використовувати терміни, пов’язані з процесом розробки та функціонування програм, тому тут наведено короткий словничок, щоб уже не повертатися до проблеми визначень.</p>
 <section id="id3">
-<h3>Алгоритм<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h3>Алгоритм<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>Алгоритм − точний припис виконавцю здійснити певну послідовність дій для досягнення поставленої мети за кінцеве число кроків.</p>
 </section>
 <section id="id4">
-<h3>Дані<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<h3>Дані<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <p>Дані − відомості отримані шляхом вимірювання, спостереження, логічних або арифметичних операцій;представлені у формі, придатній для постійного зберігання, передачі та автоматизованої) обробки.</p>
 </section>
 <section id="id5">
-<h3>Тип даних<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<h3>Тип даних<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p>Тип даних − характеристика набору даних, яка визначає:</p>
 <ul class="simple">
 <li><p>діапазон можливих значень даних з набору;</p></li>
@@ -477,69 +486,69 @@ document.write(`
 </ul>
 </section>
 <section id="id6">
-<h3>Програма<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<h3>Програма<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>Програма − дані, призначені для управління конкретними компонентами системи обробки інформації з метою реалізації певного алгоритму.</p>
 </section>
 <section id="id7">
-<h3>Алгоритмічна мова (мова програмування)<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<h3>Алгоритмічна мова (мова програмування)<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <p>Мова програмування − штучна (формальна) мова, призначена для запису алгоритмів. Мова програмування задається своїм описом і реалізується у вигляді спеціальної програми: компілятора або інтерпретатора.</p>
 </section>
 <section id="id8">
-<h3>Транслятор мови програмування<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<h3>Транслятор мови програмування<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>Транслятор − у широкому сенсі − програма, яка перетворює текст, написаний на одній мові, у текст на іншій мові.</p>
 <p>Транслятор − у вузькому сенсі − програма, яка перетворює програму, написану на одному (вхідній) мові у програму, представлену на іншому (вихідній) мові.</p>
 <p>Транслятор мови програмування − програма, яка перетворює початковий текст програми на мові програмування у машинну мову обчислювальної системи, на якій ця програма повинна виконуватися.</p>
 </section>
 <section id="id9">
-<h3>Інтерпретатор<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<h3>Інтерпретатор<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <p>Інтерпретатор − транслятор, здатний паралельно переводити і виконувати програму, написану на алгоритмічній мові високого рівня.</p>
 </section>
 <section id="id10">
-<h3>Компілятор<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<h3>Компілятор<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p>Компілятор − програма, яка перетворює текст, написаний на алгоритмічній мові, у програму, що складається з машинних команд. Компілятор створює закінчений варіант програми на машинній мові.</p>
 </section>
 <section id="id11">
-<h3>Константа<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<h3>Константа<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>Константа − у програмуванні − елемент даних, який займає місце у пам’яті, має ім’я і певний тип, причому його значення ніколи не змінюється.</p>
 </section>
 <section id="id12">
-<h3>Змінна<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<h3>Змінна<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p>Змінна − у мовах програмування − іменована частина пам’яті, у яку можуть поміщатися різні значення. Причому у кожен момент часу змінна має єдине значення (або єдиний набір значень). У процесі виконання програми значення змінної може змінюватися.Тип змінних визначається типом даних, які вони представляють.</p>
 </section>
 <section id="id13">
-<h3>Підпрограма<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
+<h3>Підпрограма<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <p>Підпрограма − самостійна частина програми, яка розробляється незалежно від інших частин і потім викликається по імені.</p>
 </section>
 <section id="id14">
-<h3>Функція<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
+<h3>Функція<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <p>Підпрограма, яка на основі деяких даних (аргументів функції) обчислює значення деякої змінної («функція повертає значення»).</p>
 </section>
 <section id="id15">
-<h3>Об’єкт<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
+<h3>Об’єкт<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
 <p>Поняття об’єктно−орієнтованого програмування, програмний модуль, який об’єднує у єдине ціле дані і програми, що маніпулюють даними. Об’єкт характеризується властивостями, які є параметрами об’єкта і методами, які дозволяють впливати на об’єкт і його властивості.</p>
 </section>
 <section id="id16">
-<h3>Метод<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
+<h3>Метод<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <p>Дія у вигляді процедури, яка виконується об’єктом (іноді говорять виконується над об’єктом).</p>
 </section>
 <section id="id17">
-<h3>Ідентифікатор<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
+<h3>Ідентифікатор<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <p>Ідентифікатор − символьне ім’я змінної або підпрограми, яке однозначно ідентифікує їх у програмі.</p>
 </section>
 <section id="id18">
-<h3>Вираз<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
+<h3>Вираз<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <p>Вираз − конструкція на мові програмування, призначена для виконання обчислень. Вираз складається з операндів, об’єднаних знаками операцій. Розрізняють арифметичні, логічні і символьні вирази.</p>
 </section>
 <section id="id19">
-<h3>Операнд<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
+<h3>Операнд<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
 <p>Операнд − константа, змінна, функція, вираз і інший об’єкт мови програмування, над яким проводяться операції.</p>
 </section>
 <section id="id20">
-<h3>Арифметична операція<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
+<h3>Арифметична операція<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
 <p>Арифметична операція − обчислювальна операція над числами.У багатьох мовах програмування визначені двомісні арифметичні операції: додавання, віднімання, множення, ділення, ділення без остачі, обчислення залишку від ділення.</p>
 </section>
 <section id="id21">
-<h3>Логічна операція<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h3>
+<h3>Логічна операція<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
 <p>Логічна операція − операція над логічними («булевського») операндами, приймають значення «істина» або «хибність». Найбільш поширеними є такі операції:</p>
 <ul class="simple">
 <li><p>багатомісне роз’єднання;</p></li>
@@ -549,27 +558,27 @@ document.write(`
 <p>(«Багатомісна» операція означає, що у ній може два і більше операндів, а у «одномісній» або «унарній» операції бере участь лише один операнд).</p>
 </section>
 <section id="id22">
-<h3>Операція відношення<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
+<h3>Операція відношення<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
 <p>Операція відношення здійснює порівняння двох величин. Результат операції відношення є «булева» змінна, що приймає значення «істина» (true або логічна 1) або «хибність» (false або логічний 0).</p>
 </section>
 <section id="id23">
-<h3>Масив (масив даних)<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
+<h3>Масив (масив даних)<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
 <p>Сукупність, як правило, однотипних даних, кожне з яких ідентифікується з ім’ям масиву та індексом (індексами).Залежно від кількості індексів масиви бувають одномірні (лінійні), двомірні і т.д.</p>
 </section>
 <section id="id24">
-<h3>Індекс<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
+<h3>Індекс<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
 <p>Номер (або номера, якщо масив даних багатовимірний), що додається до імені масиву, щоб ідентифікувати кожен елемент даного масиву.Наприклад, а [1, 3] означає, що визначений елемент двовимірного масиву а з індексом 1,3 (рядок − 1, стовпець − 3).</p>
 </section>
 <section id="id25">
-<h3>Присвоєння<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
+<h3>Присвоєння<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
 <p>Операція запису значення у змінну. У багатьох мовах програмування визначено оператор присвоювання. Якщо у змінну записується нове значення, старе стирається.</p>
 </section>
 <section id="id26">
-<h3>Цикл<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
+<h3>Цикл<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
 <p>Цикл (циклічні обчислення) означають багаторазове виконання одних і тих же операцій. Залежно від завдання розрізняються цикли зі змінною (з лічильником, з відомою кількістю повторень) і цикли з умовою (цикл повторюється, поки не виконається умова завершення циклу).</p>
 </section>
 <section id="id27">
-<h3>Зациклення<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h3>
+<h3>Зациклення<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
 <p>Для циклів з умовою − ситуація, при якій умова завершення циклу ніколи не виконується.</p>
 </section>
 </section>
@@ -602,7 +611,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -718,8 +727,8 @@ By <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
