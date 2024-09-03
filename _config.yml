@@ -46,4 +46,4 @@ execute:
 #sphinx:
 #  config:
 #    bibtex_reference_style: numbers
-bibtex_bibfiles: references.bib
+bibtex_bibfiles: [references.bib]
