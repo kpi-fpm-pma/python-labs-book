@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -60,6 +63,7 @@
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/lab5/theory';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/lab5/theory.html" />
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -68,34 +72,30 @@
     <link rel="prev" title="Вступ" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -103,7 +103,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -111,15 +110,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -128,7 +171,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -158,21 +202,17 @@
     
     
     <img src="../../_static/logo.png" class="logo__image only-light" alt="Основи програмування в "обіймах" Python - Home"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Основи програмування в "обіймах" Python - Home"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Основи програмування в "обіймах" Python - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -281,9 +321,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -433,7 +478,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -447,25 +492,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -487,7 +524,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Як це працює</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Параметри функцій</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Як це працює</a></li>
@@ -544,7 +581,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Теоретичні відомості<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>Функції — це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повторного використання коду (див. <span id="id2">[<a class="reference internal" href="../bibliography.html#id4" title="Любанович Б. Простой Python. Современный стиль программирования. Питер, СПб., 2016.">1</a>]</span>, стр. 118-130).
+<p>Функції — це багаторазово використовувані фрагменти програми, які забезпечують кращу модульність програми та значно підвищують рівень повторного використання коду (див. <span class="bibtex-citation" id="id2">[<a class="reference internal" href="../bibliography.html#id4" title="Любанович Б. Простой Python. Современный стиль программирования. Питер, СПб., 2016.">1</a>]</span>, стр. 118-130).
 Функції дозволяють надати ім’я визначеному блоку команд з тим, щоб згодом запускати цей блок за вказаним ім’ям у будь-якому місці програми. Це називається викликом функції.
 Існують правила для створення функцій у Python.</p>
 <ul class="simple">
@@ -555,8 +592,8 @@ document.write(`
 <p>На прикладі можна побачити простоту застосування функції.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sayHello</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Привіт студенти!&#39;</span><span class="p">)</span> <span class="c1"># блок, що належить функції</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">sayHello</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Привіт студенти!'</span><span class="p">)</span> <span class="c1"># блок, що належить функції</span>
 <span class="c1"># Кінець функції</span>
 <span class="n">sayHello</span><span class="p">()</span> <span class="c1"># виклик функції</span>
 <span class="n">sayHello</span><span class="p">()</span> <span class="c1"># ще один виклик функції</span>
@@ -581,13 +618,13 @@ document.write(`
 <p>Параметри вказуються в дужках при оголошенні функції і розділяються комами. Аналогічно передаються значення, коли викликається функція. Слід звернути увагу на термінологію: імена, зазначені в оголошенні функції, називаються <em>параметрами</em>, тоді як значення, які передаються в функцію при її виклику — <em>аргументами</em>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printMax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">printMax</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">'максимально'</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">&#39;дорівнює &#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="s1">'дорівнює '</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s1">&#39;максимально&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="s1">'максимально'</span><span class="p">)</span>
 <span class="n">printMax</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="c1"># пряма передача значень </span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
@@ -622,7 +659,7 @@ document.write(`
 <p>Якщо при створенні функції ми вказали кількість переданих їй аргументів і їх порядок, то і викликати її ми повинні з тією ж кількістю аргументів, заданих в потрібному порядку.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bigger</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">bigger</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
@@ -657,7 +694,7 @@ document.write(`
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">bigger</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">bigger</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 
-<span class="ne">TypeError</span>: bigger() missing 2 required positional arguments: &#39;a&#39; and &#39;b&#39;
+<span class="ne">TypeError</span>: bigger() missing 2 required positional arguments: 'a' and 'b'
 </pre></div>
 </div>
 </div>
@@ -669,10 +706,10 @@ document.write(`
 <p>Значення за замовчуванням має бути константою. Або точніше кажучи, воно має бути незмінним.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">say</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">times</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">say</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">times</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message</span> <span class="o">*</span> <span class="n">times</span><span class="p">)</span>
-<span class="n">say</span><span class="p">(</span><span class="s1">&#39;Привіт&#39;</span><span class="p">)</span>
-<span class="n">say</span><span class="p">(</span><span class="s1">&#39;Світ&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">say</span><span class="p">(</span><span class="s1">'Привіт'</span><span class="p">)</span>
+<span class="n">say</span><span class="p">(</span><span class="s1">'Світ'</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -690,11 +727,11 @@ document.write(`
 При першому виклику <code class="docutils literal notranslate"><span class="pre">say</span></code> вказується тільки рядок, і функція виводить його один раз. При другому виклику <code class="docutils literal notranslate"><span class="pre">say</span></code> вказується також і аргумент <span class="math notranslate nohighlight">\(5\)</span>, позначаючи таким чином, що фраза сказана <span class="math notranslate nohighlight">\(5\)</span> разів.
 Важливо:
 Значеннями за замовчанням можуть бути наділені тільки ті параметри, що знаходяться в кінці списку параметрів. Таким чином, в списку параметрів функції параметр із значенням за замовчанням не може передувати параметру без значення за замовчанням. Це пов’язано з тим, що значення присвоюються параметрам відповідно до їх положення. Наприклад,</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span> 
 </pre></div>
 </div>
 <p>допустимо, а</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>не допустимо.</p>
@@ -705,8 +742,8 @@ document.write(`
 Є дві переваги такого підходу: по-перше, використання функції стає легше, оскільки немає необхідності відстежувати порядок аргументів; по-друге, можна задавати значення тільки деяким обраним аргументів, за умови, що інші параметри мають значення аргументу за замовчуванням.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a дорівнює&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s1">&#39;, b дорівнює&#39;</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s1">&#39;, а c дорівнює&#39;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'a дорівнює'</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s1">', b дорівнює'</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s1">', а c дорівнює'</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
 <span class="n">func</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
 <span class="n">func</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
 <span class="n">func</span><span class="p">(</span><span class="n">c</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
@@ -734,11 +771,11 @@ a дорівнює 100 , b дорівнює 5 , а c дорівнює 50
 <p>Іноді буває потрібно визначити функцію, здатну приймати будь-яке число параметрів. Цього можна досягти за допомогою синтаксису із використанням зірочок (так званого <code class="docutils literal notranslate"><span class="pre">*args/**kwargs</span></code> синтаксису).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">,</span> <span class="o">**</span><span class="n">phonebook</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">total</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">,</span> <span class="o">**</span><span class="n">phonebook</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> 
     <span class="c1"># Прохід по всіх елементах кортежу</span>
     <span class="k">for</span> <span class="n">single_item</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;single_item&#39;</span><span class="p">,</span> <span class="n">single_item</span><span class="p">)</span> <span class="c1"># прохід по всіх елементах словника</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'single_item'</span><span class="p">,</span> <span class="n">single_item</span><span class="p">)</span> <span class="c1"># прохід по всіх елементах словника</span>
     <span class="k">for</span> <span class="n">first_part</span><span class="p">,</span> <span class="n">second_part</span> <span class="ow">in</span> <span class="n">phonebook</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">first_part</span><span class="p">,</span> <span class="n">second_part</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Jack</span><span class="o">=</span><span class="mi">1123</span><span class="p">,</span> <span class="n">John</span><span class="o">=</span><span class="mi">2231</span><span class="p">,</span> <span class="n">Inge</span><span class="o">=</span><span class="mi">1560</span><span class="p">))</span>
@@ -769,7 +806,7 @@ None
 <p>Якщо деякі ключові параметри повинні бути доступні тільки по ключу, а не як позиційні аргументи, їх можна оголосити після параметра із зірочкою</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">,</span> <span class="n">extra_number</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">total</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">*</span><span class="n">numbers</span><span class="p">,</span> <span class="n">extra_number</span><span class="p">):</span>
     <span class="n">count</span> <span class="o">=</span> <span class="n">initial</span>
     <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
         <span class="n">count</span> <span class="o">+=</span> <span class="n">number</span>
@@ -779,7 +816,7 @@ None
 <span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">extra_number</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="c1"># викличе помилку, оскільки ми не вказали значення</span>
-<span class="c1"># аргументу за замовчуванням для &#39;extra_number&#39;.</span>
+<span class="c1"># аргументу за замовчуванням для 'extra_number'.</span>
 </pre></div>
 </div>
 </div>
@@ -794,9 +831,9 @@ None
 <span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">extra_number</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 <span class="ne">----&gt; </span><span class="mi">9</span> <span class="n">total</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># викличе помилку, оскільки ми не вказали значення</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="c1"># аргументу за замовчуванням для &#39;extra_number&#39;.</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="c1"># аргументу за замовчуванням для 'extra_number'.</span>
 
-<span class="ne">TypeError</span>: total() missing 1 required keyword-only argument: &#39;extra_number&#39;
+<span class="ne">TypeError</span>: total() missing 1 required keyword-only argument: 'extra_number'
 </pre></div>
 </div>
 </div>
@@ -823,13 +860,13 @@ None
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'x дорівнює '</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Заміна локального x на &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Заміна локального x на '</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
     
 <span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x як і раніше &#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'x як і раніше '</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -856,14 +893,14 @@ x як і раніше  50
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">x</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'x дорівнює'</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Замінюємо глобальне значення x на&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Замінюємо глобальне значення x на'</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 
 <span class="n">func</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Значення x становить&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Значення x становить'</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -890,14 +927,14 @@ x як і раніше  50
 <p>Оскільки в Python все є виконуваним кодом, функції можна визначати де завгодно.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func_outer</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">func_outer</span><span class="p">():</span>
     <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x дорівнює&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">func_inner</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'x дорівнює'</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">func_inner</span><span class="p">():</span>
         <span class="k">nonlocal</span> <span class="n">x</span>
         <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
     <span class="n">func_inner</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Локальне x змінилося на&#39;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Локальне x змінилося на'</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 <span class="n">func_outer</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -922,11 +959,11 @@ x як і раніше  50
 <p>Оператор <code class="docutils literal notranslate"><span class="pre">return</span></code> використовується для повернення з функції, тобто для припинення її роботи і виходу з неї. При цьому можна також повернути деяке значення з функції.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">maximum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">maximum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">x</span>
     <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s1">&#39;Числа рівні.&#39;</span>
+        <span class="k">return</span> <span class="s1">'Числа рівні.'</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">y</span>
     
@@ -945,7 +982,7 @@ x як і раніше  50
 <p>Функція <code class="docutils literal notranslate"><span class="pre">maximum</span></code> повертає максимальний з двох параметрів, які в даному випадку передаються їй при виклику. Вона використовує звичайний умовний оператор <code class="docutils literal notranslate"><span class="pre">if..else</span></code> для визначення найбільшого числа, а потім повертає це число.</p>
 <p>Оператор <code class="docutils literal notranslate"><span class="pre">return</span></code> без вказівки значення, що повертається, еквівалентний вислову <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">None</span></code>. <code class="docutils literal notranslate"><span class="pre">None</span></code> — це спеціальний тип даних в Python, що позначає “нічого”. Наприклад, якщо значення змінної встановлено в <code class="docutils literal notranslate"><span class="pre">None</span></code>, це означає, що їй не присвоєно ніякого значення.</p>
 <p>Кожна функція містить в неявній формі оператор <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">None</span></code> в кінці, якщо не вказано свій власний оператор <code class="docutils literal notranslate"><span class="pre">return</span></code>. У цьому можна переконатися, запустивши <code class="docutils literal notranslate"><span class="pre">print(someFunction())</span></code>, де функція <code class="docutils literal notranslate"><span class="pre">someFunction</span></code> — це якась функція, яка не має оператора <code class="docutils literal notranslate"><span class="pre">return</span></code> в явному вигляді. Наприклад:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">someFunction</span><span class="p">():</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">someFunction</span><span class="p">():</span>
     <span class="k">pass</span>
 </pre></div>
 </div>
@@ -986,7 +1023,7 @@ x як і раніше  50
 <p>Наступний фрагмент коду показує різницю між звичайним визначенням функції <code class="docutils literal notranslate"><span class="pre">f</span></code> і <code class="docutils literal notranslate"><span class="pre">lambda</span></code>-функції <code class="docutils literal notranslate"><span class="pre">g</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">f</span> <span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
 
 <span class="n">g</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
@@ -1064,15 +1101,17 @@ x як і раніше  50
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Як це працює</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Параметри функцій</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Як це працює</a></li>
@@ -1167,8 +1206,8 @@ By <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

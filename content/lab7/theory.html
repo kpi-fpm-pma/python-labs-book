@@ -16,41 +16,44 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -58,6 +61,7 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/lab7/theory';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="canonical" href="https://kpi-fpm-pma.github.io/python-labs-book/content/lab7/theory.html" />
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -66,34 +70,30 @@
     <link rel="prev" title="Вступ" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -101,7 +101,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -109,15 +108,59 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -126,7 +169,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -156,21 +200,17 @@
     
     
     <img src="../../_static/logo.png" class="logo__image only-light" alt="Основи програмування в "обіймах" Python - Home"/>
-    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Основи програмування в "обіймах" Python - Home"/>`);</script>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Основи програмування в "обіймах" Python - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -279,9 +319,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -431,7 +476,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
   title="Fullscreen mode"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -445,25 +490,17 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -485,7 +522,7 @@ document.write(`
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Структуровані текстові файли</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Приклади</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Відкриття і закриття файлів</a><ul class="nav section-nav flex-column">
@@ -559,7 +596,7 @@ document.write(`
 <li><p>Виділення пробілами. Прикладом є YAML (що означає YAML Is not Markup Language — «YAML не мова розмітки»).</p></li>
 <li><p>Інші файли, наприклад, конфігураційні.</p></li>
 </ul>
-<p>Кожен з цих форматів структурованих файлів може бути зчитаний і записаний за допомогою як мінімум одного модуля Python. Більш детально із застосуванням цих форматів можна ознайомитися у джерелі <span id="id3">[<a class="reference internal" href="../bibliography.html#id3" title="Лутц М. Изучаем Python. Символ-Плюс, СПб., 4 edition, 2011. Пер. с англ.">3</a>]</span>, стр. 219-228.</p>
+<p>Кожен з цих форматів структурованих файлів може бути зчитаний і записаний за допомогою як мінімум одного модуля Python. Більш детально із застосуванням цих форматів можна ознайомитися у джерелі <span class="bibtex-citation" id="id3">[<a class="reference internal" href="../bibliography.html#id3" title="Лутц М. Изучаем Python. Символ-Плюс, СПб., 4 edition, 2011. Пер. с англ.">3</a>]</span>, стр. 219-228.</p>
 <p>У даній лабораторній роботі детально розглядаються текстові файли, елементами яких будуть рядки.</p>
 <p>Робота з файлом у програмі мовою Python включає три основних етапи:</p>
 <ol class="arabic simple">
@@ -571,7 +608,7 @@ document.write(`
 <p><code class="docutils literal notranslate"><span class="pre">&lt;ім'я</span> <span class="pre">файлової</span> <span class="pre">змінної&gt;</span> <span class="pre">=</span> <span class="pre">open(&lt;ім'я</span> <span class="pre">файлу&gt;,</span> <span class="pre">&lt;режим</span> <span class="pre">відкриття</span> <span class="pre">&gt;,</span> <span class="pre">&lt;encoding</span> <span class="pre">=</span> <span class="pre">&quot;utf-8&quot;|&quot;ascii&quot;|...&gt;)</span></code>,</p>
 <p>де:</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;ім'я</span> <span class="pre">файлової</span> <span class="pre">змінної&gt;</span></code> — ім’я змінної, за допомогою якої програма буде здійснювати зв’язок з файлом (файловою змінною);</p>
-<p><code class="docutils literal notranslate"><span class="pre">&lt;ім'я</span> <span class="pre">файлу&gt;</span></code> — рядкове представлення імені файлу, що може включати шлях до файлу; більш детально про знаходження абсолютного шляху до файлу з прикладами див. <span id="id4">[<a class="reference internal" href="../bibliography.html#id4" title="Любанович Б. Простой Python. Современный стиль программирования. Питер, СПб., 2016.">1</a>]</span>, стор.279-282;</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;ім'я</span> <span class="pre">файлу&gt;</span></code> — рядкове представлення імені файлу, що може включати шлях до файлу; більш детально про знаходження абсолютного шляху до файлу з прикладами див. <span class="bibtex-citation" id="id4">[<a class="reference internal" href="../bibliography.html#id4" title="Любанович Б. Простой Python. Современный стиль программирования. Питер, СПб., 2016.">1</a>]</span>, стор.279-282;</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;режим</span> <span class="pre">відкриття&gt;</span></code> вказує, чи буде файл інтерпретуватися як текстовий або як двійковий, і для виконання яких дій буде відкритий файл — для читання, для запису, для доповнення в кінець або комбінації цих дій;</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;encoding</span> <span class="pre">=</span> <span class="pre">&quot;utf-8&quot;|&quot;ascii&quot;|...&gt;</span></code> вказує назву кодування символів у файлі.</p>
 <p>Режими можуть містити інформацію про мету відкриття і тип файлу, тобто, наприклад, <code class="docutils literal notranslate"><span class="pre">'rb'</span></code> — читання в двійковому режимі, а <code class="docutils literal notranslate"><span class="pre">'rt'</span></code> — у текстовому. За замовчуванням використовуэться режим <code class="docutils literal notranslate"><span class="pre">'rt'</span></code>.
@@ -636,13 +673,13 @@ document.write(`
 <h3>Відкриття і закриття файлів<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my_file1.txt&#39;</span><span class="p">)</span>             <span class="c1"># Використано режим відкриття за замовчуванням</span>
-<span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;my_file2.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>       <span class="c1"># Відкриття файлу на запис</span>
-<span class="n">f3</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;list&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>               <span class="c1"># Не важливо, як називається файл</span>
-<span class="n">fv</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;C:/temp/1.txt&#39;</span><span class="p">)</span>           <span class="c1"># Вказано повний шлях до файлу</span>
-<span class="n">fv1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;/files/1.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>      <span class="c1"># Вказано відносний шлях до файлу</span>
-<span class="n">fv15</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;../folder/15.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="c1"># Вказано відносний шлях до файлу </span>
-<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="s1">&#39;r+&#39;</span><span class="p">)</span>            <span class="c1"># Читання і запис з початку файлу</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'my_file1.txt'</span><span class="p">)</span>             <span class="c1"># Використано режим відкриття за замовчуванням</span>
+<span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'my_file2.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>       <span class="c1"># Відкриття файлу на запис</span>
+<span class="n">f3</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'list'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>               <span class="c1"># Не важливо, як називається файл</span>
+<span class="n">fv</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'C:/temp/1.txt'</span><span class="p">)</span>           <span class="c1"># Вказано повний шлях до файлу</span>
+<span class="n">fv1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'/files/1.csv'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>      <span class="c1"># Вказано відносний шлях до файлу</span>
+<span class="n">fv15</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'../folder/15.csv'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="c1"># Вказано відносний шлях до файлу </span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'data'</span><span class="p">,</span> <span class="s1">'r+'</span><span class="p">)</span>            <span class="c1"># Читання і запис з початку файлу</span>
 </pre></div>
 </div>
 </div>
@@ -667,9 +704,9 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Відкриваємо файл на запис</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;some_file&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>    <span class="c1"># де some_file це ім&#39;я файлу</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'some_file'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>    <span class="c1"># де some_file це ім'я файлу</span>
 <span class="c1"># Записуємо в нього текст</span>
-<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39; How beautiful the world is! &#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">' How beautiful the world is! '</span><span class="p">)</span>
 <span class="c1"># Якщо більше нічого записуватися не буде - треба закрити файл</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -683,8 +720,8 @@ document.write(`
 <p>Запис рядка, значення якого задається в ході виконання програми:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file1&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Задайте рядок: &#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file1'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Задайте рядок: '</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -697,9 +734,9 @@ document.write(`
 <p>Запис всіх чисел від 1 до 100 з пробілом між ними:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file2&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file2'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1"> &#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s1"> '</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -711,8 +748,8 @@ document.write(`
 <p>Запис всіх символів заданого рядку:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Задайте рядок: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file3&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Задайте рядок: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file3'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">nom</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span> <span class="c1"># Розглядаємо всі номери символів рядка s</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">nom</span><span class="p">])</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -723,8 +760,8 @@ document.write(`
 <p>або</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Задайте рядок: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file3&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Задайте рядок: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file3'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>     <span class="c1"># Розглядаємо всі символи рядка s</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sim</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -743,9 +780,9 @@ people!
 <p>Програма:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file4&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Hello,</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;people!</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file4'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'Hello,</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'people!</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -758,10 +795,10 @@ people!
 <p>Запис кожного символу заданого рядку на окремий рядок файлу:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Задайте рядок: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Задайте рядок: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">sim</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">sim</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">sim</span><span class="si">}</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -773,9 +810,9 @@ people!
 <p>Запис кожного з чисел від 1 до 10 на окремому рядку файлу:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file6&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file6'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>     <span class="c1"># m – числа, які записуються </span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -788,9 +825,9 @@ people!
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="c1">#Заданий список</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file7&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file7'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sp</span><span class="p">)):</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">sp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -800,7 +837,7 @@ people!
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file7&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file7'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">sp</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -813,12 +850,12 @@ people!
 <p>Запис кожного з 10 заданих назв футбольних клубів на окремому рядку файлу:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file8&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file8'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="c1"># Введення чергової назви</span>
-    <span class="n">club</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Введіть назву клубу: &#39;</span><span class="p">)</span>
+    <span class="n">club</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Введіть назву клубу: '</span><span class="p">)</span>
     <span class="c1"># Запис його в файл</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">club</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">club</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -834,8 +871,8 @@ people!
 Наприклад, програма для виведення на екран першого рядка файлу, пов’язаного з файловою змінною <code class="docutils literal notranslate"><span class="pre">f</span></code>, має вигляд:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file1&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="c1"># Читаємо 1-й рядок файлу і запам&#39;ятовуємо його в змінній s</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file1'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
+<span class="c1"># Читаємо 1-й рядок файлу і запам'ятовуємо його в змінній s</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="c1"># Друкуємо значення змінної s</span>
@@ -848,8 +885,8 @@ people!
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Відкриваємо файл для читання</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file4&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="c1"># Читаємо 1-й рядок файлу і запам&#39;ятовуємо його в змінній s</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file4'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
+<span class="c1"># Читаємо 1-й рядок файлу і запам'ятовуємо його в змінній s</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="c1"># Друкуємо значення змінної s</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
@@ -871,12 +908,12 @@ people!
 <p>Чому між двома рядками, прочитаними з файлу, виводиться порожній рядок? Справа в тому, що під час запису тексту в файл в кінець кожного рядка був записаний керуючий символ <code class="docutils literal notranslate"><span class="pre">'\n'</span></code>, символу переходу на наступний рядок. Тому після виведення першого рядка (<code class="docutils literal notranslate"><span class="pre">'Hello,'</span></code>) відбувся перехід на наступний рядок екрана. А згідно з правилами роботи інструкції <code class="docutils literal notranslate"><span class="pre">print()</span></code>, після її виконання також відбувається перехід на наступний рядок. Тому, щоб виключити виведення порожнього рядка, слід або включити в інструкцію <code class="docutils literal notranslate"><span class="pre">print()</span></code> параметр <code class="docutils literal notranslate"><span class="pre">end</span> <span class="pre">=</span> <span class="pre">''</span></code>, при якому переходу на наступний рядок після виведення не буде:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file4&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file4'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="c1"># друкуємо змінну s</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -885,7 +922,7 @@ people!
 <p>або не виводити керуючий символ (це можна зробити, використовуючи зріз рядка):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file4&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file4'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="c1"># Друкуємо змінну s, використовуючи зріз</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -904,10 +941,10 @@ people!
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># n – число рядків у файлі</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -915,12 +952,12 @@ people!
 </div>
 <p>Але в цьому випадку, якщо зазначене <code class="docutils literal notranslate"><span class="pre">n</span></code> більше кількості рядків у файлі, то в кінець при виведенні додаються порожні рядки.
 Довжину файлу можна визначити так:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">())</span><span class="err">`</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">)</span><span class="o">.</span><span class="n">readlines</span><span class="p">())</span><span class="err">`</span>
 </pre></div>
 </div>
 <p>або інакше:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span>  <span class="nn">re</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[\n]+&quot;</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span> <span class="c1"># виведе кількість без порожніх рядків</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w">  </span><span class="nn">re</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">"[\n]+"</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()))</span> <span class="c1"># виведе кількість без порожніх рядків</span>
 </pre></div>
 </div>
 </section>
@@ -929,7 +966,7 @@ people!
 <p>Вивести на екран всі рядки файлу, створеного при вирішенні прикладу 6. Порожніх рядків між ними бути не повинно.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file6&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file6'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
@@ -945,12 +982,12 @@ people!
 <p>Текстовий файл називають “файлом послідовного доступу до даних”. Це означає, що для того, щоб прочитати 100-е за рахунком значення з файлу, потрібно спочатку прочитати попередні 99. У своїй внутрішній пам’яті система зберігає положення вказівника (файлового курсора), який визначає поточне місце в файлі. При відкритті файлу вказівник встановлюється в самий початок файлу, при читанні зміщується на позицію, наступну за прочитаними даними. Якщо потрібно повторити читання з початку файлу, потрібно його закрити, а потім знову відкрити. Тому для вирішення завдання треба прочитати, але не використовувати перші <code class="docutils literal notranslate"><span class="pre">(n</span> <span class="pre">-</span> <span class="pre">1)</span></code> рядків файлу, а потім прочитати і вивести на екран <code class="docutils literal notranslate"><span class="pre">n</span></code>-й рядок.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Задайте номер рядку файла: &#39;</span><span class="p">))</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file7&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Задайте номер рядку файла: '</span><span class="p">))</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file7'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="c1"># Пропускаємо перші (n - 1) рядків </span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<span class="c1"># Читаємо рядок з номером n і запам&#39;ятовуємо його в змінній s</span>
+<span class="c1"># Читаємо рядок з номером n і запам'ятовуємо його в змінній s</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="c1">#Виводимо його</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="c1"># Керуючий символ в кінці рядка можна не виключати</span>
@@ -966,10 +1003,10 @@ people!
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sp</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># заповнюваний список</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file7&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file7'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># n – число рядків у файлі</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># Читаємо черговий рядок файлу і запам&#39;ятовуємо його в змінній s</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>  <span class="c1"># Читаємо черговий рядок файлу і запам'ятовуємо його в змінній s</span>
     <span class="n">sp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># Додаємо значення s без керуючого символу в якості нового# элемента списка</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -998,7 +1035,7 @@ people!
 </div>
 <p>Наявність або відсутність керуючого символу в кінці кожного елемента списку у всіх перерахованих варіантах встановіть самостійно.</p>
 <p>У всіх розглянутих задачах кількість рядків текстового файлу, що читається, було відомо (2, <code class="docutils literal notranslate"><span class="pre">n</span></code> і 10). А якщо це не так? У подібних випадках для читання всіх рядків можна використовувати інструкцію циклу <code class="docutils literal notranslate"><span class="pre">for</span></code> зі змінною <code class="docutils literal notranslate"><span class="pre">line</span></code>, відповідної кожному рядку файлу:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span> <span class="c1"># Для всіх рядків файлу </span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">line</span>   <span class="c1"># значення рядків</span>
     <span class="c1"># ...</span>
@@ -1007,9 +1044,9 @@ people!
 <p>Наприклад, програма для виведення на екран всіх рядків файлу без порожніх рядків між ними має вигляд:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file7&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file7'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1021,8 +1058,8 @@ people!
 <p>Всі рядки файлу, створеного при розв’язанні прикладу 5, записати в інший файл. Список не використовувати.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>        <span class="c1"># Відкриваємо існуючий файл на читання,</span>
-<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;new_file5&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="c1"># а новий файл - на запис</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>        <span class="c1"># Відкриваємо існуючий файл на читання,</span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'new_file5'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="c1"># а новий файл - на запис</span>
 
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>       <span class="c1"># Для всіх рядків вихідного файлу:</span>
     <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="c1"># Значення чергового рядка записуємо в інший файл,</span>
@@ -1040,8 +1077,8 @@ people!
 <p>Це завдання може бути вирішена різними засобами. Можна розглянути всі рядки файлу, визначаючи при цьому номер кожного рядка. Якщо значення в рядку (без врахування останнього, керуючого символу) збігається з відшукуваним символом, то номер цього рядка потрібно запам’ятати:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Задайте символ: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Задайте символ: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 
 <span class="n">line_number</span>  <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Поточний номер рядка файлу (умовне початкове значення)</span>
 <span class="n">found_number</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># шуканий номер рядка</span>
@@ -1052,11 +1089,11 @@ people!
     <span class="c1"># Порівнюємо значення в рядку без керуючого символу</span>
     <span class="c1"># з шуканим символом (використовуємо зріз)</span>
     <span class="k">if</span> <span class="n">line</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">sym</span><span class="p">:</span> <span class="c1"># Зустрівся шуканий символ</span>
-        <span class="c1"># Запам&#39;ятовуємо номер поточного рядка файлу</span>
+        <span class="c1"># Запам'ятовуємо номер поточного рядка файлу</span>
         <span class="n">found_number</span> <span class="o">=</span> <span class="n">line_number</span>
 
 <span class="c1"># виводимо відповідь</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Цей символ знаходиться в рядку номер: </span><span class="si">{</span><span class="n">found_number</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Цей символ знаходиться в рядку номер: </span><span class="si">{</span><span class="n">found_number</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1068,8 +1105,8 @@ people!
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Задайте символ: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Задайте символ: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 
 <span class="n">line_number</span>  <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Поточний номер рядка файлу (умовне початкове значення)</span>
 <span class="n">found_number</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># шуканий номер рядка</span>
@@ -1080,12 +1117,12 @@ people!
     <span class="c1"># Порівнюємо значення в рядку без керуючого символу</span>
     <span class="c1"># з шуканим символом (використовуємо зріз)</span>
     <span class="k">if</span> <span class="n">line</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">sym</span><span class="p">:</span> <span class="c1"># Зустрівся шуканий символ</span>
-        <span class="c1"># Запам&#39;ятовуємо номер поточного рядка файлу</span>
+        <span class="c1"># Запам'ятовуємо номер поточного рядка файлу</span>
         <span class="n">found_number</span> <span class="o">=</span> <span class="n">line_number</span>
         <span class="k">break</span>
 
 <span class="c1"># виводимо відповідь</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Цей символ знаходиться в рядку номер: </span><span class="si">{</span><span class="n">found_number</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Цей символ знаходиться в рядку номер: </span><span class="si">{</span><span class="n">found_number</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1096,8 +1133,8 @@ people!
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">&#39;Задайте символ: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span> <span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">'Задайте символ: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span> <span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 
 <span class="n">line_num</span> <span class="o">=</span> <span class="mi">1</span>      <span class="c1"># Номер рядка файлу</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span> <span class="p">()</span> <span class="c1"># Його значення (символ)</span>
@@ -1109,7 +1146,7 @@ people!
     <span class="n">line_number</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="c1"># Зупинилися на рядку з заданим символом</span>
-<span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Цей символ знаходиться в рядку номер </span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s1">'Цей символ знаходиться в рядку номер </span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1123,8 +1160,8 @@ people!
 <p>Для вирішення можна використовувати змінну <code class="docutils literal notranslate"><span class="pre">exst_sym</span></code> логічного типу, що визначає, чи є в файлі заданий символ (якщо є, то ця змінна має значення <code class="docutils literal notranslate"><span class="pre">True</span></code>, інакше — <code class="docutils literal notranslate"><span class="pre">False</span></code>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">&#39;Задайте символ: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span> <span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">'Задайте символ: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span> <span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 
 <span class="c1"># Спочатку символ не знайденo</span>
 <span class="n">exst_sym</span> <span class="o">=</span> <span class="kc">False</span>
@@ -1136,9 +1173,9 @@ people!
 
 <span class="c1"># Виводимо відповідь</span>
 <span class="k">if</span> <span class="n">exst_sym</span><span class="p">:</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Даний символ у файлі є&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Даний символ у файлі є'</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Даного символу у файлі немає&#39;</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">'Даного символу у файлі немає'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1147,8 +1184,8 @@ people!
 <p>Можна також використовувати інструкцію <code class="docutils literal notranslate"><span class="pre">while</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">&#39;Задайте символ: &#39;</span><span class="p">)</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span> <span class="p">(</span><span class="s1">&#39;file5&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sym</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">'Задайте символ: '</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span> <span class="p">(</span><span class="s1">'file5'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 
 <span class="n">exst_sym</span> <span class="o">=</span> <span class="kc">False</span>
 <span class="k">while</span> <span class="ow">not</span> <span class="n">exst_sym</span><span class="p">:</span>  <span class="c1"># Доки не зустрінеться шуканий символ:</span>
@@ -1170,11 +1207,11 @@ people!
 <p>Вирішення цього завдання являє собою “суму” рішень завдань 6 і 3:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">country</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Введіть назву держави: &#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">country</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Введіть назву держави: '</span><span class="p">)</span>
 
 <span class="c1"># Визначаємо номер рядка у файлі country.txt,</span>
 <span class="c1"># В якому записано назву заданої держави</span>
-<span class="n">f1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;country.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'country.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="n">line_number</span>  <span class="o">=</span> <span class="mi">0</span>
 <span class="n">found_number</span> <span class="o">=</span> <span class="mi">0</span>
 
@@ -1182,21 +1219,21 @@ people!
     <span class="n">line_number</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># визначаємо його номер</span>
     <span class="c1"># Порівнюємо значення в рядку з шуканою назвою</span>
     <span class="k">if</span> <span class="n">line</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">country</span><span class="p">:</span>       <span class="c1"># Якщо зустрілася шукана назва</span>
-        <span class="n">found_number</span> <span class="o">=</span> <span class="n">line_number</span> <span class="c1"># Запам&#39;ятовуємо номер поточного рядка файлу</span>
+        <span class="n">found_number</span> <span class="o">=</span> <span class="n">line_number</span> <span class="c1"># Запам'ятовуємо номер поточного рядка файлу</span>
         <span class="k">break</span> <span class="c1"># Припиняємо роботу циклу</span>
 
 <span class="c1"># Закриваємо файл gosud.txt</span>
 <span class="n">f1</span><span class="o">.</span><span class="n">close</span> <span class="p">()</span>
 
 <span class="c1"># Шукаємо рядок з номером found_number у файлі capitals.txt</span>
-<span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;capitals.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'capitals.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">found_number</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">f2</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span> <span class="c1"># Пропускаємо перші (found_number - 1) рядків</span>
 
 <span class="c1"># Читаємо рядок з номером found_number</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f2</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="c1"># Виводимо його значення</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Столиця цієї держави: </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Столиця цієї держави: </span><span class="si">{</span><span class="n">s</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 <span class="c1"># Закриваємо файл capitals.txt</span>
 <span class="n">f2</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
@@ -1205,12 +1242,12 @@ people!
 </div>
 <p>Можна також не читати перші “непотрібні” рядки, а ведучи підрахунок рядків, знайти рядок із номером <code class="docutils literal notranslate"><span class="pre">found_number</span></code> і вивести його на екран:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Шукаємо рядок з номером found_number в файлі capitals.txt</span>
-<span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;capitals.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f2</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'capitals.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="n">line_number</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f2</span><span class="p">:</span>      <span class="c1"># Для кожного рядка файлу</span>
     <span class="n">line_number</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># визначаємо його номер</span>
     <span class="k">if</span> <span class="n">line_number</span> <span class="o">==</span> <span class="n">found_number</span><span class="p">:</span> <span class="c1"># Зустрівся рядок з потрібним номером</span>
-        <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Столиця цієї держави:&#39;</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span> <span class="c1"># Виводимо його значення</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s1">'Столиця цієї держави:'</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span> <span class="c1"># Виводимо його значення</span>
         <span class="k">break</span> <span class="c1"># Припиняємо роботу циклу</span>
 <span class="c1"># Закриваємо файл capitals.txt</span>
 <span class="n">f2</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -1241,20 +1278,20 @@ people!
     <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">s</span><span class="p">:</span>
         <span class="k">break</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>або передумовою:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="k">while</span> <span class="n">s</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>У цьому прикладі при отриманні порожнього рядка цикл читання і виведення на екран рядків файлу закінчується за допомогою інструкції <code class="docutils literal notranslate"><span class="pre">break</span></code>. Аналогічно можна знайти кількість рядків у файлі:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="k">while</span> <span class="n">s</span><span class="p">:</span>
@@ -1275,8 +1312,8 @@ people!
 <section id="id26">
 <h3>Запис в файл нового рядка<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
 <p>Для вирішення завдання треба відкрити файл на додавання до нього інформації, після чого записати в нього новий рядок і закрити файл:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">new_str</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">new_str</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1286,28 +1323,28 @@ people!
 <h3>Заміна рядка файлу<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
 <p>Припустимо, потрібно в існуючому файлі замінити рядок із заданим номером <code class="docutils literal notranslate"><span class="pre">k</span></code> на деякий новий рядок <code class="docutils literal notranslate"><span class="pre">new_str</span></code>. На перший погляд, здається, що можна вчинити так:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># відкрити файл на читання і запис</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;r+&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">,</span> <span class="s1">'r+'</span><span class="p">)</span>
 <span class="c1"># прочитати, але не використовувати перші (k - 1) рядків файлу</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
     <span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <span class="c1"># записати в поточний рядок файлу нове значення</span>
-<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">new_str</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">new_str</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Однак при цьому потрібний результат отриманий не буде (переконайтеся у цьому).
 Правильне рішення:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># відкрити файл на читання</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="c1"># всі рядки файлу записати в список</span>
 <span class="n">sp</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 <span class="c1"># закрити файл</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
 <span class="c1"># змінити відповідне значення в списку</span>
-<span class="n">sp</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_str</span> <span class="o">+</span> <span class="s1">&#39;\ n&#39;</span>
+<span class="n">sp</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_str</span> <span class="o">+</span> <span class="s1">'\ n'</span>
 
 <span class="c1"># записати всі елементи нового списку в той же файл</span>
-<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'file'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">sp</span><span class="p">:</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -1326,7 +1363,7 @@ people!
 <h2>Використання оператора with<a class="headerlink" href="#with" title="Link to this heading">#</a></h2>
 <p>В Python є акуратно вбудований інструмент, який може помітно спростити читання і редагування файлів, званий менеджером контексту. Оператор <code class="docutils literal notranslate"><span class="pre">with</span></code> створює диспетчер контексту в Python, який автоматично закриває файл, по закінченню роботи з ним.</p>
 <p>Як це працює:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;test.txt&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_handler</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"test.txt"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_handler</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file_handler</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 </pre></div>
@@ -1337,9 +1374,9 @@ people!
 <h2>Як дізнатися позицію вказівника у файлі в Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h2>
 <p>Після того як викликаний метод <code class="docutils literal notranslate"><span class="pre">read()</span></code> на файловому об’єкті, якщо повторно викликати <code class="docutils literal notranslate"><span class="pre">read()</span></code>, то буде порожній рядок. Це відбувається тому, що після першого прочитання вказівник знаходиться в кінці файлу. Для того щоб дізнатися позицію вказівника можна використовувати метод <code class="docutils literal notranslate"><span class="pre">tell()</span></code>.</p>
 <p>Приклад:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;some.txt&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">my_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"some.txt"</span><span class="p">)</span>
 <span class="n">my_file</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># ми хочемо прочитати 10 символів</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Я на позиції:&quot;</span><span class="p">,</span> <span class="n">my_file</span><span class="o">.</span><span class="n">tell</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Я на позиції:"</span><span class="p">,</span> <span class="n">my_file</span><span class="o">.</span><span class="n">tell</span><span class="p">())</span>
 <span class="n">my_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1352,9 +1389,9 @@ people!
 <p>Приклад:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;some.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"some.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_file</span><span class="o">.</span><span class="n">read</span> <span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ми знаходимося на позиції:&quot;</span><span class="p">,</span> <span class="n">my_file</span><span class="o">.</span><span class="n">tell</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Ми знаходимося на позиції:"</span><span class="p">,</span> <span class="n">my_file</span><span class="o">.</span><span class="n">tell</span><span class="p">())</span>
 
 <span class="c1"># Повертаємося в початок</span>
 <span class="n">my_file</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -1377,72 +1414,72 @@ people!
 <section id="id28">
 <h3>Створення та видалення папки<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
 <p>Для створення папки застосовується функція <code class="docutils literal notranslate"><span class="pre">mkdir()</span></code>, в яку передається шлях до створюваної папки:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
-<span class="n">os</span><span class="o">.</span><span class="n">mkdir</span> <span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span> <span class="c1"># Шлях щодо поточного скрипта</span>
+<span class="n">os</span><span class="o">.</span><span class="n">mkdir</span> <span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span> <span class="c1"># Шлях щодо поточного скрипта</span>
 
 <span class="c1"># Абсолютний шлях</span>
-<span class="n">os</span><span class="o">.</span><span class="n">mkdir</span> <span class="p">(</span><span class="s2">&quot;c: // somedir&quot;</span><span class="p">)</span>
-<span class="n">os</span><span class="o">.</span><span class="n">mkdir</span> <span class="p">(</span><span class="s2">&quot;c: // somedir / hello&quot;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">mkdir</span> <span class="p">(</span><span class="s2">"c: // somedir"</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">mkdir</span> <span class="p">(</span><span class="s2">"c: // somedir / hello"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Для видалення папки використовується функція <code class="docutils literal notranslate"><span class="pre">rmdir()</span></code>, в яку передається шлях до видаленої папки:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="c1"># Шлях відносно поточного скрипта</span>
-<span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span>
 
 <span class="c1"># абсолютний шлях</span>
-<span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="s2">&quot;c://somedir/hello&quot;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">(</span><span class="s2">"c://somedir/hello"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="id29">
 <h3>Перейменування файлу<a class="headerlink" href="#id29" title="Link to this heading">#</a></h3>
 <p>Для перейменування викликається функція <code class="docutils literal notranslate"><span class="pre">rename(source,</span> <span class="pre">target)</span></code>, перший параметр якої — шлях до вихідного файлу, а другий — нове ім’я файлу. В якості шляхів можуть використовуватися як абсолютні, так і відносні. Наприклад, нехай в папці <code class="docutils literal notranslate"><span class="pre">C:/SomeDir/</span></code> розташовується файл <code class="docutils literal notranslate"><span class="pre">somefile.txt</span></code>. Перейменуємо його у файл <code class="docutils literal notranslate"><span class="pre">hello.txt</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
-<span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">&quot;C://SomeDir//somefile.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;C://SomeDir//hello.txt&quot;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s2">"C://SomeDir//somefile.txt"</span><span class="p">,</span> <span class="s2">"C://SomeDir//hello.txt"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="id30">
 <h3>Видалення файлу<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
 <p>Для видалення викликається функція <code class="docutils literal notranslate"><span class="pre">remove()</span></code>, в яку передається шлях до файлу:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
-<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;C://SomeDir//hello.txt&quot;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"C://SomeDir//hello.txt"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="id31">
 <h3>Існування файлу<a class="headerlink" href="#id31" title="Link to this heading">#</a></h3>
 <p>Якщо спробувати відкрити файл, який не існує, то Python видасть виняток <code class="docutils literal notranslate"><span class="pre">FileNotFoundError</span></code>. Для відлову виключення можна використовувати конструкцію <code class="docutils literal notranslate"><span class="pre">try</span> <span class="pre">...</span> <span class="pre">except</span></code>. Однак можна вже до відкриття файлу перевірити, чи існує він чи ні за допомогою методу <code class="docutils literal notranslate"><span class="pre">os.path.exists(path)</span></code>. У цей метод передається шлях, який необхідно перевірити:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Введіть шлях до файлу: &quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Введіть шлях до файлу: "</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Зазначений файл існує&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Зазначений файл існує"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Файл не існує&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Файл не існує"</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
 <section id="id32">
 <h3>Додаткові важливі функції роботи з os<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
 <p>Кожна програма має поточний каталог. Функція <code class="docutils literal notranslate"><span class="pre">os.getcwd</span></code> повертає поточний каталог:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="n">cwd</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">cwd</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Перевірити наявність файлу в поточному каталозі:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;my_file&#39;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">'my_file'</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Наступний приклад рекурсивно виводить список всіх файлів і підкаталогів для даного каталогу:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
-<span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="nb">dir</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">walk</span><span class="p">(</span><span class="nb">dir</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="nb">dir</span><span class="p">):</span>
         <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
@@ -1454,45 +1491,45 @@ people!
 </pre></div>
 </div>
 <p>У наступному прикладі виводиться статистична інформація щодо поточного каталогу: загальний розмір каталогу в байтах, число файлів, число підкаталогів. Стандартна функція <code class="docutils literal notranslate"><span class="pre">os.path.walk</span></code> має три параметри: каталог, користувацька функція, список для підрахунку:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span>
 
-<span class="k">def</span> <span class="nf">getlocaldata</span><span class="p">(</span><span class="n">sms</span><span class="p">,</span> <span class="n">dr</span><span class="p">,</span> <span class="n">flst</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">getlocaldata</span><span class="p">(</span><span class="n">sms</span><span class="p">,</span> <span class="n">dr</span><span class="p">,</span> <span class="n">flst</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">flst</span><span class="p">:</span>
         <span class="n">fullf</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dr</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">islink</span><span class="p">(</span><span class="n">fullf</span><span class="p">):</span> <span class="k">continue</span> <span class="c1"># don&#39;t count linked files</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">islink</span><span class="p">(</span><span class="n">fullf</span><span class="p">):</span> <span class="k">continue</span> <span class="c1"># don't count linked files</span>
         <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">fullf</span><span class="p">):</span>
             <span class="n">sms</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="n">fullf</span><span class="p">)</span>
             <span class="n">sms</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">sms</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
 
-<span class="k">def</span> <span class="nf">dtstat</span><span class="p">(</span><span class="n">dtroot</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">dtstat</span><span class="p">(</span><span class="n">dtroot</span><span class="p">):</span>
     <span class="n">sums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1"># 0 bytes, 0 files, 1 directory so far</span>
     <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">dtroot</span><span class="p">,</span> <span class="n">getlocaldata</span><span class="p">,</span> <span class="n">sums</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">sums</span>
 
-<span class="n">report</span> <span class="o">=</span> <span class="n">dtstat</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="n">report</span> <span class="o">=</span> <span class="n">dtstat</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">report</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>У наступному прикладі зроблена інтерпретація системної утиліти <code class="docutils literal notranslate"><span class="pre">grep</span></code>. У поточному каталозі будуть знайдені файли з пітоновськім розширенням, в яких буде знайдений пошуковий рядок <code class="docutils literal notranslate"><span class="pre">'import</span> <span class="pre">os'</span></code>:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">fnmatch.</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">sys</span><span class="o">,</span><span class="w"> </span><span class="nn">fnmatch.</span>
 
-<span class="n">mask</span> <span class="o">=</span> <span class="s1">&#39;*.py&#39;</span>
-<span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;import os&#39;</span>
+<span class="n">mask</span> <span class="o">=</span> <span class="s1">'*.py'</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="s1">'import os'</span>
 
-<span class="k">def</span> <span class="nf">walk</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="nb">dir</span><span class="p">,</span> <span class="n">files</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">walk</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="nb">dir</span><span class="p">,</span> <span class="n">files</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">fnmatch</span><span class="o">.</span><span class="n">fnmatch</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="n">mask</span><span class="p">):</span>
             <span class="n">name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">dir</span><span class="p">,</span><span class="n">file</span><span class="p">)</span>
             <span class="k">try</span><span class="p">:</span>
-                <span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s1">'rb'</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
                 <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">pattern</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
                     <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
             <span class="k">except</span><span class="p">:</span> 
                 <span class="k">pass</span>
 
-<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">walk</span><span class="p">,</span> <span class="p">[])</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s1">'.'</span><span class="p">,</span> <span class="n">walk</span><span class="p">,</span> <span class="p">[])</span>
 </pre></div>
 </div>
 </section>
@@ -1554,15 +1591,17 @@ people!
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
   </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Структуровані текстові файли</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Приклади</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Відкриття і закриття файлів</a><ul class="nav section-nav flex-column">
@@ -1656,8 +1695,8 @@ By <a href="mailto:vikvikgrom@gmail.com">Громова В.В.</a>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>
